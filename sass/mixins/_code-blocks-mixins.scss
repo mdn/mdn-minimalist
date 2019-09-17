@@ -1,0 +1,22 @@
+@import "../vars/dimension-vars";
+@import "../vars/color-vars";
+@import "../vars/grid-vars";
+@import "../vars/typography-vars";
+
+/* Example code blocks 
+ * @param $bg-color - The background-color for the code example box
+ * @param $border-color - The border-color for the code example box
+ */
+@mixin example-box($bg-color, $border-color) {
+  position: relative;
+  background: $bg-color;
+  color: $text-color;
+  margin-top: 0;
+  margin-bottom: $grid-spacing;
+  padding: 15px;
+  border: 0 $code-block-border-style $border-color;
+  @include bidi(
+    (border-left-width, $code-block-border-width, 0, border-right-width)
+  );
+  font-size: $base-font-size;
+}

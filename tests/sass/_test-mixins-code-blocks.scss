@@ -1,0 +1,31 @@
+@include describe("example-box") {
+  @include it("Returns code example-box styles including RTL override") {
+    @include assert {
+      @include output(false) {
+        .expect {
+          @include example-box(#fff, #222);
+        }
+      }
+
+      @include expect(false) {
+        .expect {
+          position: relative;
+          background: #fff;
+          color: #333;
+          margin-top: 0;
+          margin-bottom: 20px;
+          padding: 15px;
+          border: 0 solid #222;
+          font-size: 18px;
+        }
+        .expect {
+          border-left-width: 5px;
+        }
+        html[dir="rtl"] .expect {
+          border-left-width: 0;
+          border-right-width: 5px;
+        }
+      }
+    }
+  }
+}

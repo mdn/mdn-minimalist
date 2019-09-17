@@ -1,0 +1,11 @@
+$browser-default-font-size: 16px;
+$mobile-ends: (767px / $browser-default-font-size) * 1em;
+$tablet-starts: $mobile-ends + 0.001em;
+
+/*
+media queries
+- MDN should be coded "mobile first"
+- when coding features, begin by coding the mobile presentation as default
+- use the min-width MQs to modify presentation for larger screens
+*/
+$mq-tablet-and-up: "all and (min-width: #{$tablet-starts})";

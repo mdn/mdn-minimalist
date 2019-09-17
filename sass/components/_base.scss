@@ -1,0 +1,22 @@
+@import "../vars/typography-vars";
+@import "../vars/color-vars";
+@import "../mixins/typography-mixins";
+
+html {
+  box-sizing: border-box;
+  background-color: #fff;
+  color: $text-color;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  line-height: $document-line-height;
+  @include set-site-font-family();
+  font-size: $base-font-size;
+  @include font-smoothing();
+}

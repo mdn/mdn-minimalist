@@ -1,0 +1,35 @@
+{
+  "name": "mdn-minimalist",
+  "version": "0.0.1",
+  "description": "The base Sass for Mozilla Developer based projects and products",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "node-sass-chokidar ./sass/mdn-minimalist.scss -o ./css/",
+    "dev": "parcel pages/reference.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schalkneethling/mdn-minimalist.git"
+  },
+  "keywords": [
+    "styleguide",
+    "sass",
+    "south",
+    "mdn",
+    "css"
+  ],
+  "author": "Mozilla",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/schalkneethling/mdn-minimalist/issues"
+  },
+  "homepage": "https://github.com/schalkneethling/mdn-minimalist#readme",
+  "devDependencies": {
+    "jest": "24.8.0",
+    "node-sass": "4.12.0",
+    "node-sass-chokidar": "1.3.5",
+    "parcel-bundler": "1.12.3",
+    "sass-true": "5.0.0"
+  }
+}

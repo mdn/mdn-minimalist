@@ -1,0 +1,70 @@
+/* Fonts */
+/* Based on a modular scale with a base of 18px and a 
+   perfect fourth ratio of 1.333 - https://www.modularscale.com/?18&px&1.333 */
+/* Fonts */
+/* Based on a modular scale with a base of 18px and a 
+   perfect fourth ratio of 1.333 - https://www.modularscale.com/?18&px&1.333 */
+/*
+media queries
+- MDN should be coded "mobile first"
+- when coding features, begin by coding the mobile presentation as default
+- use the min-width MQs to modify presentation for larger screens
+*/
+html {
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #333; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  line-height: 1.6;
+  font-family: Arial, x-locale-body, sans-serif;
+  letter-spacing: -0.0027777778rem;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* Fonts */
+/* Based on a modular scale with a base of 18px and a 
+   perfect fourth ratio of 1.333 - https://www.modularscale.com/?18&px&1.333 */
+/*
+media queries
+- MDN should be coded "mobile first"
+- when coding features, begin by coding the mobile presentation as default
+- use the min-width MQs to modify presentation for larger screens
+*/
+/*Typography */
+h1 {
+  font-size: 4.209rem;
+  font-family: x-locale-heading-primary, zillaslab, Palatino, "Palatino Linotype", x-locale-heading-secondary, serif;
+  line-height: 1; }
+
+h2 {
+  font-size: 2.369rem;
+  font-family: x-locale-heading-primary, zillaslab, Palatino, "Palatino Linotype", x-locale-heading-secondary, serif;
+  line-height: 1.2; }
+  @media all and (min-width: 47.9385em) {
+    h2 {
+      font-size: 3.157rem; } }
+
+h3 {
+  font-size: 2.369rem;
+  font-family: x-locale-heading-primary, zillaslab, Palatino, "Palatino Linotype", x-locale-heading-secondary, serif;
+  line-height: 1.2; }
+
+h4 {
+  font-size: 1.777rem;
+  font-family: x-locale-heading-primary, zillaslab, Palatino, "Palatino Linotype", x-locale-heading-secondary, serif;
+  line-height: 1.2; }
+
+h5 {
+  font-size: 1.333rem;
+  font-family: x-locale-heading-primary, zillaslab, Palatino, "Palatino Linotype", x-locale-heading-secondary, serif;
+  line-height: 1.2; }
+
+p {
+  margin-bottom: 24px; }

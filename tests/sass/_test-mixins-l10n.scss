@@ -1,0 +1,73 @@
+@include describe("bidi") {
+  @include it("Returns a single LTR style rule with a RTL override") {
+    @include assert {
+      @include output(false) {
+        .expect {
+          @include bidi((float, left, right));
+        }
+      }
+
+      @include expect(false) {
+        .expect {
+          float: left;
+        }
+        html[dir="rtl"] .expect {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+@include describe("bidi") {
+  @include it(
+    "Returns an additional RTL style rule if a fourth parameter is passed"
+  ) {
+    @include assert {
+      @include output(false) {
+        .expect {
+          @include bidi((margin-left, 10px, 0, margin-right));
+        }
+      }
+
+      @include expect(false) {
+        .expect {
+          margin-left: 10px;
+        }
+        html[dir="rtl"] .expect {
+          margin-left: 0;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@include describe("bidi") {
+  @include it(
+    "Returns multiple LTR and RTL style rules from a single bidi call"
+  ) {
+    @include assert {
+      @include output(false) {
+        .expect {
+          @include bidi(
+            (float, left, right),
+            (margin-left, 10px, 0, margin-right)
+          );
+        }
+      }
+
+      @include expect(false) {
+        .expect {
+          float: left;
+          margin-left: 10px;
+        }
+        html[dir="rtl"] .expect {
+          float: right;
+          margin-left: 0;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

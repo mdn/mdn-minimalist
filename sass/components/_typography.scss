@@ -1,0 +1,50 @@
+@import "../vars/dimension-vars";
+@import "../mixins/typography-mixins";
+
+/*Typography */
+h1 {
+  @include heading-1();
+}
+
+h2 {
+  @include heading-2();
+}
+
+h3 {
+  @include heading-3();
+}
+
+h4 {
+  @include heading-4();
+}
+
+h5 {
+  @include heading-5();
+}
+
+p {
+  margin-bottom: $content-block-margin;
+}
+
+/* text links */
+a:link,
+a:visited {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+/* mono space elements pre, code, kbd */
+code {
+  background-color: rgba(220, 220, 220, 0.5);
+  box-decoration-break: clone;
+  padding: 0 2px;
+  border-radius: 2px;
+  font-family: $code-inline-font-family;
+  word-wrap: break-word;
+}

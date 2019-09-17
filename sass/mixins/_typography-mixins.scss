@@ -1,0 +1,50 @@
+@import "../vars/typography-vars";
+@import "../vars/media-query-vars";
+
+@mixin set-heading-font-family() {
+  font-family: $heading-font-family;
+}
+
+@mixin set-site-font-family() {
+  font-family: $site-font-family;
+  letter-spacing: -0.0027777778rem;
+}
+
+@mixin heading-1() {
+  font-size: $h1-font-size;
+  @include set-heading-font-family();
+  line-height: $h1-heading-line-height;
+}
+
+@mixin heading-2() {
+  font-size: $mobile-h2-font-size;
+  @include set-heading-font-family();
+  line-height: $heading-line-height;
+
+  @media #{$mq-tablet-and-up} {
+    font-size: $h2-font-size;
+  }
+}
+
+@mixin heading-3() {
+  font-size: $h3-font-size;
+  @include set-heading-font-family();
+  line-height: $heading-line-height;
+}
+
+@mixin heading-4() {
+  font-size: $h4-font-size;
+  @include set-heading-font-family();
+  line-height: $heading-line-height;
+}
+
+@mixin heading-5() {
+  font-size: $h5-font-size;
+  @include set-heading-font-family();
+  line-height: $heading-line-height;
+}
+
+@mixin font-smoothing() {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
