@@ -4,484 +4,1597 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <title>&lt;audio&gt;: The Embed Audio element</title>
-    <link rel="stylesheet" href="../sass/mdn-minimalist.scss" media="screen" />
+    <title>Array.prototype.forEach() - JavaScript | MDN</title>
+    <link rel="stylesheet" href="./css/mdn-minimalist.css" media="screen" />
 </head>
 
-<body>
-    <div id="root">
-        <div>
-            <header>
-                <h1><a href="/">MDN Web Docs</a></h1>
-                <p>Breadcrumbs here...</p>
-            </header>
-            <section class="section">
-                <div>
-                    <h1 class="page-title">&lt;audio&gt;: The Embed Audio element</h1>
-                    <div class="main">
-                        <div class="sidebar">SIDE BAR</div>
-                        <div class="content">
-                            <div>
-                                <p>The <strong>HTML <code>&lt;audio&gt;</code> element</strong> is used to embed sound
-                                    content in
-                                    documents. It may contain one or more audio sources, represented using
-                                    the <code>src</code> attribute or the
+<body data-gr-c-s-loaded="true">
+    <div id="react-container" data-component-name="SPA">
+        <div class="loading-bar"></div>
+        <ul id="nav-access">
+            <li><a id="skip-main" href="#content">Skip to main content</a></li>
+            <li><a id="skip-language" href="#language">Select language</a></li>
+            <li><a id="skip-search" href="#main-q">Skip to search</a></li>
+        </ul>
+        <header class="page-header"><a href="/en-US/" class="logo" aria-label="MDN Web Docs"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 219 48" role="img">
+                    <path
+                        d="M49.752 30.824h59.917v17.132H49.75zm57.23 12.3c-.103.03-.21.048-.316.05-.338 0-.514-.15-.514-.582v-3.256c0-1.71-1.352-2.543-2.976-2.543a7.206 7.206 0 0 0-3.21.676l-.29 1.724 1.71.182.245-.842a2.338 2.338 0 0 1 1.147-.216c1.214 0 1.23.913 1.23 1.69v.234c-.407-.048-.818-.07-1.23-.068-1.71 0-3.49.433-3.49 2.276 0 1.563 1.23 2.144 2.31 2.144a2.7 2.7 0 0 0 2.41-1.494c.018.88.77 1.563 1.648 1.494a2.89 2.89 0 0 0 1.353-.338zm-4.604-.05a.787.787 0 0 1-.88-.867c0-.815.677-1.015 1.432-1.015.36.008.722.04 1.078.098-.05 1.235-.852 1.783-1.63 1.783zM97.388 33l-3.24 11.433h2.11L99.5 33.002zm-4.353 0l-3.24 11.433h2.11L95.145 33zm-6.89 6.645h2.243V36.94h-2.242zm0 4.802h2.243v-2.706h-2.242zm-3.617-1.64H80.1l4.156-4.736-.166-1.13h-6.58l-.268 2.63 1.546.164.338-1.163h2.343l-4.123 4.734.216 1.13h6.544l.467-2.63-1.69-.164zM72.143 36.79c-2.706 0-4.02 1.812-4.02 4.004 0 2.394 1.595 3.804 3.905 3.804 2.394 0 4.122-1.51 4.122-3.905-.003-2.093-1.32-3.906-4.01-3.906zm-.054 6.154c-1.165 0-1.763-.997-1.763-2.292 0-1.414.676-2.23 1.778-2.23 1.015 0 1.83.677 1.83 2.196 0 1.438-.73 2.327-1.846 2.327zm-5.906-3.564c0-1.78-1.224-2.594-2.577-2.594a2.51 2.51 0 0 0-2.44 1.612c-.367-1.1-1.364-1.613-2.443-1.613a2.48 2.48 0 0 0-2.276 1.278v-1.13h-3.14v1.63h.996v4.24h-.997v1.63h4.572v-1.63h-1.432V40.2c0-1.048.433-1.78 1.448-1.78.845 0 1.278.502 1.278 1.797v4.224h3.14v-1.63h-.996v-2.612c0-1.048.433-1.78 1.447-1.78.846 0 1.278.502 1.278 1.797v4.214h3.142V42.8h-.998zm78.791-22.39h-6.29c.23-1.935 1.16-3.558 3.274-3.558 2.245 0 3.2 1.857 3.016 3.558zM218.952 0v29.137h-169.2V0zM71.706 6.885h-3.85L61.51 20.01h-.104L54.882 6.884h-3.84v1.65h2.19V21.98H51.12v1.65h5.927v-1.65h-2.012V11.24h.1l5.75 11.553H61.9l5.62-11.474h.105v10.66h-1.962v1.65h5.942v-1.65h-2.09V8.536h2.19zm9.993 16.76c5.285 0 8.484-3.48 8.484-8.42 0-4.847-3.094-8.353-8.56-8.353H74.12v1.623h2.114v13.527H74.12v1.623zm27.05-16.76h-6.426v1.65h2.526v11.268h-.1L95.21 6.885H91.6v1.65h2.22V21.98h-1.935v1.65h6.385v-1.65h-2.655V10.444h.1l9.724 13.202h1.21V8.535h2.09zm26.71 5.29h-5.156v1.467h1.83l-1.857 7.247h-.128l-3.586-8.716h-1.21l-3.423 8.718h-.127l-2.14-7.247h1.933v-1.47h-5.41v1.467h1.522l3.25 10.003h1.352l3.432-8.766h.13l3.496 8.765h1.393l3.122-10.003h1.573zm6.704 11.727c2.837 0 4.514-1.583 4.83-3.568l-1.523-.338c-.36 1.42-1.365 2.347-3.17 2.347-2.283 0-3.53-1.468-3.636-4.02h8.058c.1-.445.153-.898.156-1.354-.024-2.71-1.728-5.03-4.873-5.03-3.246 0-5.26 2.58-5.26 6.14 0 3.712 2.162 5.825 5.412 5.825zm13.408 0c3.663 0 5.134-3.25 5.134-6.294 0-3.642-2.063-5.67-4.924-5.67-2.19 0-3.402 1.186-4.1 2.603V5.905h-3.53v1.47h1.692v12.923a22.8 22.8 0 0 1-.338 3.35h1.805a44.05 44.05 0 0 0 .235-1.906c.747 1.39 2.242 2.165 4.02 2.165zm26.198-1.728h-1.985V5.904h-4.6v1.47h2.798v6.653c-.748-1.342-2.15-2.09-3.842-2.09-3.74 0-5.183 3.2-5.183 6.267 0 3.584 1.958 5.698 4.924 5.698 2.087 0 3.352-1.224 4.1-2.577v2.323h3.784zm6.963 1.728c3.53 0 5.75-2.526 5.742-6.006 0-3.25-1.934-5.982-5.647-5.982s-5.67 2.735-5.67 6.087c0 3.457 2.09 5.905 5.568 5.905zm12.942 0c3.172 0 4.538-2.114 4.866-4.112l-1.548-.34c-.334 1.885-1.315 2.917-3.094 2.917-2.27 0-3.507-1.637-3.507-4.397 0-2.475.982-4.487 3.43-4.487a4.4 4.4 0 0 1 2.45.646l.42 1.936 1.496-.18-.44-2.758c-1.16-.876-2.397-1.187-3.92-1.187-3.556 0-5.362 2.966-5.362 6.14 0 3.685 2.036 5.825 5.208 5.825zm11.166 0c2.76 0 4.874-1.34 4.847-3.595 0-4.565-7.1-2.195-7.1-5.184 0-1.177 1.03-1.69 2.474-1.69.826-.015 1.64.18 2.368.567l.267 1.864 1.495-.18-.284-2.68a8.135 8.135 0 0 0-3.997-1.06c-2.088 0-4.255.903-4.255 3.328 0 4.46 7.193 2.063 7.193 5.208 0 1.315-1.495 1.934-3.095 1.934a5.812 5.812 0 0 1-2.553-.568l.078-1.522-1.444-.156-.362 2.604c.977.643 2.736 1.133 4.36 1.133zm-54.042-6.11c0 2.373-1.058 4.564-3.584 4.564a3.455 3.455 0 0 1-3.534-3.456v-1.728c.05-1.7 1.444-3.686 3.635-3.686 1.948 0 3.48 1.444 3.483 4.305zm19.18-1.06v1.833c-.076 1.73-1.57 3.79-3.634 3.79-1.985 0-3.48-1.47-3.48-4.28 0-2.425 1.133-4.59 3.686-4.59a3.36 3.36 0 0 1 3.43 3.248zm14.597 1.133c0 2.58-1.34 4.488-3.79 4.488-2.453 0-3.74-1.958-3.74-4.46 0-2.55 1.34-4.434 3.74-4.434 2.397 0 3.79 1.778 3.79 4.405zm-104.39-2.593c0 4.16-2.32 6.763-6.574 6.763h-3.478V8.508h3.466c4.254 0 6.574 2.71 6.587 6.764zM.116 0h47.956v47.956H.116zM42.01 22.02c-.036-.723-.12-1.448-.17-2.166a1.74 1.74 0 0 0-.395-.98 2.465 2.465 0 0 0-1.026-.74c-.808-.314-1.622-.664-2.435-.975a21.509 21.509 0 0 1-3.342-1.472 2.626 2.626 0 0 1-1.296-1.972 2.954 2.954 0 0 0-1.47-2.228 4.062 4.062 0 0 0-2.958-.35c-.734.176-1.5.165-2.23-.033l-1.112-.34-.302-.09-.873-.26c-1.57-.468-2.228-.713-4.773-.278a14.678 14.678 0 0 0-7.09 3.897l-6.37 6.76h5.72l-3.504 3.71h6.026l-3.503 3.71h4.844l-1.548 4.06c5.93 6.07 12.25 7.295 12.25 7.295 0-1.673.38-8.24.826-9.34a5.25 5.25 0 0 1 .762-1.54 4.211 4.211 0 0 1 3.393-1.547c1.303 0 2.597.238 3.815.702.74.31 1.577.264 2.277-.122a38.42 38.42 0 0 0 1.498-.94.839.839 0 0 1 .556-.18c.54.06 1.054-.237 1.27-.734.16-.33.35-.64.524-.97.472-.884.69-1.88.633-2.88z">
+                    </path>
+                </svg></a>
+            <nav class="main-nav" role="navigation">
+                <ul>
+                    <li class="top-level-entry-container"><button type="button" class="top-level-entry"
+                            aria-haspopup="true">Technologies<span class="main-menu-arrow"
+                                aria-hidden="true">▼</span></button>
+                        <ul>
+                            <li data-item="Technologies" role="menuitem"><a href="/en-US/docs/Web">Technologies
+                                    Overview</a></li>
+                            <li data-item="Technologies" role="menuitem"><a href="/en-US/docs/Web/HTML">HTML</a></li>
+                            <li data-item="Technologies" role="menuitem"><a href="/en-US/docs/Web/CSS">CSS</a></li>
+                            <li data-item="Technologies" role="menuitem"><a
+                                    href="/en-US/docs/Web/JavaScript">JavaScript</a></li>
+                            <li data-item="Technologies" role="menuitem"><a
+                                    href="/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
+                            <li data-item="Technologies" role="menuitem"><a href="/en-US/docs/Web/HTTP">HTTP</a></li>
+                            <li data-item="Technologies" role="menuitem"><a href="/en-US/docs/Web/API">APIs / DOM</a>
+                            </li>
+                            <li data-item="Technologies" role="menuitem"><a
+                                    href="/en-US/docs/Mozilla/Add-ons/WebExtensions">Browser Extensions</a></li>
+                            <li data-item="Technologies" role="menuitem"><a href="/en-US/docs/Web/MathML">MathML</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="top-level-entry-container"><button type="button" class="top-level-entry"
+                            aria-haspopup="true">References &amp; Guides<span class="main-menu-arrow"
+                                aria-hidden="true">▼</span></button>
+                        <ul>
+                            <li data-item="References &amp; Guides" role="menuitem"><a href="/en-US/docs/Learn">Learn
+                                    web development</a></li>
+                            <li data-item="References &amp; Guides" role="menuitem"><a
+                                    href="/en-US/docs/Web/Tutorials">Tutorials</a></li>
+                            <li data-item="References &amp; Guides" role="menuitem"><a
+                                    href="/en-US/docs/Web/Reference">References</a></li>
+                            <li data-item="References &amp; Guides" role="menuitem"><a
+                                    href="/en-US/docs/Web/Guide">Developer Guides</a></li>
+                            <li data-item="References &amp; Guides" role="menuitem"><a
+                                    href="/en-US/docs/Web/Accessibility">Accessibility</a></li>
+                            <li data-item="References &amp; Guides" role="menuitem"><a href="/en-US/docs/Games">Game
+                                    development</a></li>
+                            <li data-item="References &amp; Guides" role="menuitem"><a href="/en-US/docs/Web">...more
+                                    docs</a></li>
+                        </ul>
+                    </li>
+                    <li class="top-level-entry-container"><button type="button" class="top-level-entry"
+                            aria-haspopup="true">Feedback<span class="main-menu-arrow"
+                                aria-hidden="true">▼</span></button>
+                        <ul>
+                            <li data-item="Feedback" role="menuitem"><a href="/en-US/docs/MDN/Feedback">Send
+                                    Feedback</a></li>
+                            <li data-item="Feedback" role="menuitem"><a target="_blank" rel="noopener noreferrer"
+                                    href="https://support.mozilla.org/">Get Firefox help
+                                    <!-- --> 🌐</a></li>
+                            <li data-item="Feedback" role="menuitem"><a target="_blank" rel="noopener noreferrer"
+                                    href="https://stackoverflow.com/">Get web development help
+                                    <!-- --> 🌐</a></li>
+                            <li data-item="Feedback" role="menuitem"><a href="/en-US/docs/MDN/Community">Join the MDN
+                                    community</a></li>
+                            <li data-item="Feedback" role="menuitem"><a target="_blank" rel="noopener noreferrer"
+                                    href="https://github.com/mdn/sprints/issues/new?template=issue-template.md&amp;projects=mdn/sprints/2&amp;labels=user-report&amp;title=%2Fen-US%2Fdocs%2FWeb%2FJavaScript%2FReference%2FGlobal_Objects%2FArray%2FforEach">Report
+                                    a content problem
+                                    <!-- --> 🌐</a></li>
+                            <li data-item="Feedback" role="menuitem"><a target="_blank" rel="noopener noreferrer"
+                                    href="https://github.com/mdn/kuma/issues/new">Report an issue
+                                    <!-- --> 🌐</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <form class="header-search" id="nav-main-search" action="/en-US/search" method="get" role="search"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 28" aria-hidden="true" class="search-icon">
+                    <path
+                        d="M18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zm8 13c0 1.094-.906 2-2 2a1.96 1.96 0 0 1-1.406-.594l-5.359-5.344a10.971 10.971 0 0 1-6.234 1.937c-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-.672 4.406-1.937 6.234l5.359 5.359c.359.359.578.875.578 1.406z">
+                    </path>
+                </svg><label for="main-q" class="visually-hidden">Search MDN</label><input type="search"
+                    class="search-input-field" id="main-q" name="q" placeholder="Search MDN" pattern="(.|\s)*\S(.|\s)*"
+                    required=""></form>
+            <div class="auth-container">
+                <div class="dropdown-container"><button type="button" class="dropdown-menu-label"
+                        aria-haspopup="true"><img
+                            srcset="https://avatars.githubusercontent.com/u/80675?v=2 200w, https://avatars.githubusercontent.com/u/80675?v=2 50w"
+                            src="/static/img/avatar.png" class="avatar" alt="schalkneethling"></button>
+                    <ul class="dropdown-menu-items" style="right: 0px;" role="menu">
+                        <li><a href="https://wiki.developer.mozilla.org/en-US/profiles/schalkneethling">View profile</a>
+                        </li>
+                        <li><a href="https://wiki.developer.mozilla.org/en-US/profiles/schalkneethling/edit">Edit
+                                profile</a></li>
+                        <li>
+                            <form action="/en-US/users/signout" method="post"><input name="next" type="hidden"
+                                    value="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"><button
+                                    class="signout-button" type="submit">Sign out</button></form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main role="main">
+            <div class="titlebar-container">
+                <div class="titlebar">
+                    <h1 class="title">Array.prototype.forEach()</h1><a class="button neutral"
+                        href="https://wiki.developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+                        rel="nofollow"><svg class="icon icon-pencil" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 26" aria-hidden="true">
+                            <path
+                                d="M5.672 24l1.422-1.422-3.672-3.672L2 20.328V22h2v2h1.672zm8.172-14.5a.329.329 0 0 0-.344-.344.368.368 0 0 0-.266.109l-8.469 8.469a.366.366 0 0 0-.109.266c0 .203.141.344.344.344a.368.368 0 0 0 .266-.109l8.469-8.469a.366.366 0 0 0 .109-.266zM13 6.5l6.5 6.5-13 13H0v-6.5zM23.672 8c0 .531-.219 1.047-.578 1.406L20.5 12 14 5.5l2.594-2.578c.359-.375.875-.594 1.406-.594s1.047.219 1.422.594l3.672 3.656c.359.375.578.891.578 1.422z">
+                            </path>
+                        </svg> Edit in wiki</a>
+                </div>
+            </div>
+            <div class="full-width-row-container">
+                <div class="max-content-width-container">
+                    <nav class="breadcrumbs" role="navigation">
+                        <ol typeof="BreadcrumbList" vocab="https://schema.org/" aria-label="breadcrumbs">
+                            <li property="itemListElement" typeof="ListItem"><a href="/en-US/docs/Web"
+                                    class="breadcrumb-chevron" property="item" typeof="WebPage"><span
+                                        property="name">Web technology for developers</span></a>
+                                <meta property="position" content="1">
+                            </li>
+                            <li property="itemListElement" typeof="ListItem"><a href="/en-US/docs/Web/JavaScript"
+                                    class="breadcrumb-chevron" property="item" typeof="WebPage"><span
+                                        property="name">JavaScript</span></a>
+                                <meta property="position" content="2">
+                            </li>
+                            <li property="itemListElement" typeof="ListItem"><a
+                                    href="/en-US/docs/Web/JavaScript/Reference" class="breadcrumb-chevron"
+                                    property="item" typeof="WebPage"><span property="name">JavaScript
+                                        reference</span></a>
+                                <meta property="position" content="3">
+                            </li>
+                            <li property="itemListElement" typeof="ListItem"><a
+                                    href="/en-US/docs/Web/JavaScript/Reference/Global_Objects"
+                                    class="breadcrumb-chevron" property="item" typeof="WebPage"><span
+                                        property="name">Standard built-in objects</span></a>
+                                <meta property="position" content="4">
+                            </li>
+                            <li property="itemListElement" typeof="ListItem"><a
+                                    href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+                                    class="breadcrumb-chevron" property="item" typeof="WebPage"><span
+                                        property="name">Array</span></a>
+                                <meta property="position" content="5">
+                            </li>
+                            <li property="itemListElement" typeof="ListItem"><a
+                                    href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+                                    class="crumb-current-page" property="item" typeof="WebPage"><span property="name"
+                                        aria-current="page">Array.prototype.forEach()</span></a>
+                                <meta property="position" content="6">
+                            </li>
+                        </ol>
+                    </nav>
+                    <div class="dropdown-container"><button type="button" class="dropdown-menu-label"
+                            aria-haspopup="true" aria-owns="language-menu"
+                            aria-label="Current language is English. Choose your preferred language.">English<span
+                                class="dropdown-arrow-down" aria-hidden="true">▼</span></button>
+                        <ul id="language-menu" class="dropdown-menu-items" style="right:0" role="menu">
+                            <li role="menuitem" lang="ca"><a
+                                    href="/ca/docs/Web/JavaScript/Referencia/Objectes_globals/Array/forEach"
+                                    title="Catalan"><bdi>Català</bdi></a></li>
+                            <li role="menuitem" lang="de"><a
+                                    href="/de/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+                                    title="German"><bdi>Deutsch</bdi></a></li>
+                            <li role="menuitem" lang="es"><a
+                                    href="/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/forEach"
+                                    title="Spanish"><bdi>Español</bdi></a></li>
+                            <li role="menuitem" lang="fr"><a
+                                    href="/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/forEach"
+                                    title="French"><bdi>Français</bdi></a></li>
+                            <li role="menuitem" lang="he"><a
+                                    href="/he/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+                                    title="Hebrew"><bdi>עברית</bdi></a></li>
+                            <li role="menuitem" lang="id"><a
+                                    href="/id/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+                                    title="Indonesian"><bdi>Bahasa Indonesia</bdi></a></li>
+                            <li role="menuitem" lang="it"><a
+                                    href="/it/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+                                    title="Italian"><bdi>Italiano</bdi></a></li>
+                            <li role="menuitem" lang="ja"><a
+                                    href="/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+                                    title="Japanese"><bdi>日本語</bdi></a></li>
+                            <li role="menuitem" lang="ko"><a
+                                    href="/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+                                    title="Korean"><bdi>한국어</bdi></a></li>
+                            <li role="menuitem" lang="nl"><a
+                                    href="/nl/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+                                    title="Dutch"><bdi>Nederlands</bdi></a></li>
+                            <li role="menuitem" lang="pl"><a
+                                    href="/pl/docs/Web/JavaScript/Referencje/Obiekty/Array/forEach"
+                                    title="Polish"><bdi>Polski</bdi></a></li>
+                            <li role="menuitem" lang="pt-BR"><a
+                                    href="/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+                                    title="Portuguese (Brazilian)"><bdi>Português (do&nbsp;Brasil)</bdi></a></li>
+                            <li role="menuitem" lang="pt-PT"><a
+                                    href="/pt-PT/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+                                    title="Portuguese (Portugal)"><bdi>Português (Europeu)</bdi></a></li>
+                            <li role="menuitem" lang="ru"><a
+                                    href="/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+                                    title="Russian"><bdi>Русский</bdi></a></li>
+                            <li role="menuitem" lang="tr"><a
+                                    href="/tr/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+                                    title="Turkish"><bdi>Türkçe</bdi></a></li>
+                            <li role="menuitem" lang="uk"><a
+                                    href="/uk/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+                                    title="Ukrainian"><bdi>Українська</bdi></a></li>
+                            <li role="menuitem" lang="vi"><a
+                                    href="/vi/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+                                    title="Vietnamese"><bdi>Tiếng Việt</bdi></a></li>
+                            <li role="menuitem" lang="zh-CN"><a
+                                    href="/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+                                    title="Chinese (Simplified)"><bdi>中文 (简体)</bdi></a></li>
+                            <li role="menuitem" lang="zh-TW"><a
+                                    href="/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach"
+                                    title="Chinese (Traditional)"><bdi>正體中文 (繁體)</bdi></a></li>
+                            <li><a href="https://wiki.developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach$locales"
+                                    rel="nofollow" id="translations-add">Add a translation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="wiki-left-present content-layout">
+                <aside class="document-toc-container">
+                    <section class="document-toc">
+                        <header>
+                            <h2>On this Page</h2>
+                        </header>
+                        <ul>
+                            <li><a href="#Syntax" rel="internal">Syntax</a></li>
+                            <li><a href="#Description" rel="internal">Description</a></li>
+                            <li><a href="#Examples" rel="internal">Examples</a></li>
+                            <li><a href="#Note_on_using_Promises_or_async_functions" rel="internal">Note on using
+                                    Promises or async functions</a></li>
+                            <li><a href="#Specifications" rel="internal">Specifications</a></li>
+                            <li><a href="#Browser_compatibility" rel="internal">Browser compatibility</a></li>
+                            <li><a href="#See_also" rel="internal">See also</a></li>
+                        </ul>
+                    </section>
+                </aside>
+                <div id="content" class="article text-content">
+                    <article id="wikiArticle">
+                        <div></div>
+
+                        <p>The <code><strong>forEach()</strong></code> method executes a provided function once for each
+                            array element.</p>
+
+                        <div><iframe class="interactive interactive-js"
+                                src="https://interactive-examples.mdn.mozilla.net/pages/js/array-foreach.html"
+                                title="MDN Web Docs Interactive Example" width="100%" height="250"
+                                frameborder="0"></iframe></div>
+
+                        <p class="hidden">The source for this interactive example is stored in a GitHub repository. If
+                            you'd like to contribute to the interactive examples project, please clone <a
+                                class="external" href="https://github.com/mdn/interactive-examples"
+                                rel="noopener">https://github.com/mdn/interactive-examples</a> and send us a pull
+                            request.</p>
+
+                        <h2 id="Syntax">Syntax</h2>
+
+                        <pre
+                            class="syntaxbox"><var>arr</var>.forEach(<var>callback(currentValue [, index [, array]])</var>[, <var>thisArg</var>])</pre>
+
+                        <h3 id="Parameters">Parameters</h3>
+
+                        <dl>
+                            <dt><code><var>callback</var></code></dt>
+                            <dd>Function to execute on each element. It accepts between one and&nbsp;three arguments:
+                            </dd>
+                            <dd>
+                                <dl>
+                                    <dt><code><var>currentValue</var></code></dt>
+                                    <dd>The current element being processed in the array.</dd>
+                                    <dt><code><var>index</var></code> <span
+                                            class="inlineIndicator optional optionalInline">Optional</span></dt>
+                                    <dd>The index <code><var>currentValue</var></code>&nbsp;in the array.</dd>
+                                    <dt><code><var>array</var></code> <span
+                                            class="inlineIndicator optional optionalInline">Optional</span></dt>
+                                    <dd>The array <code>forEach()</code> was called upon.</dd>
+                                </dl>
+                            </dd>
+                            <dt><code><var>thisArg</var></code> <span
+                                    class="inlineIndicator optional optionalInline">Optional</span></dt>
+                            <dd>Value to use as <code>this</code> when executing <code><var>callback</var></code>.</dd>
+                        </dl>
+
+                        <h3 id="Return_value">Return value</h3>
+
+                        <p><code>undefined</code>.</p>
+
+                        <h2 id="Description">Description</h2>
+
+                        <p><code>forEach()</code> calls a provided <code><var>callback</var></code> function once for
+                            each element in an array in ascending order. It is not invoked for index properties that
+                            have been deleted or are uninitialized. (For sparse arrays, <a href="#sparseArray">see
+                                example below</a>.)</p>
+
+                        <p><code><var>callback</var></code> is invoked with three arguments:</p>
+
+                        <ol>
+                            <li>the value of the element</li>
+                            <li>the index of the element</li>
+                            <li>the Array object being traversed</li>
+                        </ol>
+
+                        <p>If a <code><var>thisArg</var></code> parameter is provided to <code>forEach()</code>, it will
+                            be used as callback's <code>this</code> value. The <code><var>thisArg</var></code> value
+                            ultimately observable by <code><var>callback</var></code> is determined according to <a
+                                href="/en-US/docs/Web/JavaScript/Reference/Operators/this">the usual rules for
+                                determining the <code>this</code> seen by a function</a>.</p>
+
+                        <p>The range of elements processed by <code>forEach()</code> is set before the first invocation
+                            of <code><var>callback</var></code>. Elements which are appended to the array after the call
+                            to <code>forEach()</code> begins will not be visited by <code><var>callback</var></code>. If
+                            existing elements of the array are changed or deleted, their value as passed to
+                            <code><var>callback</var></code> will be the value at the time <code>forEach()</code> visits
+                            them; elements that are deleted before being visited are not visited. If elements that are
+                            already visited are removed (e.g. using <a
+                                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift"
+                                title="The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array."><code>shift()</code></a>)
+                            during the iteration, later elements will be skipped. (<a
+                                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach#If_the_array_is_modified_during_iteration_other_elements_might_be_skipped.">See
+                                this example, below</a>.)</p>
+
+                        <p><code>forEach()</code> executes the <code><var>callback</var></code> function once for each
+                            array element; unlike <a
+                                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+                                title="The map() method creates a new array with the results of calling a provided function on every element in the calling&nbsp;array."><code>map()</code></a>
+                            or <a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce"
+                                title="The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in a single output value."><code>reduce()</code></a>
+                            it always returns the value <a
+                                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined"
+                                title="The global undefined property represents the primitive value undefined. It is one of JavaScript's primitive types."><code>undefined</code></a>
+                            and is not chainable. The typical use case is to execute side effects at the end of a chain.
+                        </p>
+
+                        <p><code>forEach()</code> does not mutate the array on which it is called.
+                            (However,&nbsp;<code><var>callback</var></code>&nbsp;may do so)</p>
+
+                        <div class="note">
+                            <p>There is no way to stop or break a <code>forEach()</code> loop other than by throwing an
+                                exception. If you need such behavior, the <code>forEach()</code> method is the wrong
+                                tool.</p>
+
+                            <p>Early termination may be accomplished with:</p>
+
+                            <ul>
+                                <li>A simple <a href="/en-US/docs/Web/JavaScript/Reference/Statements/for">for</a> loop
+                                </li>
+                                <li>A <a
+                                        href="/en-US/docs/Web/JavaScript/Reference/Statements/for...of">for...of</a>&nbsp;/
                                     <a
-                                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source"><code>&lt;source&gt;</code></a>
-                                    element: the browser will choose the most suitable one. It can also be
-                                    the destination for streamed media, using a
-                                    <a
-                                        href="https://developer.mozilla.org/en-US/docs/Web/API/MediaStream"><code>MediaStream</code></a>.
-                                </p>
-                            </div>
-                            <div><iframe title="Interactive example for <audio>: The Embed Audio element"
-                                    class="interactive-example"
-                                    src="https://interactive-examples.mdn.mozilla.net/pages/tabbed/audio.html"
-                                    width="100%" height="450" frameborder="0"></iframe></div>
-                            <div>
-                                <p>In a similar manner to the
-                                    <a
-                                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img"><code>&lt;img&gt;</code></a>
-                                    element, we include a path to the media we want to embed inside the
-                                    <code>src</code> attribute; we can include other attributes to specify information
-                                    such as whether we want it to autoplay and loop, whether we want to show
-                                    the browser's default audio controls, etc.</p>
-                                <p>The content inside the opening and closing <code>&lt;audio&gt;&lt;/audio&gt;</code>
-                                    tags is
-                                    shown as a fallback in browsers that don't support the element.</p>
-                                <p>Browsers don't all support the same <a
-                                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats">audio
-                                        formats</a>; you can provide
-                                    multiple sources inside nested
-                                    <a
-                                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source"><code>&lt;source&gt;</code></a>
-                                    elements, and the browser will then use the first one it understands:</p>
-                                <pre><code class="language-html">&lt;audio controls&gt;
-      &lt;source src="myAudio.mp3" type="audio/mp3"&gt;
-      &lt;source src="myAudio.ogg" type="audio/ogg"&gt;
-      &lt;p&gt;Your browser doesn't support HTML5 audio. Here is
-         a &lt;a href="myAudio.mp4"&gt;link to the audio&lt;/a&gt; instead.&lt;/p&gt;
-    &lt;/audio&gt;</code></pre>
-                                <p>Other usage notes:</p>
-                                <ul>
-                                    <li>If you don't specify the <code>controls</code> attribute, the audio player
-                                        won't include the browser's default controls; you can create your
-                                        own custom controls using JavaScript and the
-                                        <a
-                                            href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement"><code>HTMLMediaElement</code></a>
-                                        API.</li>
-                                    <li>To allow precise control over your audio content,
-                                        <code>HTMLMediaElement</code>s fire many different
-                                        <a
-                                            href="https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Media_events">events</a>.
-                                    </li>
-                                    <li>You can also use the <a
-                                            href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API">Web
-                                            Audio
-                                            API</a> to directly generate and
-                                        manipulate audio streams from JavaScript code.</li>
-                                    <li><code>&lt;audio&gt;</code> elements can't have subtitles/captions associated
-                                        with
-                                        them in the same way that <code>&lt;video&gt;</code> elements can. See <a
-                                            href="https://www.iandevlin.com/blog/2015/12/html5/webvtt-and-audio">WebVTT
-                                            and
-                                            Audio</a>
-                                        by Ian Devlin for some useful information and workarounds.</li>
-                                </ul>
-                                <p>A good general source of information on using HTML <code>&lt;audio&gt;</code> is the
-                                    <a
-                                        href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content">Video
-                                        and audio
-                                        content</a>
-                                    beginner's tutorial.</p>
-                            </div>
-                            <h2>Attributes</h2>
-                            <p>This element supports the <a
-                                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">global
-                                    attributes</a> as well as the following element-specific attributes:</p>
-                            <dl>
-                                <dt>
-                                    <p><code>autoplay</code>: <i>Boolean</i></p>
-                                </dt>
-                                <dd>
-                                    <div>
-                                        <p>A Boolean attribute: if specified, the audio will automatically
-                                            begin playback as soon as it can do so, without waiting for the
-                                            entire audio file to finish downloading.</p>
-                                        <p><strong>Note</strong>: Sites that automatically play audio (or videos with an
-                                            audio track) can be an unpleasant experience for users, so should be
-                                            avoided when possible. If you must offer autoplay functionality, you
-                                            should make it opt-in (requiring a user to specifically enable it).
-                                            However, this can be useful when creating media elements whose
-                                            source will be set at a later time, under user control.</p>
+                                        href="/en-US/docs/Web/JavaScript/Reference/Statements/for...in">for...in</a>&nbsp;loops
+                                </li>
+                                <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every"
+                                        title="The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value."><code>Array.prototype.every()</code></a>
+                                </li>
+                                <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some"
+                                        title="The some() method tests whether at least one&nbsp;element in the array passes the test implemented by the provided function. It returns a Boolean value."><code>Array.prototype.some()</code></a>
+                                </li>
+                                <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find"
+                                        title="The find() method returns the value of the first element in the provided array that satisfies the provided testing function."><code>Array.prototype.find()</code></a>
+                                </li>
+                                <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex"
+                                        title="The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test."><code>Array.prototype.findIndex()</code></a>
+                                </li>
+                            </ul>
+
+                            <p>Array methods: <a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every"
+                                    title="The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value."><code>every()</code></a>,
+                                <a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some"
+                                    title="The some() method tests whether at least one&nbsp;element in the array passes the test implemented by the provided function. It returns a Boolean value."><code>some()</code></a>,
+                                <a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find"
+                                    title="The find() method returns the value of the first element in the provided array that satisfies the provided testing function."><code>find()</code></a>,
+                                and <a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex"
+                                    title="The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test."><code>findIndex()</code></a>
+                                test the array elements with a predicate returning a truthy value to determine if
+                                further iteration is required.</p>
+                        </div>
+
+                        <h2 id="Examples">Examples</h2>
+
+                        <h3 id="sparseArray" name="sparseArray">No operation for uninitialized values (sparse arrays)
+                        </h3>
+
+                        <pre
+                            class="brush: js line-numbers language-js"><code class=" language-js"><span class="token keyword">const</span> arraySparse <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">]</span>
+<span class="token keyword">let</span> numCallbackRuns <span class="token operator">=</span> <span class="token number">0</span>
+
+arraySparse<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">element</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>element<span class="token punctuation">)</span>
+  numCallbackRuns<span class="token operator">++</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"numCallbackRuns: "</span><span class="token punctuation">,</span> numCallbackRuns<span class="token punctuation">)</span>
+
+<span class="token comment">// 1</span>
+<span class="token comment">// 3</span>
+<span class="token comment">// 7</span>
+<span class="token comment">// numCallbackRuns: 3</span>
+<span class="token comment">// comment: as you can see the missing value between 3 and 7 didn't invoke callback function.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+                        <h3 id="Converting_a_for_loop_to_forEach">Converting a for loop to forEach</h3>
+
+                        <pre
+                            class="brush:js line-numbers language-js"><code class=" language-js"><span class="token keyword">const</span> items <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'item1'</span><span class="token punctuation">,</span> <span class="token string">'item2'</span><span class="token punctuation">,</span> <span class="token string">'item3'</span><span class="token punctuation">]</span>
+<span class="token keyword">const</span> copy <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+<span class="token comment">// before</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> items<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  copy<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>items<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// after</span>
+items<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  copy<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>item<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+                        <h3 id="Printing_the_contents_of_an_array">Printing the contents of an array</h3>
+
+                        <div class="blockIndicator note">
+                            <p><strong>Note:</strong> In order to display the content of an array in the console, you
+                                can use <a href="/en-US/docs/Web/API/Console/table"
+                                    title="Displays tabular data as a table."><code>console.table()</code></a>, which
+                                prints a formatted version of the array.</p>
+
+                            <p>The following example illustrates an alternative approach, using <code>forEach()</code>.
+                            </p>
+                        </div>
+
+                        <p>The following code logs a line for each element in an array:</p>
+
+                        <pre
+                            class="brush:js line-numbers language-js"><code class=" language-js"><span class="token keyword">function</span> <span class="token function">logArrayElements</span><span class="token punctuation">(</span><span class="token parameter">element<span class="token punctuation">,</span> index<span class="token punctuation">,</span> array</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'a['</span> <span class="token operator">+</span> index <span class="token operator">+</span> <span class="token string">'] = '</span> <span class="token operator">+</span> element<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Notice that index 2 is skipped, since there is no item at</span>
+<span class="token comment">// that position in the array...</span>
+<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span>logArrayElements<span class="token punctuation">)</span>
+<span class="token comment">// logs:</span>
+<span class="token comment">// a[0] = 2</span>
+<span class="token comment">// a[1] = 5</span>
+<span class="token comment">// a[3] = 9</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+                        <h3 id="Using_thisArg">Using <code><var>thisArg</var></code></h3>
+
+                        <p>The following (contrived) example updates an object's properties from each entry in the
+                            array:</p>
+
+                        <pre
+                            class="brush:js line-numbers language-js"><code class=" language-js"><span class="token keyword">function</span> <span class="token function">Counter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>sum <span class="token operator">=</span> <span class="token number">0</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>count <span class="token operator">=</span> <span class="token number">0</span>
+<span class="token punctuation">}</span>
+<span class="token class-name">Counter</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">add</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">array</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  array<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">entry</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>sum <span class="token operator">+=</span> entry
+    <span class="token operator">++</span><span class="token keyword">this</span><span class="token punctuation">.</span>count
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">)</span>
+  <span class="token comment">// ^---- Note</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Counter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+obj<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+obj<span class="token punctuation">.</span>count
+<span class="token comment">// 3 </span>
+obj<span class="token punctuation">.</span>sum
+<span class="token comment">// 16</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+                        <p>Since the <code><var>thisArg</var></code> parameter (<code>this</code>) is provided to
+                            <code>forEach()</code>, it is passed to <code><var>callback</var></code> each time it's
+                            invoked. The callback uses it&nbsp;as its <code>this</code> value.</p>
+
+                        <div class="note">
+                            <p><strong>Note:</strong> If passing the callback function uses an <a
+                                    href="/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">arrow function
+                                    expression</a>, the <code><var>thisArg</var></code> parameter can be omitted, since
+                                all arrow functions lexically bind the <a
+                                    href="/en-US/docs/Web/JavaScript/Reference/Operators/this"
+                                    title="A function's this keyword behaves a little differently in JavaScript compared to other languages. It also has some differences between strict mode and non-strict mode."><code>this</code></a>
+                                value.</p>
+                        </div>
+
+                        <h3 id="An_object_copy_function">An object copy function</h3>
+
+                        <p>The following code creates a copy of a given object.</p>
+
+                        <p>There are different ways to create a copy of an object. The following is just one way and is
+                            presented to explain how <code>Array.prototype.forEach()</code> works by using ECMAScript 5
+                            <code>Object.*</code> meta property functions.</p>
+
+                        <pre
+                            class="brush: js line-numbers language-js"><code class=" language-js"><span class="token keyword">function</span> <span class="token function">copy</span><span class="token punctuation">(</span><span class="token parameter">obj</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> copy <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>Object<span class="token punctuation">.</span><span class="token function">getPrototypeOf</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token keyword">const</span> propNames <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">getOwnPropertyNames</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span>
+
+  propNames<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> desc <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">getOwnPropertyDescriptor</span><span class="token punctuation">(</span>obj<span class="token punctuation">,</span> name<span class="token punctuation">)</span>
+    Object<span class="token punctuation">.</span><span class="token function">defineProperty</span><span class="token punctuation">(</span>copy<span class="token punctuation">,</span> name<span class="token punctuation">,</span> desc<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">return</span> copy
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> obj1 <span class="token operator">=</span> <span class="token punctuation">{</span> a<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> b<span class="token punctuation">:</span> <span class="token number">2</span> <span class="token punctuation">}</span>
+<span class="token keyword">const</span> obj2 <span class="token operator">=</span> <span class="token function">copy</span><span class="token punctuation">(</span>obj1<span class="token punctuation">)</span>      <span class="token comment">// obj2 looks like obj1 now</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+                        <h3 id="If_the_array_is_modified_during_iteration_other_elements_might_be_skipped.">If the array
+                            is modified during iteration, other elements might be skipped.</h3>
+
+                        <p>The following example logs <code>"one"</code>, <code>"two"</code>, <code>"four"</code>.</p>
+
+                        <p>When the entry containing the value <code>"two"</code> is reached, the first entry of the
+                            whole array is shifted off—resulting&nbsp;in all remaining entries moving up one position.
+                            Because element "four" is now at an earlier position in the array, <code>"three"</code> will
+                            be skipped.</p>
+
+                        <p><code>forEach()</code> does not make a copy of the array before iterating.</p>
+
+                        <pre
+                            class="brush:js line-numbers language-js"><code class=" language-js"><span class="token keyword">let</span> words <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'one'</span><span class="token punctuation">,</span> <span class="token string">'two'</span><span class="token punctuation">,</span> <span class="token string">'three'</span><span class="token punctuation">,</span> <span class="token string">'four'</span><span class="token punctuation">]</span>
+words<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">word</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>word<span class="token punctuation">)</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>word <span class="token operator">===</span> <span class="token string">'two'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    words<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">// one</span>
+<span class="token comment">// two</span>
+<span class="token comment">// four</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+                        <h3 id="Flatten_an_array">Flatten an array</h3>
+
+                        <p>The following example is only here for learning purpose. If you want to flatten an array
+                            using built-in methods you can use <a
+                                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat"
+                                title="The flat() method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth."><code>Array.prototype.flat()</code></a>
+                            (which is expected to be part of ES2019, and is already implemented in some browsers).</p>
+
+                        <pre
+                            class="brush: js line-numbers language-js"><code class=" language-js"><span class="token comment">/**
+ * Flattens passed array in one dimensional array
+ *
+ * @params {array} arr
+ * @returns {array}
+ */</span>
+<span class="token keyword">function</span> <span class="token function">flatten</span><span class="token punctuation">(</span><span class="token parameter">arr</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+  arr<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">i</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>Array<span class="token punctuation">.</span><span class="token function">isArray</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      result<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token function">flatten</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      result<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  
+  <span class="token keyword">return</span> result
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Usage</span>
+<span class="token keyword">const</span> problem <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">]</span>
+
+<span class="token function">flatten</span><span class="token punctuation">(</span>problem<span class="token punctuation">)</span> <span class="token comment">// [1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+                        <h2 id="Note_on_using_Promises_or_async_functions">Note on using Promises or async functions
+                        </h2>
+
+                        <pre
+                            class="brush: js line-numbers language-js"><code class=" language-js"><span class="token keyword">let</span> ratings <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+
+<span class="token keyword">let</span> sum <span class="token operator">=</span> <span class="token number">0</span>
+
+<span class="token keyword">let</span> <span class="token function-variable function">sumFunction</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">return</span> a <span class="token operator">+</span> b
+<span class="token punctuation">}</span> 
+
+ratings<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">async</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">rating</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    sum <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">sumFunction</span><span class="token punctuation">(</span>sum<span class="token punctuation">,</span> rating<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>sum<span class="token punctuation">)</span>
+<span class="token comment">// Expected output: 14</span>
+<span class="token comment">// Actual output: 0</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+                        <h2 id="Specifications">Specifications</h2>
+
+                        <table class="standard-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Specification</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Comment</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a class="external" href="https://tc39.es/ecma262/#sec-array.prototype.foreach"
+                                            hreflang="en" rel="noopener" lang="en">ECMAScript Latest Draft
+                                            (ECMA-262)<br><small lang="en-US">The definition of
+                                                'Array.prototype.forEach' in that specification.</small></a></td>
+                                    <td><span class="spec-Draft">Draft</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><a class="external"
+                                            href="https://www.ecma-international.org/ecma-262/6.0/#sec-array.prototype.foreach"
+                                            hreflang="en" rel="noopener" lang="en">ECMAScript 2015 (6th Edition,
+                                            ECMA-262)<br><small lang="en-US">The definition of 'Array.prototype.forEach'
+                                                in that specification.</small></a></td>
+                                    <td><span class="spec-Standard">Standard</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><a class="external"
+                                            href="https://www.ecma-international.org/ecma-262/5.1/#sec-15.4.4.18"
+                                            hreflang="en" rel="noopener" lang="en">ECMAScript 5.1 (ECMA-262)<br><small
+                                                lang="en-US">The definition of 'Array.prototype.forEach' in that
+                                                specification.</small></a></td>
+                                    <td><span class="spec-Standard">Standard</span></td>
+                                    <td>Initial definition. Implemented in JavaScript 1.6.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2 id="Browser_compatibility">Browser compatibility</h2>
+
+                        <div>
+                            <div class="hidden">The compatibility table in this page is generated from structured data.
+                                If you'd like to contribute to the data, please check out <a class="external"
+                                    href="https://github.com/mdn/browser-compat-data"
+                                    rel="noopener">https://github.com/mdn/browser-compat-data</a> and send us a pull
+                                request.</div>
+
+                            <div class="bc-data" id="bcd:javascript.builtins.Array.forEach"><a
+                                    class="bc-github-link external" href="https://github.com/mdn/browser-compat-data"
+                                    rel="noopener">Update compatibility data on GitHub</a>
+                                <table class="bc-table bc-table-js">
+                                    <thead>
+                                        <tr class="bc-platforms">
+                                            <td></td>
+                                            <th class="bc-platform-desktop" colspan="6"><span>Desktop</span></th>
+                                            <th class="bc-platform-mobile" colspan="6"><span>Mobile</span></th>
+                                            <th class="bc-platform-server" colspan="1"><span>Server</span></th>
+                                        </tr>
+                                        <tr class="bc-browsers">
+                                            <td></td>
+                                            <th class="bc-browser-chrome"><span
+                                                    class="bc-head-txt-label bc-head-icon-chrome">Chrome</span></th>
+                                            <th class="bc-browser-edge"><span
+                                                    class="bc-head-txt-label bc-head-icon-edge">Edge</span></th>
+                                            <th class="bc-browser-firefox"><span
+                                                    class="bc-head-txt-label bc-head-icon-firefox">Firefox</span></th>
+                                            <th class="bc-browser-ie"><span
+                                                    class="bc-head-txt-label bc-head-icon-ie">Internet Explorer</span>
+                                            </th>
+                                            <th class="bc-browser-opera"><span
+                                                    class="bc-head-txt-label bc-head-icon-opera">Opera</span></th>
+                                            <th class="bc-browser-safari"><span
+                                                    class="bc-head-txt-label bc-head-icon-safari">Safari</span></th>
+                                            <th class="bc-browser-webview_android"><span
+                                                    class="bc-head-txt-label bc-head-icon-webview_android">Android
+                                                    webview</span></th>
+                                            <th class="bc-browser-chrome_android"><span
+                                                    class="bc-head-txt-label bc-head-icon-chrome_android">Chrome for
+                                                    Android</span></th>
+                                            <th class="bc-browser-firefox_android"><span
+                                                    class="bc-head-txt-label bc-head-icon-firefox_android">Firefox for
+                                                    Android</span></th>
+                                            <th class="bc-browser-opera_android"><span
+                                                    class="bc-head-txt-label bc-head-icon-opera_android">Opera for
+                                                    Android</span></th>
+                                            <th class="bc-browser-safari_ios"><span
+                                                    class="bc-head-txt-label bc-head-icon-safari_ios">Safari on
+                                                    iOS</span></th>
+                                            <th class="bc-browser-samsunginternet_android"><span
+                                                    class="bc-head-txt-label bc-head-icon-samsunginternet_android">Samsung
+                                                    Internet</span></th>
+                                            <th class="bc-browser-nodejs"><span
+                                                    class="bc-head-txt-label bc-head-icon-nodejs">Node.js</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><code>forEach</code></th>
+                                            <td class="bc-supports-yes bc-browser-chrome"><span
+                                                    class="bc-browser-name">Chrome</span><abbr
+                                                    class="bc-level-yes only-icon" title="Full support">
+                                                    <span>Full support</span>
+                                                </abbr>
+                                                1</td>
+                                            <td class="bc-supports-yes bc-browser-edge"><span
+                                                    class="bc-browser-name">Edge</span><abbr
+                                                    class="bc-level-yes only-icon" title="Full support">
+                                                    <span>Full support</span>
+                                                </abbr>
+                                                12</td>
+                                            <td class="bc-supports-yes bc-browser-firefox"><span
+                                                    class="bc-browser-name">Firefox</span><abbr
+                                                    class="bc-level-yes only-icon" title="Full support">
+                                                    <span>Full support</span>
+                                                </abbr>
+                                                1.5</td>
+                                            <td class="bc-supports-yes bc-browser-ie"><span
+                                                    class="bc-browser-name">IE</span><abbr
+                                                    class="bc-level-yes only-icon" title="Full support">
+                                                    <span>Full support</span>
+                                                </abbr>
+                                                9</td>
+                                            <td class="bc-supports-yes bc-browser-opera"><span
+                                                    class="bc-browser-name">Opera</span><abbr
+                                                    class="bc-level-yes only-icon" title="Full support">
+                                                    <span>Full support</span>
+                                                </abbr>
+                                                Yes</td>
+                                            <td class="bc-supports-yes bc-browser-safari"><span
+                                                    class="bc-browser-name">Safari</span><abbr
+                                                    class="bc-level-yes only-icon" title="Full support">
+                                                    <span>Full support</span>
+                                                </abbr>
+                                                3</td>
+                                            <td class="bc-supports-yes bc-browser-webview_android"><span
+                                                    class="bc-browser-name">WebView Android</span><abbr
+                                                    class="bc-level-yes only-icon" title="Full support">
+                                                    <span>Full support</span>
+                                                </abbr>
+                                                ≤37</td>
+                                            <td class="bc-supports-yes bc-browser-chrome_android"><span
+                                                    class="bc-browser-name">Chrome Android</span><abbr
+                                                    class="bc-level-yes only-icon" title="Full support">
+                                                    <span>Full support</span>
+                                                </abbr>
+                                                18</td>
+                                            <td class="bc-supports-yes bc-browser-firefox_android"><span
+                                                    class="bc-browser-name">Firefox Android</span><abbr
+                                                    class="bc-level-yes only-icon" title="Full support">
+                                                    <span>Full support</span>
+                                                </abbr>
+                                                4</td>
+                                            <td class="bc-supports-yes bc-browser-opera_android"><span
+                                                    class="bc-browser-name">Opera Android</span><abbr
+                                                    class="bc-level-yes only-icon" title="Full support">
+                                                    <span>Full support</span>
+                                                </abbr>
+                                                Yes</td>
+                                            <td class="bc-supports-yes bc-browser-safari_ios"><span
+                                                    class="bc-browser-name">Safari iOS</span><abbr
+                                                    class="bc-level-yes only-icon" title="Full support">
+                                                    <span>Full support</span>
+                                                </abbr>
+                                                1</td>
+                                            <td class="bc-supports-yes bc-browser-samsunginternet_android"><span
+                                                    class="bc-browser-name">Samsung Internet Android</span><abbr
+                                                    class="bc-level-yes only-icon" title="Full support">
+                                                    <span>Full support</span>
+                                                </abbr>
+                                                1.0</td>
+                                            <td class="bc-supports-yes bc-browser-nodejs"><span
+                                                    class="bc-browser-name">nodejs</span><abbr
+                                                    class="bc-level-yes only-icon" title="Full support">
+                                                    <span>Full support</span>
+                                                </abbr>
+                                                Yes</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="column-container bc-signal-block complete">
+                                    <div class="column-half left-block">
+                                        <div class="close-button-wrapper"><button class="button close-btn"></button>
+                                        </div>
+                                        <div class="complete-left-block-image" style="display: block;"></div>
+                                        <h2 class="complete-left-block-header">Thank you!</h2>
                                     </div>
-                                </dd>
-                                <dt>
-                                    <p><code>controls</code>: <i>Boolean</i></p>
-                                </dt>
-                                <dd>
-                                    <div>
-                                        <p>If this attribute is present, the browser will offer controls to allow the
-                                            user to control audio playback, including volume, seeking, and pause/resume
-                                            playback.</p>
+                                    <div class="column-half right-block">
+                                        <h3 class="right-block-header"><span>Report sent</span></h3>
+                                        <div class="right-block-main-text">
+                                            <h4>What happens next?</h4>
+                                            <p>Our team will review your report. Once we verify the information you have
+                                                supplied we will update this browser compatability table accordingly.
+                                            </p>
+                                            <h4>Can I keep track of my report?</h4>
+                                            <p>You can join the GitHub repository to see updates and commits for this
+                                                table data:</p>
+                                            <p><a href="https://github.com/mdn/browser-compat-data">https://github.com/mdn/browser-compat-data
+                                                    <span class="external external-icon"></span></a></p>
+                                        </div>
+                                        <div class="navigation-buttons"><button
+                                                class="button neutral main-btn">Finish</button></div>
                                     </div>
-                                </dd>
-                                <dt>
-                                    <p><code>crossorigin</code>: <i>String</i></p>
-                                </dt>
-                                <dd>
-                                    <div>
-                                        <p>This enumerated attribute indicates whether to use CORS to fetch the
-                                            resource. <a
-                                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image">CORS-enabled
-                                                resources</a> can be reused in the <code>&lt;canvas&gt;</code> element
-                                            without being <em>tainted</em>.</p>
-                                        <p>When not present, the resource is fetched without a CORS request (i.e.
-                                            without sending the <code>Origin</code> HTTP header), preventing its
-                                            non-tainted used in <code>&lt;canvas&gt;</code> elements. If invalid, it is
-                                            handled as if the enumerated keyword <code>anonymous</code> was used. See <a
-                                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_settings_attributes">CORS
-                                                settings attributes</a> for additional information.</p>
+                                </div>
+                                <div class="column-container bc-signal-block">
+                                    <div class="column-5 left-block">
+                                        <div class="close-button-wrapper"><button class="button close-btn"></button>
+                                        </div><span class="left-block-image"></span>
+                                        <h2 class="left-block-header">Tell us what’s wrong with this table</h2>
+                                        <p>Our goal is to provide accurate, real values for all our compatibility data
+                                            tables. Notifying MDN of inaccurate data or supplying new data pushes us
+                                            further towards our goal of providing 100% real values to the developer
+                                            community.<br>Thank you for helping.</p>
                                     </div>
-                                    <ul>
-                                        <li>
-                                            <p><code>anonymous</code></p>
-                                            <div>
-                                                <p>Sends a cross-origin request without a credential. In other words, it
-                                                    sends the <code>Origin:</code> HTTP header without a cookie, X.509
-                                                    certificate, or performing HTTP Basic authentication. If the server
-                                                    does not give credentials to the origin site (by not setting the
-                                                    <code>Access-Control-Allow-Origin:</code> HTTP header), the resource
-                                                    will be <em>tainted</em>, and its usage restricted.</p>
+                                    <div class="column-7 right-block form-control-block">
+                                        <h3 class="highlight-spanned"><span class="highlight-span"></span></h3>
+                                        <div class="inner-step" id="step-1">
+                                            <div class="controls">
+                                                <div class="control"><span class="step-num">1</span>
+                                                    <div class="control-wrap">
+                                                        <div class="control-header"><span
+                                                                class="step-num inline">1</span>Which browsers are
+                                                            affected?</div>
+                                                        <div class="control-description">Please select the browser or
+                                                            browsers which are affected.</div>
+                                                        <div class="select-browser-block">
+                                                            <div class="browser">
+                                                                <div class="browser-logo"><span
+                                                                        class="browser-selected-icon"></span><img
+                                                                        src="https://developer.mozilla.org/static/browsers/chrome.b49946f7739f.svg"
+                                                                        alt="Chrome" role="img" aria-hidden="true">
+                                                                </div>
+                                                                <div class="browser-name">Chrome</div>
+                                                            </div>
+                                                            <div class="browser">
+                                                                <div class="browser-logo"><span
+                                                                        class="browser-selected-icon"></span><img
+                                                                        src="https://developer.mozilla.org/static/browsers/edge.a5b352eb863f.svg"
+                                                                        alt="Edge" role="img" aria-hidden="true"></div>
+                                                                <div class="browser-name">Edge</div>
+                                                            </div>
+                                                            <div class="browser">
+                                                                <div class="browser-logo"><span
+                                                                        class="browser-selected-icon"></span><img
+                                                                        src="https://developer.mozilla.org/static/browsers/firefox.1c9f202ae696.svg"
+                                                                        alt="Firefox" role="img" aria-hidden="true">
+                                                                </div>
+                                                                <div class="browser-name">Firefox</div>
+                                                            </div>
+                                                            <div class="browser">
+                                                                <div class="browser-logo"><span
+                                                                        class="browser-selected-icon"></span><img
+                                                                        src="https://developer.mozilla.org/static/browsers/internet-explorer.4bb2b5f99e82.svg"
+                                                                        alt="Internet Explorer" role="img"
+                                                                        aria-hidden="true"></div>
+                                                                <div class="browser-name">Internet Explorer</div>
+                                                            </div>
+                                                            <div class="browser">
+                                                                <div class="browser-logo"><span
+                                                                        class="browser-selected-icon"></span><img
+                                                                        src="https://developer.mozilla.org/static/browsers/opera.da441711d2f6.svg"
+                                                                        alt="Opera" role="img" aria-hidden="true"></div>
+                                                                <div class="browser-name">Opera</div>
+                                                            </div>
+                                                            <div class="browser">
+                                                                <div class="browser-logo"><span
+                                                                        class="browser-selected-icon"></span><img
+                                                                        src="https://developer.mozilla.org/static/browsers/safari.aca6ae03b671.svg"
+                                                                        alt="Safari" role="img" aria-hidden="true">
+                                                                </div>
+                                                                <div class="browser-name">Safari</div>
+                                                            </div>
+                                                            <div class="browser">
+                                                                <div class="browser-logo"><span
+                                                                        class="browser-selected-icon"></span><img
+                                                                        src="https://developer.mozilla.org/static/platforms/android.201ce5d041f7.svg"
+                                                                        alt="Android webview" role="img"
+                                                                        aria-hidden="true"></div>
+                                                                <div class="browser-name">Android webview</div>
+                                                            </div>
+                                                            <div class="browser">
+                                                                <div class="browser-logo"><span
+                                                                        class="browser-selected-icon"></span><img
+                                                                        src="https://developer.mozilla.org/static/browsers/chrome.b49946f7739f.svg"
+                                                                        alt="Chrome for Android" role="img"
+                                                                        aria-hidden="true"></div>
+                                                                <div class="browser-name">Chrome for Android</div>
+                                                            </div>
+                                                            <div class="browser">
+                                                                <div class="browser-logo"><span
+                                                                        class="browser-selected-icon"></span><img
+                                                                        src="https://developer.mozilla.org/static/browsers/firefox.1c9f202ae696.svg"
+                                                                        alt="Firefox for Android" role="img"
+                                                                        aria-hidden="true"></div>
+                                                                <div class="browser-name">Firefox for Android</div>
+                                                            </div>
+                                                            <div class="browser">
+                                                                <div class="browser-logo"><span
+                                                                        class="browser-selected-icon"></span><img
+                                                                        src="https://developer.mozilla.org/static/browsers/opera.da441711d2f6.svg"
+                                                                        alt="Opera for Android" role="img"
+                                                                        aria-hidden="true"></div>
+                                                                <div class="browser-name">Opera for Android</div>
+                                                            </div>
+                                                            <div class="browser">
+                                                                <div class="browser-logo"><span
+                                                                        class="browser-selected-icon"></span><img
+                                                                        src="https://developer.mozilla.org/static/browsers/safari.aca6ae03b671.svg"
+                                                                        alt="Safari on iOS" role="img"
+                                                                        aria-hidden="true"></div>
+                                                                <div class="browser-name">Safari on iOS</div>
+                                                            </div>
+                                                            <div class="browser">
+                                                                <div class="browser-logo"><span
+                                                                        class="browser-selected-icon"></span><img
+                                                                        src="https://developer.mozilla.org/static/browsers/samsung-internet.8faa2ee1b8a1.svg"
+                                                                        alt="Samsung Internet" role="img"
+                                                                        aria-hidden="true"></div>
+                                                                <div class="browser-name">Samsung Internet</div>
+                                                            </div>
+                                                            <div class="browser">
+                                                                <div class="browser-logo"><span
+                                                                        class="browser-selected-icon"></span><img
+                                                                        src="https://developer.mozilla.org/static/platforms/nodejs.33dfe169dc5c.svg"
+                                                                        alt="Node.js" role="img" aria-hidden="true">
+                                                                </div>
+                                                                <div class="browser-name">Node.js</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="control"><span class="step-num">2</span>
+                                                    <div class="control-wrap">
+                                                        <div class="control-header has-control"><span
+                                                                class="step-num inline">2</span>Which table row is
+                                                            affected?<span class="select-wrapper"><select
+                                                                    id="select-row">
+                                                                    <option value="forEach">forEach</option>
+                                                                </select></span></div>
+                                                        <div class="control-description"></div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </li>
-                                        <li>
-                                            <p><code>use-credentials</code></p>
-                                            <div>
-                                                <p>Sends a cross-origin request with a credential. In other words, it
-                                                    sends the <code>Origin:</code> HTTP header with a cookie, a
-                                                    certificate, or performing HTTP Basic authentication. If the server
-                                                    does not give credentials to the origin site (through
-                                                    <code>Access-Control-Allow-Credentials:</code> HTTP header), the
-                                                    resource will be <em>tainted</em> and its usage restricted.</p>
+                                            <div class="navigation-buttons reverse mob-reduced-space"><button
+                                                    class="button neutral disabled next-step-btn">Next step (2 of
+                                                    2)<span class="icon-next"></span></button></div>
+                                        </div>
+                                        <div id="step-2" class="inner-step">
+                                            <div class="controls">
+                                                <div class="control"><span class="step-num">3</span>
+                                                    <div class="control-wrap">
+                                                        <div class="control-header with-optional-label"><span
+                                                                class="step-num inline">3</span>Can you provide a brief
+                                                            explanation?</div>
+                                                        <div class="control-description">Briefly outline the issue you
+                                                            are highlighting.</div><textarea class="control-input"
+                                                            id="brief-explanation" maxlength="1000"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="control"><span class="step-num">4</span>
+                                                    <div class="control-wrap">
+                                                        <div class="control-header with-optional-label"><span
+                                                                class="step-num inline">4</span>Do you have any
+                                                            supporting material?<span
+                                                                class="optional-text">Optional</span></div>
+                                                        <div class="control-description">Browser documentation and
+                                                            release notes are good supporting items to accompany your
+                                                            message. A demo hosted on services like Codepen or JSBin are
+                                                            perfect for providing real examples of your findings.</div>
+                                                        <textarea class="control-input" id="supporting-material"
+                                                            maxlength="1000"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="warning error-message"><span class="error-label">Connection
+                                                        error:</span><span>Sorry, we can’t seem to reach the server. We
+                                                        are working to fix the problem. Please try again later.</span>
+                                                </div>
                                             </div>
-                                        </li>
-                                    </ul>
-                                </dd>
-                                <dt>
-                                    <p><code>loop</code>: <i>Boolean</i></p>
-                                </dt>
-                                <dd>
-                                    <div>
-                                        <p>A Boolean attribute: if specified, the audio player will automatically seek
-                                            back to the start upon reaching the end of the audio.</p>
+                                            <div class="navigation-buttons reverse"><button
+                                                    class="button neutral disabled main-btn scroll-to-signal">Send
+                                                    report</button><button class="button prev-step-btn btn-dark"><span
+                                                        class="icon-back"></span>Previous step</button></div>
+                                        </div>
                                     </div>
-                                </dd>
-                                <dt>
-                                    <p><code>muted</code>: <i>Boolean</i></p>
-                                </dt>
-                                <dd>
-                                    <div>
-                                        <p>A Boolean attribute that indicates whether the audio will be initially
-                                            silenced. Its default value is <code>false</code>.</p>
-                                    </div>
-                                </dd>
-                                <dt>
-                                    <p><code>preload</code>: <i>String</i></p>
-                                </dt>
-                                <dd>
-                                    <div>
-                                        <p>This enumerated attribute is intended to provide a hint to the browser about
-                                            what the author thinks will lead to the best user experience.</p>
-                                        <p>The <code>autoplay</code> attribute has precedence over <code>preload</code>.
-                                            If <code>autoplay</code> is specified, the browser would obviously need to
-                                            start downloading the audio for playback.</p>
-                                        <p>The browser is not forced by the specification to follow the value of this
-                                            attribute; it is a mere hint.</p>
-                                        <p>If not set, <code>preload</code>'s default value is browser-defined (i.e.
-                                            each browser may have its own default value). The spec advises that it
-                                            should be set to <code>metadata</code>.</p>
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            <p><code>none</code></p>
-                                            <div>
-                                                <p>Indicates that the audio should not be preloaded.</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <p><code>metadata</code></p>
-                                            <div>
-                                                <p>Indicates that only audio metadata (e.g. length) is fetched.</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <p><code>auto</code></p>
-                                            <div>
-                                                <p>Indicates that the whole audio file can be downloaded, even if the
-                                                    user is not expected to use it.
-                                                    An empty string is a synonym for the <code>auto</code> value.</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </dd>
-                                <dt>
-                                    <p><code>src</code>: <i>URL</i></p>
-                                </dt>
-                                <dd>
-                                    <div>
-                                        <p>The URL of the audio to embed. This is subject to <a
-                                                href="https://developer.mozilla.org/en-US/docs/HTTP_access_control">HTTP
-                                                access controls</a>. This is optional; you may instead use the
-                                            <a
-                                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source"><code>&lt;source&gt;</code></a>
-                                            element within the audio block to specify the audio to embed.</p>
-                                    </div>
-                                </dd>
-                            </dl>
-                            <h2>Usage notes</h2>
-                            <div>
-                                <h3 id="styling-with-css">Styling with CSS</h3>
-                                <p>The <code>&lt;audio&gt;</code> element has no intrinsic visual output of its own
-                                    unless
-                                    the <code>controls</code> attribute is specified, in which case the browser's
-                                    default controls are shown.</p>
-                                <p>The default controls have a
-                                    <a
-                                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/display"><code>display</code></a>
-                                    value of <code>inline</code> by default, and it is often a good idea set the value
-                                    to <code>block</code> to improve control over positioning and layout, unless you
-                                    want it to sit within a text block or similar.</p>
-                                <p>You can style the default controls with properties that affect the block
-                                    as a single unit, so for example you can give it a
-                                    <a
-                                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/border"><code>border</code></a>
-                                    and
-                                    <a
-                                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius"><code>border-radius</code></a>,
-                                    <a
-                                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding"><code>padding</code></a>,
-                                    <a
-                                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin"><code>margin</code></a>,
-                                    etc. You can't however style the individual components inside the audio
-                                    player (e.g. change the button size or icons, change the font, etc.),
-                                    and the controls are different across the different browsers.</p>
-                                <p>To get a consistent look and feel across browsers, you'll need to
-                                    create custom controls; these can be marked up and styled in whatever
-                                    way you want, and then JavaScript can be used along with the
-                                    <a
-                                        href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement"><code>HTMLMediaElement</code></a>
-                                    API to wire up their functionality.</p>
-                                <p><a
-                                        href="https://developer.mozilla.org/en-US/docs/Web/Apps/Fundamentals/Audio_and_video_delivery/Video_player_styling_basics">Video
-                                        player styling
-                                        basics</a>
-                                    provides some useful styling techniques --- it is written in the context
-                                    of <code>&lt;video&gt;</code>, but much of it is equally applicable to
-                                    <code>&lt;audio&gt;</code>.</p>
-                                <h3 id="detecting-addition-and-removal-of-tracks">Detecting addition and removal of
-                                    tracks</h3>
-                                <p>You can detect when tracks are added to and removed from an
-                                    <code>&lt;audio&gt;</code>
-                                    element using the <code>addtrack</code> and <code>removetrack</code> events.
-                                    However, these
-                                    events aren't sent directly to the <code>&lt;audio&gt;</code> element itself.
-                                    Instead,
-                                    they're sent to the track list object within the <code>&lt;audio&gt;</code>
-                                    element's
-                                    <a
-                                        href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement"><code>HTMLMediaElement</code></a>
-                                    that corresponds to the type of track that was added to the element:</p>
-                                <ul>
-                                    <li>
-                                        <p><a
-                                                href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/audioTracks"><code>HTMLMediaElement.audioTracks</code></a>:
-                                            An
-                                            <a
-                                                href="https://developer.mozilla.org/en-US/docs/Web/API/AudioTrackList"><code>AudioTrackList</code></a>
-                                            containing all of the media element's audio tracks. You can add a
-                                            listener for <code>addtrack</code> to this object to be alerted when new
-                                            audio
-                                            tracks are added to the element.</p>
-                                    </li>
-                                    <li>
-                                        <p><a
-                                                href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/videoTracks"><code>HTMLMediaElement.videoTracks</code></a>:
-                                            Add an <code>addtrack</code> listener to this
-                                            <a
-                                                href="https://developer.mozilla.org/en-US/docs/Web/API/VideoTrackList"><code>VideoTrackList</code></a>
-                                            object to be informed when video tracks are added to the element.</p>
-                                    </li>
-                                    <li>
-                                        <p><a
-                                                href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/textTracks"><code>HTMLElement.textTracks</code></a>:
-                                            Add an <code>addtrack</code> event listener to this
-                                            <a
-                                                href="https://developer.mozilla.org/en-US/docs/Web/API/TextTrackList"><code>TextTrackList</code></a>
-                                            to be notified when new text tracks are added to the element.</p>
-                                    </li>
-                                </ul>
-                                <p><strong>Note:</strong> Even though it's an <code>&lt;audio&gt;</code> element, it
-                                    still has video and
-                                    text track lists, and can in fact be used to present video, although the
-                                    use interface implications can be odd.</p>
-                                <p>For example, to detect when audio tracks are added to or removed from an
-                                    <code>&lt;audio&gt;</code> element, you can use code like this:</p>
-                                <pre><code class="language-js">var elem = document.querySelector("audio");
-    
-    elem.audioTrackList.onaddtrack = function(event) {
-      trackEditor.addTrack(event.track);
-    };
-    
-    elem.audioTrackList.onremovetrack = function(event) {
-      trackEditor.removeTrack(event.track);
-    };</code></pre>
-                                <p>This code watches for audio tracks to be added to and removed from the
-                                    element, and calls a hypothetical function on a track editor to register
-                                    and remove the track from the editor's list of available tracks.</p>
-                                <p>You can also use
-                                    <a
-                                        href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener"><code>addEventListener()</code></a>
-                                    to listen for the <code>addtrack</code> and <code>removetrack</code> events.</p>
+                                </div>
+                                <div class="signal-link-ext-container">
+                                    <div class="signal-link-container">
+                                        <hr><a class="scroll-to-signal" href="#">What are we missing?</a></div>
+                                </div>
+                                <section class="bc-legend" id="sect1">
+                                    <h3 class="offscreen" id="Legend">Legend</h3>
+                                    <dl>
+                                        <dt><span class="bc-supports-yes bc-supports">
+                                                <abbr class="bc-level bc-level-yes only-icon" title="Full support">
+                                                    <span>Full support</span>
+                                                    &nbsp;
+                                                </abbr></span></dt>
+                                        <dd>Full support</dd>
+                                    </dl>
+                                </section>
                             </div>
-                            <h2>Accessibility concerns</h2>
-                            <div>
-                                <p>Audio with spoken dialog should provide both captions and transcripts
-                                    that accurately describe its content. Captions allow people who are
-                                    experiencing hearing loss to understand an audio recording's content as
-                                    the recording is being played, while transcripts allow people who need
-                                    additional time to be able to review the recording's content at a pace
-                                    and format that is comfortable for them.</p>
-                                <p>If automatic captioning services are used, it is important to review the
-                                    generated content to ensure it accurately represents the source audio.</p>
-                                <p>In addition to spoken dialog, subtitles and transcripts should also
-                                    identify music and sound effects that communicate important information.
-                                    This includes emotion and tone:</p>
-                                <pre><code>    1
-        00:00:00 --&gt; 00:00:45
-        [Energetic techno music]
-    
-        2
-        00:00:46 --&gt; 00:00:51
-        Welcome to the Time Keeper's podcast! In this episode we're discussing which Swisswatch is a wrist switchwatch?
-    
-        16
-        00:00:52 --&gt; 00:01:02
-        [Laughing] Sorry! I mean, which wristwatch is a Swiss wristwatch?</code></pre>
-                                <ul>
-                                    <li><a
-                                            href="https://developer.mozilla.org/en-US/docs/Plugins/Flash_to_HTML5/Video/Subtitles_captions">MDN
-                                            Subtitles and closed caption --- Plugins</a></li>
-                                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API">Web Video
-                                            Text Tracks Format (WebVTT)</a></li>
-                                    <li><a href="https://webaim.org/techniques/captions/">WebAIM: Captions, Transcripts,
-                                            and Audio Descriptions</a></li>
-                                    <li><a
-                                            href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Perceivable#Guideline_1.2_%E2%80%94_Providing_text_alternatives_for_time-based_media">MDN
-                                            Understanding WCAG, Guideline 1.2 explanations</a></li>
-                                    <li><a
-                                            href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html">Understanding
-                                            Success Criterion 1.2.1 | W3C Understanding WCAG 2.0</a></li>
-                                    <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html">Understanding
-                                            Success Criterion 1.2.2 | W3C Understanding WCAG 2.0</a></li>
-                                </ul>
-                            </div>
-                            <h2>Examples</h2>
-                            <h4>HTML</h4>
-                            <pre><code>&lt;!-- Simple audio playback --&gt;
-    &lt;audio
-      src="AudioTest.ogg"
-      autoplay&gt;
-      Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
-    &lt;/audio&gt;
-    </code></pre>
-                            <h4>HTML</h4>
-                            <pre><code>&lt;audio controls="controls"&gt;
-      &lt;source src="foo.wav" type="audio/wav"&gt;
-      Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element. 
-    &lt;/audio&gt;
-    </code></pre>
-                            <h4>HTML</h4>
-                            <pre><code>&lt;audio controls=""&gt;
-     &lt;source src="foo.opus" type="audio/ogg; codecs=opus"/&gt;
-     &lt;source src="foo.ogg" type="audio/ogg; codecs=vorbis"/&gt;
-     &lt;source src="foo.mp3" type="audio/mpeg"/&gt;
-    &lt;/audio&gt;
-    </code></pre>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th rowspan="2"></th>
-                                        <th colspan="2">Desktop</th>
-                                        <th colspan="2">Mobile</th>
-                                    </tr>
-                                    <tr>
-                                        <th>Chrome</th>
-                                        <th>Edge</th>
-                                        <th>Chrome</th>
-                                        <th>Edge</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><code>video</code></td>
-                                        <td style="background-color: rgb(228, 248, 225);">3</td>
-                                        <td style="background-color: rgb(228, 248, 225);">Yes</td>
-                                        <td>?</td>
-                                        <td style="background-color: rgb(248, 225, 225);">No</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <h2>See also</h2>
-                            <div>
-                                <ul>
-                                    <li><a
-                                            href="https://developer.mozilla.org/en-US/docs/Media_formats_supported_by_the_audio_and_video_elements">Media
-                                            formats supported by the audio and video elements</a></li>
-                                    <li><a href="https://developer.mozilla.org/en-US/docs/Web_Audio_API">Web Audio
-                                            API</a></li>
-                                    <li><a
-                                            href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement"><code>HTMLAudioElement</code></a>
-                                    </li>
-                                    <li><a
-                                            href="https://developer.mozilla.org/en-US/docs/XPCOM_Interface_Reference/NsIDOMHTMLMediaElement"><code>nsIDOMHTMLMediaElement</code></a>
-                                    </li>
-                                    <li><a
-                                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source"><code>&lt;source&gt;</code></a>
-                                    </li>
-                                    <li><a
-                                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video"><code>&lt;video&gt;</code></a>
-                                    </li>
-                                    <li><a href="https://developer.mozilla.org/en-US/docs/Using_HTML5_audio_and_video">Using
-                                            audio and video</a></li>
-                                    <li><a
-                                            href="https://developer.mozilla.org/en-US/docsApps/Fundamentals/Audio_and_video_delivery/Cross-browser_audio_basics">Cross-browser
-                                            audio basics</a></li>
-                                    <li><a href="https://www.whatwg.org/specs/web-apps/current-work/#audio">The
-                                            <code>audio</code> element</a> (HTML5 specification)</li>
-                                </ul>
-                            </div>
-                            <hr>
-                            <div><b>Contributors to this page:</b><span>
-                                    <p><a href="">jpmedley</a>,
-                                        <a href="">thisisganesh</a>,
-                                        <a href="">mfuji09</a>, <a href="">Sheppy</a>,
-                                        <a href="">connorshea</a>, <a href="">Tigt</a>,
-                                        <a href="">chrisdavidmills</a>,
-                                        <a href="">wbamberg</a>,
-                                        <a href="">SphinxKnight</a>,
-                                        <a href="">stephanmax</a>,
-                                        <a href="">roy-vanegas</a>,
-                                        <a href="">johnnyagerard</a>,
-                                    </p>
-                                </span></div>
+                        </div>
+
+                        <h2 id="See_also">See also</h2>
+
+                        <ul>
+                            <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find"
+                                    title="The find() method returns the value of the first element in the provided array that satisfies the provided testing function."><code>Array.prototype.find()</code></a>
+                            </li>
+                            <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex"
+                                    title="The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test."><code>Array.prototype.findIndex()</code></a>
+                            </li>
+                            <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+                                    title="The map() method creates a new array with the results of calling a provided function on every element in the calling&nbsp;array."><code>Array.prototype.map()</code></a>
+                            </li>
+                            <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
+                                    title="The filter() method creates a new array with all elements that pass the test implemented by the provided function."><code>Array.prototype.filter()</code></a>
+                            </li>
+                            <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every"
+                                    title="The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value."><code>Array.prototype.every()</code></a>
+                            </li>
+                            <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some"
+                                    title="The some() method tests whether at least one&nbsp;element in the array passes the test implemented by the provided function. It returns a Boolean value."><code>Array.prototype.some()</code></a>
+                            </li>
+                            <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/forEach"
+                                    title="The forEach() method executes a provided function once per each key/value pair in the Map object, in insertion order."><code>Map.prototype.forEach()</code></a>
+                            </li>
+                            <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/forEach"
+                                    title="The forEach() method executes a provided function once for each value in the Set object, in insertion order."><code>Set.prototype.forEach()</code></a>
+                            </li>
+                        </ul>
+
+                        <h3 id="sparseArray" name="sparseArray">Polyfill</h3>
+
+                        <pre
+                            class="line-numbers language-html"><code class=" language-html">//https://raw.githubusercontent.com/FabioVergani/js-Polyfill_forEach/master/forEach.js
+
+(function(){
+	var o=[];
+	if('function' !== typeof o.forEach){
+		o.constructor.prototype.forEach=function(callback,thisArg){
+			if('function' !== typeof callback){
+				throw new TypeError(callback+' is not a function!')
+			}else{
+				if('undefined' !== typeof thisArg){
+					for(var e=thisArg,f=callback,i=0,m=this;i&lt;m.length;++i){
+						f.call(e,m[i],i,m)
+					}
+				}else{
+					for(var f=callback,i=0,m=this;i&lt;m.length;++i){
+						f(m[i],i,m)
+					}
+				}
+			}
+		}
+	}
+})();
+
+/*
+//#test-A
+	[1,2,3].forEach(function(v,i,m){
+		console.log(v,i,m)
+	});
+
+	//1,0,[1, 2, 3]
+	//2,1,[1, 2, 3]
+	//3,2,[1, 2, 3]
+
+
+//#test-B
+	[1,2,3].forEach2(function(v,i,m){
+		this[i]=v;
+		console.log(v,i,m,this)
+	},{});
+
+	//1,0,[1, 2, 3],{0:1}
+	//2,1,[1, 2, 3],{0:1,1:2}
+	//3,2,[1, 2, 3],{0:1,1:2,2:3}
+
+*/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+                    </article>
+                    <div class="metadata">
+                        <section class="document-meta">
+                            <header class="visually-hidden">
+                                <h4>Metadata</h4>
+                            </header>
+                            <ul>
+                                <li class="last-modified"><b>Last modified:</b> <time
+                                        datetime="2019-12-25T10:51:18.956137">Dec 25, 2019</time>,
+                                    <!-- --> <a
+                                        href="https://wiki.developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach$history"
+                                        rel="nofollow">by MDN contributors</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="quick-links">
+                        <div class="quick-links-head sidebar-heading">Related Topics</div>
+                        <div>
+                            <ol>
+                                <li><strong><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects">Standard
+                                            built-in objects</a></strong></li>
+                                <li><strong><a
+                                            href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"><code>Array</code></a></strong>
+                                </li>
+                                <li data-default-state="open"><a href="#"><strong>Properties</strong></a>
+                                    <ol>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length"
+                                                title="The length property of an object which is an instance of type Array sets or returns the number of elements in that array. The value is an unsigned, 32-bit integer that is always numerically greater than the highest index in the array."><code>Array.length</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/@@unscopables"
+                                                title="The @@unscopable symbol property contains property names that were not included in the ECMAScript standard prior to the ES2015 version. These properties are excluded from with statement bindings."><code>Array.prototype[@@unscopables]</code></a>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li data-default-state="open"><a href="#"><strong>Methods</strong></a>
+                                    <ol>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from"
+                                                title="The Array.from() method creates a new, shallow-copied Array instance from an array-like or iterable object."><code>Array.from()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray"
+                                                title="The Array.isArray()&nbsp;method&nbsp;determines whether the passed value is an Array."><code>Array.isArray()</code></a>
+                                        </li>
+                                        <li><span class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This is an obsolete API and is no longer guaranteed to work."><i
+                                                        class="icon-trash"> </i></span></span><s
+                                                class="obsoleteElement"><a
+                                                    href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/observe"
+                                                    title="The Array.observe() method was used for asynchronously observing changes to Arrays, similar to Object.observe() for objects. It provided a stream of changes in order of occurrence. It's equivalent to Object.observe() invoked with the accept type list [&quot;add&quot;, &quot;update&quot;, &quot;delete&quot;, &quot;splice&quot;]. However, this API has been deprecated and removed from Browsers. You can use the more general Proxy object instead."><code>Array.observe()</code></a></s>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/of"
+                                                title="The Array.of() method creates a new Array instance from a variable number of arguments, regardless of number or type of the arguments."><code>Array.of()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat"
+                                                title="The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array."><code>Array.prototype.concat()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin"
+                                                title="The copyWithin() method shallow copies part of an array to another location in the same array and returns it&nbsp;without modifying its length."><code>Array.prototype.copyWithin()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries"
+                                                title="The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array."><code>Array.prototype.entries()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every"
+                                                title="The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value."><code>Array.prototype.every()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill"
+                                                title="The fill() method changes all elements in an array to a static value, from a start index&nbsp;(default 0) to an end index&nbsp;(default array.length). It returns the modified array."><code>Array.prototype.fill()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
+                                                title="The filter() method creates a new array with all elements that pass the test implemented by the provided function."><code>Array.prototype.filter()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find"
+                                                title="The find() method returns the value of the first element in the provided array that satisfies the provided testing function."><code>Array.prototype.find()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex"
+                                                title="The findIndex() method returns the index of the first element in the array that satisfies the provided testing function. Otherwise, it returns -1, indicating that no element passed the test."><code>Array.prototype.findIndex()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat"
+                                                title="The flat() method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth."><code>Array.prototype.flat()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap"
+                                                title="The flatMap() method first maps each element using a mapping function, then flattens the result into a new array. It is identical to a map() followed by a flat() of depth 1, but flatMap() is often quite useful, as merging both into one method is slightly more efficient."><code>Array.prototype.flatMap()</code></a>
+                                        </li>
+                                        <li><em><code>Array.prototype.forEach()</code></em></li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes"
+                                                title="The includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate."><code>Array.prototype.includes()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf"
+                                                title="The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present."><code>Array.prototype.indexOf()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join"
+                                                title="The join() method creates and returns a new string by concatenating all of the elements in an array (or an array-like object), separated by commas or a specified separator string. If the array has only one item, then that item will be returned without using the separator."><code>Array.prototype.join()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys"
+                                                title="The keys() method returns a new Array Iterator object that contains the keys for each index in the array."><code>Array.prototype.keys()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf"
+                                                title="The lastIndexOf() method returns the last index at which a given element can be found in the array, or -1 if it is not present. The array is searched backwards, starting at fromIndex."><code>Array.prototype.lastIndexOf()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+                                                title="The map() method creates a new array with the results of calling a provided function on every element in the calling&nbsp;array."><code>Array.prototype.map()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop"
+                                                title="The pop() method removes the last element from an array and returns that element. This method changes the length of the array."><code>Array.prototype.pop()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push"
+                                                title="The push() method adds one or more elements to the end of an array and returns the new length of the array."><code>Array.prototype.push()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce"
+                                                title="The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in a single output value."><code>Array.prototype.reduce()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight"
+                                                title="The reduceRight() method applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value."><code>Array.prototype.reduceRight()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse"
+                                                title="The reverse() method reverses an array in place. The first array element becomes the last, and the last array element becomes the first."><code>Array.prototype.reverse()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift"
+                                                title="The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array."><code>Array.prototype.shift()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice"
+                                                title="The slice() method returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included) where begin and end represent the index of items in that array. The original array will not be modified."><code>Array.prototype.slice()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some"
+                                                title="The some() method tests whether at least one&nbsp;element in the array passes the test implemented by the provided function. It returns a Boolean value."><code>Array.prototype.some()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort"
+                                                title="The sort() method sorts the elements of an array in place and returns the sorted array. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values."><code>Array.prototype.sort()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice"
+                                                title="The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place."><code>Array.prototype.splice()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toLocaleString"
+                                                title="The toLocaleString() method returns a string representing the elements of the array. The elements are converted to Strings using their toLocaleString methods and these Strings are separated by a locale-specific String (such as a comma “,”)."><code>Array.prototype.toLocaleString()</code></a>
+                                        </li>
+                                        <li><span class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This API has not been standardized."><i
+                                                        class="icon-warning-sign"> </i></span></span><a
+                                                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSource"
+                                                title="The toSource() method returns a string representing the source code of the array."><code>Array.prototype.toSource()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString"
+                                                title="The toString() method returns a string representing the specified array and its elements."><code>Array.prototype.toString()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift"
+                                                title="The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array."><code>Array.prototype.unshift()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values"
+                                                title="The values() method returns a new Array Iterator object that contains the values for each index in the array."><code>Array.prototype.values()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/@@iterator"
+                                                title="The initial value of the @@iterator property is the same function object as the initial value of the values() property."><code>Array.prototype[@@iterator]()</code></a>
+                                        </li>
+                                        <li><span class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This is an obsolete API and is no longer guaranteed to work."><i
+                                                        class="icon-trash"> </i></span></span><s
+                                                class="obsoleteElement"><a
+                                                    href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unobserve"
+                                                    title="The Array.unobserve() method was used to remove observers set by Array.observe(), but has been deprecated and removed from Browsers. You can use the more general Proxy object instead."><code>Array.unobserve()</code></a></s>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/@@species"
+                                                title="The Array[@@species] accessor property returns the Array constructor."><code>get Array[@@species]</code></a>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li><strong>Inheritance:</strong></li>
+                                <li><strong><a
+                                            href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function"><code>Function</code></a></strong>
+                                </li>
+                                <li><a href="#"><strong>Properties</strong></a>
+                                    <ol>
+                                        <li><span class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This deprecated API should no longer be used, but will probably still work."><i
+                                                        class="icon-thumbs-down-alt"> </i></span></span><a
+                                                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/arguments"
+                                                title="The function.arguments property refers to an an array-like object corresponding to the arguments passed to a function. Use the simple variable arguments instead. This property is forbidden in strict mode."><code>Function.arguments</code></a>
+                                        </li>
+                                        <li><span class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This is an obsolete API and is no longer guaranteed to work."><i
+                                                        class="icon-trash"> </i></span></span><s
+                                                class="obsoleteElement"><a
+                                                    href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/arity"
+                                                    title="Implemented in JavaScript 1.2. Deprecated in JavaScript 1.4."><code>Function.arity</code></a></s>
+                                        </li>
+                                        <li><span class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This API has not been standardized."><i
+                                                        class="icon-warning-sign"> </i></span></span><a
+                                                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/caller"
+                                                title="The function.caller property returns the function that invoked the specified function. This property is forbidden in strict mode."><code>Function.caller</code></a>
+                                        </li>
+                                        <li><span class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This API has not been standardized."><i
+                                                        class="icon-warning-sign"> </i></span></span><a
+                                                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/displayName"
+                                                title="The function.displayName property returns the display name of the function."><code>Function.displayName</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/length"
+                                                title="The length property indicates&nbsp;the number of parameters expected by the function."><code>Function.length</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name"
+                                                title="A Function object's read-only name property indicates the function's name as specified when it was created, or it may be rather&nbsp;anonymous&nbsp;or ''(an empty string)&nbsp;for functions created anonymously."><code>Function.name</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype"
+                                                title="The Function.prototype property represents the Function prototype object."><code>Function.prototype</code></a>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li><a href="#"><strong>Methods</strong></a>
+                                    <ol>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply"
+                                                title="The apply() method calls a function with a given this value, and arguments provided as an array (or an array-like object)."><code>Function.prototype.apply()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind"
+                                                title="The bind() method creates a new function that, when called, has its this keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called."><code>Function.prototype.bind()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call"
+                                                title="The call() method calls a function with a given this value and arguments provided individually."><code>Function.prototype.call()</code></a>
+                                        </li>
+                                        <li><span class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This API has not been standardized."><i
+                                                        class="icon-warning-sign"> </i></span></span><span
+                                                class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This is an obsolete API and is no longer guaranteed to work."><i
+                                                        class="icon-trash"> </i></span></span><s
+                                                class="obsoleteElement"><a
+                                                    href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/isGenerator"
+                                                    title="The non-standard isGenerator() method used to determine whether or not a function is a generator. It has been removed from Firefox starting with version 58."><code>Function.prototype.isGenerator()</code></a></s>
+                                        </li>
+                                        <li><span class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This API has not been standardized."><i
+                                                        class="icon-warning-sign"> </i></span></span><a
+                                                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/toSource"
+                                                title="The toSource() method returns a string representing the source code of the object."><code>Function.prototype.toSource()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/toString"
+                                                title="The toString() method returns a string representing the source code of the function."><code>Function.prototype.toString()</code></a>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li><strong><a
+                                            href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object"><code>Object</code></a></strong>
+                                </li>
+                                <li><a href="#"><strong>Properties</strong></a>
+                                    <ol>
+                                        <li><span class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This API has not been standardized."><i
+                                                        class="icon-warning-sign"> </i></span></span><span
+                                                class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This is an obsolete API and is no longer guaranteed to work."><i
+                                                        class="icon-trash"> </i></span></span><s
+                                                class="obsoleteElement"><a
+                                                    href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/count"
+                                                    title="The __count__ property used to store the count of enumerable properties on the object, but it has been removed."><code>Object.prototype.__count__</code></a></s>
+                                        </li>
+                                        <li><span class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This API has not been standardized."><i
+                                                        class="icon-warning-sign"> </i></span></span><span
+                                                class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This is an obsolete API and is no longer guaranteed to work."><i
+                                                        class="icon-trash"> </i></span></span><s
+                                                class="obsoleteElement"><a
+                                                    href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/noSuchMethod"
+                                                    title="The __noSuchMethod__ property used to reference a function to be executed when a non-existent method is called on an object, but this function is no longer available."><code>Object.prototype.__noSuchMethod__</code></a></s>
+                                        </li>
+                                        <li><span class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This API has not been standardized."><i
+                                                        class="icon-warning-sign"> </i></span></span><span
+                                                class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This is an obsolete API and is no longer guaranteed to work."><i
+                                                        class="icon-trash"> </i></span></span><s
+                                                class="obsoleteElement"><a
+                                                    href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/Parent"
+                                                    title="The __parent__ property used to point to an object's context, but it has been removed."><code>Object.prototype.__parent__</code></a></s>
+                                        </li>
+                                        <li><span class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This deprecated API should no longer be used, but will probably still work."><i
+                                                        class="icon-thumbs-down-alt"> </i></span></span><a
+                                                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/proto"
+                                                title="The __proto__ property of Object.prototype is an accessor property (a getter function and a setter function) that exposes the internal [[Prototype]] (either an object or null) of the object through which it is accessed."><code>Object.prototype.__proto__</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/constructor"
+                                                title="The constructor property returns a reference to the Object constructor function that created the instance object. Note that the value of this property is a reference to the function itself, not a string containing the function's name."><code>Object.prototype.constructor</code></a>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li><a href="#"><strong>Methods</strong></a>
+                                    <ol>
+                                        <li><span class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This deprecated API should no longer be used, but will probably still work."><i
+                                                        class="icon-thumbs-down-alt"> </i></span></span><a
+                                                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/__defineGetter__"
+                                                title="The __defineGetter__ method binds an object's property to a function to be called when that property is looked up."><code>Object.prototype.__defineGetter__()</code></a>
+                                        </li>
+                                        <li><span class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This deprecated API should no longer be used, but will probably still work."><i
+                                                        class="icon-thumbs-down-alt"> </i></span></span><a
+                                                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/__defineSetter__"
+                                                title="The __defineSetter__ method binds an object's property to a function to be called when an attempt is made to set that property."><code>Object.prototype.__defineSetter__()</code></a>
+                                        </li>
+                                        <li><span class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This deprecated API should no longer be used, but will probably still work."><i
+                                                        class="icon-thumbs-down-alt"> </i></span></span><a
+                                                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/__lookupGetter__"
+                                                title="The __lookupGetter__ method returns the function bound as a getter to the specified property."><code>Object.prototype.__lookupGetter__()</code></a>
+                                        </li>
+                                        <li><span class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This deprecated API should no longer be used, but will probably still work."><i
+                                                        class="icon-thumbs-down-alt"> </i></span></span><a
+                                                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/__lookupSetter__"
+                                                title="The __lookupSetter__ method returns the function bound as a setter to the specified property."><code>Object.prototype.__lookupSetter__()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty"
+                                                title="The hasOwnProperty() method returns a boolean indicating whether the object has the specified property as its own property (as opposed to inheriting it)."><code>Object.prototype.hasOwnProperty()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isPrototypeOf"
+                                                title="The isPrototypeOf() method checks if an object exists in another object's prototype chain."><code>Object.prototype.isPrototypeOf()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable"
+                                                title="The propertyIsEnumerable() method returns a Boolean indicating whether the specified property is enumerable and is the object's own property."><code>Object.prototype.propertyIsEnumerable()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toLocaleString"
+                                                title="The toLocaleString() method returns a string representing the object. This method is meant to be overridden by derived objects for locale-specific purposes."><code>Object.prototype.toLocaleString()</code></a>
+                                        </li>
+                                        <li><span class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This API has not been standardized."><i
+                                                        class="icon-warning-sign"> </i></span></span><a
+                                                href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toSource"
+                                                title="The toSource() method returns a string representing the source code of the object."><code>Object.prototype.toSource()</code></a>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString"
+                                                title="The toString() method returns a string representing the object."><code>Object.prototype.toString()</code></a>
+                                        </li>
+                                        <li><span class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This deprecated API should no longer be used, but will probably still work."><i
+                                                        class="icon-thumbs-down-alt"> </i></span></span><span
+                                                class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This is an obsolete API and is no longer guaranteed to work."><i
+                                                        class="icon-trash"> </i></span></span><s
+                                                class="obsoleteElement"><a
+                                                    href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/unwatch"
+                                                    title="The unwatch() method removes a watchpoint set with the watch() method."><code>Object.prototype.unwatch()</code></a></s>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/valueOf"
+                                                title="The valueOf() method returns the primitive value of the specified object."><code>Object.prototype.valueOf()</code></a>
+                                        </li>
+                                        <li><span class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This deprecated API should no longer be used, but will probably still work."><i
+                                                        class="icon-thumbs-down-alt"> </i></span></span><span
+                                                class="sidebar-icon"><span class="icon-only-inline"
+                                                    title="This is an obsolete API and is no longer guaranteed to work."><i
+                                                        class="icon-trash"> </i></span></span><s
+                                                class="obsoleteElement"><a
+                                                    href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/watch"
+                                                    title="The watch() method watches for a property to be assigned a value and runs a function when that occurs."><code>Object.prototype.watch()</code></a></s>
+                                        </li>
+                                        <li><a href="/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf"
+                                                title="The Object.setPrototypeOf() method sets the prototype (i.e., the internal [[Prototype]] property) of a specified object to another object or null."><code>Object.setPrototypeOf()</code></a>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </main>
+        <section class="newsletter-container">
+            <div id="newsletter-form-container" class="newsletter">
+                <form class="newsletter-form nodisable" name="newsletter-form">
+                    <section class="newsletter-head">
+                        <h2 class="newsletter-teaser">Learn the best of web development</h2>
+                        <p class="newsletter-description">Get the latest and greatest from MDN delivered straight to
+                            your inbox.</p>
+                        <p class="hidden" aria-hidden="true">The newsletter is offered in English only at the moment.
+                        </p>
+                    </section>
+                    <fieldset class="newsletter-fields"><input type="hidden" name="fmt" value="H"><input type="hidden"
+                            name="newsletters" value="app-dev">
+                        <div class="form-group newsletter-group-email"><label for="newsletter-email-input"
+                                class="form-label offscreen">E-mail</label><input type="email"
+                                id="newsletter-email-input" name="email" class="form-input newsletter-input-email"
+                                placeholder="you@example.com" required=""></div>
+                        <div id="newsletter-privacy" class="hidden" aria-hidden="true"><input type="checkbox"
+                                id="newsletter-privacy-input" name="privacy" required=""><label
+                                for="newsletter-privacy-input">I’m okay with Mozilla handling my info as explained in
+                                this <a href="https://www.mozilla.org/privacy/">Privacy Policy</a>.</label></div>
+                        <div class="newsletter-group-submit"><button id="newsletter-submit" type="submit"
+                                class="button neutral newsletter-submit">Sign up now</button></div>
+                    </fieldset>
+                </form><button type="button" class="only-icon newsletter-hide"
+                    aria-controls="newsletter-form-container"><span>Hide Newsletter Sign-up</span><svg
+                        class="icon icon-close" xmlns="http://www.w3.org/2000/svg" role="presentation"
+                        viewBox="0 0 24 28">
+                        <path
+                            d="M20.281 20.656c0 .391-.156.781-.438 1.062l-2.125 2.125c-.281.281-.672.438-1.062.438s-.781-.156-1.062-.438L11 19.249l-4.594 4.594c-.281.281-.672.438-1.062.438s-.781-.156-1.062-.438l-2.125-2.125c-.281-.281-.438-.672-.438-1.062s.156-.781.438-1.062L6.751 15l-4.594-4.594c-.281-.281-.438-.672-.438-1.062s.156-.781.438-1.062l2.125-2.125c.281-.281.672-.438 1.062-.438s.781.156 1.062.438L11 10.751l4.594-4.594c.281-.281.672-.438 1.062-.438s.781.156 1.062.438l2.125 2.125c.281.281.438.672.438 1.062s-.156.781-.438 1.062L15.249 15l4.594 4.594c.281.281.438.672.438 1.062z">
+                        </path>
+                    </svg></button>
+            </div>
+        </section>
+        <footer id="nav-footer" class="nav-footer">
+            <div class="center"><a href="/en-US/" class="nav-footer-logo">MDN Web Docs</a>
+                <div class="footer-group footer-group-mdn">
+                    <h2 class="footer-title">MDN</h2>
+                    <ul class="footer-list">
+                        <li><a href="/en-US/docs/Web">Web Technologies</a></li>
+                        <li><a href="/en-US/docs/Learn">Learn Web Development</a></li>
+                        <li><a href="/en-US/docs/MDN/About">About MDN</a></li>
+                        <li><a href="/en-US/docs/MDN/Feedback">Feedback</a></li>
+                        <li class="footer-social"><a href="https://twitter.com/mozdevnet"><svg class="icon icon-twitter"
+                                    xmlns="http://www.w3.org/2000/svg" width="26" height="28" aria-label="Twitter"
+                                    role="img" focusable="false">
+                                    <path
+                                        d="M25.312 6.375a10.85 10.85 0 0 1-2.531 2.609c.016.219.016.438.016.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-.828-7.75-2.266.406.047.797.063 1.219.063 2.359 0 4.531-.797 6.266-2.156a5.056 5.056 0 0 1-4.719-3.5c.313.047.625.078.953.078.453 0 .906-.063 1.328-.172a5.048 5.048 0 0 1-4.047-4.953v-.063a5.093 5.093 0 0 0 2.281.641 5.044 5.044 0 0 1-2.25-4.203c0-.938.25-1.797.688-2.547a14.344 14.344 0 0 0 10.406 5.281 5.708 5.708 0 0 1-.125-1.156 5.045 5.045 0 0 1 5.047-5.047 5.03 5.03 0 0 1 3.687 1.594 9.943 9.943 0 0 0 3.203-1.219 5.032 5.032 0 0 1-2.219 2.781c1.016-.109 2-.391 2.906-.781z">
+                                    </path>
+                                </svg></a></li>
+                        <li class="footer-social"><a href="https://github.com/mdn/"><svg class="icon icon-github"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="28" aria-label="GitHub"
+                                    role="img" focusable="false">
+                                    <path
+                                        d="M12 2c6.625 0 12 5.375 12 12 0 5.297-3.437 9.797-8.203 11.391-.609.109-.828-.266-.828-.578 0-.391.016-1.687.016-3.297 0-1.125-.375-1.844-.812-2.219 2.672-.297 5.484-1.313 5.484-5.922 0-1.313-.469-2.375-1.234-3.219.125-.313.531-1.531-.125-3.187-1-.313-3.297 1.234-3.297 1.234a11.28 11.28 0 0 0-6 0S6.704 6.656 5.704 6.969c-.656 1.656-.25 2.875-.125 3.187-.766.844-1.234 1.906-1.234 3.219 0 4.594 2.797 5.625 5.469 5.922-.344.313-.656.844-.766 1.609-.688.313-2.438.844-3.484-1-.656-1.141-1.844-1.234-1.844-1.234-1.172-.016-.078.734-.078.734.781.359 1.328 1.75 1.328 1.75.703 2.141 4.047 1.422 4.047 1.422 0 1 .016 1.937.016 2.234 0 .313-.219.688-.828.578C3.439 23.796.002 19.296.002 13.999c0-6.625 5.375-12 12-12zM4.547 19.234c.031-.063-.016-.141-.109-.187-.094-.031-.172-.016-.203.031-.031.063.016.141.109.187.078.047.172.031.203-.031zm.484.532c.063-.047.047-.156-.031-.25-.078-.078-.187-.109-.25-.047-.063.047-.047.156.031.25.078.078.187.109.25.047zm.469.703c.078-.063.078-.187 0-.297-.063-.109-.187-.156-.266-.094-.078.047-.078.172 0 .281s.203.156.266.109zm.656.656c.063-.063.031-.203-.063-.297-.109-.109-.25-.125-.313-.047-.078.063-.047.203.063.297.109.109.25.125.313.047zm.891.391c.031-.094-.063-.203-.203-.25-.125-.031-.266.016-.297.109s.063.203.203.234c.125.047.266 0 .297-.094zm.984.078c0-.109-.125-.187-.266-.172-.141 0-.25.078-.25.172 0 .109.109.187.266.172.141 0 .25-.078.25-.172zm.906-.156c-.016-.094-.141-.156-.281-.141-.141.031-.234.125-.219.234.016.094.141.156.281.125s.234-.125.219-.219z">
+                                    </path>
+                                </svg></a></li>
+                    </ul>
+                </div><a href="https://mozilla.org" class="nav-footer-mozilla">Mozilla</a>
+                <div class="footer-group footer-group-mozilla">
+                    <h2 class="footer-title">Mozilla</h2>
+                    <ul class="footer-list">
+                        <li><a href="https://www.mozilla.org/about/">About</a></li>
+                        <li><a href="https://www.mozilla.org/contact/">Contact Us</a></li>
+                        <li><a
+                                href="https://www.mozilla.org/firefox/?utm_source=developer.mozilla.org&amp;utm_campaign=footer&amp;utm_medium=referral">Firefox</a>
+                        </li>
+                        <li class="footer-social"><a href="https://twitter.com/mozilla"><svg class="icon icon-twitter"
+                                    xmlns="http://www.w3.org/2000/svg" width="26" height="28" aria-label="Twitter"
+                                    role="img" focusable="false">
+                                    <path
+                                        d="M25.312 6.375a10.85 10.85 0 0 1-2.531 2.609c.016.219.016.438.016.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-.828-7.75-2.266.406.047.797.063 1.219.063 2.359 0 4.531-.797 6.266-2.156a5.056 5.056 0 0 1-4.719-3.5c.313.047.625.078.953.078.453 0 .906-.063 1.328-.172a5.048 5.048 0 0 1-4.047-4.953v-.063a5.093 5.093 0 0 0 2.281.641 5.044 5.044 0 0 1-2.25-4.203c0-.938.25-1.797.688-2.547a14.344 14.344 0 0 0 10.406 5.281 5.708 5.708 0 0 1-.125-1.156 5.045 5.045 0 0 1 5.047-5.047 5.03 5.03 0 0 1 3.687 1.594 9.943 9.943 0 0 0 3.203-1.219 5.032 5.032 0 0 1-2.219 2.781c1.016-.109 2-.391 2.906-.781z">
+                                    </path>
+                                </svg></a></li>
+                        <li class="footer-social"><a href="https://www.instagram.com/mozillagram/"><svg
+                                    class="icon icon-instagram" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="28" aria-label="Instagram" role="img" focusable="false">
+                                    <path
+                                        d="M16 14c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zm2.156 0c0 3.406-2.75 6.156-6.156 6.156S5.844 17.406 5.844 14 8.594 7.844 12 7.844s6.156 2.75 6.156 6.156zm1.688-6.406c0 .797-.641 1.437-1.437 1.437S16.97 8.39 16.97 7.594s.641-1.437 1.437-1.437 1.437.641 1.437 1.437zM12 4.156c-1.75 0-5.5-.141-7.078.484-.547.219-.953.484-1.375.906s-.688.828-.906 1.375c-.625 1.578-.484 5.328-.484 7.078s-.141 5.5.484 7.078c.219.547.484.953.906 1.375s.828.688 1.375.906c1.578.625 5.328.484 7.078.484s5.5.141 7.078-.484c.547-.219.953-.484 1.375-.906s.688-.828.906-1.375c.625-1.578.484-5.328.484-7.078s.141-5.5-.484-7.078c-.219-.547-.484-.953-.906-1.375s-.828-.688-1.375-.906C17.5 4.015 13.75 4.156 12 4.156zM24 14c0 1.656.016 3.297-.078 4.953-.094 1.922-.531 3.625-1.937 5.031s-3.109 1.844-5.031 1.937c-1.656.094-3.297.078-4.953.078s-3.297.016-4.953-.078c-1.922-.094-3.625-.531-5.031-1.937S.173 20.875.08 18.953C-.014 17.297.002 15.656.002 14s-.016-3.297.078-4.953c.094-1.922.531-3.625 1.937-5.031s3.109-1.844 5.031-1.937c1.656-.094 3.297-.078 4.953-.078s3.297-.016 4.953.078c1.922.094 3.625.531 5.031 1.937s1.844 3.109 1.937 5.031C24.016 10.703 24 12.344 24 14z">
+                                    </path>
+                                </svg></a></li>
+                    </ul>
+                </div>
+                <ul class="footer-tos">
+                    <li><a href="https://www.mozilla.org/about/legal/terms/mozilla">Terms</a></li>
+                    <li><a href="https://www.mozilla.org/privacy/websites/">Privacy</a></li>
+                    <li><a href="https://www.mozilla.org/privacy/websites/#cookies">Cookies</a></li>
+                </ul>
+                <div id="license" class="contentinfo">
+                    <p>© 2005-
+                        <!-- -->2020
+                        <!-- --> Mozilla and individual contributors.</p>
+                    <p>Content is available under
+                        <!-- --> <a href="/docs/MDN/About#Copyrights_and_licenses">these licenses</a>.</p>
+                </div>
+            </div>
+        </footer>
+        <div class="notification">
+            <div>Would you answer 4 questions for us? <a target="_blank" rel="noopener noreferrer"
+                    href="https://www.surveygizmo.com/s3/2980494/do-or-do-not?t=1578305997492&amp;p=%2Fen-US%2Fdocs%2FWeb%2FJavaScript%2FReference%2FGlobal_Objects%2FArray%2FforEach">Open
+                    the survey in a new tab</a> and fill it out when you are done on the site. Thanks!</div><button
+                class="dismiss-button" aria-label="Dismiss"><svg class="dismiss-icon" xmlns="http://www.w3.org/2000/svg"
+                    role="presentation" viewBox="0 0 24 28">
+                    <path
+                        d="M20.281 20.656c0 .391-.156.781-.438 1.062l-2.125 2.125c-.281.281-.672.438-1.062.438s-.781-.156-1.062-.438L11 19.249l-4.594 4.594c-.281.281-.672.438-1.062.438s-.781-.156-1.062-.438l-2.125-2.125c-.281-.281-.438-.672-.438-1.062s.156-.781.438-1.062L6.751 15l-4.594-4.594c-.281-.281-.438-.672-.438-1.062s.156-.781.438-1.062l2.125-2.125c.281-.281.672-.438 1.062-.438s.781.156 1.062.438L11 10.751l4.594-4.594c.281-.281.672-.438 1.062-.438s.781.156 1.062.438l2.125 2.125c.281.281.438.672.438 1.062s-.156.781-.438 1.062L15.249 15l4.594 4.594c.281.281.438.672.438 1.062z">
+                    </path>
+                </svg></button>
         </div>
     </div>
+
+    <div id="auth-modal" class="modal hidden">
+        <section class="auth-providers" tabindex="-1" role="dialog" aria-modal="true"
+            aria-labelledby="modal-main-heading">
+            <header>
+                <h2 id="modal-main-heading">Sign In</h2>
+            </header>
+
+            <p>
+                Sign in to enjoy the benefits of an MDN account. If you haven’t already created an MDN profile, you will
+                be prompted to do so after signing in.
+            </p>
+            <div class="auth-button-container">
+                <a href="/users/github/login/" class="github-auth" data-first-focusable="true">
+                    Sign in with Github
+                </a>
+                <a href="/users/google/login/" class="google-auth">
+                    Sign in with Google
+                </a>
+            </div>
+
+            <button id="close-modal" class="close-modal" data-last-focusable="true">
+                <span>Close modal</span>
+            </button>
+        </section>
+    </div>
+
+
 </body>
 
 </html>

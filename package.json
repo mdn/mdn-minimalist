@@ -4,8 +4,9 @@
   "description": "The base Sass for Mozilla Developer based projects and products",
   "main": "index.js",
   "scripts": {
-    "build:sass": "node-sass-chokidar ./sass/mdn-minimalist.scss -o ./css/",
+    "build:sass": "node-sass-chokidar ./sass/mdn-minimalist.scss -o ./pages/css/",
     "dev": "parcel pages/reference.html",
+    "start": "http-server ./pages",
     "test": "jest"
   },
   "repository": {
@@ -26,10 +27,12 @@
   },
   "homepage": "https://github.com/schalkneethling/mdn-minimalist#readme",
   "devDependencies": {
+    "http-server": "^0.12.0",
     "jest": "24.9.0",
     "node-sass": "4.13.0",
     "node-sass-chokidar": "1.4.0",
     "parcel-bundler": "1.12.4",
+    "sass": "^1.24.2",
     "sass-true": "5.0.0"
   }
 }
