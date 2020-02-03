@@ -7,6 +7,10 @@
   border: 0;
 }
 
+.simple-text {
+  @include btn-simple-text();
+}
+
 .button-base {
   background: none;
   border: none;
@@ -43,8 +47,10 @@
 .positive,
 a.negative,
 a.positive,
+a.disabled,
 button.negative,
-button.positive {
+button.positive,
+button.disabled {
   display: inline-block;
   padding: 5px 10px;
   border: 3px solid #000;
@@ -85,4 +91,12 @@ button.positive {
       fill: #fff;
     }
   }
+}
+
+a.disabled,
+button.disabled {
+  background-color: $brand-grey;
+  color: $text-color;
+  border-color: $brand-grey;
+  opacity: 1;
 }
