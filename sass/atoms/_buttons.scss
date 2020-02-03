@@ -7,6 +7,10 @@
   border: 0;
 }
 
+.simple-text {
+  @include btn-simple-text();
+}
+
 .button-base {
   background: none;
   border: none;
