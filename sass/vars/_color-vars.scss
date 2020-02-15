@@ -1,6 +1,9 @@
+/* TODO: This feel needs some serious cleanup */
+
 /* MDN SCHEME
 kuma/static/styles/includes/_vars.scss
---------------------------------------------------*/
+--------------------------------------------------
+*/
 $red: #e66465;
 $orange: #f69d3c;
 $yellow: #f6b73c;
@@ -74,7 +77,8 @@ $default: $grey;
 
 /* MDN GENERAL
 kuma/static/styles/includes/_vars.scss
---------------------------------------------------*/
+--------------------------------------------------
+*/
 $text-color: #333;
 $link-color: #3d7e9a;
 $menu-link-color: $text-color;
@@ -103,12 +107,14 @@ $bg-dark: #222;
 
 /* MDN STATES
 kuma/static/styles/includes/_vars.scss
---------------------------------------------------*/
+--------------------------------------------------
+*/
 $error: #900;
 
 /* MDN TOC WIKI
 kuma/static/styles/includes/_vars.scss
---------------------------------------------------*/
+--------------------------------------------------
+*/
 $toc-background-color: #fcfcfc;
 $toc-border-color: #dce3e5;
 $toc-gradient-start-color: #206584;
@@ -116,46 +122,54 @@ $toc-gradient-end-color: #83d0f2;
 
 /* MDN EXAMPLES SYNTAX
 kuma/static/styles/components/syntax/example.scss
---------------------------------------------------*/
+--------------------------------------------------
+*/
 $bg-good: mix($positive, #fff, 5%);
 $bg-bad: mix($negative, #fff, 5%);
 
 /* MDN PROMOTE
 kuma/static/styles/promote.scss
---------------------------------------------------*/
+--------------------------------------------------
+*/
 $box-border-hover-color: #25a;
 
 /* MDN CONTENT
 kuma/static/styles/components/content.scss
 This table style is also defined in 
 kuma/static/styles/includes/_vars.scss
---------------------------------------------------*/
+--------------------------------------------------
+*/
 $table-blue: #d4dde4;
 
 /* MDN TAGS
 kuma/static/styles/components/tags.scss
---------------------------------------------------*/
+--------------------------------------------------
+*/
 $tag-border-color: #cee9f9;
 
 /* MDN FORMS
 kuma/static/styles/includes/_vars.scss
---------------------------------------------------*/
+--------------------------------------------------
+*/
 $form-border-color: #9b9b9b;
 $placeholder-text: lighten($form-border-color, 2);
 
 /* MDN USERS
 kuma/static/styles/components/users/_vars.scss
---------------------------------------------------*/
+--------------------------------------------------
+*/
 $user-head-secondary-text-color: #a19f93;
 
 /* MDN BANNERS
 kuma/static/styles/components/banners/_vars.scss
---------------------------------------------------*/
+--------------------------------------------------
+*/
 $cta-deep-blue: #161e65;
 
 /* MDN PAYMENTS
 kuma/static/styles/components/payments/_vars.scss
---------------------------------------------------*/
+--------------------------------------------------
+*/
 $payment-background-colors: #83cff3, #ebf8e1;
 $payment-background-gradient: linear-gradient(
   to right,
@@ -168,7 +182,8 @@ $payment-faq-base-color: #3143e2;
 Not using site default colours, to increase difference
 between colours for colour blind users
 kuma/static/styles/components/compat-tables/_vars.scss
---------------------------------------------------*/
+--------------------------------------------------
+*/
 $bc-colors: (
   yes: #e4f8e1,
   no: #f8e1e1,
@@ -178,7 +193,8 @@ $bc-colors: (
 
 /* MDN MAIN-NAV
 kuma/static/styles/components/structure/page-header/_vars_nav.scss
--------------------------------------------------------------------*/
+-------------------------------------------------------------------
+*/
 $main-nav-box-shadow-color: rgba(12, 12, 13, 0.1);
 $main-menu-border-color: #d8dfe2;
 $main-menu-item-background-color: #3d7e9a;
