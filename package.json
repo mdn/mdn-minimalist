@@ -7,7 +7,7 @@
     "build:sass": "node-sass-chokidar ./sass/mdn-minimalist.scss -o ./pages/css/",
     "dev": "parcel pages/reference.html",
     "lint": "stylelint sass/**/*.scss",
-    "precommit": "npm run prettier:staged && npm run lint",
+    "precommit": "npm run prettier:staged",
     "prettier:check": "prettier --check **/*.scss",
     "prettier:format": "prettier --write **/*.scss",
     "prettier:staged": "pretty-quick --staged --pattern \"**/*.scss\"",
@@ -60,7 +60,8 @@
   },
   "husky": {
     "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
+      "pre-commit": "yarn run precommit"
     }
   }
 }
