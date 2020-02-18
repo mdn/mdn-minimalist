@@ -7,6 +7,10 @@
     "build:sass": "node-sass-chokidar ./sass/mdn-minimalist.scss -o ./pages/css/",
     "dev": "parcel pages/reference.html",
     "lint": "stylelint sass/**/*.scss",
+    "precommit": "npm run prettier:staged && npm run lint",
+    "prettier:check": "prettier --check **/*.scss",
+    "prettier:format": "prettier --write **/*.scss",
+    "prettier:staged": "pretty-quick --staged --pattern \"**/*.scss\"",
     "start": "http-server ./pages",
     "test": "jest"
   },
@@ -37,6 +41,7 @@
     "node-sass-chokidar": "1.4.0",
     "parcel-bundler": "1.12.4",
     "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1",
     "sass": "^1.25.0",
     "sass-true": "5.0.0",
     "stylelint": "^13.1.0",
