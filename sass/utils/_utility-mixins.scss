@@ -6,7 +6,5 @@
   margin: -1px;
   overflow: hidden;
   padding: 0;
-  /* !important required to ensure element is hidden when mixin is applied */
-  position: absolute !important; /* stylelint-disable-line declaration-no-important */
   width: 1px;
 }

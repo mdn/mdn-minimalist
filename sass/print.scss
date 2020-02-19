@@ -1,5 +1,5 @@
-@import '../includes/vars';
-@import './mixins/print-mixins';
+@import "../includes/vars";
+@import "./mixins/print-mixins";
 
 header,
 .notification-tray,
@@ -15,16 +15,16 @@ a.edit-section,
 #page-attachments,
 #offline-dialog-content,
 #wiki-left {
-    display: none;
+  display: none;
 }
 
 .center {
-    @include remove-center-spacing();
+  @include remove-center-spacing();
 }
 
 /* hide print button on tablets since they are less likely to be hooked up to a printer */
 @media #{$mq-tablet-and-down} {
-    .page-print {
-        display: none;
-    }
+  .page-print {
+    display: none;
+  }
 }
