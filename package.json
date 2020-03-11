@@ -42,7 +42,7 @@
     "parcel-bundler": "1.12.4",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
-    "sass": "^1.26.1",
+    "sass": "^1.26.2",
     "sass-true": "5.0.0",
     "stylelint": "^13.2.0",
     "stylelint-a11y": "^1.2.3",
