@@ -1,12 +1,16 @@
 {
   "extends": [
-    "stylelint-config-standard",
+    "stylelint-config-recommended",
     "stylelint-config-recommended-scss",
     "stylelint-config-sass-guidelines",
     "stylelint-a11y/recommended",
     "stylelint-prettier/recommended"
   ],
   "rules": {
-    "max-nesting-depth": 2
+    "max-nesting-depth": 2,
+    "declaration-no-important": true,
+    "font-weight-notation": "named-where-possible",
+    "color-hex-length": "short",
+    "selector-pseudo-element-colon-notation": "double"
   }
 }
