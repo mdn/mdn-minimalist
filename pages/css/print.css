@@ -1,0 +1,107 @@
+/* 
+ * TODO: Some serious cleanup required here.
+ */
+/******* this file cannot reference _mixins ******/
+/*
+vendors
+====================================================================== */
+/* our custom variable for prefixing */
+/* custom list of properties and their valid prefixes for vendors we support */
+/* 
+ * TODO: We probably do not need this any longer.
+ * If this is still useful, we should determine which
+ * of the prefixes still make sense to keep around.
+ */
+/*
+colors
+====================================================================== */
+/* TODO */
+/*
+typography
+====================================================================== */
+/* prism */
+/* inline */
+/*
+sizes
+====================================================================== */
+/* bumps */
+/*
+forms
+====================================================================== */
+/*
+grid
+====================================================================== */
+/*
+grid - 12 columns assuming a 3% margin
+-------------------------------------------------------------- */
+/*
+breakpoints & media queries
+====================================================================== */
+/*
+break points
+- developers understand pixel values better
+- ems is a better user experience, because design handles text resizing better
+- divide pixels by browser default font size (16px)
+- and multiply by 1em to convert unit to em.
+*/
+/*
+media queries
+- MDN should be coded "mobile first"
+- when coding features, begin by coding the mobile presentation as default
+- use the min-width MQs to modify presentation for larger screens
+*/
+/* Moves nav items all the way to the left, moves logo above */
+/* Moves nav menu items to block, its own line */
+/* avoid using these media queries, code mobile first */
+/*
+animation
+====================================================================== */
+/*
+dimensions
+====================================================================== */
+/* The default icon size for inline indicator icons */
+/*
+forms
+====================================================================== */
+/*
+selectors
+====================================================================== */
+/*
+paths
+====================================================================== */
+/*
+svg icons base paths
+svg icons located in jinja2/includes/icons
+====================================================================== */
+/*
+edit-mode customizations - applied to blocks only in edit mode
+====================================================================== */
+/*
+z-index
+====================================================================== */
+/* needs to be above main-nav */
+/* needs to be above main-nav */
+header,
+.notification-tray,
+.global-notice,
+.nav-footer,
+.contributors,
+.crumbs,
+.breadcrumbs,
+a.edit-section,
+.page-buttons,
+.open-in-host-container,
+.newsletter-box,
+#page-attachments,
+#offline-dialog-content,
+#wiki-left {
+  display: none; }
+
+.center {
+  padding-left: 0;
+  padding-right: 0; }
+
+/* hide print button on tablets since they are less likely to be hooked up to a printer */
+@media all and (max-width: 63.9375em) {
+  .page-print {
+    display: none; } }

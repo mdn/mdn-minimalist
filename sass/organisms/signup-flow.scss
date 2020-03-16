@@ -2,6 +2,5 @@
 Styling for the new user signup flow
 ======================================================================
 */
-@import "../../includes/vars";
-
-@import "../components/auth-service-header";
+@import "../vars/vars";
+@import "../components/auth/auth-service-header";

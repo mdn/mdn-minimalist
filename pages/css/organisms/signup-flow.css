@@ -1,0 +1,135 @@
+/*
+Styling for the new user signup flow
+======================================================================
+*/
+/* 
+ * TODO: Some serious cleanup required here.
+ */
+/******* this file cannot reference _mixins ******/
+/*
+vendors
+====================================================================== */
+/* our custom variable for prefixing */
+/* custom list of properties and their valid prefixes for vendors we support */
+/* 
+ * TODO: We probably do not need this any longer.
+ * If this is still useful, we should determine which
+ * of the prefixes still make sense to keep around.
+ */
+/*
+colors
+====================================================================== */
+/* TODO */
+/*
+typography
+====================================================================== */
+/* prism */
+/* inline */
+/*
+sizes
+====================================================================== */
+/* bumps */
+/*
+forms
+====================================================================== */
+/*
+grid
+====================================================================== */
+/*
+grid - 12 columns assuming a 3% margin
+-------------------------------------------------------------- */
+/*
+breakpoints & media queries
+====================================================================== */
+/*
+break points
+- developers understand pixel values better
+- ems is a better user experience, because design handles text resizing better
+- divide pixels by browser default font size (16px)
+- and multiply by 1em to convert unit to em.
+*/
+/*
+media queries
+- MDN should be coded "mobile first"
+- when coding features, begin by coding the mobile presentation as default
+- use the min-width MQs to modify presentation for larger screens
+*/
+/* Moves nav items all the way to the left, moves logo above */
+/* Moves nav menu items to block, its own line */
+/* avoid using these media queries, code mobile first */
+/*
+animation
+====================================================================== */
+/*
+dimensions
+====================================================================== */
+/* The default icon size for inline indicator icons */
+/*
+forms
+====================================================================== */
+/*
+selectors
+====================================================================== */
+/*
+paths
+====================================================================== */
+/*
+svg icons base paths
+svg icons located in jinja2/includes/icons
+====================================================================== */
+/*
+edit-mode customizations - applied to blocks only in edit mode
+====================================================================== */
+/*
+z-index
+====================================================================== */
+/* needs to be above main-nav */
+/* needs to be above main-nav */
+.auth-service-header {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+  padding: 0;
+  max-width: 750px;
+  text-align: center;
+  font-weight: bold; }
+  .auth-service-header .github-auth,
+  .auth-service-header .google-auth,
+  .auth-service-header .mdn-profile {
+    position: relative;
+    max-width: 140px; }
+    @media all and (min-width: 47.9385em) {
+      .auth-service-header .github-auth,
+      .auth-service-header .google-auth,
+      .auth-service-header .mdn-profile {
+        max-width: unset; } }
+  .auth-service-header .github-auth img,
+  .auth-service-header .google-auth img,
+  .auth-service-header .mdn-profile img {
+    display: block;
+    margin: 0 auto;
+    border: 10px solid #fff;
+    border-radius: 50%; }
+  .auth-service-header .checked::after {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 30px;
+    background: transparent url("../../../general/auth-checkmark.svg") 0 0 no-repeat;
+    content: "";
+    background-size: 20px;
+    width: 20px;
+    height: 20px; }
+    @media all and (min-width: 47.9385em) {
+      .auth-service-header .checked::after {
+        right: 40px;
+        background-size: 25px;
+        width: 25px;
+        height: 25px; } }
+  .auth-service-header .mdn-profile::after {
+    right: 30px; }
+    @media all and (min-width: 47.9385em) {
+      .auth-service-header .mdn-profile::after {
+        right: 20px; } }
+  .auth-service-header .lead-in {
+    text-align: center; }

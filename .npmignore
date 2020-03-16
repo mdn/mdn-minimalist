@@ -4,6 +4,7 @@ css
 dist
 pages
 tests
+.prettierignore
 .prettierrc
 .stylelintrc.json
 yarn.lock

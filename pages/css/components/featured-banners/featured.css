@@ -1,0 +1,312 @@
+/* 
+ * TODO: Some serious cleanup required here.
+ */
+/******* this file cannot reference _mixins ******/
+/*
+vendors
+====================================================================== */
+/* our custom variable for prefixing */
+/* custom list of properties and their valid prefixes for vendors we support */
+/* 
+ * TODO: We probably do not need this any longer.
+ * If this is still useful, we should determine which
+ * of the prefixes still make sense to keep around.
+ */
+/*
+colors
+====================================================================== */
+/* TODO */
+/*
+typography
+====================================================================== */
+/* prism */
+/* inline */
+/*
+sizes
+====================================================================== */
+/* bumps */
+/*
+forms
+====================================================================== */
+/*
+grid
+====================================================================== */
+/*
+grid - 12 columns assuming a 3% margin
+-------------------------------------------------------------- */
+/*
+breakpoints & media queries
+====================================================================== */
+/*
+break points
+- developers understand pixel values better
+- ems is a better user experience, because design handles text resizing better
+- divide pixels by browser default font size (16px)
+- and multiply by 1em to convert unit to em.
+*/
+/*
+media queries
+- MDN should be coded "mobile first"
+- when coding features, begin by coding the mobile presentation as default
+- use the min-width MQs to modify presentation for larger screens
+*/
+/* Moves nav items all the way to the left, moves logo above */
+/* Moves nav menu items to block, its own line */
+/* avoid using these media queries, code mobile first */
+/*
+animation
+====================================================================== */
+/*
+dimensions
+====================================================================== */
+/* The default icon size for inline indicator icons */
+/*
+forms
+====================================================================== */
+/*
+selectors
+====================================================================== */
+/*
+paths
+====================================================================== */
+/*
+svg icons base paths
+svg icons located in jinja2/includes/icons
+====================================================================== */
+/*
+edit-mode customizations - applied to blocks only in edit mode
+====================================================================== */
+/*
+z-index
+====================================================================== */
+/* needs to be above main-nav */
+/* needs to be above main-nav */
+/* 
+ * TODO: Some serious cleanup required here.
+ */
+/*
+Provides main mixins for use within the MDN theme.
+********************************************************************** */
+/*
+Accessibility helpers
+====================================================================== */
+/* When changing the values of this mixin, remember to also update the
+   relevant test at __tests__/sass/mdn/_a11y-helpers-mixins-test.scss */
+/*
+Vendor prefixes
+====================================================================== */
+/*
+Prevent last child spacing
+====================================================================== */
+/*
+Links
+====================================================================== */
+/*
+Colours
+====================================================================== */
+/*
+    creates a hex fallback of a property using an rgba value
+    will use white as the background matte if no colour is provided
+    */
+/* generates a cross-browser gradient */
+/* uses the white logo instead of color logo */
+/*
+function to apply all the generated colors to a notification to theme it
+-------------------------------------------------------------- */
+/*
+coloured boxes
+-------------------------------------------------------------- */
+/* =================================================================== */
+/* generates the essential "before" and "after" code for pseudo-arrows */
+/* =================================================================== */
+/* used to create sliding animations */
+/* =================================================================== */
+/* sets the base styles for messages (review, warning, error, notice, etc.) */
+/*
+Spacing
+====================================================================== */
+/* removes the implied "<main>" spacing so page is more customizable */
+/* =================================================================== */
+/* sets an input tag's placeholder styles */
+/*
+Bidi / l10n
+- The bidi mixins are used to declare both the LTR and RTL values for
+  a property together and output appropriate declarations
+- This makes it easier to maintain the RTL version since you only have
+  to update values in one place.
+====================================================================== */
+/*
+    @mixin bidi
+    accepts: a list of lists - each list must have 3 or 4 values
+
+    A list with three properties overrides the ltr value in rtl locales
+    @include bidi(((float, left, right),))
+    LTR: float: left;
+    RTL: float: right;
+
+    A list with four properties overrides the ltr value in rtl locales
+    AND provides a new rtl only property value
+    @include bidi(((margin-right, 20px, margin-left, 0),))
+    LTR: margin-right: 10px;
+    RTL: margin-right: 0;
+         margin-left: 10px;
+
+    Example input:
+    .test {
+        @include bidi((
+            (float, left, right),
+            (margin-right, ($grid-spacing / 2), margin-left, 0),
+        ));
+    }
+
+    Example output:
+    .test {
+        float: left;
+        margin-right: 10px;
+    }
+    html[dir='rtl'] .test {
+        float: right;
+        margin-right: 0;
+        margin-left: 10px;
+    }
+}
+*/
+/*
+    @mixin bidi-value-vendorize
+    - adds vendor prefixes to property
+    - does not support multiple declarations
+    - does support !important with optional 4th parameter
+
+    Example input:
+
+    .test {
+        @include bidi-value-vendorize(transform, rotate(90deg), rotate(-90deg));
+    }
+
+    Example output:
+
+    .test {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    html[dir='rtl'] .test {
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+}
+*/
+/* =================================================================== */
+/*
+MIXINS LIKE CLASSES
+These are not dynamic but serve as mixins
+====================================================================== */
+/*
+pull aside
+- assumes content has a bottom margin of its own
+- floats to the right until there's not enough space for it
+-------------------------------------------------------------- */
+/*
+Placeholders
+====================================================================== */
+/* Styles for code blocks - used for wiki document and WYSIWYG editor */
+/*
+Grid
+====================================================================== */
+/*
+grid - 12 columns assuming a 3% margin
+-------------------------------------------------------------- */
+/*
+Featured callout
+-------------------------------------------------------------- */
+.callout-featured {
+  box-sizing: border-box;
+  background: #fff url("../../../../img/embed/promos/grid-tools-bg.svg") 0 100% no-repeat;
+  background-size: contain;
+  border: 1px solid #cdcdcd; }
+  .callout-featured a {
+    position: relative;
+    color: #333;
+    padding: 12px;
+    min-height: 225px; }
+    @supports (display: flex) {
+      .callout-featured a {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between; } }
+    .callout-featured a:before {
+      position: absolute;
+      top: 20%;
+      left: 5%;
+      content: "";
+      display: inline-block;
+      background: transparent url("../../../../img/embed/promos/inactive-css.png") 0 0 no-repeat;
+      background-size: 330px 118px;
+      width: 330px;
+      height: 118px;
+      vertical-align: middle; }
+      @media all and (min-width: 47.9385em) {
+        .callout-featured a:before {
+          display: none; } }
+      @media all and (min-width: 63.9385em) {
+        .callout-featured a:before {
+          left: 15%;
+          display: inline-block;
+          background-size: 280px 100px;
+          width: 280px;
+          height: 100px; } }
+      @media all and (min-width: 74.9375em) {
+        .callout-featured a:before {
+          top: 25%;
+          left: 10%;
+          background-size: 330px 118px;
+          width: 330px;
+          height: 118px; } }
+    .callout-featured a:hover, .callout-featured a:visited, .callout-featured a:focus, .callout-featured a:active {
+      text-decoration: none;
+      box-shadow: 2px 2px 5px #aaceff; }
+  .callout-featured .main-copy {
+    margin-left: 5px;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    font-family: zillaslab;
+    line-height: 1.2; }
+    .callout-featured .main-copy:before {
+      content: "";
+      display: inline-block;
+      background: transparent url("../../../../img/embed/promos/devedition-logo.png") 0 0 no-repeat;
+      background-size: 40px;
+      /* prettier-ignore */
+      width: 40px;
+      height: 42px;
+      vertical-align: middle; }
+      .callout-featured .main-copy:before {
+        margin-right: 5px; }
+      html[dir='rtl'] .callout-featured .main-copy:before {
+        margin-right: 5px;
+        margin-left: 5px; }
+      @media all and (min-width: 74.9375em) {
+        .callout-featured .main-copy:before {
+          background-size: 50px;
+          width: 50px;
+          height: 52px; } }
+    @media all and (min-width: 47.9385em) {
+      .callout-featured .main-copy {
+        font-size: 1.7rem; } }
+  .callout-featured .callout-subtext {
+    display: block;
+    margin-top: 12px;
+    font-weight: normal; }
+  .callout-featured button {
+    background-color: #015fdf;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    min-width: 170px;
+    text-align: unset;
+    line-height: 1.2; }
+    @supports (display: flex) {
+      .callout-featured button {
+        align-self: flex-end; } }

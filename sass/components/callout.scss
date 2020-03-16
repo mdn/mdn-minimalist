@@ -1,8 +1,8 @@
-@import '../../includes/_vars.scss';
-@import '../vars/_vars-callout.scss';
-@import '../../includes/_mixins.scss';
-@import '../../includes/_mixins_indicators.scss';
+@import "../vars/vars";
+@import "../vars/callout";
+@import "../mixins/base-mixins";
+@import "../mixins/indicators";
 
-@import 'callout-core/_callout-base.scss';
-@import 'callout-core/_callout-standard.scss';
-@import 'callout-core/_callout-home.scss';
+@import "./callout-core/_callout-base.scss";
+@import "./callout-core/_callout-standard.scss";
+@import "./callout-core/_callout-home.scss";
