@@ -1,0 +1,397 @@
+/* 
+ * TODO: Some serious cleanup required here.
+ */
+/******* this file cannot reference _mixins ******/
+/*
+vendors
+====================================================================== */
+/* our custom variable for prefixing */
+/* custom list of properties and their valid prefixes for vendors we support */
+/* 
+ * TODO: We probably do not need this any longer.
+ * If this is still useful, we should determine which
+ * of the prefixes still make sense to keep around.
+ */
+/*
+colors
+====================================================================== */
+/* TODO */
+/*
+typography
+====================================================================== */
+/* prism */
+/* inline */
+/*
+sizes
+====================================================================== */
+/* bumps */
+/*
+forms
+====================================================================== */
+/*
+grid
+====================================================================== */
+/*
+grid - 12 columns assuming a 3% margin
+-------------------------------------------------------------- */
+/*
+breakpoints & media queries
+====================================================================== */
+/*
+break points
+- developers understand pixel values better
+- ems is a better user experience, because design handles text resizing better
+- divide pixels by browser default font size (16px)
+- and multiply by 1em to convert unit to em.
+*/
+/*
+media queries
+- MDN should be coded "mobile first"
+- when coding features, begin by coding the mobile presentation as default
+- use the min-width MQs to modify presentation for larger screens
+*/
+/* Moves nav items all the way to the left, moves logo above */
+/* Moves nav menu items to block, its own line */
+/* avoid using these media queries, code mobile first */
+/*
+animation
+====================================================================== */
+/*
+dimensions
+====================================================================== */
+/* The default icon size for inline indicator icons */
+/*
+forms
+====================================================================== */
+/*
+selectors
+====================================================================== */
+/*
+paths
+====================================================================== */
+/*
+svg icons base paths
+svg icons located in jinja2/includes/icons
+====================================================================== */
+/*
+edit-mode customizations - applied to blocks only in edit mode
+====================================================================== */
+/*
+z-index
+====================================================================== */
+/* needs to be above main-nav */
+/* needs to be above main-nav */
+/* 
+ * TODO: Some serious cleanup required here.
+ */
+/*
+Provides main mixins for use within the MDN theme.
+********************************************************************** */
+/*
+Accessibility helpers
+====================================================================== */
+/* When changing the values of this mixin, remember to also update the
+   relevant test at __tests__/sass/mdn/_a11y-helpers-mixins-test.scss */
+/*
+Vendor prefixes
+====================================================================== */
+/*
+Prevent last child spacing
+====================================================================== */
+/*
+Links
+====================================================================== */
+/*
+Colours
+====================================================================== */
+/*
+    creates a hex fallback of a property using an rgba value
+    will use white as the background matte if no colour is provided
+    */
+/* generates a cross-browser gradient */
+/* uses the white logo instead of color logo */
+/*
+function to apply all the generated colors to a notification to theme it
+-------------------------------------------------------------- */
+/*
+coloured boxes
+-------------------------------------------------------------- */
+/* =================================================================== */
+/* generates the essential "before" and "after" code for pseudo-arrows */
+/* =================================================================== */
+/* used to create sliding animations */
+/* =================================================================== */
+/* sets the base styles for messages (review, warning, error, notice, etc.) */
+/*
+Spacing
+====================================================================== */
+/* removes the implied "<main>" spacing so page is more customizable */
+/* =================================================================== */
+/* sets an input tag's placeholder styles */
+/*
+Bidi / l10n
+- The bidi mixins are used to declare both the LTR and RTL values for
+  a property together and output appropriate declarations
+- This makes it easier to maintain the RTL version since you only have
+  to update values in one place.
+====================================================================== */
+/*
+    @mixin bidi
+    accepts: a list of lists - each list must have 3 or 4 values
+
+    A list with three properties overrides the ltr value in rtl locales
+    @include bidi(((float, left, right),))
+    LTR: float: left;
+    RTL: float: right;
+
+    A list with four properties overrides the ltr value in rtl locales
+    AND provides a new rtl only property value
+    @include bidi(((margin-right, 20px, margin-left, 0),))
+    LTR: margin-right: 10px;
+    RTL: margin-right: 0;
+         margin-left: 10px;
+
+    Example input:
+    .test {
+        @include bidi((
+            (float, left, right),
+            (margin-right, ($grid-spacing / 2), margin-left, 0),
+        ));
+    }
+
+    Example output:
+    .test {
+        float: left;
+        margin-right: 10px;
+    }
+    html[dir='rtl'] .test {
+        float: right;
+        margin-right: 0;
+        margin-left: 10px;
+    }
+}
+*/
+/*
+    @mixin bidi-value-vendorize
+    - adds vendor prefixes to property
+    - does not support multiple declarations
+    - does support !important with optional 4th parameter
+
+    Example input:
+
+    .test {
+        @include bidi-value-vendorize(transform, rotate(90deg), rotate(-90deg));
+    }
+
+    Example output:
+
+    .test {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    html[dir='rtl'] .test {
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+}
+*/
+/* =================================================================== */
+/*
+MIXINS LIKE CLASSES
+These are not dynamic but serve as mixins
+====================================================================== */
+/*
+pull aside
+- assumes content has a bottom margin of its own
+- floats to the right until there's not enough space for it
+-------------------------------------------------------------- */
+/*
+Placeholders
+====================================================================== */
+/* Styles for code blocks - used for wiki document and WYSIWYG editor */
+/*
+Grid
+====================================================================== */
+/*
+grid - 12 columns assuming a 3% margin
+-------------------------------------------------------------- */
+/*
+Mixins for indicators
+********************************************************************** */
+/*
+block indicators aka banners
+====================================================================== */
+/*
+inline indicators aka badges
+====================================================================== */
+/*
+ * icon styling for indicator icons needs to be separate because
+ * .spec-* extends `%indicator-inline` into some :before content
+ *
+ * This also can't extend `%indicator-with-icon`, as `%indicator-inline-icon`
+ * is applied to all inline indicators to ensure consistent inline icon spacing,
+ * whereas `%indicator-with-icon` is used to add inline padding.
+ */
+/*
+icons for both indicator types
+====================================================================== */
+/*
+Base CSS rules used for both set-icon and set-inline-icon
+====================================================================== */
+/*
+Styling for block level icons
+====================================================================== */
+/*
+Styling for inline icons
+====================================================================== */
+/*
+colours for both indicator types
+====================================================================== */
+/*
+colorful callouts
+********************************************************************** */
+.column-callout {
+  margin-bottom: 20px;
+  background: #00539f; }
+  .column-callout > a {
+    display: block;
+    min-height: 170px;
+    position: relative;
+    overflow: hidden;
+    font-size: 19px;
+    font-size: 1.05556rem; }
+    .column-callout > a:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 20px;
+      /* prettier-ignore */
+      height: 90px;
+      width: 90px; }
+      .column-callout > a:after {
+        right: 20px; }
+      html[dir='rtl'] .column-callout > a:after {
+        right: auto;
+        left: 20px; }
+    .column-callout > a:before {
+      position: absolute;
+      bottom: 11px;
+      /* prettier-ignore */
+      display: inline-block;
+      content: '';
+      background-image: url("../../../arrows/arrow-right.svg");
+      right: 20px;
+      left: auto;
+      background-size: 16px;
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 20px;
+      z-index: 4; }
+      html[dir='rtl'] .column-callout > a:before {
+        background-image: url("../../../arrows/arrow-left.svg");
+        right: 20px;
+        left: auto; }
+  .column-callout span {
+    position: absolute;
+    z-index: 1;
+    bottom: -2px;
+    /* prettier-ignore */
+    box-sizing: border-box; }
+    .column-callout span {
+      padding: 20px 110px 20px 20px; }
+    html[dir='rtl'] .column-callout span {
+      padding: 20px 20px 20px 110px; }
+
+@media all and (min-width: 47.9385em) and (max-width: 63.9375em) {
+  .column-callout a:after {
+    display: none; }
+  .column-callout span {
+    /* prettier-ignore */ }
+    .column-callout span {
+      padding: 20px 3em 20px 20px; }
+    html[dir='rtl'] .column-callout span {
+      padding: 20px 20px 20px 3em; } }
+
+@media all and (min-width: 47.9385em) {
+  .column-callout {
+    width: 31.33333%;
+    margin-bottom: 0; } }
+
+/*
+Standard callout
+-------------------------------------------------------------- */
+.callout-standard {
+  background-color: #83d0f2; }
+  .callout-standard a {
+    font-size: 14px;
+    font-size: 0.77778rem;
+    font-weight: bold; }
+    .callout-standard a:after {
+      display: none;
+      /* prettier-ignore */
+      height: 140px;
+      top: 15px;
+      width: 129px; }
+      .callout-standard a:after {
+        right: 20px; }
+      html[dir='rtl'] .callout-standard a:after {
+        right: auto;
+        left: 20px; }
+      @media all and (min-width: 29.9385em) and (max-width: 47.9375em) {
+        .callout-standard a:after {
+          display: block; } }
+      @media all and (min-width: 74.9375em) {
+        .callout-standard a:after {
+          display: block; } }
+      @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) {
+        .callout-standard a:after {
+          background-size: 129px 140px; } }
+    .callout-standard a:before {
+      content: none;
+      display: none; }
+  .callout-standard span {
+    padding: 20px; }
+    @media all and (min-width: 29.9385em) and (max-width: 47.9375em) {
+      .callout-standard span {
+        /* prettier-ignore */ }
+        .callout-standard span {
+          padding: 20px 169px 20px 20px; }
+        html[dir='rtl'] .callout-standard span {
+          padding: 20px 20px 20px 169px; } }
+    @media all and (min-width: 74.9375em) {
+      .callout-standard span {
+        /* prettier-ignore */ }
+        .callout-standard span {
+          padding: 20px 169px 20px 20px; }
+        html[dir='rtl'] .callout-standard span {
+          padding: 20px 20px 20px 169px; } }
+  .callout-standard p {
+    margin-bottom: 0; }
+  .callout-standard .callout-subtext {
+    font-size: 18px;
+    font-size: 1rem; }
+  .callout-standard button {
+    /* prettier-ignore */
+    background: #fff;
+    border: 2px solid;
+    border-radius: 0;
+    box-shadow: none;
+    color: #000;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 14px;
+    padding: 9px;
+    text-transform: none; }
+    .callout-standard button {
+      text-align: left; }
+    html[dir='rtl'] .callout-standard button {
+      text-align: right;
+      text-align: left; }
+
+/*
+callouts wrapper
+********************************************************************** */
+.home-callouts .column-container {
+  padding: 20px 0; }

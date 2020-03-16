@@ -1,10 +1,11 @@
-@import '../vars/_vars-media-queries.scss';
-@import '../vars/_vars-color-palette.scss';
+@import "../../vars/media-queries";
+@import "../../vars/color-palette.scss";
+@import "../../vars/color.scss";
 
-@import '../utils/utility-mixins.scss';
+@import "../../utils/utility-mixins";
 
-@import '../molecules/buttons.scss';
+@import "../../atoms/buttons";
 
-@import '../components/modal.scss';
-@import '../components/card.scss';
-@import '../components/auth-providers.scss';
+@import "../modal";
+@import "../card";
+@import "./auth-providers";

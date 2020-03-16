@@ -1,0 +1,277 @@
+/*
+media queries
+- MDN should be coded "mobile first"
+- when coding features, begin by coding the mobile presentation as default
+- use the min-width MQs to modify presentation for larger screens
+*/
+/* 
+ * TODO: Merge with _color-palette.scss and cleanup.
+ * There are just to many colors ro choose from :)
+ */
+/* MDN SCHEME
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* MDN GENERAL
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* TODO */
+/* MDN STATES
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* MDN TOC WIKI
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* MDN EXAMPLES SYNTAX
+kuma/static/styles/components/syntax/example.scss
+--------------------------------------------------
+*/
+/* MDN PROMOTE
+kuma/static/styles/promote.scss
+--------------------------------------------------
+*/
+/* MDN CONTENT
+kuma/static/styles/components/content.scss
+This table style is also defined in 
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* MDN TAGS
+kuma/static/styles/components/tags.scss
+--------------------------------------------------
+*/
+/* MDN FORMS
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* MDN USERS
+kuma/static/styles/components/users/_vars.scss
+--------------------------------------------------
+*/
+/* MDN BANNERS
+kuma/static/styles/components/banners/_vars.scss
+--------------------------------------------------
+*/
+/* MDN PAYMENTS
+kuma/static/styles/components/payments/_vars.scss
+--------------------------------------------------
+*/
+/* MDN BCD
+Not using site default colours, to increase difference
+between colours for colour blind users
+kuma/static/styles/components/compat-tables/_vars.scss
+--------------------------------------------------
+*/
+/* MDN MAIN-NAV
+kuma/static/styles/components/structure/page-header/_vars_nav.scss
+-------------------------------------------------------------------
+*/
+/* Hide an element visually, but not from screen readers */
+/* Base for auth buttons */
+.auth-button {
+  display: block;
+  margin: 10px;
+  padding: 10px 0;
+  border: 2px solid #015fdf;
+  border-radius: 2px;
+  min-width: 280px;
+  font-weight: bold;
+  text-align: center; }
+  @media all and (min-width: 47.9385em) {
+    .auth-button {
+      min-width: 330px; } }
+  .auth-button::before {
+    display: inline-block;
+    content: "";
+    background-size: 24px;
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    vertical-align: text-bottom; }
+  .auth-button:hover, .auth-button:focus {
+    text-decoration: none;
+    box-shadow: 5px 5px 5px #a1b4ce; }
+
+/* A button that resembles a text link. These should
+   be use sparingly and *only* when a button truly is
+   the correct element */
+.simple-text {
+  background: none;
+  color: #3d7e9a;
+  border: 0; }
+
+.button-base, .cta {
+  background: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+.cta {
+  min-width: 200px;
+  min-height: 40px; }
+
+.primary {
+  background-color: #015fdf;
+  color: #fff; }
+  .primary:hover, .primary:active, .primary:focus {
+    background-color: #014cb2; }
+
+/* A button used inline. for exmaple at the end
+   of a string of text - ex. Change my name? [ button ] */
+.inline {
+  min-width: auto;
+  min-height: 30px; }
+
+/* Button states */
+.negative,
+.positive,
+a.negative,
+a.positive,
+a.disabled,
+button.negative,
+button.positive,
+button.disabled {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 3px solid #000;
+  border-radius: 3px;
+  min-height: 28px;
+  font-weight: bold;
+  box-sizing: content-box;
+  text-decoration: none; }
+
+.negative,
+a.negative,
+button.negative {
+  color: #d65752;
+  border-color: #d65752; }
+  .negative:hover, .negative:focus, .negative:active,
+  a.negative:hover,
+  a.negative:focus,
+  a.negative:active,
+  button.negative:hover,
+  button.negative:focus,
+  button.negative:active {
+    background-color: #d65752;
+    color: #fff; }
+
+.positive,
+a.positive,
+button.positive {
+  color: #4d9f0c;
+  border-color: #4d9f0c; }
+  .positive:hover, .positive:focus, .positive:active,
+  a.positive:hover,
+  a.positive:focus,
+  a.positive:active,
+  button.positive:hover,
+  button.positive:focus,
+  button.positive:active {
+    background-color: #4d9f0c;
+    color: #fff; }
+    .positive:hover svg, .positive:focus svg, .positive:active svg,
+    a.positive:hover svg,
+    a.positive:focus svg,
+    a.positive:active svg,
+    button.positive:hover svg,
+    button.positive:focus svg,
+    button.positive:active svg {
+      fill: #fff; }
+
+a.disabled,
+button.disabled {
+  background-color: #aeb7c2;
+  color: #333;
+  border-color: #aeb7c2;
+  opacity: 1; }
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 400; }
+  .modal section {
+    position: relative; }
+  .modal .close-modal {
+    position: absolute;
+    top: -17px;
+    right: -23px;
+    background: none;
+    border: 0; }
+    .modal .close-modal span {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      width: 1px; }
+    .modal .close-modal::before {
+      display: block;
+      content: '';
+      background: transparent url("../../../general/close-modal.svg") 0 0 no-repeat;
+      background-size: 24px;
+      width: 24px;
+      height: 24px; }
+
+@supports (display: flex) {
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .modal section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 20px; } }
+
+.delete-user {
+  background-color: #fdfdfd;
+  border: 1px solid #dce3e5;
+  border-radius: 4px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 550px; }
+  .delete-user h2,
+  .delete-user p,
+  .delete-user ul {
+    padding: 0 20px;
+    text-align: center; }
+  .delete-user header {
+    text-align: center; }
+  .delete-user p {
+    padding: 0;
+    text-align: left; }
+  .delete-user form {
+    text-align: right; }
+    .delete-user form .simple-text {
+      background: none;
+      color: #3d7e9a;
+      border: 0;
+      margin-right: 10px; }
+    .delete-user form .error-message {
+      color: #d65752;
+      margin: 12px 0;
+      font-weight: bold; }
+    .delete-user form ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: left; }
+      .delete-user form ul li {
+        margin-bottom: 12px; }
+        .delete-user form ul li:last-child {
+          margin-bottom: 24px; }
+
+.hidden {
+  display: none; }

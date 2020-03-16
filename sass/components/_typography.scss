@@ -1,6 +1,3 @@
-@import "../vars/dimension-vars";
-@import "../mixins/typography-mixins";
-
 /*Typography */
 h1 {
   @include heading-1();

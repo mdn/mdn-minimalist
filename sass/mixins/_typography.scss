@@ -1,6 +1,3 @@
-@import "../vars/typography-vars";
-@import "../vars/media-query-vars";
-
 @mixin set-heading-font-family() {
   font-family: $heading-font-family;
 }

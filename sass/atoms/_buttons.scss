@@ -1,3 +1,35 @@
+/* Base for auth buttons */
+.auth-button {
+  display: block;
+  margin: 10px;
+  padding: 10px 0;
+  border: 2px solid $brand-primary;
+  border-radius: 2px;
+  min-width: 280px;
+  font-weight: bold;
+  text-align: center;
+
+  @media #{$mq-tablet-and-up} {
+    min-width: 330px;
+  }
+
+  &::before {
+    display: inline-block;
+    content: "";
+    background-size: 24px;
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    vertical-align: text-bottom;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    box-shadow: $button-box-shadow;
+  }
+}
+
 /* A button that resembles a text link. These should
    be use sparingly and *only* when a button truly is
    the correct element */
@@ -5,6 +37,24 @@
   background: none;
   color: $link-color;
   border: 0;
+}
+
+@mixin github-auth-button() {
+  @extend .auth-button;
+
+  &::before {
+    background: transparent url("../../../auth/github-auth.svg") 0 0 no-repeat;
+  }
+}
+
+@mixin google-auth-button() {
+  @extend .auth-button;
+
+  /* icon use based on the following guidelines:
+       https://developers.google.com/identity/branding-guidelines */
+  &::before {
+    background: transparent url("../../../auth/google-auth.svg") 0 0 no-repeat;
+  }
 }
 
 .simple-text {

@@ -3,7 +3,7 @@
   "version": "0.0.1-semantically-released",
   "description": "The base Sass for Mozilla Developer based projects and products",
   "scripts": {
-    "build:sass": "node-sass-chokidar ./sass/mdn-minimalist.scss -o ./pages/css/",
+    "build:sass": "node-sass-chokidar ./sass/ -o ./pages/css/",
     "dev": "parcel pages/reference.html",
     "lint": "stylelint sass/**/*.scss",
     "precommit": "npm run prettier:staged",
