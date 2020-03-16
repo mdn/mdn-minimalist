@@ -1,6 +1,7 @@
 .cache
 .github
 css
+dist
 pages
 tests
 .prettierrc
