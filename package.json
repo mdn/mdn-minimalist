@@ -39,7 +39,7 @@
     "node-sass": "4.13.1",
     "node-sass-chokidar": "1.4.0",
     "parcel-bundler": "1.12.4",
-    "prettier": "^1.19.1",
+    "prettier": "^2.0.4",
     "pretty-quick": "^2.0.1",
     "sass": "^1.26.3",
     "sass-true": "5.0.0",
