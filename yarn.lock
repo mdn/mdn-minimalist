@@ -7353,13 +7353,6 @@ stylelint-config-prettier@^8.0.1:
   resolved "https://registry.yarnpkg.com/stylelint-config-prettier/-/stylelint-config-prettier-8.0.1.tgz#ec7cdd7faabaff52ebfa56c28fed3d995ebb8cab"
   integrity sha512-RcjNW7MUaNVqONhJH4+rtlAE3ow/9SsAM0YWV0Lgu3dbTKdWTa/pQXRdFWgoHWpzUKn+9oBKR5x8JdH+20wmgw==
 
-stylelint-config-recommended-scss@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-recommended-scss/-/stylelint-config-recommended-scss-4.2.0.tgz#3ad3fc858215cfd16a0f90aecf1ac0ea8a3e6971"
-  integrity sha512-4bI5BYbabo/GCQ6LbRZx/ZlVkK65a1jivNNsD+ix/Lw0U3iAch+jQcvliGnnAX8SUPaZ0UqzNVNNAF3urswa7g==
-  dependencies:
-    stylelint-config-recommended "^3.0.0"
-
 stylelint-config-recommended@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-3.0.0.tgz#e0e547434016c5539fe2650afd58049a2fd1d657"
@@ -8214,13 +8207,6 @@ yaml@^1.7.2:
 yargs-parser@^15.0.0:
   version "15.0.0"
   resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-15.0.0.tgz#cdd7a97490ec836195f59f3f4dbe5ea9e8f75f08"
-  dependencies:
-    camelcase "^5.0.0"
-    decamelize "^1.2.0"
-
-yargs-parser@^16.1.0:
-  version "16.1.0"
-  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-16.1.0.tgz#73747d53ae187e7b8dbe333f95714c76ea00ecf1"
   dependencies:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
