@@ -9,8 +9,6 @@
   "rules": {
     "max-nesting-depth": 2,
     "declaration-no-important": true,
-    "font-weight-notation": "named-where-possible",
-    "color-hex-length": "short",
-    "selector-pseudo-element-colon-notation": "double"
+    "font-weight-notation": "named-where-possible"
   }
 }
