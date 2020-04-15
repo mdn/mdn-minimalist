@@ -1,10 +1,6 @@
 /* Fonts */
 /* Based on a modular scale with a base of 18px and a 
    perfect fourth ratio of 1.333 - https://www.modularscale.com/?18&px&1.333 */
-/* 
- * TODO: Merge with _color-palette.scss and cleanup.
- * There are just to many colors ro choose from :)
- */
 /* MDN SCHEME
 kuma/static/styles/includes/_vars.scss
 --------------------------------------------------

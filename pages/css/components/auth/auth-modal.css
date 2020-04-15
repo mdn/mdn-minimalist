@@ -4,10 +4,6 @@ media queries
 - when coding features, begin by coding the mobile presentation as default
 - use the min-width MQs to modify presentation for larger screens
 */
-/* 
- * TODO: Merge with _color-palette.scss and cleanup.
- * There are just to many colors ro choose from :)
- */
 /* MDN SCHEME
 kuma/static/styles/includes/_vars.scss
 --------------------------------------------------

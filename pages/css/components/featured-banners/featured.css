@@ -217,6 +217,67 @@ Grid
 /*
 grid - 12 columns assuming a 3% margin
 -------------------------------------------------------------- */
+/* MDN SCHEME
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* MDN GENERAL
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* TODO */
+/* MDN STATES
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* MDN TOC WIKI
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* MDN EXAMPLES SYNTAX
+kuma/static/styles/components/syntax/example.scss
+--------------------------------------------------
+*/
+/* MDN PROMOTE
+kuma/static/styles/promote.scss
+--------------------------------------------------
+*/
+/* MDN CONTENT
+kuma/static/styles/components/content.scss
+This table style is also defined in 
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* MDN TAGS
+kuma/static/styles/components/tags.scss
+--------------------------------------------------
+*/
+/* MDN FORMS
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* MDN USERS
+kuma/static/styles/components/users/_vars.scss
+--------------------------------------------------
+*/
+/* MDN BANNERS
+kuma/static/styles/components/banners/_vars.scss
+--------------------------------------------------
+*/
+/* MDN PAYMENTS
+kuma/static/styles/components/payments/_vars.scss
+--------------------------------------------------
+*/
+/* MDN BCD
+Not using site default colours, to increase difference
+between colours for colour blind users
+kuma/static/styles/components/compat-tables/_vars.scss
+--------------------------------------------------
+*/
+/* MDN MAIN-NAV
+kuma/static/styles/components/structure/page-header/_vars_nav.scss
+-------------------------------------------------------------------
+*/
 /*
 Featured callout
 -------------------------------------------------------------- */
