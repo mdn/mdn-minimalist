@@ -4,13 +4,12 @@
   "description": "The base Sass for Mozilla Developer based projects and products",
   "scripts": {
     "build:sass": "node-sass-chokidar ./sass/ -o ./pages/css/",
-    "dev": "parcel pages/reference.html",
     "lint": "stylelint sass/**/*.scss",
     "precommit": "npm run prettier:staged",
     "prettier:check": "prettier --check **/*.scss",
     "prettier:format": "prettier --write **/*.scss",
     "prettier:staged": "pretty-quick --staged --pattern \"**/*.scss\"",
-    "start": "dev",
+    "start": "parcel pages/reference.html",
     "test": "jest"
   },
   "repository": {
