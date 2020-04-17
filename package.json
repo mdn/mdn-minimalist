@@ -10,7 +10,7 @@
     "prettier:check": "prettier --check **/*.scss",
     "prettier:format": "prettier --write **/*.scss",
     "prettier:staged": "pretty-quick --staged --pattern \"**/*.scss\"",
-    "start": "http-server ./pages",
+    "start": "dev",
     "test": "jest"
   },
   "repository": {
@@ -33,7 +33,6 @@
   "devDependencies": {
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "3.1.0",
-    "http-server": "^0.12.1",
     "husky": "^4.2.3",
     "jest": "25.3.0",
     "node-sass": "4.13.1",

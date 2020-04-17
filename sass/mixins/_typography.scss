@@ -9,36 +9,22 @@
 
 @mixin heading-1() {
   font-size: $h1-font-size;
-  @include set-heading-font-family();
-  line-height: $h1-heading-line-height;
 }
 
 @mixin heading-2() {
-  font-size: $mobile-h2-font-size;
-  @include set-heading-font-family();
-  line-height: $heading-line-height;
-
-  @media #{$mq-tablet-and-up} {
-    font-size: $h2-font-size;
-  }
+  font-size: $h2-font-size;
 }
 
 @mixin heading-3() {
   font-size: $h3-font-size;
-  @include set-heading-font-family();
-  line-height: $heading-line-height;
 }
 
 @mixin heading-4() {
   font-size: $h4-font-size;
-  @include set-heading-font-family();
-  line-height: $heading-line-height;
 }
 
 @mixin heading-5() {
   font-size: $h5-font-size;
-  @include set-heading-font-family();
-  line-height: $heading-line-height;
 }
 
 @mixin font-smoothing() {
