@@ -217,6 +217,8 @@ Grid
 /*
 grid - 12 columns assuming a 3% margin
 -------------------------------------------------------------- */
+/* should be defined in `atoms/_borders.scss` */
+/* should be defined in `atoms/....scss` - TBD */
 /* MDN SCHEME
 kuma/static/styles/includes/_vars.scss
 --------------------------------------------------

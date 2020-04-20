@@ -16,11 +16,13 @@ $link-color: #3d7e9a;
 $border-color: #585858;
 $light-border-color: scale-color($border-color, $lightness: 70%);
 
+/* should be defined in `atoms/_borders.scss` */
 $light-thin-border: 1px solid #dce3e5;
 
 $warning-border-color: #ffc543;
 $warning-background-color: scale-color($warning-border-color, $lightness: 50%);
 
+/* should be defined in `atoms/....scss` - TBD */
 $featured-banner-hover-shadow: 2px 2px 5px
   scale-color($brand-primary, $lightness: 70%);
 $button-box-shadow: 5px 5px 5px $light-blue-grey;
@@ -105,8 +107,8 @@ kuma/static/styles/includes/_vars.scss
 --------------------------------------------------
 */
 $text-color: #333;
-$link-color: #3d7e9a;
 $menu-link-color: $text-color;
+
 $blue-background-text-color: #fff;
 $light-background-color: #{map-get(map-get($colors-lookup, "default"), "light")};
 $header-background-color: $light-background-color;

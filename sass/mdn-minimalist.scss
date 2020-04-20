@@ -1,2 +1,9 @@
-@import "./components/base.scss";
-@import "./components/typography.scss";
+@import "./vars/dimension";
+@import "./vars/color-palette";
+@import "./vars/typography";
+
+@import "./mixins/typography";
+
+@import "./atoms/typography";
+
+@import "./components/base";

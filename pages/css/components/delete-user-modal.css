@@ -4,6 +4,8 @@ media queries
 - when coding features, begin by coding the mobile presentation as default
 - use the min-width MQs to modify presentation for larger screens
 */
+/* should be defined in `atoms/_borders.scss` */
+/* should be defined in `atoms/....scss` - TBD */
 /* MDN SCHEME
 kuma/static/styles/includes/_vars.scss
 --------------------------------------------------

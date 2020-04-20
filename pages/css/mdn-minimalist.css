@@ -1,6 +1,130 @@
+/* borders */
+/* should be defined in `atoms/_borders.scss` */
+/* should be defined in `atoms/....scss` - TBD */
+/* MDN SCHEME
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* MDN GENERAL
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* TODO */
+/* MDN STATES
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* MDN TOC WIKI
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* MDN EXAMPLES SYNTAX
+kuma/static/styles/components/syntax/example.scss
+--------------------------------------------------
+*/
+/* MDN PROMOTE
+kuma/static/styles/promote.scss
+--------------------------------------------------
+*/
+/* MDN CONTENT
+kuma/static/styles/components/content.scss
+This table style is also defined in 
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* MDN TAGS
+kuma/static/styles/components/tags.scss
+--------------------------------------------------
+*/
+/* MDN FORMS
+kuma/static/styles/includes/_vars.scss
+--------------------------------------------------
+*/
+/* MDN USERS
+kuma/static/styles/components/users/_vars.scss
+--------------------------------------------------
+*/
+/* MDN BANNERS
+kuma/static/styles/components/banners/_vars.scss
+--------------------------------------------------
+*/
+/* MDN PAYMENTS
+kuma/static/styles/components/payments/_vars.scss
+--------------------------------------------------
+*/
+/* MDN BCD
+Not using site default colours, to increase difference
+between colours for colour blind users
+kuma/static/styles/components/compat-tables/_vars.scss
+--------------------------------------------------
+*/
+/* MDN MAIN-NAV
+kuma/static/styles/components/structure/page-header/_vars_nav.scss
+-------------------------------------------------------------------
+*/
 /* Fonts */
 /* Based on a modular scale with a base of 18px and a 
-   perfect fourth ratio of 1.333 - https://www.modularscale.com/?18&px&1.333 */
+   perfect fourth ratio of 1.333 - 
+   https://type-scale.com/?size=18&scale=1.333&text=A%20Visual%20Type%20Scale&font=Zilla%20Slab&fontweight=700&bodyfont=Fira%20Sans&bodyfontweight=400&lineheight=1.65&backgroundcolor=white&fontcolor=%23333&preview=false */
+@font-face {
+  font-family: zillaslab;
+  font-display: swap;
+  src: url("../../typography/ZillaSlab-Bold.subset.woff2") format("woff2"), url("../../typography/ZillaSlab-Bold.subset.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: zillaslab, palatino, "Palatino Linotype", serif;
+  line-height: 1.2; }
+
+h1 {
+  font-size: 4.209rem; }
+
+h2 {
+  font-size: 3.157rem; }
+
+h3 {
+  font-size: 2.369rem; }
+
+h4 {
+  font-size: 1.777rem; }
+
+h5 {
+  font-size: 1.333rem; }
+
+p {
+  margin-bottom: 24px; }
+
+/* text links */
+a:link,
+a:visited {
+  color: #3d7e9a;
+  text-decoration: none; }
+  a:link:hover, a:link:focus, a:link:active,
+  a:visited:hover,
+  a:visited:focus,
+  a:visited:active {
+    text-decoration: underline; }
+
+/* mono space elements pre, code, kbd */
+code {
+  background-color: rgba(220, 220, 220, 0.5);
+  box-decoration-break: clone;
+  padding: 0 2px;
+  border-radius: 2px;
+  font-family: consolas, "Liberation Mono", courier, monospace;
+  word-wrap: break-word; }
+
+/* Fonts */
+/* Based on a modular scale with a base of 18px and a 
+   perfect fourth ratio of 1.333 - 
+   https://type-scale.com/?size=18&scale=1.333&text=A%20Visual%20Type%20Scale&font=Zilla%20Slab&fontweight=700&bodyfont=Fira%20Sans&bodyfontweight=400&lineheight=1.65&backgroundcolor=white&fontcolor=%23333&preview=false */
+/* should be defined in `atoms/_borders.scss` */
+/* should be defined in `atoms/....scss` - TBD */
 /* MDN SCHEME
 kuma/static/styles/includes/_vars.scss
 --------------------------------------------------
@@ -86,55 +210,3 @@ body {
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-
-/*Typography */
-h1 {
-  font-size: 4.209rem;
-  font-family: x-locale-heading-primary, zillaslab, palatino, "Palatino Linotype", x-locale-heading-secondary, serif;
-  line-height: 1; }
-
-h2 {
-  font-size: 2.369rem;
-  font-family: x-locale-heading-primary, zillaslab, palatino, "Palatino Linotype", x-locale-heading-secondary, serif;
-  line-height: 1.2; }
-  @media all and (min-width: 47.9385em) {
-    h2 {
-      font-size: 3.157rem; } }
-
-h3 {
-  font-size: 2.369rem;
-  font-family: x-locale-heading-primary, zillaslab, palatino, "Palatino Linotype", x-locale-heading-secondary, serif;
-  line-height: 1.2; }
-
-h4 {
-  font-size: 1.777rem;
-  font-family: x-locale-heading-primary, zillaslab, palatino, "Palatino Linotype", x-locale-heading-secondary, serif;
-  line-height: 1.2; }
-
-h5 {
-  font-size: 1.333rem;
-  font-family: x-locale-heading-primary, zillaslab, palatino, "Palatino Linotype", x-locale-heading-secondary, serif;
-  line-height: 1.2; }
-
-p {
-  margin-bottom: 24px; }
-
-/* text links */
-a:link,
-a:visited {
-  color: #3d7e9a;
-  text-decoration: none; }
-  a:link:hover, a:link:focus, a:link:active,
-  a:visited:hover,
-  a:visited:focus,
-  a:visited:active {
-    text-decoration: underline; }
-
-/* mono space elements pre, code, kbd */
-code {
-  background-color: rgba(220, 220, 220, 0.5);
-  box-decoration-break: clone;
-  padding: 0 2px;
-  border-radius: 2px;
-  font-family: consolas, "Liberation Mono", courier, monospace;
-  word-wrap: break-word; }
