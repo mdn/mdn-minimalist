@@ -40,6 +40,14 @@ p {
   margin-bottom: $content-block-margin;
 }
 
+.tiny-text {
+  font-size: $tiny-text;
+}
+
+.readable-line-length {
+  max-width: $max-line-length;
+}
+
 /* text links */
 a:link,
 a:visited {
