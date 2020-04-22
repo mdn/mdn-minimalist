@@ -1,10 +1,16 @@
 /* Hide an element visually, but not from screen readers */
 @mixin visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
+  position: absolute;
   margin: -1px;
-  overflow: hidden;
   padding: 0;
+  border: 0;
   width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* Keeping the mixin for backwards compatibility */
+.visually-hidden {
+  @include visually-hidden();
 }
