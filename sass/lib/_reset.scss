@@ -70,6 +70,10 @@ select {
 
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
+  /* We are relaxing the `declaration-no-important` here
+     because we want to ensure that code further down the
+     cascade will adhere to this accessibility enhancement */
+  /* stylelint-disable declaration-no-important */
   * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
