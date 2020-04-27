@@ -5291,7 +5291,7 @@ node-sass-chokidar@1.4.0:
     sass-graph "^2.1.1"
     stdout-stream "^1.4.0"
 
-node-sass@4.13, node-sass@4.13.1:
+node-sass@4.13:
   version "4.13.1"
   resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.13.1.tgz#9db5689696bb2eec2c32b98bfea4c7a2e992d0a3"
   dependencies:
