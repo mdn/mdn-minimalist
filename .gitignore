@@ -64,3 +64,8 @@ typings/
 
 .cache
 dist
+
+# project specific
+
+pages/css
+pages/typography
