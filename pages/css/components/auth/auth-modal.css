@@ -68,6 +68,17 @@ kuma/static/styles/components/structure/page-header/_vars_nav.scss
 -------------------------------------------------------------------
 */
 /* Hide an element visually, but not from screen readers */
+/* Keeping the mixin for backwards compatibility */
+.visually-hidden {
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0); }
+
 /* Base for auth buttons */
 .auth-button, .auth-providers .github-auth, .auth-providers .google-auth {
   display: block;
@@ -205,13 +216,14 @@ button.disabled {
     background: none;
     border: 0; }
     .modal .close-modal span {
-      border: 0;
-      clip: rect(0 0 0 0);
-      height: 1px;
+      position: absolute;
       margin: -1px;
-      overflow: hidden;
       padding: 0;
-      width: 1px; }
+      border: 0;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0); }
     .modal .close-modal::before {
       display: block;
       content: '';
