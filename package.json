@@ -12,7 +12,9 @@
     "prettier:staged": "pretty-quick --staged --pattern \"**/*.scss\"",
     "server": "parcel pages/reference.html",
     "start": "run-p build:sass copy server",
-    "test": "jest"
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,9 @@
   },
   "homepage": "https://github.com/schalkneethling/mdn-minimalist#readme",
   "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@storybook/html": "^5.3.18",
+    "babel-loader": "^8.1.0",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "3.1.0",
     "husky": "^4.2.3",
@@ -42,6 +47,7 @@
     "prettier": "^2.0.4",
     "pretty-quick": "^2.0.1",
     "sass": "^1.26.3",
+    "sass-loader": "^8.0.2",
     "sass-true": "5.0.0",
     "stylelint": "^13.2.1",
     "stylelint-a11y": "^1.2.3",
@@ -61,5 +67,6 @@
       "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
       "pre-commit": "yarn run precommit"
     }
-  }
+  },
+  "dependencies": {}
 }
