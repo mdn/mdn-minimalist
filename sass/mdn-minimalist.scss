@@ -1,13 +1,10 @@
-@import "./vars/dimension";
+@import "./lib/reset";
+
+@import "./vars/spacing";
 @import "./vars/color-palette";
 @import "./vars/typography";
 
 @import "./mixins/typography";
 
+@import "./atoms/base";
 @import "./atoms/typography";
-
-@import "./lib/reset";
-
-@import "./components/base";
-
-// @import "./components/breadcrumbs";
