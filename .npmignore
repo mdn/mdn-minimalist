@@ -1,8 +1,10 @@
 .cache
 .github
+.storybook
 css
 dist
 pages
+stories
 tests
 .prettierignore
 .prettierrc
