@@ -1,19 +1,7 @@
-@import "../vars/typography";
-@import "../vars/color-palette";
-@import "../vars/media-queries";
-@import "../vars/dimension";
-@import "../mixins/typography";
-
 html {
   box-sizing: border-box;
   background-color: #fff;
   color: $text-color;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
 }
 
 body {

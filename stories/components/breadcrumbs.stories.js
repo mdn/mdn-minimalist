@@ -1,4 +1,4 @@
-import "../../sass/components/_breadcrumbs.scss";
+import "../../sass/components/breadcrumbs.scss";
 
 export default {
   title: "Components|Breadcrumbs",
