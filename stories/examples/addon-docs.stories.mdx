@@ -1,0 +1,38 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+
+# Storybook Docs for HTML
+
+<Meta title="Addons/Docs" />
+
+## Story definition
+
+Hallelujah! HTML is working out of the box without modification.
+How you like them apples?!
+
+<Story name="heading" height="100px">
+  {'<h1>Hello World</h1>'}
+</Story>
+
+## Function stories
+
+<Story name="function" height="100px">
+  {() => {
+    const btn = document.createElement('button');
+    btn.innerHTML = 'Hello Button';
+    return btn;
+  }}
+</Story>
+
+## Custom source
+
+<Preview>
+  <Story name="custom source" height="100px" parameters={{ docs: { source: { code: 'hello' }}}}>
+    {'<h1>Custom source</h1>'}
+  </Story>
+</Preview>
+
+## Story reference
+
+You can also reference an existing story from within your MDX file.
+
+<Story id="welcome--welcome" height="800px" />
