@@ -1,4 +1,3 @@
-import "../../sass/vars/_color-palette.scss";
 import "../../sass/atoms/_buttons.scss";
 
 export default { title: "Atoms|Buttons" };

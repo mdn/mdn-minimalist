@@ -34,7 +34,6 @@
   },
   "homepage": "https://github.com/schalkneethling/mdn-minimalist#readme",
   "devDependencies": {
-    "@babel/core": "^7.9.6",
     "@storybook/addon-a11y": "^6.0.0-beta.1",
     "@storybook/addon-docs": "^6.0.0-beta.1",
     "@storybook/addon-essentials": "^6.0.0-beta.1",
@@ -44,7 +43,6 @@
     "@storybook/addons": "^6.0.0-beta.1",
     "@storybook/html": "^6.0.0-beta.1",
     "@storybook/source-loader": "^6.0.0-beta.1",
-    "babel-loader": "^8.1.0",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "3.1.0",
     "husky": "^4.2.3",
