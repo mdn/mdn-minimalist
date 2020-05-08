@@ -12,9 +12,7 @@
     "prettier:staged": "pretty-quick --staged --pattern \"**/*.scss\"",
     "server": "parcel pages/reference.html",
     "start": "run-p build:sass copy server",
-    "test": "jest",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -34,15 +32,6 @@
   },
   "homepage": "https://github.com/schalkneethling/mdn-minimalist#readme",
   "devDependencies": {
-    "@storybook/addon-a11y": "^6.0.0-beta.1",
-    "@storybook/addon-docs": "^6.0.0-beta.1",
-    "@storybook/addon-essentials": "^6.0.0-beta.1",
-    "@storybook/addon-knobs": "^6.0.0-beta.1",
-    "@storybook/addon-links": "^6.0.0-beta.1",
-    "@storybook/addon-storysource": "^6.0.0-beta.1",
-    "@storybook/addons": "^6.0.0-beta.1",
-    "@storybook/html": "^6.0.0-beta.1",
-    "@storybook/source-loader": "^6.0.0-beta.1",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "3.2.0",
     "husky": "^4.2.3",
@@ -53,7 +42,6 @@
     "prettier": "^2.0.4",
     "pretty-quick": "^2.0.1",
     "sass": "^1.26.3",
-    "sass-loader": "^8.0.2",
     "sass-true": "5.0.0",
     "stylelint": "^13.2.1",
     "stylelint-a11y": "^1.2.3",
