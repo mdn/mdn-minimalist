@@ -10,5 +10,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "12"
-      - name: Run Jest
-        uses: stefanoeb/jest-action@1.0.2
+      - name: Install dependencies
+        run: |
+          yarn install
+      - name: Run tests
+        run: |
+          yarn test
