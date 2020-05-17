@@ -66,6 +66,4 @@ typings/
 dist
 
 # project specific
-
-pages/css
-pages/typography
+public

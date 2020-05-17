@@ -1,7 +1,7 @@
+name: publish-minimalist
 on:
   push:
     branches: [master]
-name: publish-minimalist
 jobs:
   all:
     name: publish-minimalist

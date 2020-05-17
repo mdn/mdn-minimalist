@@ -1,0 +1,110 @@
+@include describe("button-state") {
+  @include it("Returns the default button state") {
+    @include assert {
+      @include output {
+        @include button-state();
+      }
+
+      @include expect {
+        background-color: #1e7f9d;
+        color: #fff;
+        border: 2px solid #1e7f9d;
+
+        &:hover,
+        &:focus {
+          background-color: #216b82;
+          border-color: #216b82;
+        }
+
+        &:active {
+          background-color: #1e7f9d;
+          border-color: #1e7f9d;
+        }
+      }
+    }
+  }
+}
+
+@include describe("button-state") {
+  @include it("Returns custom button state") {
+    @include assert {
+      @include output {
+        @include button-state(
+          $background-color: $primary-300,
+          $hover-color: $primary-400
+        );
+      }
+
+      @include expect {
+        background-color: #d75752;
+        color: #fff;
+        border: 2px solid #d75752;
+
+        &:hover,
+        &:focus {
+          background-color: #c14238;
+          border-color: #c14238;
+        }
+
+        &:active {
+          background-color: #d75752;
+          border-color: #d75752;
+        }
+      }
+    }
+  }
+}
+
+@include describe("outline-button-state") {
+  @include it("Returns the default outline button state") {
+    @include assert {
+      @include output {
+        @include outline-button-state();
+      }
+
+      @include expect {
+        background-color: #fff;
+        color: #1e7f9d;
+        border-color: #1e7f9d;
+
+        &:hover,
+        &:focus {
+          color: #1e7f9d;
+        }
+      }
+    }
+  }
+}
+
+@include describe("outline-button-state") {
+  @include it("Returns custom outline button state") {
+    @include assert {
+      @include output {
+        @include outline-button-state(
+          $border-color: $primary-300,
+          $hover-color: $primary-400,
+          $active-color: $primary-300,
+          $text-hover-color: $neutral-600
+        );
+      }
+
+      @include expect {
+        background-color: #fff;
+        color: #d75752;
+        border-color: #d75752;
+
+        &:hover,
+        &:focus {
+          background-color: #c14238;
+          color: #fff;
+          border-color: #c14238;
+        }
+
+        &:active {
+          background-color: #d75752;
+          border-color: #d75752;
+        }
+      }
+    }
+  }
+}

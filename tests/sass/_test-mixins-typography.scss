@@ -6,8 +6,7 @@
       }
 
       @include expect {
-        font-family: x-locale-heading-primary, zillaslab, Palatino,
-          "Palatino Linotype", x-locale-heading-secondary, serif;
+        font-family: zillaslab, palatino, "Palatino Linotype", serif;
       }
     }
   }
@@ -21,107 +20,8 @@
       }
 
       @include expect {
-        font-family: Arial, x-locale-body, sans-serif;
+        font-family: arial, x-locale-body, sans-serif;
         letter-spacing: -0.0027777778rem;
-      }
-    }
-  }
-}
-
-@include describe("heading-1") {
-  @include it(
-    "Returns the expected typographic styles for a standard level 1 heading"
-  ) {
-    @include assert {
-      @include output {
-        @include heading-1();
-      }
-
-      @include expect {
-        font-size: 4.209rem;
-        font-family: x-locale-heading-primary, zillaslab, Palatino,
-          "Palatino Linotype", x-locale-heading-secondary, serif;
-        line-height: 1;
-      }
-    }
-  }
-}
-
-@include describe("heading-2") {
-  @include it(
-    "Returns the expected typographic styles for a standard level 2 heading"
-  ) {
-    @include assert {
-      @include output {
-        @include heading-2();
-      }
-
-      @include expect {
-        font-size: 2.369rem;
-        font-family: x-locale-heading-primary, zillaslab, Palatino,
-          "Palatino Linotype", x-locale-heading-secondary, serif;
-        line-height: 1.2;
-
-        @media all and (min-width: 47.9385em) {
-          font-size: 3.157rem;
-        }
-      }
-    }
-  }
-}
-
-@include describe("heading-3") {
-  @include it(
-    "Returns the expected typographic styles for a standard level 3 heading"
-  ) {
-    @include assert {
-      @include output {
-        @include heading-3();
-      }
-
-      @include expect {
-        font-size: 2.369rem;
-        font-family: x-locale-heading-primary, zillaslab, Palatino,
-          "Palatino Linotype", x-locale-heading-secondary, serif;
-        line-height: 1.2;
-      }
-    }
-  }
-}
-
-@include describe("heading-4") {
-  @include it(
-    "Returns the expected typographic styles for a standard level 4 heading"
-  ) {
-    @include assert {
-      @include output {
-        @include heading-4();
-      }
-
-      @include expect {
-        font-size: 1.777rem;
-        font-family: x-locale-heading-primary, zillaslab, Palatino,
-          "Palatino Linotype", x-locale-heading-secondary, serif;
-        line-height: 1.2;
-      }
-    }
-  }
-}
-
-@include describe("heading-5") {
-  @include it(
-    "Returns the expected typographic styles for a standard level 5 heading"
-  ) {
-    @include assert {
-      @include output {
-        @include heading-5();
-      }
-
-      @include expect {
-        font-size: 1.333rem;
-        font-family: x-locale-heading-primary, zillaslab, Palatino,
-          "Palatino Linotype", x-locale-heading-secondary, serif;
-        line-height: 1.2;
       }
     }
   }
