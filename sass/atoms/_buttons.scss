@@ -32,16 +32,13 @@ a.outline {
 
 .danger,
 a.danger {
-  @include button-state(
-    $background-color: $primary-300,
-    $hover-color: $primary-400
-  );
+  @include button-state($bg-color: $primary-300, $bg-hover-color: $primary-400);
 
   &.outline {
     @include outline-button-state(
       $border-color: $primary-300,
-      $hover-color: $primary-400,
-      $active-color: $primary-300,
+      $bg-hover-color: $primary-400,
+      $bg-active-color: $primary-300,
       $text-hover-color: $neutral-600
     );
   }
@@ -49,16 +46,13 @@ a.danger {
 
 .positive,
 a.positive {
-  @include button-state(
-    $background-color: $primary-500,
-    $hover-color: $primary-600
-  );
+  @include button-state($bg-color: $primary-500, $bg-hover-color: $primary-600);
 
   &.outline {
     @include outline-button-state(
       $border-color: $primary-500,
-      $hover-color: $primary-600,
-      $active-color: $primary-500,
+      $bg-hover-color: $primary-600,
+      $bg-active-color: $primary-500,
       $text-hover-color: $neutral-600
     );
   }
@@ -67,8 +61,8 @@ a.positive {
 .inactive,
 a.inactive {
   @include button-state(
-    $background-color: $neutral-500,
-    $hover-color: $neutral-500,
+    $bg-color: $neutral-500,
+    $bg-hover-color: $neutral-500,
     $text-color: $neutral-300
   );
 }

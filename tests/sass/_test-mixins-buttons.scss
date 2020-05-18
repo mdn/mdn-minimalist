@@ -30,8 +30,8 @@
     @include assert {
       @include output {
         @include button-state(
-          $background-color: $primary-300,
-          $hover-color: $primary-400
+          $bg-color: $primary-300,
+          $bg-hover-color: $primary-400
         );
       }
 
@@ -82,8 +82,8 @@
       @include output {
         @include outline-button-state(
           $border-color: $primary-300,
-          $hover-color: $primary-400,
-          $active-color: $primary-300,
+          $bg-hover-color: $primary-400,
+          $bg-active-color: $primary-300,
           $text-hover-color: $neutral-600
         );
       }
