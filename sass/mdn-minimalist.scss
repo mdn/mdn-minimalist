@@ -1,9 +1,11 @@
 @import "./lib/reset";
 
+@import "./vars/typography";
 @import "./vars/spacing";
 @import "./vars/color-palette";
-@import "./vars/typography";
+@import "./vars/media-queries";
 
+@import "./mixins/animation-mixins";
 @import "./mixins/typography";
 @import "./mixins/buttons";
 
