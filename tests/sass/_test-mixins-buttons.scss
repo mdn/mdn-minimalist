@@ -23,9 +23,7 @@
       }
     }
   }
-}
 
-@include describe("button-state") {
   @include it("Returns custom button state") {
     @include assert {
       @include output {
@@ -53,9 +51,7 @@
       }
     }
   }
-}
 
-@include describe("outline-button-state") {
   @include it("Returns the default outline button state") {
     @include assert {
       @include output {
@@ -74,9 +70,7 @@
       }
     }
   }
-}
 
-@include describe("outline-button-state") {
   @include it("Returns custom outline button state") {
     @include assert {
       @include output {

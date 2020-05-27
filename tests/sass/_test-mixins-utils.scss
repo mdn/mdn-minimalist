@@ -1,0 +1,77 @@
+@include describe("caret-arrow") {
+  @include it("Returns up caret arrow") {
+    @include assert {
+      @include output {
+        @include caret-arrow(#1e7f9d, $direction: up);
+      }
+
+      @include expect {
+        content: "";
+        border: solid #1e7f9d;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        /* stylelint-disable block-closing-brace-newline-after */
+        transform: rotate(-135deg);
+      }
+    }
+  }
+
+  @include it("Returns left caret arrow") {
+    @include assert {
+      @include output {
+        @include caret-arrow(#1e7f9d, $direction: left);
+      }
+
+      @include expect {
+        content: "";
+        border: solid #1e7f9d;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        /* stylelint-disable block-closing-brace-newline-after */
+        transform: rotate(135deg);
+      }
+    }
+  }
+
+  @include it("Returns down caret arrow") {
+    @include assert {
+      @include output {
+        @include caret-arrow(#1e7f9d, $direction: down);
+      }
+
+      @include expect {
+        content: "";
+        border: solid #1e7f9d;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        /* stylelint-disable block-closing-brace-newline-after */
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  @include it("Returns right caret arrow") {
+    @include assert {
+      @include output {
+        @include caret-arrow(#1e7f9d);
+      }
+
+      @include expect {
+        content: "";
+        border: solid #1e7f9d;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        /* stylelint-disable block-closing-brace-newline-after */
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
