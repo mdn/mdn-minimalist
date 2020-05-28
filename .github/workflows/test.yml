@@ -13,7 +13,7 @@ jobs:
       - name: Install dependencies
         run: |
           yarn install
-      -name: Build minimalist
+      - name: Build minimalist
         run: |
           yarn build:sass
       - name: Run tests
