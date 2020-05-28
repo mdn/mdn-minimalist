@@ -1,8 +1,8 @@
 /* 
  * Hide an element visually, but not from screen readers
  */
-.isually-hidden {
-  @include .visually-hidden();
+.visually-hidden {
+  @include visually-hidden();
 }
 
 /* Hide from everyone */
