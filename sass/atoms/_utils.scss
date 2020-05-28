@@ -2,7 +2,7 @@
  * Hide an element visually, but not from screen readers
  */
 .visually-hidden {
-  @include .visually-hidden();
+  @include visually-hidden();
 }
 
 /* Hide from everyone */

@@ -4,6 +4,7 @@
   "description": "The base Sass for Mozilla Developer based projects and products",
   "scripts": {
     "build:sass": "node-sass-chokidar ./sass/ -o ./public/css/ -w",
+    "build:sass:ci": "node-sass-chokidar ./sass/ -o ./public/css/",
     "copy": "cp -R ./typography ./public/typography",
     "lint": "stylelint sass/**/*.scss",
     "precommit": "npm run prettier:staged",
