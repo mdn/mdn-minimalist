@@ -1,0 +1,85 @@
+form {
+  .field-note {
+    color: $neutral-300;
+    font-size: $smaller-font-size;
+  }
+}
+
+fieldset {
+  margin: 20px 0;
+  padding-bottom: 0;
+  border: 0;
+}
+
+fieldset.bordered {
+  border: 1px solid $neutral-400;
+}
+
+legend.highlighted {
+  background-color: $neutral-100;
+  color: $text-color-inverted;
+  padding: 10px 4px 10px 40px;
+}
+
+legend.emphasized {
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+fieldset.bordered {
+  legend.emphasized {
+    padding: 10px;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+label.inline {
+  display: inline-block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+textarea {
+  padding: 5px 10px;
+  border: 1px solid $neutral-400;
+  border-radius: 4px;
+
+  &:focus,
+  &:active {
+    border-color: $primary-100;
+    box-shadow: 1px 1px 1px $primary-100;
+  }
+
+  &.valid {
+    border-color: $primary-500;
+    outline: 2px dashed $primary-500;
+    outline-offset: 3px;
+  }
+
+  &.valid:focus,
+  &.valid:active {
+    box-shadow: 1px 1px 1px $primary-500;
+  }
+
+  &.invalid {
+    border-color: $primary-300;
+    outline: 2px dashed $primary-300;
+    outline-offset: 3px;
+  }
+
+  &.invalid:focus,
+  &.invalid:active {
+    box-shadow: 1px 1px 1px $primary-300;
+  }
+}
+
+textarea {
+  min-width: 350px;
+  min-height: 120px;
+}
