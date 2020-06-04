@@ -5,6 +5,7 @@
     "stylelint-a11y/recommended",
     "stylelint-prettier/recommended"
   ],
+  "plugins": ["stylelint-scss"],
   "rules": {
     "max-nesting-depth": 2,
     "declaration-no-important": true,
