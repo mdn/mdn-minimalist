@@ -1,4 +1,13 @@
 form {
+  .field-group {
+    margin-bottom: 20px;
+
+    &.inline {
+      display: inline-block;
+      margin-right: 20px;
+    }
+  }
+
   .field-note {
     color: $neutral-300;
     font-size: $smaller-font-size;
@@ -49,11 +58,17 @@ textarea {
   padding: 5px 10px;
   border: 1px solid $neutral-400;
   border-radius: 4px;
+}
 
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"] {
   &:focus,
   &:active {
     border-color: $primary-100;
     box-shadow: 1px 1px 1px $primary-100;
+    outline: 0;
   }
 
   &.valid {
