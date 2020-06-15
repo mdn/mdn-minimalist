@@ -1,0 +1,16 @@
+.icon-base {
+  display: inline-block;
+  content: "";
+  background-color: transparent;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 21px;
+  margin-right: 5px;
+  width: 21px;
+  height: 21px;
+  vertical-align: sub;
+}
+
+.icon {
+  @extend .icon-base;
+}

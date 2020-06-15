@@ -13,26 +13,12 @@ a {
   }
 
   &[rel="external"]::before {
-    display: inline-block;
-    content: "";
-    background: transparent url("../../dinocons/general/external.svg") 0 0px
-      no-repeat;
-    background-size: 21px;
-    margin-right: 5px;
-    width: 21px;
-    height: 21px;
-    vertical-align: sub;
+    @extend .icon-base;
+    background-image: url("../../dinocons/general/external.svg");
   }
 
   &.mailto::before {
-    display: inline-block;
-    content: "";
-    background: transparent url("../../dinocons/general/email.svg") 0 0px
-      no-repeat;
-    background-size: 21px;
-    margin-right: 5px;
-    width: 21px;
-    height: 21px;
-    vertical-align: sub;
+    @extend .icon-base;
+    background-image: url("../../dinocons/general/email.svg");
   }
 }
