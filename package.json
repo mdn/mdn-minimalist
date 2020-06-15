@@ -6,6 +6,7 @@
     "build:sass": "node-sass-chokidar ./sass/ -o ./public/css/ -w",
     "build:sass:ci": "node-sass-chokidar ./sass/ -o ./public/css/",
     "copy": "cp -R ./typography ./public/typography",
+    "copy:dinocons": "cp -R ./dinocons ./public/dinocons",
     "lint": "stylelint sass/**/*.scss",
     "optim:svg": "svgo --config=./.svgo.yml -r ./dinocons",
     "precommit": "npm run prettier:staged",
@@ -13,7 +14,7 @@
     "prettier:format": "prettier --write **/*.scss",
     "prettier:staged": "pretty-quick --staged --pattern \"**/*.scss\"",
     "server": "http-server -p 8090",
-    "start": "run-p build:sass copy server",
+    "start": "run-p build:sass copy copy:dinocons server",
     "test": "jest"
   },
   "repository": {
