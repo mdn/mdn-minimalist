@@ -1,0 +1,11 @@
+.cache
+.github
+css
+dist
+pages
+tests
+.prettierignore
+.prettierrc
+.stylelintrc.json
+.svgo.yml
+yarn.lock

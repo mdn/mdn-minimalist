@@ -1,13 +1,16 @@
 /* Requirements */
 @import "../node_modules/sass-true/sass/true";
 
-@import "../sass/vars/typography-vars";
+@import "../sass/vars/color-palette";
+@import "../sass/vars/typography";
 
-@import "../sass/mixins/typography-mixins";
-@import "../sass/mixins/l10n-mixins";
-@import "../sass/mixins/code-blocks-mixins";
+@import "../sass/mixins/buttons";
+@import "../sass/mixins/typography";
+@import "../sass/mixins/utils";
+
+@import "../sass/atoms/buttons";
 
 /* Tests */
-@import "sass/test-mixins-typography";
-@import "sass/test-mixins-l10n";
-@import "sass/test-mixins-code-blocks";
+@import "./sass/test-mixins-typography";
+@import "./sass/test-mixins-buttons";
+@import "./sass/test-mixins-utils";

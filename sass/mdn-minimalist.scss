@@ -1,2 +1,26 @@
-@import "./components/base.scss";
-@import "./components/typography.scss";
+@import "./lib/reset";
+
+@import "./vars/typography";
+@import "./vars/spacing";
+@import "./vars/color-palette";
+@import "./vars/media-queries";
+
+@import "./mixins/animation";
+@import "./mixins/typography";
+@import "./mixins/buttons";
+@import "./mixins/utils";
+
+@import "./atoms/base";
+@import "./atoms/typography";
+@import "./atoms/links";
+@import "./atoms/lists";
+@import "./atoms/icons";
+@import "./atoms/buttons";
+@import "./atoms/forms";
+
+/* 
+ * Include utils at the end of the bundle to ensure classes
+ * such as `.hidden` and `.show` are at the bottom of
+ * the cascade
+ */
+@import "./atoms/utils";

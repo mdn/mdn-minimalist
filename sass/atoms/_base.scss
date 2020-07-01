@@ -1,0 +1,12 @@
+html {
+  box-sizing: border-box;
+  background-color: #fff;
+  color: $text-color;
+}
+
+body {
+  line-height: $document-line-height;
+  @include set-site-font-family();
+  font-size: $base-font-size;
+  @include font-smoothing();
+}

@@ -1,0 +1,40 @@
+dl {
+  dt {
+    font-weight: bold;
+  }
+
+  dd {
+    margin: 0 10px 20px;
+  }
+}
+
+.flex-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  &.styled {
+    margin: 20px 0;
+    padding-left: 40px;
+  }
+
+  li {
+    flex-basis: 45%;
+  }
+}
+
+ul.flex-list {
+  &.styled {
+    li {
+      list-style-type: disc;
+    }
+  }
+}
+
+ol.flex-list {
+  &.styled {
+    li {
+      list-style-type: decimal;
+    }
+  }
+}

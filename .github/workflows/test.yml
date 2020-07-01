@@ -1,0 +1,21 @@
+name: test-minimalist
+on: [pull_request]
+
+jobs:
+  test:
+    name: test-minimalist
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12"
+      - name: Install dependencies
+        run: |
+          yarn install
+      - name: Build minimalist
+        run: |
+          yarn build:sass:ci
+      - name: Run tests
+        run: |
+          yarn test

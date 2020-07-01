@@ -1,0 +1,26 @@
+/* Fonts */
+$heading-font-family-fallback: palatino, "Palatino Linotype", serif;
+$heading-font-family: zillaslab, $heading-font-family-fallback;
+$site-font-family-fallback: x-locale-body, sans-serif;
+$site-font-family: arial, $site-font-family-fallback;
+
+$code-inline-font-family: consolas, "Liberation Mono", courier, monospace;
+
+$document-line-height: 1.6;
+$heading-line-height: 1.2;
+
+/* Based on a modular scale with a base of 18px and a 
+   perfect fourth ratio of 1.333 - 
+   https://type-scale.com/?size=18&scale=1.333&text=A%20Visual%20Type%20Scale&font=Zilla%20Slab&fontweight=700&bodyfont=Fira%20Sans&bodyfontweight=400&lineheight=1.65&backgroundcolor=white&fontcolor=%23333&preview=false */
+$base-font-size: 18px;
+$h1-font-size: 4.209rem;
+$h2-font-size: 3.157rem;
+$h3-font-size: 2.369rem;
+$h4-font-size: 1.777rem;
+$h5-font-size: 1.333rem;
+
+$smaller-font-size: 16px;
+$tiny-text: 0.75rem;
+
+/* approx 72ch for base font size and HHGTTG reference */
+$max-line-length: 42rem;

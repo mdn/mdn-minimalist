@@ -1,0 +1,15 @@
+name: publish-minimalist
+on:
+  push:
+    branches: [master]
+jobs:
+  all:
+    name: publish-minimalist
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: publish
+        uses: mikeal/merge-release@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}

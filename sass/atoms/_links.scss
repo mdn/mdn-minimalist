@@ -1,0 +1,24 @@
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:active {
+    background-color: $primary-100;
+    color: $text-color-inverted;
+  }
+
+  &[rel="external"]::before {
+    @extend .icon-base;
+    background-image: url("../../dinocons/general/external.svg");
+  }
+
+  &.mailto::before {
+    @extend .icon-base;
+    background-image: url("../../dinocons/general/email.svg");
+  }
+}

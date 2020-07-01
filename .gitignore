@@ -64,3 +64,6 @@ typings/
 
 .cache
 dist
+
+# project specific
+public
