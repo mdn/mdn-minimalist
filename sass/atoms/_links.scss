@@ -14,11 +14,11 @@ a {
 
   &[rel="external"]::before {
     @extend .icon-base;
-    background-image: url("../../dinocons/general/external.svg");
+    background-image: url("/dinocons/general/external.svg");
   }
 
   &.mailto::before {
     @extend .icon-base;
-    background-image: url("../../dinocons/general/email.svg");
+    background-image: url("/dinocons/general/email.svg");
   }
 }
