@@ -7,11 +7,18 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: zillaslab;
+  font-display: swap;
+  src: url("/typography/ZillaSlab-Regular.subset.woff2") format("woff2"),
+    url("/typography/ZillaSlab-Regular.subset.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 h1,
 h2,
-h3,
-h4,
-h5 {
+h3 {
   @include set-heading-font-family();
   line-height: $heading-line-height;
 }
@@ -26,6 +33,10 @@ h2 {
 
 h3 {
   @include heading-3();
+  background-color: $neutral-100;
+  color: $text-color-inverted;
+  padding: 0 4px 0 40px;
+  font-weight: 400;
 }
 
 h4 {
