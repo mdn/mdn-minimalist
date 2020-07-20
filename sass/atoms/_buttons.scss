@@ -66,6 +66,14 @@ a.inactive {
   );
 }
 
+/* Runs off most base default browser styles
+   for button elements. */
+.ghost {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
 .icon {
   svg {
     margin-right: 10px;
