@@ -20,10 +20,10 @@ a {
   }
 
   &[rel="external"]::before {
-    background-image: url("/dinocons/general/external.svg");
+    background-image: url("./dinocons/general/external.svg");
   }
 
   &.mailto::before {
-    background-image: url("/dinocons/general/email.svg");
+    background-image: url("./dinocons/general/email.svg");
   }
 }
