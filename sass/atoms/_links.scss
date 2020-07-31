@@ -11,19 +11,4 @@ a {
     background-color: $primary-100;
     color: $text-color-inverted;
   }
-
-  &[rel="external"]::before,
-  &.mailto::before {
-    @extend .icon-base;
-    width: 21px;
-    height: 21px;
-  }
-
-  &[rel="external"]::before {
-    background-image: url("./dinocons/general/external.svg");
-  }
-
-  &.mailto::before {
-    background-image: url("./dinocons/general/email.svg");
-  }
 }
