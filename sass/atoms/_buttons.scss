@@ -64,6 +64,7 @@ a.inactive {
     $bg-hover-color: $neutral-500,
     $text-color: $neutral-300
   );
+  cursor: default;
 }
 
 /* Runs off most base default browser styles
