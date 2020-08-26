@@ -1,5 +1,5 @@
 {
-  "name": "mdn-minimalist",
+  "name": "@mdn/minimalist",
   "version": "0.0.1-semantically-released",
   "description": "The base Sass for Mozilla Developer based projects and products",
   "scripts": {
