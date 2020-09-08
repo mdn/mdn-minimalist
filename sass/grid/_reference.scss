@@ -48,7 +48,7 @@
 
     .sidebar {
       grid-column: 1/4;
-      grid-row: 7/8;
+      grid-row: 6/7;
 
       @media #{$mq-small-desktop-and-up} {
         grid-column: 1/2;
@@ -57,7 +57,7 @@
     }
 
     .page-footer {
-      grid-row: 6/7;
+      grid-row: 7/8;
     }
   }
 }
