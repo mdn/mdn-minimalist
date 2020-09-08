@@ -6,21 +6,26 @@ $site-font-family: arial, $site-font-family-fallback;
 
 $code-inline-font-family: consolas, "Liberation Mono", courier, monospace;
 
+$base-font-size: 18px;
 $document-line-height: 1.6;
 $heading-line-height: 1.2;
 
-/* Based on a modular scale with a base of 18px and a 
-   perfect fourth ratio of 1.333 - 
-   https://type-scale.com/?size=18&scale=1.333&text=A%20Visual%20Type%20Scale&font=Zilla%20Slab&fontweight=700&bodyfont=Fira%20Sans&bodyfontweight=400&lineheight=1.65&backgroundcolor=white&fontcolor=%23333&preview=false */
-$base-font-size: 18px;
-$h1-font-size: 4.209rem;
-$h2-font-size: 3.157rem;
-$h3-font-size: 2.369rem;
-$h4-font-size: 1.777rem;
-$h5-font-size: 1.333rem;
-
-$smaller-font-size: 16px;
+/* Desktop and tablet typescale based on perfect fourth typescale with a base of 18px */
+$xxl-font-size: 4.209rem;
+$xl-font-size: 3.157rem;
+$large-font-size: 2.369rem;
+$medium-font-size: 1.777rem;
+$small-medium-font-size: 1.333rem;
+$default-font-size: 1rem;
+$small-font-size: 0.9rem;
 $tiny-text: 0.75rem;
+
+/* Mobile typescale based on minor third typescale with a base of 18px */
+$xxl-font-size-mobile: 2.488rem;
+$xl-font-size-mobile: 2.074rem;
+$large-font-size-mobile: 1.728rem;
+$medium-font-size-mobile: 1.44rem;
+$small-medium-font-size-mobile: 1.2rem;
 
 /* approx 72ch for base font size and HHGTTG reference */
 $max-line-length: 42rem;
