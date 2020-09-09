@@ -1,3 +1,6 @@
+$base-padding: 24px;
 $gutter-width: 24px;
 $content-block-margin: $gutter-width;
+
 $max-width-default: (1399px / $browser-default-font-size) * 1em;
+$max-width-small-desktop: (1023px / $browser-default-font-size) * 1em;

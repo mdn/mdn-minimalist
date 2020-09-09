@@ -1,11 +1,13 @@
 .icon-base {
-  display: inline-block;
-  content: "";
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 21px;
+  content: "";
+  display: inline-block;
+  height: 21px;
   margin-right: 5px;
   vertical-align: sub;
+  width: 21px;
 }
 
 .icon {
