@@ -1,35 +1,57 @@
 @supports (display: grid) {
+  .page-wrapper {
+    display: grid;
+    gap: 20px;
+  }
+
   .reference-page {
     .page-header,
-    .titlebar-container,
-    .breadcrumb-locale-container,
+    .page-content-container,
     .page-footer {
-      grid-column: 1/4;
+      grid-column: 1/2;
     }
 
     .page-header {
       grid-row: 1/2;
     }
 
-    .titlebar-container {
+    .page-content-container {
+      display: grid;
+      grid-row: 2/3;
+      margin: 0 auto;
+      max-width: $max-width-default;
+    }
+
+    .page-footer {
       grid-row: 3/4;
+    }
+
+    /* The titlebar, breadcrumbs, toc, sidebar, and main elements are
+    inside a separate page-content-container element. */
+    .titlebar-container,
+    .breadcrumb-locale-container {
+      grid-column: 1/4;
+    }
+
+    .titlebar-container {
+      grid-row: 2/3;
+
+      @media #{$mq-small-desktop-and-up} {
+        grid-row: 1/2;
+      }
+    }
+
+    .breadcrumb-locale-container {
+      grid-row: 1/2;
 
       @media #{$mq-small-desktop-and-up} {
         grid-row: 2/3;
       }
     }
 
-    .breadcrumb-locale-container {
-      grid-row: 2/3;
-
-      @media #{$mq-small-desktop-and-up} {
-        grid-row: 3/4;
-      }
-    }
-
     .document-toc-container {
       grid-column: 1/4;
-      grid-row: 4/5;
+      grid-row: 3/4;
 
       @media #{$mq-small-desktop-and-up} {
         grid-column: 1/2;
@@ -38,26 +60,22 @@
 
     .main-content {
       grid-column: 1/4;
-      grid-row: 5/6;
+      grid-row: 4/5;
 
       @media #{$mq-small-desktop-and-up} {
         grid-column: 2/4;
-        grid-row: 4/6;
+        grid-row: 3/6;
       }
     }
 
     .sidebar {
       grid-column: 1/4;
-      grid-row: 6/7;
+      grid-row: 5/6;
 
       @media #{$mq-small-desktop-and-up} {
         grid-column: 1/2;
         grid-row: 5/6;
       }
-    }
-
-    .page-footer {
-      grid-row: 7/8;
     }
   }
 }
