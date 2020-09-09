@@ -6,6 +6,8 @@
 
   .reference-page {
     .page-header,
+    .titlebar-container,
+    .breadcrumb-locale-container,
     .page-content-container,
     .page-footer {
       grid-column: 1/2;
@@ -15,40 +17,35 @@
       grid-row: 1/2;
     }
 
-    .page-content-container {
-      display: grid;
-      grid-row: 2/3;
-      margin: 0 auto;
-      max-width: $max-width-default;
-    }
-
-    .page-footer {
-      grid-row: 3/4;
-    }
-
-    /* The titlebar, breadcrumbs, toc, sidebar, and main elements are
-    inside a separate page-content-container element. */
-    .titlebar-container,
-    .breadcrumb-locale-container {
-      grid-column: 1/4;
-    }
-
     .titlebar-container {
-      grid-row: 2/3;
-
-      @media #{$mq-small-desktop-and-up} {
-        grid-row: 1/2;
-      }
-    }
-
-    .breadcrumb-locale-container {
-      grid-row: 1/2;
+      grid-row: 3/4;
 
       @media #{$mq-small-desktop-and-up} {
         grid-row: 2/3;
       }
     }
 
+    .breadcrumb-locale-container {
+      grid-row: 2/3;
+
+      @media #{$mq-small-desktop-and-up} {
+        grid-row: 3/4;
+      }
+    }
+
+    .page-content-container {
+      display: grid;
+      grid-row: 4/5;
+      margin: 0 auto;
+      max-width: $max-width-default;
+    }
+
+    .page-footer {
+      grid-row: 5/6;
+    }
+
+    /* The toc, sidebar, and main elements are
+    inside a separate page-content-container element. */
     .document-toc-container {
       grid-column: 1/4;
       grid-row: 3/4;
