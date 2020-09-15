@@ -2,6 +2,7 @@
   .page-wrapper {
     display: grid;
     gap: $gap-width;
+    grid-template-columns: 100%;
   }
 
   .reference-page {
@@ -11,7 +12,6 @@
     .page-content-container,
     .page-footer {
       grid-column: 1/2;
-      grid-template-columns: 100%;
 
       @media #{$mq-small-desktop-and-up} {
         grid-column: 1/3;
