@@ -1,7 +1,7 @@
 @supports (display: grid) {
   .page-wrapper {
     display: grid;
-    gap: 20px;
+    gap: $gap-width;
   }
 
   .reference-page {
@@ -36,10 +36,14 @@
     .page-content-container {
       display: grid;
       grid-row: 4/5;
-      grid-template-columns: 25% 75%;
-      grid-template-rows: max-content 1fr;
-      margin: 0 auto;
-      max-width: $max-width-default;
+      padding: $gap-width;
+
+      @media #{$mq-tablet-and-up} {
+        grid-template-columns: 25% 75%;
+        grid-template-rows: max-content 1fr;
+        margin: 0 auto;
+        max-width: $max-width-default;
+      }
     }
 
     .page-footer {
