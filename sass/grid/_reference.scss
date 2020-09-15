@@ -10,7 +10,13 @@
     .breadcrumb-locale-container,
     .page-content-container,
     .page-footer {
-      grid-column: 1/3;
+      grid-column: 1/2;
+      grid-template-columns: 100%;
+
+      @media #{$mq-small-desktop-and-up} {
+        grid-column: 1/3;
+        grid-template-columns: inherit;
+      }
     }
 
     .page-header {
@@ -36,6 +42,7 @@
     .page-content-container {
       display: grid;
       grid-row: 4/5;
+      grid-template-columns: 100%;
       padding: $gap-width;
 
       @media #{$mq-tablet-and-up} {
