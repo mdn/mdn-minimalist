@@ -1,0 +1,10 @@
+.article {
+  pre {
+    background-color: $neutral-550;
+    border-left: $code-example-border;
+    max-width: 100%;
+    overflow: auto;
+    padding: ($base-padding / 4) ($base-padding / 2);
+    width: 100%;
+  }
+}
