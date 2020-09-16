@@ -4,7 +4,7 @@
     border-left: $code-example-border;
     max-width: 100%;
     overflow: auto;
-    padding: ($base-padding / 4) ($base-padding / 2);
+    padding: ($base-padding - 6);
     width: 100%;
   }
 }
