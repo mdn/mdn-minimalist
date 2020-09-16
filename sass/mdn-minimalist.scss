@@ -1,8 +1,9 @@
 @import "./lib/reset";
 
 @import "./vars/layout";
-@import "./vars/typography";
 @import "./vars/color-palette";
+@import "./vars/borders";
+@import "./vars/typography";
 
 @import "./mixins/animation";
 @import "./mixins/typography";
@@ -14,6 +15,7 @@
 @import "./atoms/links";
 @import "./atoms/lists";
 @import "./atoms/icons";
+@import "./atoms/code";
 @import "./atoms/buttons";
 @import "./atoms/forms";
 @import "./atoms/overlays";
