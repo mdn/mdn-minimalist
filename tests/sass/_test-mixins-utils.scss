@@ -1,3 +1,19 @@
+@include describe("reset-list") {
+  @include it("Returns the expected reset style rules") {
+    @include assert {
+      @include output {
+        @include reset-list();
+      }
+
+      @include expect {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
 @include describe("caret-arrow") {
   @include it("Returns up caret arrow") {
     @include assert {
@@ -6,12 +22,12 @@
       }
 
       @include expect {
-        content: "";
         border: solid #1e7f9d;
         border-width: 0 2px 2px 0;
+        content: "";
         display: inline-block;
-        width: 6px;
         height: 6px;
+        width: 6px;
         /* stylelint-disable block-closing-brace-newline-after */
         transform: rotate(-135deg);
       }
@@ -25,12 +41,12 @@
       }
 
       @include expect {
-        content: "";
         border: solid #1e7f9d;
         border-width: 0 2px 2px 0;
+        content: "";
         display: inline-block;
-        width: 6px;
         height: 6px;
+        width: 6px;
         /* stylelint-disable block-closing-brace-newline-after */
         transform: rotate(135deg);
       }
@@ -44,12 +60,12 @@
       }
 
       @include expect {
-        content: "";
         border: solid #1e7f9d;
         border-width: 0 2px 2px 0;
+        content: "";
         display: inline-block;
-        width: 6px;
         height: 6px;
+        width: 6px;
         /* stylelint-disable block-closing-brace-newline-after */
         transform: rotate(45deg);
       }
@@ -63,12 +79,12 @@
       }
 
       @include expect {
-        content: "";
         border: solid #1e7f9d;
         border-width: 0 2px 2px 0;
+        content: "";
         display: inline-block;
-        width: 6px;
         height: 6px;
+        width: 6px;
         /* stylelint-disable block-closing-brace-newline-after */
         transform: rotate(-45deg);
       }
