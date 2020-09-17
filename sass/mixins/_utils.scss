@@ -31,6 +31,7 @@
 @mixin reset-list() {
   list-style: none;
   margin: 0;
+  margin-bottom: 6px;
   padding: 0;
 }
 
