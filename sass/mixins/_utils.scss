@@ -1,3 +1,11 @@
+/* Used with flexbox and grid. The new syntax is to use `gap`, but here
+   we also provide the fallback of `grid-gap`. This is also why we need
+   the stylelint-disable-line as the order is important */
+@mixin gap($width: $gap-width) {
+  grid-gap: $width;
+  gap: $width; /* stylelint-disable-line order/properties-alphabetical-order */
+}
+
 /* 
  * Hide an element visually, but not from screen readers
  * Use this mixin sparingly to avoid unnecessary code bloat

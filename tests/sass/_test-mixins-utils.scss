@@ -1,3 +1,31 @@
+@include describe("gap") {
+  @include it("Returns both grid-gap and gap set to the default $gap-width") {
+    @include assert {
+      @include output {
+        @include gap();
+      }
+
+      @include expect {
+        grid-gap: 24px;
+        gap: 24px; /* stylelint-disable-line order/properties-alphabetical-order */
+      }
+    }
+  }
+
+  @include it("Returns both grid-gap and gap set to the specified width") {
+    @include assert {
+      @include output {
+        @include gap(12px);
+      }
+
+      @include expect {
+        grid-gap: 12px;
+        gap: 12px; /* stylelint-disable-line order/properties-alphabetical-order */
+      }
+    }
+  }
+}
+
 @include describe("reset-list") {
   @include it("Returns the expected reset style rules") {
     @include assert {

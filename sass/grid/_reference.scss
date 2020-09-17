@@ -1,7 +1,7 @@
 @supports (display: grid) {
   .page-wrapper {
+    @include gap();
     display: grid;
-    gap: $gap-width;
     grid-template-columns: 100%;
   }
 
@@ -51,6 +51,7 @@
       }
 
       .page-content-container {
+        @include gap();
         grid-template-columns: 25% 75%;
         grid-template-rows: max-content 1fr;
         margin: 0 auto;
