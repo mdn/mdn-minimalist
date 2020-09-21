@@ -3,8 +3,8 @@
   "version": "0.0.1-semantically-released",
   "description": "The base Sass for Mozilla Developer based projects and products",
   "scripts": {
+    "build": "webpack",
     "build:sass": "sass ./sass/mdn-minimalist.scss ./public/css/mdn-minimalist.css --watch",
-    "build:sass:ci": "sass ./sass/mdn-minimalist.scss ./public/css/mdn-minimalist.css",
     "copy": "cp -R ./typography ./public/typography",
     "lint": "stylelint sass/**/*.scss",
     "precommit": "npm run prettier:staged",
@@ -33,13 +33,17 @@
   },
   "homepage": "https://github.com/schalkneethling/mdn-minimalist#readme",
   "devDependencies": {
+    "css-loader": "^4.3.0",
+    "file-loader": "^6.1.0",
     "http-server": "^0.12.3",
     "husky": "^4.2.5",
     "jest": "26.4.2",
+    "mini-css-extract-plugin": "^0.11.2",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.4",
     "pretty-quick": "^3.0.0",
     "sass": "^1.26.3",
+    "sass-loader": "^10.0.2",
     "sass-true": "6.0.0",
     "stylelint": "^13.2.1",
     "stylelint-a11y": "^1.2.3",
@@ -47,6 +51,8 @@
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-sass-guidelines": "^7.0.0",
     "stylelint-prettier": "^1.1.2",
-    "stylelint-scss": "^3.15.0"
+    "stylelint-scss": "^3.15.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
   }
 }

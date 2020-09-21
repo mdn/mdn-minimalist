@@ -1,19 +1,19 @@
 @font-face {
-  font-family: zillaslab;
   font-display: swap;
-  src: url("../../typography/ZillaSlab-Bold.subset.woff2") format("woff2"),
-    url("../../typography/ZillaSlab-Bold.subset.woff") format("woff");
-  font-weight: bold;
+  font-family: zillaslab;
   font-style: normal;
+  font-weight: bold;
+  src: url("/typography/ZillaSlab-Bold.subset.woff2") format("woff2"),
+    url("/typography/ZillaSlab-Bold.subset.woff") format("woff");
 }
 
 @font-face {
-  font-family: zillaslab;
   font-display: swap;
-  src: url("../../typography/ZillaSlab-Regular.subset.woff2") format("woff2"),
-    url("../../typography/ZillaSlab-Regular.subset.woff") format("woff");
-  font-weight: 400;
+  font-family: zillaslab;
   font-style: normal;
+  font-weight: 400;
+  src: url("/typography/ZillaSlab-Regular.subset.woff2") format("woff2"),
+    url("/typography/ZillaSlab-Regular.subset.woff") format("woff");
 }
 
 h1,
@@ -35,8 +35,8 @@ h3 {
   @include heading-3();
   background-color: $neutral-100;
   color: $text-color-inverted;
-  padding: 0 4px 0 40px;
   font-weight: 400;
+  padding: 0 4px 0 40px;
 }
 
 h4 {
@@ -75,9 +75,9 @@ a:visited {
 /* mono space elements pre, code, kbd */
 code {
   background-color: rgba(220, 220, 220, 0.5);
-  box-decoration-break: clone;
-  padding: 0 2px;
   border-radius: 2px;
+  box-decoration-break: clone;
   font-family: $code-inline-font-family;
+  padding: 0 2px;
   word-wrap: break-word;
 }
