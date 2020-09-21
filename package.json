@@ -41,7 +41,7 @@
     "prettier": "^2.0.4",
     "pretty-quick": "^3.0.0",
     "sass": "^1.26.3",
-    "sass-true": "5.0.0",
+    "sass-true": "6.0.0",
     "stylelint": "^13.2.1",
     "stylelint-a11y": "^1.2.3",
     "stylelint-config-prettier": "^8.0.1",
