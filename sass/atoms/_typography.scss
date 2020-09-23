@@ -3,8 +3,8 @@
   font-family: zillaslab;
   font-style: normal;
   font-weight: bold;
-  src: url("/typography/ZillaSlab-Bold.subset.woff2") format("woff2"),
-    url("/typography/ZillaSlab-Bold.subset.woff") format("woff");
+  src: url("../typography/ZillaSlab-Bold.subset.woff2") format("woff2"),
+    url("../typography/ZillaSlab-Bold.subset.woff") format("woff");
 }
 
 @font-face {
@@ -12,8 +12,8 @@
   font-family: zillaslab;
   font-style: normal;
   font-weight: 400;
-  src: url("/typography/ZillaSlab-Regular.subset.woff2") format("woff2"),
-    url("/typography/ZillaSlab-Regular.subset.woff") format("woff");
+  src: url("../typography/ZillaSlab-Regular.subset.woff2") format("woff2"),
+    url("../typography/ZillaSlab-Regular.subset.woff") format("woff");
 }
 
 h1,

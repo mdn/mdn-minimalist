@@ -3,9 +3,10 @@
 css
 dist
 pages
-tests
+test
 .prettierignore
 .prettierrc
 .stylelintrc.json
 .svgo.yml
+webpack.config.js
 yarn.lock
