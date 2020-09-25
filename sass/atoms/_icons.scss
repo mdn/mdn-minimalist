@@ -1,4 +1,4 @@
-.icon-base {
+.icon {
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 21px;
@@ -10,6 +10,16 @@
   width: 21px;
 }
 
-.icon {
-  @extend .icon-base;
+/* icon color styles to be applied to SVG elements */
+.experimental {
+  fill: $primary-100;
+}
+
+.warning,
+.deprecated {
+  fill: $warning-100;
+}
+
+.obsolete {
+  fill: $error-100;
 }
