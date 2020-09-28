@@ -1,5 +1,7 @@
 @include describe("gap") {
-  @include it("Returns both grid-gap and gap set to the default $gap-width") {
+  @include it(
+    "Returns both grid-gap and gap set to the default $base-spacing"
+  ) {
     @include assert {
       @include output {
         @include gap();

@@ -1,7 +1,7 @@
 /* Used with flexbox and grid. The new syntax is to use `gap`, but here
    we also provide the fallback of `grid-gap`. This is also why we need
    the stylelint-disable-line as the order is important */
-@mixin gap($width: $gap-width) {
+@mixin gap($width: $base-spacing) {
   grid-gap: $width;
   gap: $width; /* stylelint-disable-line order/properties-alphabetical-order */
 }
