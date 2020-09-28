@@ -1,7 +1,7 @@
 $browser-default-font-size: 16px;
-$base-padding: 24px;
-$gap-width: 24px;
-$content-block-margin: $gap-width;
+$base-unit: 6px;
+$base-spacing: $base-unit * 4;
+$content-block-margin: $base-spacing;
 
 $max-width-default: 1400px;
 $max-width-small-desktop: (1023px / $browser-default-font-size) * 1em;
