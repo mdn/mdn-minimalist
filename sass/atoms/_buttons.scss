@@ -2,14 +2,14 @@
 a.button {
   @include button-state();
 
-  display: block;
-  padding: 10px 20px;
   border-radius: 4px;
+  cursor: pointer;
+  display: block;
   font-weight: bold;
   max-width: max-content;
   min-height: 45px;
+  padding: 10px 20px;
   text-decoration: none;
-  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -75,19 +75,19 @@ a.inactive {
   cursor: pointer;
 }
 
-.icon {
+.icon-button {
   svg {
-    margin-right: 10px;
     fill: currentColor;
-    width: 22px;
     height: 22px;
+    margin-right: 10px;
     vertical-align: text-bottom;
+    width: 22px;
   }
 
   &.right {
     svg {
-      margin-right: 0;
       margin-left: 10px;
+      margin-right: 0;
     }
   }
 }

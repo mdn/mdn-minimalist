@@ -4,7 +4,7 @@
   "description": "The base Sass for Mozilla Developer based projects and products",
   "scripts": {
     "build": "webpack",
-    "build:sass": "sass ./sass/mdn-minimalist.scss ./public/css/mdn-minimalist.css --watch",
+    "build:sass": "sass ./sass/mdn-minimalist.scss ./public/css/main.css --watch",
     "copy": "cp -R ./typography ./public/typography",
     "lint": "stylelint sass/**/*.scss",
     "precommit": "npm run prettier:staged",

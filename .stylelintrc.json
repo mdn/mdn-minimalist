@@ -9,6 +9,12 @@
   "rules": {
     "max-nesting-depth": 2,
     "declaration-no-important": true,
-    "font-weight-notation": "named-where-possible"
+    "font-weight-notation": "named-where-possible",
+    "selector-no-qualifying-type": [
+      true,
+      {
+        "ignore": ["class"]
+      }
+    ]
   }
 }
