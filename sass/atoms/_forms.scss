@@ -15,9 +15,9 @@ form {
 }
 
 fieldset {
+  border: 0;
   margin: 20px 0;
   padding-bottom: 0;
-  border: 0;
 }
 
 fieldset.bordered {
@@ -27,18 +27,16 @@ fieldset.bordered {
 legend.highlighted {
   background-color: $neutral-100;
   color: $text-color-inverted;
-  padding: 10px 4px 10px 40px;
+  padding: 10px 4px;
+
+  code {
+    background-color: transparent;
+  }
 }
 
 legend.emphasized {
-  padding: 10px 0;
   font-weight: bold;
-}
-
-fieldset.bordered {
-  legend.emphasized {
-    padding: 10px;
-  }
+  padding: 10px 0;
 }
 
 label {
@@ -50,20 +48,20 @@ label.inline {
   display: inline-block;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
+[type="text"],
+[type="email"],
+[type="url"],
+[type="password"],
 textarea {
-  padding: 5px 10px;
   border: 1px solid $neutral-400;
   border-radius: 4px;
+  padding: 5px 10px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"] {
+[type="text"],
+[type="email"],
+[type="url"],
+[type="password"] {
   &:focus,
   &:active {
     border-color: $primary-100;
@@ -95,6 +93,6 @@ input[type="password"] {
 }
 
 textarea {
-  min-width: 350px;
   min-height: 120px;
+  min-width: 350px;
 }
