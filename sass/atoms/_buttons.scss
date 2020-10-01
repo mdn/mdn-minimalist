@@ -67,7 +67,16 @@ a.inactive {
   cursor: default;
 }
 
-/* Runs off most base default browser styles
+.minimal,
+a.minimal {
+  display: inline-block;
+  font-size: $small-font-size;
+  font-weight: normal;
+  min-height: inherit;
+  padding: $base-unit;
+}
+
+/* Turns off most base default browser styles
    for button elements. */
 .ghost {
   background: none;
