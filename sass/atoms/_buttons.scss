@@ -73,7 +73,7 @@ a.minimal {
   font-size: $small-font-size;
   font-weight: normal;
   min-height: inherit;
-  padding: $base-unit;
+  padding: ($base-unit / 2) $base-unit;
 }
 
 /* Turns off most base default browser styles
