@@ -1,14 +1,18 @@
 @supports (display: grid) {
   .page-wrapper {
-    @include gap();
     display: grid;
     grid-template-columns: 100%;
+
+    @media #{$mq-small-desktop-and-up} {
+      grid-template-columns: 75% 25%;
+    }
   }
 
   .reference-page {
     .page-header,
     .titlebar-container,
-    .breadcrumb-locale-container,
+    .breadcrumb-container,
+    .locale-container,
     .page-content-container,
     .page-footer {
       grid-column: 1/2;
@@ -22,7 +26,7 @@
       grid-row: 1/2;
     }
 
-    .breadcrumb-locale-container {
+    .breadcrumb-container {
       grid-row: 2/3;
     }
 
@@ -30,15 +34,18 @@
       grid-row: 3/4;
     }
 
+    .locale-container {
+      grid-row: 4/5;
+    }
+
     .page-content-container {
       display: grid;
-      grid-row: 4/5;
+      grid-row: 5/6;
       grid-template-columns: 100%;
-      padding: $base-spacing;
     }
 
     .page-footer {
-      grid-row: 5/6;
+      grid-row: 6/7;
     }
 
     @media #{$mq-small-desktop-and-up} {
@@ -46,16 +53,26 @@
         grid-row: 2/3;
       }
 
-      .breadcrumb-locale-container {
+      .breadcrumb-container {
+        grid-column: 1/2;
+        grid-row: 3/4;
+      }
+
+      .locale-container {
+        grid-column: 2/3;
         grid-row: 3/4;
       }
 
       .page-content-container {
-        @include gap();
+        grid-row: 4/5;
         grid-template-columns: 25% 75%;
         grid-template-rows: max-content 1fr;
         margin: 0 auto;
         max-width: $max-width-default;
+      }
+
+      .page-footer {
+        grid-row: 5/6;
       }
     }
 
