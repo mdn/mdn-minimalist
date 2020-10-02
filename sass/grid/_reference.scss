@@ -4,7 +4,7 @@
     grid-template-columns: 100%;
 
     @media #{$mq-small-desktop-and-up} {
-      grid-template-columns: 75% 25%;
+      grid-template-columns: 65% 35%;
     }
   }
 

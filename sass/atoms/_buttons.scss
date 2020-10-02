@@ -74,6 +74,10 @@ a.minimal {
   font-weight: normal;
   min-height: inherit;
   padding: ($base-unit / 2) $base-unit;
+
+  @media #{$mq-tablet-and-up} {
+    padding: 0 $base-unit;
+  }
 }
 
 /* Turns off most base default browser styles
