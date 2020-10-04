@@ -31,13 +31,13 @@ a.outline {
 
 .danger,
 a.danger {
-  @include button-state($bg-color: $primary-300, $bg-hover-color: $primary-400);
+  @include button-state($bg-color: $red-200, $bg-hover-color: $red-100);
 
   &.outline {
     @include outline-button-state(
-      $border-color: $primary-300,
-      $bg-hover-color: $primary-400,
-      $bg-active-color: $primary-300,
+      $border-color: $red-200,
+      $bg-hover-color: $red-100,
+      $bg-active-color: $red-200,
       $text-hover-color: $neutral-600
     );
   }
@@ -45,13 +45,13 @@ a.danger {
 
 .positive,
 a.positive {
-  @include button-state($bg-color: $primary-500, $bg-hover-color: $primary-600);
+  @include button-state($bg-color: $green-200, $bg-hover-color: $green-100);
 
   &.outline {
     @include outline-button-state(
-      $border-color: $primary-500,
-      $bg-hover-color: $primary-600,
-      $bg-active-color: $primary-500,
+      $border-color: $green-200,
+      $bg-hover-color: $green-100,
+      $bg-active-color: $green-200,
       $text-hover-color: $neutral-600
     );
   }

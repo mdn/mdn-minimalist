@@ -50,16 +50,16 @@
   $text-hover-color: $primary-200
 ) {
   background-color: $bg-color;
-  color: $border-color;
   border-color: $border-color;
+  color: $border-color;
 
   &:hover,
   &:focus {
     @if $bg-hover-color {
       background-color: $bg-hover-color;
     }
-    color: $text-hover-color;
     border-color: $bg-hover-color;
+    color: $text-hover-color;
   }
 
   &:active {
