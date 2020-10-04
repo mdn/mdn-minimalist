@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: {
     main: "./sass/mdn-minimalist.scss",
-    shared: "./sass/shared-variables.scss",
+    shared: "./sass/shared-variables.module.scss",
   },
   output: {
     path: path.resolve(__dirname, "public", "css"),
