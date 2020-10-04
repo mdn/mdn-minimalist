@@ -2,7 +2,10 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  entry: "./sass/mdn-minimalist.scss",
+  entry: {
+    main: "./sass/mdn-minimalist.scss",
+    shared: "./sass/shared-variables.scss",
+  },
   output: {
     path: path.resolve(__dirname, "public", "css"),
   },
