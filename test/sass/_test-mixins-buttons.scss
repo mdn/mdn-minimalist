@@ -7,8 +7,8 @@
 
       @include expect {
         background-color: #1e7f9d;
-        color: #fff;
         border: 2px solid #1e7f9d;
+        color: #fff;
 
         &:hover,
         &:focus {
@@ -34,19 +34,19 @@
       }
 
       @include expect {
-        background-color: #d75752;
+        background-color: #83d0f2;
+        border: 2px solid #83d0f2;
         color: #fff;
-        border: 2px solid #d75752;
 
         &:hover,
         &:focus {
-          background-color: #c14238;
-          border-color: #c14238;
+          background-color: #c2e8f9;
+          border-color: #c2e8f9;
         }
 
         &:active {
-          background-color: #d75752;
-          border-color: #d75752;
+          background-color: #83d0f2;
+          border-color: #83d0f2;
         }
       }
     }
@@ -60,8 +60,8 @@
 
       @include expect {
         background-color: #fff;
-        color: #1e7f9d;
         border-color: #1e7f9d;
+        color: #1e7f9d;
 
         &:hover,
         &:focus {
@@ -84,19 +84,19 @@
 
       @include expect {
         background-color: #fff;
-        color: #d75752;
-        border-color: #d75752;
+        border-color: #83d0f2;
+        color: #83d0f2;
 
         &:hover,
         &:focus {
-          background-color: #c14238;
+          background-color: #c2e8f9;
+          border-color: #c2e8f9;
           color: #fff;
-          border-color: #c14238;
         }
 
         &:active {
-          background-color: #d75752;
-          border-color: #d75752;
+          background-color: #83d0f2;
+          border-color: #83d0f2;
         }
       }
     }

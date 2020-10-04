@@ -1,21 +1,21 @@
 /* 
  * Sets base, hover, focus and active state styles for solid buttons.
- * @param `$bg-color` - Background color for default state [default: `$primary-100`]
- * @param `$bg-hover-color` - Background color for hover and focus state [default: `$primary-200`]
+ * @param `$bg-color` - Background color for default state [default: `$primary-200`]
+ * @param `$bg-hover-color` - Background color for hover and focus state [default: `$primary-100`]
  * @param `$bg-active-color` - Background color for active state [default: `$bg-color`]
  * @param `$text-color` - Foreground text color [default: `$neutral-600`]
  * @param `$text-hover-color` - Foreground text color for hover state [default: null]
  */
 @mixin button-state(
-  $bg-color: $primary-100,
-  $bg-hover-color: $primary-200,
+  $bg-color: $primary-200,
+  $bg-hover-color: $primary-100,
   $bg-active-color: $bg-color,
   $text-color: $text-color-inverted,
   $text-hover-color: null
 ) {
   background-color: $bg-color;
-  color: $text-color;
   border: 2px solid $bg-color;
+  color: $text-color;
 
   &:hover,
   &:focus {
@@ -39,27 +39,27 @@
  * @param `$bg-color` - Background color for default state [default: `$neutral-600`]
  * @param `$bg-hover-color` - Background and border color for hover state [default: `null`]
  * @param `$bg-active-color` - Background and border color for active state [default: `null`]
- * @param `$border-color` - Border color [default: `$primary-100`]
- * @param `$text-hover-color` - Text color for hover state [default: $primary-100]
+ * @param `$border-color` - Border color [default: `$primary-200`]
+ * @param `$text-hover-color` - Text color for hover state [default: $primary-200]
  */
 @mixin outline-button-state(
   $bg-color: $neutral-600,
   $bg-hover-color: null,
   $bg-active-color: null,
-  $border-color: $primary-100,
-  $text-hover-color: $primary-100
+  $border-color: $primary-200,
+  $text-hover-color: $primary-200
 ) {
   background-color: $bg-color;
-  color: $border-color;
   border-color: $border-color;
+  color: $border-color;
 
   &:hover,
   &:focus {
     @if $bg-hover-color {
       background-color: $bg-hover-color;
     }
-    color: $text-hover-color;
     border-color: $bg-hover-color;
+    color: $text-hover-color;
   }
 
   &:active {

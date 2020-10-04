@@ -64,20 +64,20 @@ textarea {
 [type="password"] {
   &:focus,
   &:active {
-    border-color: $primary-100;
-    box-shadow: 1px 1px 1px $primary-100;
+    border-color: $primary-200;
+    box-shadow: 1px 1px 1px $primary-200;
     outline: 0;
   }
 
   &.valid {
-    border-color: $primary-500;
-    outline: 2px dashed $primary-500;
+    border-color: $green-200;
+    outline: 2px dashed $green-200;
     outline-offset: 3px;
   }
 
   &.valid:focus,
   &.valid:active {
-    box-shadow: 1px 1px 1px $primary-500;
+    box-shadow: 1px 1px 1px $green-200;
   }
 
   &.invalid {

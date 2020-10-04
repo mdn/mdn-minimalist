@@ -2,11 +2,40 @@
 
 :export {
   primary100: $primary-100;
-  primary110: $primary-110;
   primary200: $primary-200;
   primary300: $primary-300;
   primary400: $primary-400;
-  primary500: $primary-500;
-  primary510: $primary-510;
-  primary600: $primary-600;
+  red100: $red-100;
+  red200: $red-200;
+  red300: $red-300;
+  error100: $error-100;
+  error200: $error-200;
+  error300: $error-300;
+  yellow100: $yellow-100;
+  yellow200: $yellow-200;
+  yellow300: $yellow-300;
+  warning100: $warning-100;
+  warning200: $warning-200;
+  warning300: $warning-300;
+  green100: $green-100;
+  green200: $green-200;
+  green300: $green-300;
+  green400: $green-400;
+  success100: $success-100;
+  success200: $success-200;
+  success300: $success-300;
+  neutral100: $neutral-100;
+  neutral200: $neutral-200;
+  neutral300: $neutral-300;
+  neutral400: $neutral-400;
+  neutral500: $neutral-500;
+  neutral525: $neutral-525;
+  neutral550: $neutral-550;
+  neutral600: $neutral-600;
+  textColor: $text-color;
+  textColorInverted: $text-color-inverted;
+  linkColor: $link-color;
+  standardGradient: $standard-gradient;
+  blueGradient: $blue-gradient;
+  overlayBackgroundColor: $overlay-background-color;
 }

@@ -1,11 +1,20 @@
-$primary-100: #1e7f9d;
-$primary-110: #83cff3;
-$primary-200: #216b82;
-$primary-300: #d75752;
-$primary-400: #c14238;
-$primary-500: #4d9f0c;
-$primary-510: #ebf8e1;
-$primary-600: #3b7b08;
+$primary-100: #216b82;
+$primary-200: #1e7f9d;
+$primary-300: #83d0f2;
+$primary-400: #c2e8f9;
+
+$red-100: #95353a;
+$red-200: #b54248;
+$red-300: #d0454c;
+
+$yellow-100: #b49e35;
+$yellow-200: #cab23f;
+$yellow-300: #e1c542;
+
+$green-100: #276738;
+$green-200: #367b48;
+$green-300: #529e66;
+$green-400: #ebf8e1;
 
 $neutral-100: #212121;
 $neutral-200: #333;
@@ -16,24 +25,25 @@ $neutral-525: #cdd5d7;
 $neutral-550: #eee;
 $neutral-600: #fff;
 
-$success-100: #529e66;
-$success-200: #367b48;
-$success-300: #276738;
+$success-100: $green-300;
+$success-200: $green-200;
+$success-300: $green-100;
 
-$warning-100: #e1c542;
-$warning-200: #cab23f;
-$warning-300: #b49e35;
+$warning-100: $yellow-300;
+$warning-200: $yellow-200;
+$warning-300: $yellow-100;
 
-$error-100: #d0454c;
-$error-200: #b54248;
-$error-300: #95353a;
+$error-100: $red-300;
+$error-200: $red-200;
+$error-300: $red-100;
 
 $text-color: $neutral-100;
 $text-color-inverted: $neutral-600;
-$link-color: $primary-100;
+$link-color: $primary-200;
 
 /* Gradients */
-$standard-gradient: linear-gradient(to right, $primary-110, $primary-510);
+$standard-gradient: linear-gradient(to right, $primary-300, $green-400);
+$blue-gradient: linear-gradient(to right, $primary-100, $primary-300);
 
 /* Overlays */
 $overlay-background-color: rgba(0, 0, 0, 0.5);
