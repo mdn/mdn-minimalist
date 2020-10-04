@@ -12,14 +12,14 @@
 
 /* icon color styles to be applied to SVG elements */
 .experimental {
-  fill: $primary-100;
+  fill: $primary-200;
 }
 
 .warning,
 .deprecated {
-  fill: $warning-100;
+  fill: $warning-300;
 }
 
 .obsolete {
-  fill: $error-100;
+  fill: $error-300;
 }

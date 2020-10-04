@@ -64,8 +64,8 @@ textarea {
 [type="password"] {
   &:focus,
   &:active {
-    border-color: $primary-100;
-    box-shadow: 1px 1px 1px $primary-100;
+    border-color: $primary-200;
+    box-shadow: 1px 1px 1px $primary-200;
     outline: 0;
   }
 

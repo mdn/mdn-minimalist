@@ -24,7 +24,7 @@ a.button {
 .outline,
 a.outline {
   @include outline-button-state(
-    $border-color: $primary-100,
+    $border-color: $primary-200,
     $text-hover-color: $neutral-600
   );
 }
