@@ -1,9 +1,20 @@
-.standard-table {
+/* 
+ * Standard table styles. For an example see:
+ * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video#Events
+ */
+.standard-table,
+.properties {
   border-collapse: collapse;
+  width: 100%;
+
+  a {
+    color: $neutral-100;
+    text-decoration: underline;
+  }
 
   th,
   td {
-    padding: ($base-spacing / 2);
+    padding: $base-unit ($base-spacing / 2);
     text-align: left;
   }
 
@@ -16,8 +27,36 @@
     background-color: $neutral-550;
     border-bottom: 2px solid $neutral-600;
   }
+}
 
+/*
+ * Property tables, for an example see :
+ * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video#Technical_summary
+ */
+.properties {
+  @include readable-line-length();
+  border-left: 5px solid $primary-100;
+
+  th,
+  td {
+    background-color: $neutral-550;
+    border: 0;
+    padding: $base-spacing;
+    vertical-align: top;
+  }
+
+  tr:nth-child(even) th,
   tr:nth-child(even) td {
-    background-color: $neutral-500;
+    background-color: $neutral-525;
+  }
+}
+
+/*
+ * Done this way to avoid the following stylelint error: no-descending-specificity 
+ * https://stylelint.io/user-guide/rules/no-descending-specificity
+ */
+.standard-table {
+  tr:nth-child(even) td {
+    background-color: $neutral-525;
   }
 }
