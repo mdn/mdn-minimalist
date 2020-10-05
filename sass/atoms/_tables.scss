@@ -1,0 +1,23 @@
+.standard-table {
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: ($base-spacing / 2);
+    text-align: left;
+  }
+
+  th {
+    background-color: $neutral-500;
+    border-bottom: 2px solid $neutral-400;
+  }
+
+  td {
+    background-color: $neutral-550;
+    border-bottom: 2px solid $neutral-600;
+  }
+
+  tr:nth-child(even) td {
+    background-color: $neutral-500;
+  }
+}
