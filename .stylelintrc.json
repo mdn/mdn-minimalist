@@ -15,6 +15,12 @@
       {
         "ignore": ["class"]
       }
+    ],
+    "no-descending-specificity": [
+      true,
+      {
+        "ignore": ["selectors-within-list"]
+      }
     ]
   }
 }

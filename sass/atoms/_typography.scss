@@ -56,7 +56,7 @@ p {
 }
 
 .readable-line-length {
-  max-width: $max-line-length;
+  @include readable-line-length();
 }
 
 /* text links */

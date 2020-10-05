@@ -28,6 +28,21 @@
   }
 }
 
+@include describe("readable-line-length") {
+  @include it("Returns both a rem and ch based max-width") {
+    @include assert {
+      @include output {
+        @include readable-line-length();
+      }
+
+      @include expect {
+        max-width: 42rem;
+        max-width: 80ch;
+      }
+    }
+  }
+}
+
 @include describe("reset-list") {
   @include it("Returns the expected reset style rules") {
     @include assert {
