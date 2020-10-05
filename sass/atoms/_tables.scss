@@ -42,7 +42,7 @@
   td {
     background-color: $neutral-550;
     border: 0;
-    padding: $base-spacing;
+    padding: ($base-spacing / 2) $base-spacing;
     vertical-align: top;
   }
 
