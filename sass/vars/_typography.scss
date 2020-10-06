@@ -16,9 +16,6 @@ $xl-font-size: 3.157rem; /* 56.83px */
 $large-font-size: 2.369rem; /* 42.63px */
 $medium-font-size: 1.777rem; /* 32px */
 $small-medium-font-size: 1.333rem; /* 24px */
-$default-font-size: 1rem; /* 18px */
-$small-font-size: 0.9rem; /* 16px */
-$tiny-text: 0.75rem; /* 13.5px */
 
 /* Mobile typescale based on minor third typescale with a base of 18px */
 $xxl-font-size-mobile: 2.488rem;
@@ -26,6 +23,10 @@ $xl-font-size-mobile: 2.074rem;
 $large-font-size-mobile: 1.728rem;
 $medium-font-size-mobile: 1.44rem;
 $small-medium-font-size-mobile: 1.2rem;
+
+$default-font-size: 1rem; /* 18px */
+$small-font-size: 0.9rem; /* 16px */
+$tiny-text: 0.75rem; /* 13.5px */
 
 /* approx 72ch for base font size and HHGTTG reference */
 $max-line-length: 42rem;
