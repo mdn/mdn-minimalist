@@ -34,6 +34,10 @@
     display: block;
     padding: ($base-spacing / 2);
     vertical-align: top;
+
+    @media #{$mq-small-desktop-and-up} {
+      display: table-cell;
+    }
   }
 }
 
