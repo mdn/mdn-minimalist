@@ -39,6 +39,12 @@
       display: table-cell;
     }
   }
+
+  @media #{$mq-small-desktop-and-up} {
+    th {
+      min-width: 30%;
+    }
+  }
 }
 
 /*
