@@ -8,7 +8,7 @@
   position: fixed;
   right: 0;
   /* This is to accomodate for the page header on all viewports */
-  top: 70px;
+  top: 90px;
   width: 100%;
-  z-index: 400;
+  z-index: $middle-layer;
 }
