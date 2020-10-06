@@ -1,6 +1,8 @@
 $browser-default-font-size: 16px;
 $base-unit: 6px;
 $base-spacing: $base-unit * 4;
+$medium-spacing: $base-spacing * 2;
+$large-spacing: $medium-spacing * 2;
 $content-block-margin: $base-spacing;
 
 $max-width-default: 1400px;

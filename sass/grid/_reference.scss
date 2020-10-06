@@ -67,7 +67,7 @@
         grid-row: 4/5;
         grid-template-columns: 25% 75%;
         grid-template-rows: max-content 1fr;
-        margin: 0 auto;
+        margin: $base-spacing auto 0;
         max-width: $max-width-default;
       }
 
