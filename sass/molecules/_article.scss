@@ -1,0 +1,15 @@
+.article {
+  p,
+  ul,
+  ol,
+  dl {
+    @include readable-line-length();
+  }
+
+  a {
+    &:active {
+      background-color: $primary-200;
+      color: $text-color-inverted;
+    }
+  }
+}

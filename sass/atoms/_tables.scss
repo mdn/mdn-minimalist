@@ -4,8 +4,8 @@
  */
 .standard-table,
 .properties {
+  @include readable-line-length();
   border-collapse: collapse;
-  width: 100%;
 
   a {
     color: $neutral-100;
@@ -14,18 +14,18 @@
 
   th,
   td {
-    border-left: 1px solid $neutral-600;
+    border-left: 2px solid $neutral-600;
     padding: $base-unit ($base-spacing / 2);
     text-align: left;
   }
 
   th {
-    background-color: $neutral-500;
-    border-bottom: 2px solid $neutral-400;
+    background-color: $primary-500;
+    border-bottom: 2px solid $primary-100;
   }
 
   td {
-    background-color: $neutral-550;
+    background-color: $primary-600;
     border-bottom: 2px solid $neutral-600;
   }
 }
@@ -48,7 +48,7 @@
 
   tr:nth-child(even) th,
   tr:nth-child(even) td {
-    background-color: $neutral-525;
+    background-color: $primary-600;
   }
 }
 
@@ -63,6 +63,10 @@
   }
 
   tr:nth-child(even) td {
-    background-color: $neutral-525;
+    background-color: $neutral-550;
   }
+}
+
+.full-width-table {
+  width: 100%;
 }
