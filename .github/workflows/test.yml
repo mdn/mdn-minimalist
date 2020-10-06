@@ -12,7 +12,10 @@ jobs:
           node-version: "12"
       - name: Install dependencies
         run: |
-          yarn install
-      - name: Run tests
+          yarn
+      - name: Lint Minimalist
+        run: |
+          yarn lint
+      - name: Run Minimalist
         run: |
           yarn test

@@ -6,9 +6,4 @@ a {
   &:focus {
     text-decoration: underline;
   }
-
-  &:active {
-    background-color: $primary-200;
-    color: $text-color-inverted;
-  }
 }

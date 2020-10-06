@@ -11,7 +11,7 @@
   font-display: swap;
   font-family: zillaslab;
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   src: url("../../typography/ZillaSlab-Regular.subset.woff2") format("woff2"),
     url("../../typography/ZillaSlab-Regular.subset.woff") format("woff");
 }
@@ -35,8 +35,8 @@ h3 {
   @include heading-3();
   background-color: $neutral-100;
   color: $text-color-inverted;
-  font-weight: 400;
-  padding: 0 4px 0 40px;
+  font-weight: normal;
+  padding: 0 $base-unit;
 }
 
 h4 {

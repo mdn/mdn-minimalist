@@ -4,18 +4,18 @@ dl {
   }
 
   dd {
-    margin: 0 10px 20px;
+    margin: 0 $base-spacing $base-spacing;
   }
 }
 
 .flex-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: $base-spacing;
 
   &.styled {
-    margin: 20px 0;
-    padding-left: 40px;
+    margin: $base-spacing 0;
+    padding-left: $base-spacing * 2;
   }
 
   li {

@@ -21,12 +21,8 @@
 @import "./atoms/forms";
 @import "./atoms/tables";
 @import "./atoms/overlays";
+@import "./atoms/utils";
+
+@import "./molecules/article";
 
 @import "./grid/reference";
-
-/* 
- * Include utils at the end of the bundle to ensure classes
- * such as `.hidden` and `.show` are at the bottom of
- * the cascade
- */
-@import "./atoms/utils";

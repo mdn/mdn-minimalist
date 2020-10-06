@@ -1,12 +1,12 @@
 html {
+  background-color: $neutral-600;
   box-sizing: border-box;
-  background-color: #fff;
   color: $text-color;
 }
 
 body {
-  line-height: $document-line-height;
   @include set-site-font-family();
-  font-size: $base-font-size;
   @include font-smoothing();
+  font-size: $base-font-size;
+  line-height: $document-line-height;
 }
