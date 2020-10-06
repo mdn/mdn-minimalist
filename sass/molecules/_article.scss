@@ -1,4 +1,6 @@
 .article {
+  margin-bottom: $large-spacing;
+
   p,
   ul,
   ol,
@@ -6,12 +8,15 @@
     @include readable-line-length();
   }
 
-  h2 {
-    margin-bottom: ($base-unit * 6);
-
+  h2,
+  h3 {
     a {
       color: $neutral-100;
     }
+  }
+
+  h2 {
+    margin-bottom: ($base-unit * 6);
   }
 
   a:active {
