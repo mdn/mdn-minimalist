@@ -20,8 +20,8 @@
   }
 
   th {
-    background-color: $primary-500;
-    border-bottom: 2px solid $primary-100;
+    background-color: $neutral-525;
+    border-bottom: 2px solid $neutral-600;
   }
 
   td {
@@ -68,5 +68,5 @@
 }
 
 .full-width-table {
-  width: 100%;
+  max-width: 100%;
 }
