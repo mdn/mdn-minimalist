@@ -6,10 +6,14 @@
     @include readable-line-length();
   }
 
-  a {
-    &:active {
-      background-color: $primary-200;
-      color: $text-color-inverted;
+  h2 {
+    a {
+      color: $neutral-100;
     }
+  }
+
+  a:active {
+    background-color: $primary-200;
+    color: $text-color-inverted;
   }
 }

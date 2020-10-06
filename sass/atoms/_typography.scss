@@ -36,6 +36,8 @@ h3 {
   background-color: $neutral-100;
   color: $text-color-inverted;
   font-weight: normal;
+  margin: $base-spacing 0;
+  max-width: max-content;
   padding: 0 $base-unit;
 }
 
