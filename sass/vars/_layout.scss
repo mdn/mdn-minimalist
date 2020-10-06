@@ -19,11 +19,20 @@ $small-desktop-starts: $tablet-ends + 0.001em;
 $small-desktop-ends: (1199px / $browser-default-font-size) * 1em;
 
 /*
-media queries
-- MDN should be coded "mobile first"
-- when coding features, begin by coding the mobile presentation as default
-*/
+ * media queries
+ * - MDN should be coded "mobile first"
+ * - when coding features, begin by coding the mobile presentation as default
+ */
 $mq-large-desktop-and-up: "all and (min-width: #{$small-desktop-ends})";
 $mq-small-desktop-and-up: "all and (min-width: #{$small-desktop-starts})";
 $mq-tablet-and-up: "all and (min-width: #{$tablet-starts})";
 $mq-mobile-and-up: "all and (min-width: #{$mobile-starts})";
+
+/*
+ * z-index scale
+ */
+$send-to-back: -1;
+$bring-to-front: 9999;
+$bottom-layer: 100;
+$middle-layer: 200;
+$top-layer: 300;
