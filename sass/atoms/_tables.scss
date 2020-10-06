@@ -4,7 +4,6 @@
  */
 .standard-table,
 .properties {
-  @include readable-line-length();
   border-collapse: collapse;
 
   a {
@@ -14,19 +13,7 @@
 
   th,
   td {
-    border-left: 2px solid $neutral-600;
-    padding: $base-unit ($base-spacing / 2);
     text-align: left;
-  }
-
-  th {
-    background-color: $neutral-525;
-    border-bottom: 2px solid $neutral-600;
-  }
-
-  td {
-    background-color: $primary-600;
-    border-bottom: 2px solid $neutral-600;
   }
 }
 
@@ -36,19 +23,17 @@
  */
 .properties {
   @include readable-line-length();
-  border-left: 5px solid $primary-100;
+  border: 2px solid $primary-100;
+  border-left: ($base-unit * 2) solid $primary-100;
 
   th,
   td {
-    background-color: $neutral-550;
+    background-color: $primary-500;
     border: 0;
+    border-top: 2px solid $primary-100;
+    display: block;
     padding: ($base-spacing / 2) $base-spacing;
     vertical-align: top;
-  }
-
-  tr:nth-child(even) th,
-  tr:nth-child(even) td {
-    background-color: $primary-600;
   }
 }
 
@@ -57,16 +42,31 @@
  * https://stylelint.io/user-guide/rules/no-descending-specificity
  */
 .standard-table {
+  border-left: ($base-unit * 2) solid $green-100;
+  width: 100%;
+
+  th,
+  td {
+    border-left: 2px solid $neutral-600;
+    padding: $base-unit ($base-spacing / 2);
+  }
+
+  th {
+    background-color: $neutral-550;
+    border-bottom: 2px solid $neutral-600;
+  }
+
+  td {
+    background-color: $green-400;
+    border-bottom: 2px solid $neutral-600;
+  }
+
   tr th:first-child,
   tr td:first-child {
     border-left: 0;
   }
 
-  tr:nth-child(even) td {
-    background-color: $neutral-550;
+  tr:last-child td {
+    border-bottom: 0;
   }
-}
-
-.full-width-table {
-  max-width: 100%;
 }
