@@ -55,6 +55,6 @@
     "stylelint-prettier": "^1.1.2",
     "stylelint-scss": "^3.15.0",
     "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^4.0.0"
   }
 }
