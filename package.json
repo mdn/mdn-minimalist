@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/schalkneethling/mdn-minimalist#readme",
   "devDependencies": {
-    "css-loader": "^4.3.0",
+    "css-loader": "^5.0.0",
     "file-loader": "^6.1.0",
     "http-server": "^0.12.3",
     "husky": "^4.2.5",
