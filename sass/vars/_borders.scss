@@ -1,1 +1,8 @@
-$code-example-border: 5px solid $primary-200;
+$standard-light-border: ($base-unit / 3) solid $neutral-600;
+$standard-primary-border: ($base-unit / 3) solid $primary-100;
+
+$thin-primary-border: 1px solid $primary-200;
+
+$code-example-border: $base-unit solid $primary-200;
+$standard-table-border: $base-unit solid $green-100;
+$property-table-border: $base-unit solid $primary-100;

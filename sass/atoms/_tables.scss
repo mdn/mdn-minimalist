@@ -23,14 +23,14 @@
  */
 .properties {
   @include readable-line-length();
-  border: 2px solid $primary-100;
-  border-left: ($base-unit * 2) solid $primary-100;
+  border: $standard-primary-border;
+  border-left: $property-table-border;
 
   th,
   td {
     background-color: $primary-500;
     border: 0;
-    border-top: 2px solid $primary-100;
+    border-top: $standard-primary-border;
     display: block;
     padding: ($base-spacing / 2);
     vertical-align: top;
@@ -56,24 +56,24 @@
   width: 100%;
 
   @media #{$mq-small-desktop-and-up} {
-    border-left: ($base-unit * 2) solid $green-100;
+    border-left: $standard-table-border;
     font-size: $default-font-size;
   }
 
   th,
   td {
-    border-left: 2px solid $neutral-600;
+    border-left: $standard-light-border;
     padding: $base-unit ($base-spacing / 2);
   }
 
   th {
     background-color: $neutral-550;
-    border-bottom: 2px solid $neutral-600;
+    border-bottom: $standard-light-border;
   }
 
   td {
     background-color: $green-400;
-    border-bottom: 2px solid $neutral-600;
+    border-bottom: $standard-light-border;
   }
 
   tr th:first-child,
