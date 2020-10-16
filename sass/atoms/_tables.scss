@@ -52,8 +52,13 @@
  * https://stylelint.io/user-guide/rules/no-descending-specificity
  */
 .standard-table {
-  border-left: ($base-unit * 2) solid $green-100;
+  font-size: $tiny-text;
   width: 100%;
+
+  @media #{$mq-small-desktop-and-up} {
+    border-left: ($base-unit * 2) solid $green-100;
+    font-size: $default-font-size;
+  }
 
   th,
   td {
