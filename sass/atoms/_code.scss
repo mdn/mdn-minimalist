@@ -1,9 +1,13 @@
 code {
-  background-color: $neutral-400;
+  background-color: $neutral-550;
   box-decoration-break: clone;
   font-family: $code-inline-font-family;
   padding: 0 2px;
   word-wrap: break-word;
+
+  a {
+    color: $neutral-100;
+  }
 }
 
 .notranslate {
