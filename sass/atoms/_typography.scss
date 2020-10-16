@@ -77,13 +77,3 @@ a:visited {
     text-decoration: underline;
   }
 }
-
-/* mono space elements pre, code, kbd */
-code {
-  background-color: rgba(220, 220, 220, 0.5);
-  border-radius: 2px;
-  box-decoration-break: clone;
-  font-family: $code-inline-font-family;
-  padding: 0 2px;
-  word-wrap: break-word;
-}
