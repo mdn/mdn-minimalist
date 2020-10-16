@@ -1,0 +1,7 @@
+.sample-code-frame {
+  border: $thin-primary-border;
+  border-left: $code-example-border;
+  margin: ($base-spacing / 2) 0;
+  padding: 0 ($base-spacing / 2);
+  width: 100%;
+}
