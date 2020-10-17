@@ -15,6 +15,10 @@
   td {
     text-align: left;
   }
+
+  code {
+    hyphens: auto;
+  }
 }
 
 /*
@@ -52,12 +56,10 @@
  * https://stylelint.io/user-guide/rules/no-descending-specificity
  */
 .standard-table {
-  font-size: $tiny-text;
   width: 100%;
 
   @media #{$mq-small-desktop-and-up} {
     border-left: $standard-table-border;
-    font-size: $default-font-size;
   }
 
   th,
@@ -69,6 +71,15 @@
   th {
     background-color: $neutral-550;
     border-bottom: $standard-light-border;
+    max-width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @media #{$mq-small-desktop-and-up} {
+      max-width: inherit;
+      overflow: inherit;
+      text-overflow: inherit;
+    }
   }
 
   td {
