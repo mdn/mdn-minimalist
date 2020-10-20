@@ -11,8 +11,7 @@
   .reference-page {
     .page-header,
     .titlebar-container,
-    .breadcrumb-container,
-    .locale-container,
+    .breadcrumbs-locale-container,
     .page-content-container,
     .page-footer {
       grid-column: 1/2;
@@ -26,16 +25,24 @@
       grid-row: 1/2;
     }
 
-    .breadcrumb-container {
+    .breadcrumbs-locale-container {
+      display: flex;
       grid-row: 2/3;
+      margin: 0 auto;
+      max-width: $max-width-default;
+      width: 100%;
+
+      .breadcrumb-container {
+        flex-basis: 70%;
+      }
+
+      .locale-container {
+        flex-basis: 30%;
+      }
     }
 
     .titlebar-container {
       grid-row: 3/4;
-    }
-
-    .locale-container {
-      grid-row: 4/5;
     }
 
     .page-content-container {
@@ -53,13 +60,7 @@
         grid-row: 2/3;
       }
 
-      .breadcrumb-container {
-        grid-column: 1/2;
-        grid-row: 3/4;
-      }
-
-      .locale-container {
-        grid-column: 2/3;
+      .breadcrumbs-locale-container {
         grid-row: 3/4;
       }
 
@@ -67,7 +68,7 @@
         grid-row: 4/5;
         grid-template-columns: 25% 75%;
         grid-template-rows: max-content 1fr;
-        margin: $base-spacing auto 0;
+        margin: 0 auto;
         max-width: $max-width-default;
         width: 100%;
       }

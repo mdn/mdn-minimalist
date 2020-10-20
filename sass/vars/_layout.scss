@@ -6,6 +6,7 @@ $medium-spacing: $base-spacing * 2;
 $large-spacing: $medium-spacing * 2;
 
 $base-section-spacing: ($base-spacing * 2) $base-spacing;
+$base-section-spacing-mobile: ($base-spacing / 2) $base-spacing;
 $content-block-margin: $base-spacing;
 
 $max-width-default: 1400px;
