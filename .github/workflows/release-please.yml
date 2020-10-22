@@ -12,7 +12,7 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
           release-type: node
-          package-name: @mdn/minimalist
+          package-name: release-please-action
       # The logic below handles the npm publication:
       - uses: actions/checkout@v2
         # these if statements ensure that a publication only occurs when
@@ -21,7 +21,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: "https://registry.npmjs.org"
         if: ${{ steps.release.outputs.release_created }}
       - run: npm ci
         if: ${{ steps.release.outputs.release_created }}
