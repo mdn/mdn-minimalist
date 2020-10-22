@@ -102,3 +102,53 @@
     }
   }
 }
+
+@include describe("bordered") {
+  @include it("Returns the default border") {
+    @include assert {
+      @include output {
+        @include bordered();
+      }
+
+      @include expect {
+        border: 2px solid #216b82;
+      }
+    }
+  }
+
+  @include it("Returns a 5px border with default color") {
+    @include assert {
+      @include output {
+        @include bordered($border-thickness: 5px);
+      }
+
+      @include expect {
+        border: 5px solid #216b82;
+      }
+    }
+  }
+
+  @include it("Returns border with default border width but custom color") {
+    @include assert {
+      @include output {
+        @include bordered($border-color: $neutral-100);
+      }
+
+      @include expect {
+        border: 2px solid #212121;
+      }
+    }
+  }
+
+  @include it("Returns border with custom border thickness and color") {
+    @include assert {
+      @include output {
+        @include bordered($border-thickness: 5px, $border-color: $neutral-100);
+      }
+
+      @include expect {
+        border: 5px solid #212121;
+      }
+    }
+  }
+}
