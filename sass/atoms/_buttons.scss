@@ -57,6 +57,26 @@ a.positive {
   }
 }
 
+.light,
+a.light {
+  @include button-state(
+    $bg-color: $neutral-600,
+    $bg-hover-color: $neutral-600,
+    $text-color: $neutral-100
+  );
+
+  &.outline {
+    @include outline-button-state(
+      $bg-color: transparent,
+      $border-color: $neutral-600,
+      $bg-hover-color: $neutral-600,
+      $bg-active-color: $neutral-600,
+      $text-color: $neutral-100,
+      $text-hover-color: $neutral-100
+    );
+  }
+}
+
 .inactive,
 a.inactive {
   @include button-state(
@@ -80,8 +100,7 @@ a.minimal {
   }
 }
 
-/* Turns off most base default browser styles
-   for button elements. */
+/* Turns off background and border and set cursor to pointer. */
 .ghost {
   background: none;
   border: 0;
