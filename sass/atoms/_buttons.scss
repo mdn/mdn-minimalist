@@ -13,7 +13,7 @@ a.button {
 
   &:hover,
   &:focus {
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   &:active {
@@ -85,6 +85,12 @@ a.inactive {
     $text-color: $neutral-300
   );
   cursor: default;
+
+  &:hover,
+  &:focus {
+    color: $neutral-300;
+    text-decoration: none;
+  }
 }
 
 .minimal,
