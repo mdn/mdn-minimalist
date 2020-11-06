@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.2](https://www.github.com/mdn/mdn-minimalist/compare/v0.2.1...v0.2.2) (2020-11-06)
+
+
+### Bug Fixes
+
+* new desktop typescale ([a5ed962](https://www.github.com/mdn/mdn-minimalist/commit/a5ed962411aa91058682c7f247baad1a54ddf898)), closes [#229](https://www.github.com/mdn/mdn-minimalist/issues/229)
+
 ### [0.2.1](https://www.github.com/mdn/mdn-minimalist/compare/v0.2.0...v0.2.1) (2020-10-26)
 
 
