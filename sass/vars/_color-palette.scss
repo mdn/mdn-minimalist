@@ -45,7 +45,7 @@ $link-color: $primary-200;
 /* Gradients */
 $standard-gradient: linear-gradient(to right, $primary-300, $green-400);
 $blue-gradient: linear-gradient(to right, $primary-100, $primary-300);
-light-gray-gradient: linear-gradient(to bottom, $neutral-550, $neutral-600);
+$light-gray-gradient: linear-gradient(to bottom, $neutral-550, $neutral-600);
 
 /* Overlays */
 $overlay-background-color: rgba(0, 0, 0, 0.5);
