@@ -6,6 +6,20 @@ code {
   word-wrap: break-word;
 }
 
+/* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd */
+kbd {
+  background: $light-gray-gradient;
+  background-color: $neutral-550;
+  border: 1px solid $neutral-525;
+  border-radius: $default-border-radius;
+  box-shadow: $light-gray-shadow;
+  font-family: $code-inline-font-family;
+  font-size: $small-font-size;
+  font-weight: bold;
+  line-height: 1;
+  padding: ($base-spacing / 6) ($base-spacing / 4);
+}
+
 .notranslate {
   code {
     background-color: transparent;
