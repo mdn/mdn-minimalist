@@ -4,17 +4,19 @@
   "description": "The base Sass for Mozilla Developer based projects and products",
   "scripts": {
     "build": "webpack",
-    "build:sass": "sass ./sass/mdn-minimalist.scss ./public/css/main.css --watch",
+    "build:sass": "sass ./sass/mdn-minimalist.scss ./public/css/main.css",
+    "build:sass:watch": "sass ./sass/mdn-minimalist.scss ./public/css/main.css --watch",
     "build:sass:variables": "sass ./sass/shared-variables.module.scss ./public/css/shared-variables.module.css",
     "copy": "cp -R ./typography ./public/typography",
     "lint": "stylelint sass/**/*.scss",
-    "precommit": "npm run prettier:staged",
+    "precommit": "yarn run prettier:staged",
     "prettier:check": "prettier --check **/*.scss",
     "prettier:format": "prettier --write **/*.scss",
     "prettier:staged": "pretty-quick --staged --pattern \"**/*.scss\"",
     "server": "http-server -p 8090",
     "start": "run-p build:sass copy server",
-    "test": "jest"
+    "test": "yarn run test:bundlesize && jest",
+    "test:bundlesize": "yarn build:sass && bundlesize"
   },
   "repository": {
     "type": "git",
@@ -34,6 +36,7 @@
   },
   "homepage": "https://github.com/schalkneethling/mdn-minimalist#readme",
   "devDependencies": {
+    "bundlesize": "^0.18.0",
     "css-loader": "^5.0.0",
     "file-loader": "^6.1.0",
     "http-server": "^0.12.3",
@@ -56,5 +59,12 @@
     "stylelint-scss": "^3.15.0",
     "webpack": "^5.0.0",
     "webpack-cli": "^4.0.0"
-  }
+  },
+  "bundlesize": [
+    {
+      "path": "./public/css/main.css",
+      "maxSize": "10 kB",
+      "compression": "gzip"
+    }
+  ]
 }
