@@ -6,19 +6,21 @@ $site-font-family: arial, $site-font-family-fallback;
 
 $code-inline-font-family: consolas, "Liberation Mono", courier, monospace;
 
-$base-font-size: 18px;
+$base-font-size: 100%;
 $document-line-height: 1.6;
 $code-example-line-height: 1.4;
 $heading-line-height: 1.2;
 
-/* Desktop and tablet typescale based on major third typescale with a base of 18px */
+/* Desktop and tablet typescale based on major third typescale with a base of 
+   100% of base font size set by the user. */
 $xxl-font-size: 3.052rem; /* 54.93px */
 $xl-font-size: 2.441rem; /* 43.95px */
 $large-font-size: 1.953rem; /* 35.16px */
 $medium-font-size: 1.563rem; /* 28.13px */
 $small-medium-font-size: 1.25rem; /* 22.50px */
 
-/* Mobile typescale based on minor third typescale with a base of 18px */
+/* Mobile typescale based on minor third typescale with a base of 
+   100% of base font size set by the user. */
 $xxl-font-size-mobile: 2.488rem;
 $xl-font-size-mobile: 2.074rem;
 $large-font-size-mobile: 1.728rem;
