@@ -1,6 +1,8 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+const ASSET_PATH = process.env.ASSET_PATH || "/";
+
 module.exports = {
   entry: {
     main: "./sass/mdn-minimalist.scss",
@@ -20,7 +22,12 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: ASSET_PATH,
+            },
+          },
           "css-loader",
           "resolve-url-loader",
           {
@@ -35,6 +42,11 @@ module.exports = {
         test: /\.(woff|woff2)$/,
         use: "file-loader",
       },
+      {
+        test: /\.svg$/,
+        use: ["url-loader"],
+      },
     ],
   },
+  watch: true,
 };
