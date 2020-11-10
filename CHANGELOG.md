@@ -1,5 +1,14 @@
 # Changelog
 
+### [0.2.3](https://www.github.com/mdn/mdn-minimalist/compare/v0.2.2...v0.2.3) (2020-11-10)
+
+
+### Bug Fixes
+
+* kbd element ([16eb53c](https://www.github.com/mdn/mdn-minimalist/commit/16eb53ca7ef8a5ef6889275cd753b8e0e304b8d6)), closes [#232](https://www.github.com/mdn/mdn-minimalist/issues/232)
+* notecards ([028c887](https://www.github.com/mdn/mdn-minimalist/commit/028c8871d70a9d3fe601f0fc236b12d821347a6d)), closes [#239](https://www.github.com/mdn/mdn-minimalist/issues/239)
+* use 100% for base font size ([0cb467a](https://www.github.com/mdn/mdn-minimalist/commit/0cb467a71cc34405a3c620c7654cc7c1018153f4)), closes [#237](https://www.github.com/mdn/mdn-minimalist/issues/237)
+
 ### [0.2.2](https://www.github.com/mdn/mdn-minimalist/compare/v0.2.1...v0.2.2) (2020-11-06)
 
 
