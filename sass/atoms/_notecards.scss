@@ -2,6 +2,19 @@
   border-left: $notecard-border;
   padding: $base-spacing / 2;
 
+  a {
+    &:link,
+    &:visited {
+      color: $neutral-100;
+      text-decoration: underline;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
   h4 {
     font-size: $small-medium-font-size-mobile;
 
