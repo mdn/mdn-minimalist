@@ -15,6 +15,7 @@
     "prettier:staged": "pretty-quick --staged --pattern \"**/*.scss\"",
     "server": "http-server -p 8090",
     "start": "run-p build:sass:watch copy server",
+    "start:webpack": "run-p build copy server",
     "test": "yarn run test:bundlesize && jest",
     "test:bundlesize": "yarn build:sass && bundlesize"
   },
@@ -36,6 +37,7 @@
   },
   "homepage": "https://github.com/schalkneethling/mdn-minimalist#readme",
   "devDependencies": {
+    "@mdn/dinocons": "^0.1.2",
     "bundlesize": "^0.18.0",
     "css-loader": "^5.0.0",
     "file-loader": "^6.1.0",
@@ -57,6 +59,7 @@
     "stylelint-config-sass-guidelines": "^7.0.0",
     "stylelint-prettier": "^1.1.2",
     "stylelint-scss": "^3.15.0",
+    "url-loader": "^4.1.1",
     "webpack": "^5.0.0",
     "webpack-cli": "^4.0.0"
   },

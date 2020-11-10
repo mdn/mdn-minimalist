@@ -1,0 +1,106 @@
+.notecard {
+  border-left: $notecard-border;
+  padding: $base-spacing / 2;
+
+  a {
+    &:link,
+    &:visited {
+      color: $neutral-100;
+      text-decoration: underline;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  h4 {
+    font-size: $small-medium-font-size-mobile;
+
+    @media #{$mq-tablet-and-up} {
+      font-size: $small-medium-font-size;
+    }
+
+    &::before {
+      background-size: 18px;
+      content: "";
+      display: inline-block;
+      height: 21px;
+      margin-right: $base-spacing / 4;
+      position: relative;
+      top: 2px;
+      width: 20px;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  &.note {
+    background-color: $primary-500;
+
+    h4 {
+      &::before {
+        background: transparent url("~@mdn/dinocons/file-icons/file.svg") 0 2px
+          no-repeat;
+      }
+    }
+  }
+
+  &.warning,
+  &.experimental,
+  &.draft {
+    background-color: $yellow-400;
+    border-color: $yellow-300;
+    color: $neutral-100;
+
+    h4 {
+      &::before {
+        background: transparent
+          url("~@mdn/dinocons/notifications/exclamation-triangle.svg") 0 2px
+          no-repeat;
+      }
+    }
+  }
+
+  &.experimental {
+    h4 {
+      &::before {
+        background-image: url("~@mdn/dinocons/general/flask.svg");
+      }
+    }
+  }
+
+  &.draft {
+    h4 {
+      &::before {
+        background-image: url("~@mdn/dinocons/general/pencil.svg");
+      }
+    }
+  }
+
+  &.negative,
+  &.obsolete,
+  &.deprecated {
+    background-color: $red-400;
+    border-color: $red-300;
+    color: $neutral-100;
+
+    h4 {
+      &::before {
+        background: transparent url("~@mdn/dinocons/general/trash.svg") 0 2px
+          no-repeat;
+      }
+    }
+  }
+
+  &.deprecated {
+    h4 {
+      &::before {
+        background-image: url("~@mdn/dinocons/emojis/thumbs-down.svg");
+      }
+    }
+  }
+}
