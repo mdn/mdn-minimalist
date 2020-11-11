@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.7](https://www.github.com/mdn/mdn-minimalist/compare/v0.2.6...v0.2.7) (2020-11-11)
+
+
+### Bug Fixes
+
+* add standard grid ([f1118f2](https://www.github.com/mdn/mdn-minimalist/commit/f1118f2ff3a724bc4d931f745bbfde43084604aa)), closes [#248](https://www.github.com/mdn/mdn-minimalist/issues/248)
+
 ### [0.2.6](https://www.github.com/mdn/mdn-minimalist/compare/v0.2.5...v0.2.6) (2020-11-11)
 
 
