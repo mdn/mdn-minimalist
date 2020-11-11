@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.5](https://www.github.com/mdn/mdn-minimalist/compare/v0.2.4...v0.2.5) (2020-11-11)
+
+
+### Bug Fixes
+
+* notecards ([43c8b09](https://www.github.com/mdn/mdn-minimalist/commit/43c8b09c80c1e03a9995f4da1e80789075c739a2))
+
 ### [0.2.4](https://www.github.com/mdn/mdn-minimalist/compare/v0.2.3...v0.2.4) (2020-11-10)
 
 
