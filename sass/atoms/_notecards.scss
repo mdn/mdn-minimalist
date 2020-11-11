@@ -1,5 +1,6 @@
 .notecard {
   border-left: $notecard-border;
+  margin: $base-spacing 0;
   padding: ($base-spacing / 4) ($base-spacing / 2);
 
   &::before {
