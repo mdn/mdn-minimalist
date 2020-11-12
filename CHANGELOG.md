@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.8](https://www.github.com/mdn/mdn-minimalist/compare/v0.2.7...v0.2.8) (2020-11-12)
+
+
+### Bug Fixes
+
+* default padding for standard grid ([84e4935](https://www.github.com/mdn/mdn-minimalist/commit/84e4935fc03f9ed4247173327b76b9b52dc6cd14))
+
 ### [0.2.7](https://www.github.com/mdn/mdn-minimalist/compare/v0.2.6...v0.2.7) (2020-11-11)
 
 
