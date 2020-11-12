@@ -23,6 +23,7 @@
       display: grid;
       grid-row: 3/4;
       grid-template-columns: 100%;
+      padding: $base-spacing;
     }
 
     .page-footer {
