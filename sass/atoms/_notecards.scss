@@ -42,7 +42,8 @@
   }
 
   &.inline {
-    display: inline-block;
+    margin: $base-spacing / 4;
+    padding: ($base-spacing / 8) ($base-spacing / 4);
 
     p {
       display: inline-block;
