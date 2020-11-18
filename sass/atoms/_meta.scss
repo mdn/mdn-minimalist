@@ -1,0 +1,133 @@
+/* General Badges */
+.badge {
+  background-color: $neutral-550;
+  border-radius: 6px;
+  margin-right: $base-spacing / 4;
+  padding: 0 $base-spacing / 4;
+
+  a {
+    color: $neutral-100;
+  }
+}
+
+.html-version,
+.optional,
+.readonly {
+  border-left: 5px solid $neutral-600;
+}
+
+.optional,
+.readonly {
+  border-color: $neutral-100;
+}
+
+.html-version {
+  border-color: $green-200;
+}
+
+/* Specification badges */
+.spec-cr,
+.spec-ed,
+.spec-draft,
+.spec-lc,
+.spec-living,
+.spec-obsolete,
+.spec-pr,
+.spec-rec,
+.spec-rfc,
+.spec-standard,
+.spec-wd {
+  &::before {
+    background-color: $neutral-550;
+    border-left: 5px solid $neutral-100;
+    border-radius: 6px;
+    display: inline-block;
+    margin-right: $base-spacing / 4;
+    padding: $base-spacing / 4;
+  }
+}
+
+.spec-living,
+.spec-standard {
+  color: $primary-50;
+
+  &::before {
+    border-color: $primary-50;
+    content: "LS";
+  }
+}
+
+.spec-standard {
+  &::before {
+    content: "ST";
+  }
+}
+
+.spec-cr,
+.spec-pr,
+.spec-rec,
+.spec-rfc {
+  color: $green-200;
+
+  &::before {
+    border-color: $green-100;
+    content: "REC";
+  }
+}
+
+.spec-cr {
+  &::before {
+    content: "CR";
+  }
+}
+
+.spec-pr {
+  &::before {
+    content: "PR";
+  }
+}
+
+.spec-rfc {
+  &::before {
+    content: "RFC";
+  }
+}
+
+.spec-draft,
+.spec-lc,
+.spec-wd {
+  color: $orange-300;
+
+  &::before {
+    border-color: $orange-300;
+    content: "WD";
+  }
+}
+
+.spec-draft {
+  &::before {
+    content: "D";
+  }
+}
+
+.spec-lc {
+  &::before {
+    content: "LC";
+  }
+}
+
+.spec-ed,
+.spec-obsolete {
+  color: $red-200;
+
+  &::before {
+    border-color: $red-200;
+    content: "ED";
+  }
+}
+
+.spec-obsolete {
+  &::before {
+    content: "O";
+  }
+}
