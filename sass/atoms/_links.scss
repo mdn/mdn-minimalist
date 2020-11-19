@@ -6,4 +6,17 @@ a {
   &:focus {
     text-decoration: underline;
   }
+
+  &.external {
+    &::before {
+      background: transparent url("~@mdn/dinocons/general/external.svg") 0 0
+        no-repeat;
+      background-size: 16px;
+      content: "";
+      display: inline-block;
+      height: 16px;
+      margin-right: $base-spacing / 8;
+      width: 16px;
+    }
+  }
 }
