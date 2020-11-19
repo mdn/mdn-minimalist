@@ -1,5 +1,15 @@
 # Changelog
 
+### [0.2.9](https://www.github.com/mdn/mdn-minimalist/compare/v0.2.8...v0.2.9) (2020-11-19)
+
+
+### Bug Fixes
+
+* better responsive tables ([d9921eb](https://www.github.com/mdn/mdn-minimalist/commit/d9921eb3593e2a6c197ce41e763db9936d6e6d5b)), closes [#259](https://www.github.com/mdn/mdn-minimalist/issues/259)
+* change standard table color ([978e0b0](https://www.github.com/mdn/mdn-minimalist/commit/978e0b075d6fb12432a99307ca22c9263d41d406)), closes [#259](https://www.github.com/mdn/mdn-minimalist/issues/259)
+* meta badges ([958a3f8](https://www.github.com/mdn/mdn-minimalist/commit/958a3f87cfebf715977a4dfef0104adcda0a347d)), closes [#255](https://www.github.com/mdn/mdn-minimalist/issues/255)
+* missing table borders ([44f37f0](https://www.github.com/mdn/mdn-minimalist/commit/44f37f07f31465faa64cf68baa847fa0b253ea62)), closes [#264](https://www.github.com/mdn/mdn-minimalist/issues/264)
+
 ### [0.2.8](https://www.github.com/mdn/mdn-minimalist/compare/v0.2.7...v0.2.8) (2020-11-12)
 
 
