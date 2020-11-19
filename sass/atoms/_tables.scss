@@ -8,7 +8,6 @@
 
   a {
     color: $neutral-100;
-    text-decoration: underline;
   }
 
   th,
@@ -17,6 +16,7 @@
   }
 
   code {
+    background-color: transparent;
     hyphens: auto;
   }
 }
@@ -83,7 +83,7 @@
   }
 
   td {
-    background-color: $green-400;
+    background-color: $neutral-550;
     border-bottom: $standard-light-border;
   }
 
