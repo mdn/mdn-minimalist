@@ -1,18 +1,23 @@
+table {
+  th,
+  td {
+    border: 1px solid $neutral-500;
+    padding: $base-spacing / 2;
+    text-align: left;
+  }
+}
+
 /* 
  * Standard table styles. For an example see:
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video#Events
  */
+table,
 .standard-table,
 .properties {
   border-collapse: collapse;
 
   a {
     color: $neutral-100;
-  }
-
-  th,
-  td {
-    text-align: left;
   }
 
   code {
