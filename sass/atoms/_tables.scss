@@ -1,4 +1,10 @@
 table {
+  font-size: $small-font-size;
+
+  @media #{$mq-tablet-and-up} {
+    font-size: $default-font-size;
+  }
+
   th,
   td {
     border: 1px solid $neutral-500;
@@ -69,6 +75,7 @@ table,
 
   th,
   td {
+    border: 0;
     border-left: $standard-light-border;
     padding: ($base-spacing / 2);
   }
@@ -76,24 +83,11 @@ table,
   th {
     background-color: $neutral-550;
     border-bottom: $standard-light-border;
-    max-width: 110px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-    @media #{$mq-small-desktop-and-up} {
-      max-width: inherit;
-      overflow: inherit;
-      text-overflow: inherit;
-    }
   }
 
   td {
     background-color: $neutral-550;
     border-bottom: $standard-light-border;
-  }
-
-  tr th:first-child {
-    max-width: 90px;
   }
 
   tr th:first-child,
