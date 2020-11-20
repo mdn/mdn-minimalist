@@ -1,0 +1,22 @@
+.callout {
+  background-color: $primary-400;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-bottom: $base-spacing;
+  padding: 0 $base-spacing;
+
+  p {
+    @include readable-line-length();
+  }
+
+  .button {
+    max-width: inherit;
+    width: 100%;
+
+    @media #{$mq-tablet-and-up} {
+      max-width: max-content;
+      width: inherit;
+    }
+  }
+}
