@@ -51,6 +51,16 @@
     }
   }
 
+  &.success {
+    background-color: $green-400;
+    border-color: $green-200;
+
+    &::before {
+      background: transparent url("~@mdn/dinocons/general/check-mark.svg") 0 2px
+        no-repeat;
+    }
+  }
+
   &.note {
     background-color: $primary-500;
 
