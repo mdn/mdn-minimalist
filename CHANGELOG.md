@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.0](https://www.github.com/mdn/mdn-minimalist/compare/v0.2.9...v0.3.0) (2020-11-20)
+
+
+### Features
+
+* add callout style ([ce3dc2c](https://www.github.com/mdn/mdn-minimalist/commit/ce3dc2c4455062c1bd1162fd4169c30aff255c61)), closes [#271](https://www.github.com/mdn/mdn-minimalist/issues/271)
+* success notecard ([0573dae](https://www.github.com/mdn/mdn-minimalist/commit/0573daed0d50c8cd193b3d6db9b74de67fc23218)), closes [#270](https://www.github.com/mdn/mdn-minimalist/issues/270)
+
 ### [0.2.9](https://www.github.com/mdn/mdn-minimalist/compare/v0.2.8...v0.2.9) (2020-11-19)
 
 
