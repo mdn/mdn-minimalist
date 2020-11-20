@@ -54,6 +54,7 @@
   &.success {
     background-color: $green-400;
     border-color: $green-200;
+    color: $neutral-100;
 
     &::before {
       background: transparent url("~@mdn/dinocons/general/check-mark.svg") 0 2px
