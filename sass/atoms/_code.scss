@@ -25,3 +25,13 @@ kbd {
     background-color: transparent;
   }
 }
+
+.example-bad {
+  background-color: $red-400;
+  border-color: $red-100;
+}
+
+.example-good {
+  background-color: $green-400;
+  border-color: $green-100;
+}

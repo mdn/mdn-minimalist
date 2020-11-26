@@ -67,3 +67,6 @@ dist
 
 # project specific
 public
+
+# tabnine
+.dccache
