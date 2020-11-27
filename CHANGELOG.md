@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.4.1](https://www.github.com/mdn/mdn-minimalist/compare/v0.4.0...v0.4.1) (2020-11-27)
+
+
+### Bug Fixes
+
+* package.json ([303016f](https://www.github.com/mdn/mdn-minimalist/commit/303016f8153dbcc674972407c662410e7406f647))
+
 ## [0.4.0](https://www.github.com/mdn/mdn-minimalist/compare/v0.3.0...v0.4.0) (2020-11-27)
 
 
