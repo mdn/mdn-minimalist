@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.4.2](https://www.github.com/mdn/mdn-minimalist/compare/v0.4.1...v0.4.2) (2020-11-27)
+
+
+### Bug Fixes
+
+* move pre styling to minimalist ([4b1fc2e](https://www.github.com/mdn/mdn-minimalist/commit/4b1fc2e2047263777e400750e231207f2b82ce07)), closes [#294](https://www.github.com/mdn/mdn-minimalist/issues/294)
+
 ### [0.4.1](https://www.github.com/mdn/mdn-minimalist/compare/v0.4.0...v0.4.1) (2020-11-27)
 
 
