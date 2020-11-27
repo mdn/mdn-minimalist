@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/schalkneethling/mdn-minimalist.git"
+    "url": "git+https://github.com/mdn/mdn-minimalist.git"
   },
   "keywords": [
     "styleguide",
@@ -33,9 +33,9 @@
   "author": "Mozilla",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/schalkneethling/mdn-minimalist/issues"
+    "url": "https://github.com/mdn/mdn-minimalist/issues"
   },
-  "homepage": "https://github.com/schalkneethling/mdn-minimalist#readme",
+  "homepage": "https://github.com/mdn/mdn-minimalist#readme",
   "devDependencies": {
     "@mdn/dinocons": "^0.1.2",
     "bundlesize": "^0.18.0",
