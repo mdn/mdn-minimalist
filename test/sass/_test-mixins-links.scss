@@ -1,0 +1,14 @@
+@include describe("highlighted-link-state") {
+  @include it("Returns the expected state") {
+    @include assert {
+      @include output {
+        @include highlighted-link-state();
+      }
+
+      @include expect {
+        background-color: #1e7f9d;
+        color: #fff;
+      }
+    }
+  }
+}
