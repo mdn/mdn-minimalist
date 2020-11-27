@@ -11,6 +11,10 @@ table {
     padding: $base-spacing / 2;
     text-align: left;
   }
+
+  pre {
+    background-color: $neutral-600;
+  }
 }
 
 /* 
