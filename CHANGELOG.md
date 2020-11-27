@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.4.0](https://www.github.com/mdn/mdn-minimalist/compare/v0.3.0...v0.4.0) (2020-11-27)
+
+
+### Features
+
+* highlighted link state ([06c5391](https://www.github.com/mdn/mdn-minimalist/commit/06c539172983491f3990d553b9d96e0511cfe2f0)), closes [#286](https://www.github.com/mdn/mdn-minimalist/issues/286)
+
+
+### Bug Fixes
+
+* code element in tables ([fee6b27](https://www.github.com/mdn/mdn-minimalist/commit/fee6b2788b98772a400a2cebfeabdf950a141ba5)), closes [#268](https://www.github.com/mdn/mdn-minimalist/issues/268)
+* give kbd element a little more space ([32a2d60](https://www.github.com/mdn/mdn-minimalist/commit/32a2d60ecec0199ab89daaebb9ec43a75a0647f3)), closes [#267](https://www.github.com/mdn/mdn-minimalist/issues/267)
+* good and bad code examples ([a258dcf](https://www.github.com/mdn/mdn-minimalist/commit/a258dcf2b241a20b8abeb9ca683a7e9b381b2253)), closes [#280](https://www.github.com/mdn/mdn-minimalist/issues/280)
+* img sizing ([72c4be6](https://www.github.com/mdn/mdn-minimalist/commit/72c4be644360411d03dd9dea9a35f3ce4a8d6861)), closes [#278](https://www.github.com/mdn/mdn-minimalist/issues/278)
+* inline notecards should use normal font-weight ([f4de1df](https://www.github.com/mdn/mdn-minimalist/commit/f4de1dff73127bdf8d3870937ba5a8788a245972)), closes [#269](https://www.github.com/mdn/mdn-minimalist/issues/269)
+* no-slab h3 callouts ([5710fbc](https://www.github.com/mdn/mdn-minimalist/commit/5710fbc1fdec7b4e5bb7ec93139d047c29e97e0a)), closes [#277](https://www.github.com/mdn/mdn-minimalist/issues/277)
+
 ## [0.3.0](https://www.github.com/mdn/mdn-minimalist/compare/v0.2.9...v0.3.0) (2020-11-20)
 
 
