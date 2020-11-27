@@ -17,7 +17,18 @@ kbd {
   font-size: $small-font-size;
   font-weight: bold;
   line-height: 1;
+  margin: $base-unit / 2;
   padding: ($base-spacing / 6) ($base-spacing / 4);
+}
+
+/*
+ * When used inside a table, give it a little more margin
+ * see: https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/Keyboard_shortcuts
+ */
+table {
+  kbd {
+    margin: $base-spacing / 4;
+  }
 }
 
 .notranslate {
