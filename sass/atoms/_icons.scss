@@ -5,9 +5,18 @@
   content: "";
   display: inline-block;
   height: 21px;
-  margin-right: 5px;
+  margin-right: $base-spacing / 4;
   vertical-align: sub;
   width: 21px;
+}
+
+h2,
+h3,
+h4 {
+  .icon {
+    margin-left: $base-spacing / 4;
+    vertical-align: middle;
+  }
 }
 
 /* icon color styles to be applied to SVG elements */
