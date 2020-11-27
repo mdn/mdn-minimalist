@@ -1,3 +1,13 @@
+pre {
+  background-color: $neutral-550;
+  border-left: $code-example-border;
+  line-height: $code-example-line-height;
+  max-width: 100%;
+  overflow: auto;
+  padding: $base-spacing;
+  width: 100%;
+}
+
 code {
   background-color: $neutral-550;
   box-decoration-break: clone;
