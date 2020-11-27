@@ -20,3 +20,13 @@ a {
     }
   }
 }
+
+/* 
+ * Utility class for highlighting a link state such
+ * as :hover, :focus, :active etc.
+ * Prefer using the class over directly using the mixin
+ * to avoid unnecessary code duplication
+ */
+.highlighted-link-state {
+  @highlighted-link-state();
+}

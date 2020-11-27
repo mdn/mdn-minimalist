@@ -1,0 +1,4 @@
+@mixin highlighted-link-state() {
+  background-color: $primary-200;
+  color: $text-color-inverted;
+}
