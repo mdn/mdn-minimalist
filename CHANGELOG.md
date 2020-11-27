@@ -1,5 +1,14 @@
 # Changelog
 
+### [0.3.1](https://www.github.com/mdn/mdn-minimalist/compare/v0.3.0...v0.3.1) (2020-11-27)
+
+
+### Bug Fixes
+
+* good and bad code examples ([a258dcf](https://www.github.com/mdn/mdn-minimalist/commit/a258dcf2b241a20b8abeb9ca683a7e9b381b2253)), closes [#280](https://www.github.com/mdn/mdn-minimalist/issues/280)
+* img sizing ([72c4be6](https://www.github.com/mdn/mdn-minimalist/commit/72c4be644360411d03dd9dea9a35f3ce4a8d6861)), closes [#278](https://www.github.com/mdn/mdn-minimalist/issues/278)
+* no-slab h3 callouts ([5710fbc](https://www.github.com/mdn/mdn-minimalist/commit/5710fbc1fdec7b4e5bb7ec93139d047c29e97e0a)), closes [#277](https://www.github.com/mdn/mdn-minimalist/issues/277)
+
 ## [0.3.0](https://www.github.com/mdn/mdn-minimalist/compare/v0.2.9...v0.3.0) (2020-11-20)
 
 
