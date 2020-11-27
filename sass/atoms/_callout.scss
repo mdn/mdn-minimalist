@@ -10,6 +10,11 @@
     @include readable-line-length();
   }
 
+  h3 {
+    background-color: transparent;
+    color: $neutral-100;
+  }
+
   .button {
     max-width: inherit;
     width: 100%;
