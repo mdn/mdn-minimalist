@@ -25,6 +25,7 @@ table,
 .standard-table,
 .properties {
   border-collapse: collapse;
+  margin-bottom: $base-spacing;
 
   a {
     color: $neutral-100;
