@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.4.4](https://www.github.com/mdn/mdn-minimalist/compare/v0.4.3...v0.4.4) (2020-11-30)
+
+
+### Bug Fixes
+
+* add bottom margin to tables ([e70aba2](https://www.github.com/mdn/mdn-minimalist/commit/e70aba27da1a4f637c191a1a6bd1da3589ffe6d3)), closes [#305](https://www.github.com/mdn/mdn-minimalist/issues/305)
+
 ### [0.4.3](https://www.github.com/mdn/mdn-minimalist/compare/v0.4.2...v0.4.3) (2020-11-30)
 
 
