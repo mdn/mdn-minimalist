@@ -1,5 +1,14 @@
 # Changelog
 
+### [0.4.3](https://www.github.com/mdn/mdn-minimalist/compare/v0.4.2...v0.4.3) (2020-11-30)
+
+
+### Bug Fixes
+
+* change top margin for notecards ([f90b309](https://www.github.com/mdn/mdn-minimalist/commit/f90b309b9032b89dca171c459e4504ab03f9f694)), closes [#303](https://www.github.com/mdn/mdn-minimalist/issues/303)
+* font size for code examples ([c6a61b3](https://www.github.com/mdn/mdn-minimalist/commit/c6a61b3b91a29a61b55803e1032f4ee0ae3fe11c)), closes [#299](https://www.github.com/mdn/mdn-minimalist/issues/299)
+* icons in headings ([bb92e34](https://www.github.com/mdn/mdn-minimalist/commit/bb92e3409f817833047db148bc01532078c02e62)), closes [#298](https://www.github.com/mdn/mdn-minimalist/issues/298)
+
 ### [0.4.2](https://www.github.com/mdn/mdn-minimalist/compare/v0.4.1...v0.4.2) (2020-11-27)
 
 
