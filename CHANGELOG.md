@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.4.5](https://www.github.com/mdn/mdn-minimalist/compare/v0.4.4...v0.4.5) (2020-12-02)
+
+
+### Bug Fixes
+
+* good and bad code examples ([bea48bb](https://www.github.com/mdn/mdn-minimalist/commit/bea48bb74e17b5606e89d461f66ad17fe0643df4)), closes [#310](https://www.github.com/mdn/mdn-minimalist/issues/310)
+
 ### [0.4.4](https://www.github.com/mdn/mdn-minimalist/compare/v0.4.3...v0.4.4) (2020-11-30)
 
 
