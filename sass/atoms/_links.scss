@@ -7,6 +7,10 @@ a {
     text-decoration: underline;
   }
 
+  code {
+    text-decoration-skip-ink: none;
+  }
+
   &.external {
     &::before {
       background: transparent url("~@mdn/dinocons/general/external.svg") 0 0
