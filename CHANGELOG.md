@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.4.6](https://www.github.com/mdn/mdn-minimalist/compare/v0.4.5...v0.4.6) (2020-12-02)
+
+
+### Bug Fixes
+
+* improved link color ([76efec8](https://www.github.com/mdn/mdn-minimalist/commit/76efec812de7ae967a866c3265f13e8be18c56f0)), closes [#313](https://www.github.com/mdn/mdn-minimalist/issues/313)
+
 ### [0.4.5](https://www.github.com/mdn/mdn-minimalist/compare/v0.4.4...v0.4.5) (2020-12-02)
 
 
