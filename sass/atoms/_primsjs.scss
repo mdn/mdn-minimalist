@@ -1,0 +1,39 @@
+.token.keyword {
+  color: $primary-50;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: $green-100;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: $neutral-100;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function {
+  color: $red-200;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: $neutral-300;
+}
+
+.token.regex,
+.token.important {
+  color: $orange-100;
+}
