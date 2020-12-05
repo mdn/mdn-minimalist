@@ -12,10 +12,7 @@ a.button {
   text-decoration: none;
 
   &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
-
+  &:focus,
   &:active {
     text-decoration: none;
   }
@@ -31,12 +28,12 @@ a.outline {
 
 .danger,
 a.danger {
-  @include button-state($bg-color: $red-200, $bg-hover-color: $red-100);
+  @include button-state($bg-color: $red-100, $bg-hover-color: $red-200);
 
   &.outline {
     @include outline-button-state(
       $border-color: $red-200,
-      $bg-hover-color: $red-100,
+      $bg-hover-color: $red-200,
       $bg-active-color: $red-200,
       $text-hover-color: $neutral-600
     );
@@ -45,12 +42,12 @@ a.danger {
 
 .positive,
 a.positive {
-  @include button-state($bg-color: $green-200, $bg-hover-color: $green-100);
+  @include button-state($bg-color: $green-100, $bg-hover-color: $green-200);
 
   &.outline {
     @include outline-button-state(
       $border-color: $green-200,
-      $bg-hover-color: $green-100,
+      $bg-hover-color: $green-200,
       $bg-active-color: $green-200,
       $text-hover-color: $neutral-600
     );

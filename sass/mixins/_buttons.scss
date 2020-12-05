@@ -7,8 +7,8 @@
  * @param `$text-hover-color` - foreground text color for hover state [default: null]
  */
 @mixin button-state(
-  $bg-color: $primary-200,
-  $bg-hover-color: $primary-100,
+  $bg-color: $primary-100,
+  $bg-hover-color: $primary-200,
   $bg-active-color: $bg-color,
   $text-color: $text-color-inverted,
   $text-hover-color: null
