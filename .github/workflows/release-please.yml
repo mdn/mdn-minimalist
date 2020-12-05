@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - master
+      - main
 name: publish-minimalist
 jobs:
   release-please:
