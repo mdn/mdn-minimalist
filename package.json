@@ -1,6 +1,6 @@
 {
   "name": "@mdn/minimalist",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "description": "The base Sass for Mozilla Developer based projects and products",
   "scripts": {
     "build": "webpack",

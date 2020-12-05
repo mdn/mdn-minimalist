@@ -1,5 +1,16 @@
 # Changelog
 
+### [0.4.7](https://www.github.com/mdn/mdn-minimalist/compare/v0.4.6...v0.4.7) (2020-12-05)
+
+
+### Bug Fixes
+
+* button interaction states ([bbd3ee2](https://www.github.com/mdn/mdn-minimalist/commit/bbd3ee2ae1431d4a47c56ccaa4eb31b93e88aedb)), closes [#320](https://www.github.com/mdn/mdn-minimalist/issues/320)
+* highlighted link state ([56a7270](https://www.github.com/mdn/mdn-minimalist/commit/56a72701c68dd18083269df46e258e381b6bb6c0)), closes [#317](https://www.github.com/mdn/mdn-minimalist/issues/317)
+* no heading no icon - notecards ([945a9b9](https://www.github.com/mdn/mdn-minimalist/commit/945a9b9781bc56a0a4fddc8788cf832003a70847)), closes [#316](https://www.github.com/mdn/mdn-minimalist/issues/316)
+* prismjs theme ([c4e6f36](https://www.github.com/mdn/mdn-minimalist/commit/c4e6f3690004e67e4fc87435c88a55ab4ea62164)), closes [#321](https://www.github.com/mdn/mdn-minimalist/issues/321)
+* release please ([3e08e30](https://www.github.com/mdn/mdn-minimalist/commit/3e08e3063d5b945840f8847949f54eb032a3072b))
+
 ### [0.4.6](https://www.github.com/mdn/mdn-minimalist/compare/v0.4.5...v0.4.6) (2020-12-02)
 
 
