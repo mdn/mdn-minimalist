@@ -1,18 +1,7 @@
 .notecard {
   border-left: $notecard-border;
   margin: ($base-spacing / 2) 0 $base-spacing;
-  padding: ($base-spacing / 4) ($base-spacing / 2);
-
-  &::before {
-    background-size: 18px;
-    content: "";
-    display: inline-block;
-    height: 21px;
-    margin-right: $base-spacing / 4;
-    position: relative;
-    top: 2px;
-    width: 20px;
-  }
+  padding: ($base-spacing / 2);
 
   a {
     &:link,
@@ -30,15 +19,35 @@
   h4 {
     display: inline-block;
     font-size: $small-medium-font-size-mobile;
-    margin: ($base-spacing / 4) 0;
+    margin: 0;
+    margin-bottom: ($base-spacing / 4);
 
     @media #{$mq-tablet-and-up} {
       font-size: $small-medium-font-size;
     }
   }
 
+  h4,
+  &.inline {
+    &::before {
+      background-repeat: no-repeat;
+      background-size: 18px;
+      content: "";
+      display: inline-block;
+      height: 21px;
+      margin-right: $base-spacing / 4;
+      position: relative;
+      top: 2px;
+      width: 20px;
+    }
+  }
+
   p {
-    margin-bottom: ($base-spacing / 2);
+    margin-bottom: $base-spacing / 2;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &.inline {
@@ -46,9 +55,13 @@
     margin: $base-spacing / 4;
     padding: ($base-spacing / 8) ($base-spacing / 4);
 
+    &::before {
+      top: 5px;
+    }
+
     p {
       display: inline-block;
-      margin: 0;
+      margin-bottom: 0;
     }
   }
 
@@ -57,7 +70,7 @@
     border-color: $green-200;
     color: $neutral-100;
 
-    &::before {
+    h4::before {
       background: transparent url("~@mdn/dinocons/general/check-mark.svg") 0 2px
         no-repeat;
     }
@@ -66,7 +79,7 @@
   &.note {
     background-color: $primary-500;
 
-    &::before {
+    h4::before {
       background: transparent url("~@mdn/dinocons/file-icons/file.svg") 0 2px
         no-repeat;
     }
@@ -80,7 +93,7 @@
     border-color: $yellow-300;
     color: $neutral-100;
 
-    &::before {
+    h4::before {
       background: transparent
         url("~@mdn/dinocons/notifications/exclamation-triangle.svg") 0 2px
         no-repeat;
@@ -88,20 +101,23 @@
   }
 
   &.experimental {
-    &::before {
+    h4::before {
       background-image: url("~@mdn/dinocons/general/flask.svg");
     }
   }
 
   &.draft {
-    &::before {
+    h4::before {
       background-image: url("~@mdn/dinocons/general/pencil.svg");
     }
   }
 
   &.secure {
-    &::before {
-      background-image: url("~@mdn/dinocons/general/lock.svg");
+    h4,
+    &.inline {
+      &::before {
+        background-image: url("~@mdn/dinocons/general/lock.svg");
+      }
     }
   }
 
@@ -112,14 +128,14 @@
     border-color: $red-300;
     color: $neutral-100;
 
-    &::before {
+    h4::before {
       background: transparent url("~@mdn/dinocons/general/trash.svg") 0 2px
         no-repeat;
     }
   }
 
   &.deprecated {
-    &::before {
+    h4::before {
       background-image: url("~@mdn/dinocons/emojis/thumbs-down.svg");
     }
   }
