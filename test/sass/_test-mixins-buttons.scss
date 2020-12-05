@@ -6,19 +6,19 @@
       }
 
       @include expect {
-        background-color: #1e7f9d;
-        border: 2px solid #1e7f9d;
+        background-color: #216b82;
+        border: 2px solid #216b82;
         color: #fff;
 
         &:hover,
         &:focus {
-          background-color: #216b82;
-          border-color: #216b82;
+          background-color: #1e7f9d;
+          border-color: #1e7f9d;
         }
 
         &:active {
-          background-color: #1e7f9d;
-          border-color: #1e7f9d;
+          background-color: #216b82;
+          border-color: #216b82;
         }
       }
     }
