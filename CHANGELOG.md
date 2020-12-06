@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://www.github.com/mdn/mdn-minimalist/compare/v0.4.7...v0.5.0) (2020-12-06)
+
+
+### Features
+
+* slow pulse animation ([213a735](https://www.github.com/mdn/mdn-minimalist/commit/213a7359923ab4c94a85ba7d0c75a011650ca2c9)), closes [#332](https://www.github.com/mdn/mdn-minimalist/issues/332)
+
 ### [0.4.7](https://www.github.com/mdn/mdn-minimalist/compare/v0.4.6...v0.4.7) (2020-12-05)
 
 
