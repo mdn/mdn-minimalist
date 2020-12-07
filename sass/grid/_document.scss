@@ -8,11 +8,12 @@
     }
   }
 
-  .reference-page {
+  .document-page {
     .page-header,
     .titlebar-container,
     .breadcrumbs-locale-container,
     .page-content-container,
+    .metadata,
     .page-footer {
       grid-column: 1/2;
 
@@ -51,8 +52,12 @@
       grid-template-columns: 100%;
     }
 
-    .page-footer {
+    .metadata {
       grid-row: 6/7;
+    }
+
+    .page-footer {
+      grid-row: 7/8;
     }
 
     @media #{$mq-large-desktop-and-up} {
@@ -71,10 +76,19 @@
         margin: 0 auto;
         max-width: $max-width-default;
         width: 100%;
+
+        &.no-sidebar {
+          grid-template-columns: 100%;
+          grid-template-rows: 1fr;
+        }
+      }
+
+      .metadata {
+        grid-row: 5/6;
       }
 
       .page-footer {
-        grid-row: 5/6;
+        grid-row: 6/7;
       }
     }
 
