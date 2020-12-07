@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.5.1](https://www.github.com/mdn/mdn-minimalist/compare/v0.5.0...v0.5.1) (2020-12-07)
+
+
+### Bug Fixes
+
+* add metadata grid section ([07099c3](https://www.github.com/mdn/mdn-minimalist/commit/07099c31d214e9f822faaa9a07ec138953f0a461)), closes [#335](https://www.github.com/mdn/mdn-minimalist/issues/335)
+
 ## [0.5.0](https://www.github.com/mdn/mdn-minimalist/compare/v0.4.7...v0.5.0) (2020-12-06)
 
 
