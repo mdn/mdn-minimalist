@@ -8,7 +8,7 @@ $code-inline-font-family: consolas, "Liberation Mono", courier, monospace;
 $code-base-font-size: 1rem;
 
 $base-font-size: 100%;
-$document-line-height: 1.6;
+$document-line-height: 1.75;
 $code-example-line-height: 1.4;
 $heading-line-height: 1.2;
 $notecard-line-height: 1;
@@ -21,13 +21,15 @@ $large-font-size: 1.953rem; /* 35.16px */
 $medium-font-size: 1.563rem; /* 28.13px */
 $small-medium-font-size: 1.25rem; /* 22.50px */
 
-/* Mobile typescale based on minor third typescale with a base of 
-   100% of base font size set by the user. */
-$xxl-font-size-mobile: 2.488rem;
-$xl-font-size-mobile: 2.074rem;
-$large-font-size-mobile: 1.728rem;
-$medium-font-size-mobile: 1.44rem;
-$small-medium-font-size-mobile: 1.2rem;
+/* Mobile typescale based on a major second typescale with a base of 
+ * 100% as set by the user
+ * https://bit.ly/2VUrOJm
+ */
+$xxl-font-size-mobile: 1.802rem;
+$xl-font-size-mobile: 1.602rem;
+$large-font-size-mobile: 1.424rem;
+$medium-font-size-mobile: 1.266rem;
+$small-medium-font-size-mobile: 1.125rem;
 
 $default-font-size: 1rem; /* 18px */
 $small-font-size: 0.9rem; /* 16px */
