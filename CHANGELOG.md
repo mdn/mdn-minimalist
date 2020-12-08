@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.5.3](https://www.github.com/mdn/mdn-minimalist/compare/v0.5.2...v0.5.3) (2020-12-08)
+
+
+### Bug Fixes
+
+* prism theme update ([2198bb2](https://www.github.com/mdn/mdn-minimalist/commit/2198bb250990b847c5eccd81b505117b56a295f3)), closes [#342](https://www.github.com/mdn/mdn-minimalist/issues/342)
+
 ### [0.5.2](https://www.github.com/mdn/mdn-minimalist/compare/v0.5.1...v0.5.2) (2020-12-08)
 
 
