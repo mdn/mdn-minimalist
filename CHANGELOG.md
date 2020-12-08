@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.5.2](https://www.github.com/mdn/mdn-minimalist/compare/v0.5.1...v0.5.2) (2020-12-08)
+
+
+### Bug Fixes
+
+* switch to small type scale - mobile ([0e3baa1](https://www.github.com/mdn/mdn-minimalist/commit/0e3baa164169f63b1620b5039135c89864cd5f54)), closes [#339](https://www.github.com/mdn/mdn-minimalist/issues/339)
+
 ### [0.5.1](https://www.github.com/mdn/mdn-minimalist/compare/v0.5.0...v0.5.1) (2020-12-07)
 
 
