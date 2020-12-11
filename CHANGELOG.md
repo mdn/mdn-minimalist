@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.5.5](https://www.github.com/mdn/mdn-minimalist/compare/v0.5.4...v0.5.5) (2020-12-11)
+
+
+### Bug Fixes
+
+* remove missed top margins ([429d840](https://www.github.com/mdn/mdn-minimalist/commit/429d8409bfa46bb8b54fd9a11779ac7be5151a5d))
+
 ### [0.5.4](https://www.github.com/mdn/mdn-minimalist/compare/v0.5.3...v0.5.4) (2020-12-11)
 
 
