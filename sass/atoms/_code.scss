@@ -1,45 +1,9 @@
-pre {
-  background-color: $neutral-550;
-  border-left: $code-example-border;
-  font-size: $code-base-font-size;
-  line-height: $code-example-line-height;
-  max-width: 100%;
-  overflow: auto;
-  padding: $base-spacing;
-  width: 100%;
-}
-
 code {
   background-color: $neutral-550;
   box-decoration-break: clone;
   font-family: $code-inline-font-family;
-  padding: 0 2px;
+  padding: 0 ($base-unit / 2);
   word-wrap: break-word;
-}
-
-/* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd */
-kbd {
-  background: $light-gray-gradient;
-  background-color: $neutral-550;
-  border: 1px solid $neutral-525;
-  border-radius: $default-border-radius;
-  box-shadow: $light-gray-shadow;
-  font-family: $code-inline-font-family;
-  font-size: $small-font-size;
-  font-weight: bold;
-  line-height: 1;
-  margin: $base-unit / 2;
-  padding: ($base-spacing / 6) ($base-spacing / 4);
-}
-
-/*
- * When used inside a table, give it a little more margin
- * see: https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/Keyboard_shortcuts
- */
-table {
-  kbd {
-    margin: $base-spacing / 4;
-  }
 }
 
 .notranslate {
