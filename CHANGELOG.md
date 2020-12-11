@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.5.4](https://www.github.com/mdn/mdn-minimalist/compare/v0.5.3...v0.5.4) (2020-12-11)
+
+
+### Bug Fixes
+
+* margins ([4609d57](https://www.github.com/mdn/mdn-minimalist/commit/4609d57fcc477e2265d6fc65a095243401bd134d)), closes [#358](https://www.github.com/mdn/mdn-minimalist/issues/358) [#352](https://www.github.com/mdn/mdn-minimalist/issues/352)
+
 ### [0.5.3](https://www.github.com/mdn/mdn-minimalist/compare/v0.5.2...v0.5.3) (2020-12-08)
 
 
