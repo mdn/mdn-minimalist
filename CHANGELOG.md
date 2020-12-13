@@ -1,5 +1,15 @@
 # Changelog
 
+### [0.5.6](https://www.github.com/mdn/mdn-minimalist/compare/v0.5.5...v0.5.6) (2020-12-13)
+
+
+### Bug Fixes
+
+* blockquote style ([1df65ee](https://www.github.com/mdn/mdn-minimalist/commit/1df65ee6688b4e7959996099fdb61e644ee0eafa)), closes [#363](https://www.github.com/mdn/mdn-minimalist/issues/363)
+* inline notecards with missing icons ([d6164db](https://www.github.com/mdn/mdn-minimalist/commit/d6164db8c690c62ac26241bdaf6205a4780a57ff)), closes [#366](https://www.github.com/mdn/mdn-minimalist/issues/366)
+* update pre element border color ([e7f94a8](https://www.github.com/mdn/mdn-minimalist/commit/e7f94a8dea6dae8695585724e142e1e7f40823ee)), closes [#365](https://www.github.com/mdn/mdn-minimalist/issues/365)
+* update to properties table color ([37577e6](https://www.github.com/mdn/mdn-minimalist/commit/37577e624d073d74c26e09b12aed610f8695f0d4)), closes [#351](https://www.github.com/mdn/mdn-minimalist/issues/351)
+
 ### [0.5.5](https://www.github.com/mdn/mdn-minimalist/compare/v0.5.4...v0.5.5) (2020-12-11)
 
 
