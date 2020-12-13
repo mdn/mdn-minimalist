@@ -129,15 +129,21 @@
     border-color: $red-300;
     color: $neutral-100;
 
-    h4::before {
-      background: transparent url("~@mdn/dinocons/general/trash.svg") 0 2px
-        no-repeat;
+    h4,
+    &.inline {
+      &::before {
+        background: transparent url("~@mdn/dinocons/general/trash.svg") 0 0
+          no-repeat;
+      }
     }
   }
 
   &.deprecated {
-    h4::before {
-      background-image: url("~@mdn/dinocons/emojis/thumbs-down.svg");
+    h4,
+    &.inline {
+      &::before {
+        background-image: url("~@mdn/dinocons/emojis/thumbs-down.svg");
+      }
     }
   }
 }
