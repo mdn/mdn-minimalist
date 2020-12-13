@@ -53,6 +53,7 @@ $text-color-inverted: $neutral-600;
 $link-color: $primary-50;
 
 /* Gradients */
+$blockquote-gradient: linear-gradient(to right, $primary-50, $primary-300);
 $standard-gradient: linear-gradient(to right, $primary-300, $green-400);
 $blue-gradient: linear-gradient(to right, $primary-100, $primary-300);
 $light-gray-gradient: linear-gradient(to bottom, $neutral-550, $neutral-600);

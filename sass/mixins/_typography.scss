@@ -47,6 +47,14 @@
   }
 }
 
+@mixin blockquote() {
+  font-size: $small-medium-font-size-mobile;
+
+  @media #{$mq-tablet-and-up} {
+    font-size: $small-medium-font-size;
+  }
+}
+
 @mixin font-smoothing() {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
