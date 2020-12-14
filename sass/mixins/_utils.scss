@@ -12,7 +12,7 @@
  */
 @mixin readable-line-length() {
   max-width: $max-line-length;
-  max-width: 80ch;
+  max-width: 75ch;
 }
 
 /* 
