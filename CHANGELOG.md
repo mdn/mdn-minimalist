@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.5.7](https://www.github.com/mdn/mdn-minimalist/compare/v0.5.6...v0.5.7) (2020-12-14)
+
+
+### Bug Fixes
+
+* readable line length ([14ef8c8](https://www.github.com/mdn/mdn-minimalist/commit/14ef8c8b5f6685f7591b4ddaa46df3ecd5f4c3ae)), closes [#375](https://www.github.com/mdn/mdn-minimalist/issues/375)
+
 ### [0.5.6](https://www.github.com/mdn/mdn-minimalist/compare/v0.5.5...v0.5.6) (2020-12-13)
 
 
