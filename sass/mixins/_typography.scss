@@ -48,6 +48,7 @@
 }
 
 @mixin blockquote() {
+  @include readable-line-length();
   font-size: $small-medium-font-size-mobile;
 
   @media #{$mq-tablet-and-up} {
