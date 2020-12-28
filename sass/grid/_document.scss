@@ -52,6 +52,38 @@
       grid-row: 7/8;
     }
 
+    @media #{$mq-large-desktop-and-up} {
+      .titlebar-container {
+        grid-row: 2/3;
+      }
+
+      .breadcrumbs-locale-container {
+        grid-row: 3/4;
+      }
+
+      .page-content-container {
+        grid-row: 4/5;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: max-content 1fr;
+        margin: 0 auto;
+        max-width: $max-width-default;
+        width: 100%;
+
+        &.no-sidebar {
+          grid-template-columns: 100%;
+          grid-template-rows: 1fr;
+        }
+      }
+
+      .metadata {
+        grid-row: 5/6;
+      }
+
+      .page-footer {
+        grid-row: 6/7;
+      }
+    }
+
     /* The toc, sidebar, and main elements are
     inside a separate page-content-container grid element. */
     .document-toc-container,
@@ -70,6 +102,22 @@
 
     .sidebar {
       grid-row: 3/4;
+    }
+
+    @media #{$mq-large-desktop-and-up} {
+      .document-toc-container {
+        grid-column: 1/2;
+      }
+
+      .main-content {
+        grid-column: 2/3;
+        grid-row: 1/3;
+      }
+
+      .sidebar {
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
     }
   }
 }
