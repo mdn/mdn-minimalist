@@ -61,12 +61,13 @@ typings/
 .next
 
 # parceljs
-
 .cache
-dist
 
 # project specific
 public
 
-# tabnine
+# deepcode
 .dccache
+
+# webpack build js
+dist/css/main.js
