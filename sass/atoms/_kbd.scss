@@ -11,6 +11,7 @@ kbd {
   line-height: 1;
   margin: $base-unit / 2;
   padding: ($base-spacing / 6) ($base-spacing / 4);
+  white-space: nowrap;
 }
 
 /*
