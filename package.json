@@ -4,6 +4,7 @@
   "description": "The base Sass for Mozilla Developer based projects and products",
   "scripts": {
     "build": "webpack",
+    "build:dist": "webpack --config ./webpack.dist.js",
     "build:sass": "sass ./sass/mdn-minimalist.scss ./public/css/main.css",
     "build:sass:watch": "sass ./sass/mdn-minimalist.scss ./public/css/main.css --watch",
     "build:sass:variables": "sass ./sass/shared-variables.module.scss ./public/css/shared-variables.module.css",
