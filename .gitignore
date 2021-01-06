@@ -70,4 +70,4 @@ public
 .dccache
 
 # webpack build js
-dist/main.js
+dist/css/main.js
