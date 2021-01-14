@@ -1093,6 +1093,7 @@ textarea {
 
 table {
   font-size: 0.9rem;
+  overflow-x: auto;
 }
 @media all and (min-width: 47.9385em) {
   table {
