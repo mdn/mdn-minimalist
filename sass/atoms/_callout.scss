@@ -1,16 +1,21 @@
 .callout {
   background-color: $primary-400;
+  border-radius: $default-border-radius;
   display: flex;
   flex-flow: column;
   justify-content: center;
   margin-bottom: $base-spacing;
-  padding: 0 $base-spacing;
+  max-width: max-content;
+  padding: $base-spacing;
+  padding-bottom: 0;
 
   p {
     @include readable-line-length();
   }
 
-  h3 {
+  h4 {
+    @include set-heading-font-family();
+
     background-color: transparent;
     color: $neutral-100;
   }
