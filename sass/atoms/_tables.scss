@@ -1,5 +1,6 @@
 table {
   font-size: $small-font-size;
+  overflow-x: auto;
 
   @media #{$mq-tablet-and-up} {
     font-size: $default-font-size;
