@@ -414,17 +414,21 @@ h4 .icon {
 
 .callout {
   background-color: #c2e8f9;
+  border-radius: 6px;
   display: flex;
   flex-flow: column;
   justify-content: center;
   margin-bottom: 24px;
-  padding: 0 24px;
+  max-width: max-content;
+  padding: 24px;
+  padding-bottom: 0;
 }
 .callout p {
   max-width: 42rem;
   max-width: 75ch;
 }
-.callout h3 {
+.callout h4 {
+  font-family: zillaslab, palatino, "Palatino Linotype", serif;
   background-color: transparent;
   color: #212121;
 }
