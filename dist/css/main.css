@@ -1246,9 +1246,10 @@ table code,
 .sample-code-frame {
   border: 1px solid #1e7f9d;
   border-left: 6px solid #00458b;
+  height: auto;
   margin: 0;
   margin-bottom: 12px;
-  padding: 0 12px;
+  padding: 12px;
   width: 100%;
 }
 
