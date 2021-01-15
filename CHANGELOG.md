@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.6.1](https://www.github.com/mdn/mdn-minimalist/compare/v0.6.0...v0.6.1) (2021-01-14)
+
+
+### Bug Fixes
+
+* update same-code-frame style ([8424b59](https://www.github.com/mdn/mdn-minimalist/commit/8424b599016a86d3239d8a579991636bec9b9cad)), closes [#422](https://www.github.com/mdn/mdn-minimalist/issues/422)
+
 ## [0.6.0](https://www.github.com/mdn/mdn-minimalist/compare/v0.5.7...v0.6.0) (2021-01-14)
 
 
