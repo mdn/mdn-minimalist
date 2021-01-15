@@ -3,6 +3,9 @@
   margin: 0;
   margin-bottom: $base-spacing;
   padding: ($base-spacing / 2);
+  &::before {
+    content: "notecard";
+  }
 
   a {
     &:link,
