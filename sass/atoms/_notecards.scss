@@ -70,24 +70,24 @@
   }
 }
 .success {
-  border-width: 2px;
-  border-style: solid;
+  color: $neutral-100;
+  background-color: $green-400;
   border-color: $green-200;
-  border-left-width: 4px;
-  border-left-style: solid;
+  border-style: solid;
+  border-width: 2px;
   border-left-color: $green-400;
-  margin-top: 0;
-  margin-right: 0;
+  border-left-style: solid;
+  border-left-width: 4px;
   margin-bottom: 1em;
   margin-left: 0;
-  background-color: $green-400;
-  color: $neutral-100;
+  margin-right: 0;
+  margin-top: 0;
   padding: 0.5em;
 }
 .success::before {
+  background-color: $green-400;
   content: "success";
   text-transform: uppercase;
-  background-color: $green-400;
 }
 .note {
   background-color: $primary-500;
