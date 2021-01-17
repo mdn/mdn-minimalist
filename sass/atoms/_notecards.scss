@@ -19,55 +19,6 @@
       text-decoration: none;
     }
   }
-
-  h4 {
-    display: inline-block;
-    font-size: $small-medium-font-size-mobile;
-    margin: 0;
-    margin-bottom: ($base-spacing / 4);
-
-    @media #{$mq-tablet-and-up} {
-      font-size: $small-medium-font-size;
-    }
-  }
-
-  h4,
-  &.inline {
-    &::before {
-      background-repeat: no-repeat;
-      background-size: 18px;
-      content: "";
-      display: inline-block;
-      height: 21px;
-      margin-right: $base-spacing / 4;
-      position: relative;
-      top: 2px;
-      width: 20px;
-    }
-  }
-
-  p {
-    margin-bottom: $base-spacing / 2;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  &.inline {
-    font-weight: normal;
-    margin: $base-spacing / 4;
-    padding: ($base-spacing / 8) ($base-spacing / 4);
-
-    &::before {
-      top: 5px;
-    }
-
-    p {
-      display: inline-block;
-      margin-bottom: 0;
-    }
-  }
 }
 .success {
   background-color: $green-400;
