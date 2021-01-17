@@ -110,6 +110,30 @@
     }
   }
 
+  &.warning {
+    &::before {
+     content: "warning";
+    }
+  }
+
+  &.experimental {
+    &::before {
+     content: "experimental";
+    }
+  }
+
+  &.draft {
+    &::before {
+     content: "draft";
+    }
+  }
+
+  &.secure {
+    &::before {
+     content: "secure";
+    }
+  }
+    
   &.experimental {
     &::before {
      content: "experimental";
