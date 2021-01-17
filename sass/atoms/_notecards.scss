@@ -3,22 +3,23 @@
   margin: 0;
   margin-bottom: $base-spacing;
   padding: ($base-spacing / 2);
-  &::before {
-    content: "notecard";
-  }
-
   a {
-    &:link,
-    &:visited {
-      color: $neutral-100;
-      text-decoration: underline;
-    }
-
     &:hover,
     &:focus {
       text-decoration: none;
     }
   }
+}
+.notecard::before {
+  content: "notecard";
+}
+.notecard a:link {
+  color: $neutral-100;
+  text-decoration: underline;
+}
+.notecard a:visited {
+  color: $neutral-100;
+  text-decoration: underline;
 }
 .success {
   background-color: $green-400;
