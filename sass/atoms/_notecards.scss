@@ -70,12 +70,23 @@
   }
 }
 .success {
-  background-color: $green-400;
+  border-width: 2px;
+  border-style: solid;
   border-color: $green-200;
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-left-color: $green-400;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 1em;
+  margin-left: 0;
+  background-color: $green-400;
   color: $neutral-100;
   padding: 0.5em;
   &::before {
     content: "success";
+    text-transform: uppercase;
+    background-color: $green-400;
   }
 }
 .note {
