@@ -73,12 +73,14 @@
   background-color: $green-400;
   border-color: $green-200;
   color: $neutral-100;
+  padding: 0.5em;
   &::before {
     content: "success";
   }
 }
 .note {
   background-color: $primary-500;
+  padding: 0.5em;
   &::before {
     content: "note";
   }
@@ -87,6 +89,7 @@
   background-color: $yellow-400;
   border-color: $yellow-300;
   color: $neutral-100;
+  padding: 0.5em;
   &::before {
     content: "secure";
   }
@@ -95,6 +98,7 @@
   background-color: $yellow-400;
   border-color: $yellow-300;
   color: $neutral-100;
+  padding: 0.5em;
   &::before {
     content: "warning";
   }
@@ -103,6 +107,7 @@
   background-color: $yellow-400;
   border-color: $yellow-300;
   color: $neutral-100;
+  padding: 0.5em;
   &::before {
     content: "experimental";
   }
@@ -111,6 +116,7 @@
   background-color: $yellow-400;
   border-color: $yellow-300;
   color: $neutral-100;
+  padding: 0.5em;
   &::before {
     content: "draft";
   }
@@ -119,6 +125,7 @@
   background-color: $red-400;
   border-color: $red-300;
   color: $neutral-100;
+  padding: 0.5em;
   &::before {
     content: "negative";
   }
@@ -127,6 +134,7 @@
   background-color: $red-400;
   border-color: $red-300;
   color: $neutral-100;
+  padding: 0.5em;
   &::before {
     content: "obsolete";
   }
@@ -135,6 +143,7 @@
   background-color: $red-400;
   border-color: $red-300;
   color: $neutral-100;
+  padding: 0.5em;
   &::before {
     content: "deprecated";
   }
