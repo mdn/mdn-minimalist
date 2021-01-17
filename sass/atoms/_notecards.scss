@@ -3,7 +3,7 @@
   margin: 0;
   margin-bottom: $base-spacing;
   padding: ($base-spacing / 2);
-  &:before {
+  &::before {
     content: "notecard";
   }
 
@@ -33,7 +33,7 @@
 
   h4,
   &.inline {
-    &:before {
+    &::before {
       background-repeat: no-repeat;
       background-size: 18px;
       content: "";
@@ -59,7 +59,7 @@
     margin: $base-spacing / 4;
     padding: ($base-spacing / 8) ($base-spacing / 4);
 
-    &:before {
+    &::before {
       top: 5px;
     }
 
@@ -70,125 +70,81 @@
   }
 }
 .success {
-    &:before {
-     content: "success";
-    }
-    background-color: $green-400;
-    border-color: $green-200;
-    color: $neutral-100;
-
-    h4:before {
-      background: transparent url("~@mdn/dinocons/general/check-mark.svg") 0 2px
-        no-repeat;
-    }
-  }
-
+ &::before {
+  content: "success";
+ }
+ background-color: $green-400;
+ border-color: $green-200;
+ color: $neutral-100;
+}
 .note {
-    &:before {
-     content: "note";
-    }
-    background-color: $primary-500;
-
-    h4:before {
-      background: transparent url("~@mdn/dinocons/file-icons/file.svg") 0 2px
-        no-repeat;
-    }
-  }
-
+ &::before {
+  content: "note";
+ }
+ background-color: $primary-500;
+}
 .secure {
-    background-color: $yellow-400;
-    border-color: $yellow-300;
-    color: $neutral-100;
-
-    h4:before {
-      background: transparent
-        url("~@mdn/dinocons/notifications/exclamation-triangle.svg") 0 2px
-        no-repeat;
-    }
-  }
-
+ background-color: $yellow-400;
+ border-color: $yellow-300;
+ color: $neutral-100;
+ &::before {
+  content: "secure";
+ }
+}
 .warning {
-    background-color: $yellow-400;
-    border-color: $yellow-300;
-    color: $neutral-100;
-    &:before {
-     content: "warning";
-    }
-  }
-
+ background-color: $yellow-400;
+ border-color: $yellow-300;
+ color: $neutral-100;
+ &::before {
+  content: "warning";
+ }
+}
 .experimental {
-    &:before {
-     content: "experimental";
-    }
-    background-color: $yellow-400;
-    border-color: $yellow-300;
-    color: $neutral-100;
-  }
-
+ &::before {
+  content: "experimental";
+ }
+ background-color: $yellow-400;
+ border-color: $yellow-300;
+ color: $neutral-100;
+}
 .draft {
-    &:before {
-     content: "draft";
-    }
-    background-color: $yellow-400;
-    border-color: $yellow-300;
-    color: $neutral-100;
-  }
-
+ &::before {
+  content: "draft";
+ }
+ background-color: $yellow-400;
+ border-color: $yellow-300;
+ color: $neutral-100;
+}
 .secure {
-    &:before {
-     content: "secure";
-    }
-    background-color: $yellow-400;
-    border-color: $yellow-300;
-    color: $neutral-100;
-  }
-
+ &::before {
+  content: "secure";
+ }
+ background-color: $yellow-400;
+ border-color: $yellow-300;
+ color: $neutral-100;
+}
 .negative {
-    &:before {
-     content: "negative";
-    }
-    background-color: $red-400;
-    border-color: $red-300;
-    color: $neutral-100;
-
-    h4,
-    &.inline {
-      &:before {
-        background: transparent url("~@mdn/dinocons/general/trash.svg") 0 0
-          no-repeat;
-      }
-    }
-  }
-
+ &::before {
+  content: "negative";
+ }
+ background-color: $red-400;
+ border-color: $red-300;
+ color: $neutral-100;
+}
 .obsolete {
-    &:before {
-     content: "obsolete";
-    }
-    background-color: $red-400;
-    border-color: $red-300;
-    color: $neutral-100;
-
-    h4,
-    &.inline {
-      &:before {
-        background: transparent url("~@mdn/dinocons/general/trash.svg") 0 0
-          no-repeat;
-      }
-    }
-  }
-
-
+ &::before {
+  content: "obsolete";
+ }
+ background-color: $red-400;
+ border-color: $red-300;
+ color: $neutral-100;
+ }
+}
 .deprecated {
-    &:before {
-     content: "deprecated";
-    }
-    background-color: $red-400;
-    border-color: $red-300;
-    color: $neutral-100;
-    h4,
-    &.inline {
-      &:before {
-        background-image: url("~@mdn/dinocons/emojis/thumbs-down.svg");
-      }
-    }
-  }
+ &::before {
+  content: "deprecated";
+ }
+ background-color: $red-400;
+ border-color: $red-300;
+ color: $neutral-100;
+}
