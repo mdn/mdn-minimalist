@@ -3,12 +3,6 @@
   margin: 0;
   margin-bottom: $base-spacing;
   padding: ($base-spacing / 2);
-  a {
-    &:hover,
-    &:focus {
-      text-decoration: none;
-    }
-  }
 }
 .notecard::before {
   content: "notecard";
@@ -18,6 +12,14 @@
   text-decoration: underline;
 }
 .notecard a:visited {
+  color: $neutral-100;
+  text-decoration: underline;
+}
+.notecard a:hover {
+  color: $neutral-100;
+  text-decoration: underline;
+}
+.notecard a:focus {
   color: $neutral-100;
   text-decoration: underline;
 }
@@ -48,6 +50,22 @@
   color: $neutral-100;
   content: "success";
   text-transform: uppercase;
+}
+.success a:link {
+  color: $neutral-100;
+  text-decoration: underline;
+}
+.success a:visited {
+  color: $neutral-100;
+  text-decoration: underline;
+}
+.success a:hover {
+  color: $neutral-100;
+  text-decoration: underline;
+}
+.success a:focus {
+  color: $neutral-100;
+  text-decoration: underline;
 }
 .note {
   background-color: $primary-400;
