@@ -83,11 +83,11 @@
   background-color: $green-400;
   color: $neutral-100;
   padding: 0.5em;
-  &::before {
-    content: "success";
-    text-transform: uppercase;
-    background-color: $green-400;
-  }
+}
+.success::before {
+  content: "success";
+  text-transform: uppercase;
+  background-color: $green-400;
 }
 .note {
   background-color: $primary-500;
