@@ -74,15 +74,13 @@
   border-color: $green-200;
   color: $neutral-100;
   &::before {
-    content: "success";
-    background: transparent url("~@mdn/dinocons/general/success.svg") 0 2px no-repeat;
+    content: "success" url("~@mdn/dinocons/general/success.svg");
   }
 }
 .note {
   background-color: $primary-500;
   &::before {
-    content: "note";
-    background: transparent url("~@mdn/dinocons/general/note.svg") 0 2px no-repeat;
+    content: "note" url("~@mdn/dinocons/general/note.svg");
   }
 }
 .secure {
@@ -90,8 +88,7 @@
   border-color: $yellow-300;
   color: $neutral-100;
   &::before {
-    content: "secure";
-    background: transparent url("~@mdn/dinocons/general/secure.svg") 0 2px no-repeat;
+    content: "secure" url("~@mdn/dinocons/general/secure.svg");
   }
 }
 .warning {
@@ -99,8 +96,7 @@
   border-color: $yellow-300;
   color: $neutral-100;
   &::before {
-    content: "warning";
-    background: transparent url("~@mdn/dinocons/general/warning.svg") 0 2px no-repeat;
+    content: "warning" url("~@mdn/dinocons/general/warning.svg");
   }
 }
 .experimental {
@@ -108,8 +104,7 @@
   border-color: $yellow-300;
   color: $neutral-100;
   &::before {
-    content: "experimental";
-    background: transparent url("~@mdn/dinocons/general/experimental.svg") 0 2px no-repeat;
+    content: "experimental" url("~@mdn/dinocons/general/experimental.svg");
   }
 }
 .draft {
@@ -117,8 +112,7 @@
   border-color: $yellow-300;
   color: $neutral-100;
   &::before {
-    content: "draft";
-    background: transparent url("~@mdn/dinocons/general/draft.svg") 0 2px no-repeat;
+    content: "draft" url("~@mdn/dinocons/general/draft.svg");
   }
 }
 .negative {
@@ -126,8 +120,7 @@
   border-color: $red-300;
   color: $neutral-100;
   &::before {
-    content: "negative";
-    background: transparent url("~@mdn/dinocons/general/negative.svg") 0 2px no-repeat;
+    content: "negative" url("~@mdn/dinocons/general/negative.svg");
   }
 }
 .obsolete {
@@ -135,8 +128,7 @@
   border-color: $red-300;
   color: $neutral-100;
   &::before {
-    content: "obsolete";
-    background: transparent url("~@mdn/dinocons/general/obsolete.svg") 0 2px no-repeat;
+    content: "obsolete" url("~@mdn/dinocons/general/obsolete.svg");
   }
 }
 .deprecated {
@@ -144,7 +136,6 @@
   border-color: $red-300;
   color: $neutral-100;
   &::before {
-    content: "deprecated";
-    background: transparent url("~@mdn/dinocons/general/deprecated.svg") 0 2px no-repeat;
+    content: "deprecated" url("~@mdn/dinocons/general/deprecated.svg");
   }
 }
