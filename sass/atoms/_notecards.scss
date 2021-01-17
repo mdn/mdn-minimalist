@@ -70,18 +70,18 @@
   }
 }
 .success {
-  background-color: Green;
+  background-color: $green-400;
   border-color: $green-200;
-  border-bottom-color: DarkGreen;
+  border-bottom-color: $green-400;
   border-bottom-style: solid;
   border-bottom-width: 2px;
-  border-left-color: DarkGreen;
+  border-left-color: $green-400;
   border-left-style: solid;
   border-left-width: 4px;
-  border-right-color: DarkGreen;
+  border-right-color: $green-400;
   border-right-style: solid;
   border-right-width: 2px;
-  border-top-color: DarkGreen;
+  border-top-color: $green-400;
   border-top-style: solid;
   border-top-width: 2px;
   color: $neutral-100;
@@ -92,13 +92,31 @@
   padding: 0.5em;
 }
 .success::before {
-  background-color: DarkGreen;
-  color: White;
+  background-color: $green-400;
+  color: $neutral-100;
   content: "success";
   text-transform: uppercase;
 }
 .note {
-  background-color: $primary-500;
+  background-color: $primary-400;
+  border-color: $primary-200;
+  border-bottom-color: $primary-400;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: $primary-400;
+  border-left-style: solid;
+  border-left-width: 4px;
+  border-right-color: $primary-400;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-top-color: $primary-400;
+  border-top-style: solid;
+  border-top-width: 2px;
+  color: $neutral-100;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
   padding: 0.5em;
   &::before {
     content: "note";
