@@ -74,13 +74,13 @@
   border-color: $green-200;
   color: $neutral-100;
   &::before {
-    content: "success" url("~@mdn/dinocons/general/success.svg");
+    content: "success";
   }
 }
 .note {
   background-color: $primary-500;
   &::before {
-    content: "note" url("~@mdn/dinocons/general/note.svg");
+    content: "note";
   }
 }
 .secure {
@@ -88,7 +88,7 @@
   border-color: $yellow-300;
   color: $neutral-100;
   &::before {
-    content: "secure" url("~@mdn/dinocons/general/secure.svg");
+    content: "secure";
   }
 }
 .warning {
@@ -96,7 +96,7 @@
   border-color: $yellow-300;
   color: $neutral-100;
   &::before {
-    content: "warning" url("~@mdn/dinocons/general/warning.svg");
+    content: "warning";
   }
 }
 .experimental {
@@ -104,7 +104,7 @@
   border-color: $yellow-300;
   color: $neutral-100;
   &::before {
-    content: "experimental" url("~@mdn/dinocons/general/experimental.svg");
+    content: "experimental";
   }
 }
 .draft {
@@ -112,7 +112,7 @@
   border-color: $yellow-300;
   color: $neutral-100;
   &::before {
-    content: "draft" url("~@mdn/dinocons/general/draft.svg");
+    content: "draft";
   }
 }
 .negative {
@@ -120,7 +120,7 @@
   border-color: $red-300;
   color: $neutral-100;
   &::before {
-    content: "negative" url("~@mdn/dinocons/general/negative.svg");
+    content: "negative";
   }
 }
 .obsolete {
@@ -128,7 +128,7 @@
   border-color: $red-300;
   color: $neutral-100;
   &::before {
-    content: "obsolete" url("~@mdn/dinocons/general/obsolete.svg");
+    content: "obsolete";
   }
 }
 .deprecated {
@@ -136,6 +136,6 @@
   border-color: $red-300;
   color: $neutral-100;
   &::before {
-    content: "deprecated" url("~@mdn/dinocons/general/deprecated.svg");
+    content: "deprecated";
   }
 }
