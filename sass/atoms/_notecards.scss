@@ -70,6 +70,9 @@
   }
 
   &.success {
+    &::before {
+     content: "success";
+    }
     background-color: $green-400;
     border-color: $green-200;
     color: $neutral-100;
@@ -81,6 +84,9 @@
   }
 
   &.note {
+    &::before {
+     content: "note";
+    }
     background-color: $primary-500;
 
     h4::before {
@@ -105,18 +111,27 @@
   }
 
   &.experimental {
+    &::before {
+     content: "experimental";
+    }
     h4::before {
       background-image: url("~@mdn/dinocons/general/flask.svg");
     }
   }
 
   &.draft {
+    &::before {
+     content: "draft";
+    }
     h4::before {
       background-image: url("~@mdn/dinocons/general/pencil.svg");
     }
   }
 
   &.secure {
+    &::before {
+     content: "secure";
+    }
     h4,
     &.inline {
       &::before {
@@ -142,6 +157,9 @@
   }
 
   &.deprecated {
+    &::before {
+     content: "deprecated";
+    }
     h4,
     &.inline {
       &::before {
