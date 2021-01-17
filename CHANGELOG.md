@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.6.2](https://www.github.com/mdn/mdn-minimalist/compare/v0.6.1...v0.6.2) (2021-01-17)
+
+
+### Bug Fixes
+
+* page overlay stacking order ([32a69b7](https://www.github.com/mdn/mdn-minimalist/commit/32a69b7f7ebf6da12bdb317a58e3f69f6a9bee8f)), closes [#427](https://www.github.com/mdn/mdn-minimalist/issues/427)
+
 ### [0.6.1](https://www.github.com/mdn/mdn-minimalist/compare/v0.6.0...v0.6.1) (2021-01-14)
 
 
