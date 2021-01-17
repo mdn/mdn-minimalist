@@ -70,26 +70,26 @@
   }
 }
 .success {
-  &::before {
-    content: "success";
-  }
   background-color: $green-400;
   border-color: $green-200;
   color: $neutral-100;
+  &::before {
+    content: "success";
+  }
 }
 .note {
+ background-color: $primary-500;
  &::before {
   content: "note";
  }
- background-color: $primary-500;
 }
 .secure {
  background-color: $yellow-400;
  border-color: $yellow-300;
  color: $neutral-100;
-}
-.secure::before {
- content: "secure";
+ &::before {
+  content: "secure";
+ }
 }
 .warning {
  background-color: $yellow-400;
@@ -108,42 +108,42 @@
  color: $neutral-100;
 }
 .draft {
+ background-color: $yellow-400;
+ border-color: $yellow-300;
+ color: $neutral-100;
  &::before {
   content: "draft";
  }
+}
+.secure {
  background-color: $yellow-400;
  border-color: $yellow-300;
  color: $neutral-100;
-}
-.secure {
  &::before {
   content: "secure";
  }
- background-color: $yellow-400;
- border-color: $yellow-300;
- color: $neutral-100;
 }
 .negative {
+ background-color: $red-400;
+ border-color: $red-300;
+ color: $neutral-100;
  &::before {
   content: "negative";
  }
+}
+.obsolete {
  background-color: $red-400;
  border-color: $red-300;
  color: $neutral-100;
-}
-.obsolete {
  &::before {
   content: "obsolete";
  }
+}
+.deprecated {
  background-color: $red-400;
  border-color: $red-300;
  color: $neutral-100;
-}
-.deprecated {
  &::before {
   content: "deprecated";
  }
- background-color: $red-400;
- border-color: $red-300;
- color: $neutral-100;
 }
