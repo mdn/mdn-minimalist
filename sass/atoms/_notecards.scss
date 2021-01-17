@@ -70,12 +70,12 @@
   }
 }
 .success {
-   &::before {
+  &::before {
     content: "success";
-   }
-   background-color: $green-400;
-   border-color: $green-200;
-   color: $neutral-100;
+  }
+  background-color: $green-400;
+  border-color: $green-200;
+  color: $neutral-100;
 }
 .note {
  &::before {
