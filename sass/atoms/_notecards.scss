@@ -68,8 +68,8 @@
       margin-bottom: 0;
     }
   }
-
-  &.success {
+}
+.success {
     &::before {
      content: "success";
     }
@@ -83,7 +83,7 @@
     }
   }
 
-  &.note {
+.note {
     &::before {
      content: "note";
     }
@@ -95,7 +95,7 @@
     }
   }
 
-  &.secure {
+.secure {
     background-color: $yellow-400;
     border-color: $yellow-300;
     color: $neutral-100;
@@ -107,7 +107,7 @@
     }
   }
 
-  &.warning {
+.warning {
     background-color: $yellow-400;
     border-color: $yellow-300;
     color: $neutral-100;
@@ -116,7 +116,7 @@
     }
   }
 
-  &.experimental {
+.experimental {
     &::before {
      content: "experimental";
     }
@@ -125,7 +125,7 @@
     color: $neutral-100;
   }
 
-  &.draft {
+.draft {
     &::before {
      content: "draft";
     }
@@ -134,7 +134,7 @@
     color: $neutral-100;
   }
 
-  &.secure {
+.secure {
     &::before {
      content: "secure";
     }
@@ -143,7 +143,7 @@
     color: $neutral-100;
   }
 
-  &.negative {
+.negative {
     &::before {
      content: "negative";
     }
@@ -160,7 +160,7 @@
     }
   }
 
-  &.obsolete {
+.obsolete {
     &::before {
      content: "obsolete";
     }
@@ -178,7 +178,7 @@
   }
 
 
-  &.deprecated {
+.deprecated {
     &::before {
      content: "deprecated";
     }
@@ -192,4 +192,3 @@
       }
     }
   }
-}
