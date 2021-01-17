@@ -70,14 +70,14 @@
   }
 }
 .success {
-  color: $neutral-100;
   background-color: $green-400;
   border-color: $green-200;
   border-style: solid;
-  border-width: 2px;
   border-left-color: $green-400;
   border-left-style: solid;
   border-left-width: 4px;
+  border-width: 2px;
+  color: $neutral-100;
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
