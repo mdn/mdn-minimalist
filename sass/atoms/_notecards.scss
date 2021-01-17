@@ -80,7 +80,7 @@
 .note {
   background-color: $primary-500;
   &::before {
-   content: "note";
+    content: "note";
   }
 }
 .secure {
@@ -88,7 +88,7 @@
   border-color: $yellow-300;
   color: $neutral-100;
   &::before {
-   content: "secure";
+    content: "secure";
   }
 }
 .warning {
@@ -96,23 +96,23 @@
   border-color: $yellow-300;
   color: $neutral-100;
   &::before {
-   content: "warning";
+    content: "warning";
   }
 }
 .experimental {
-  &::before {
-   content: "experimental";
-  }
   background-color: $yellow-400;
   border-color: $yellow-300;
   color: $neutral-100;
+  &::before {
+    content: "experimental";
+  }
 }
 .draft {
   background-color: $yellow-400;
   border-color: $yellow-300;
   color: $neutral-100;
   &::before {
-   content: "draft";
+    content: "draft";
   }
 }
 .negative {
@@ -120,7 +120,7 @@
   border-color: $red-300;
   color: $neutral-100;
   &::before {
-   content: "negative";
+    content: "negative";
   }
 }
 .obsolete {
@@ -128,7 +128,7 @@
   border-color: $red-300;
   color: $neutral-100;
   &::before {
-   content: "obsolete";
+    content: "obsolete";
   }
 }
 .deprecated {
@@ -136,6 +136,6 @@
   border-color: $red-300;
   color: $neutral-100;
   &::before {
-   content: "deprecated";
+    content: "deprecated";
   }
 }
