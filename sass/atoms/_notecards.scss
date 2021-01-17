@@ -8,24 +8,24 @@
   content: "notecard";
 }
 .notecard a:link {
-  color: $neutral-100;
+  color: #212121;
   text-decoration: underline;
 }
 .notecard a:visited {
-  color: $neutral-100;
+  color: #212121;
   text-decoration: underline;
 }
 .notecard a:hover {
-  color: $neutral-100;
+  color: #212121;
   text-decoration: underline;
 }
 .notecard a:focus {
-  color: $neutral-100;
+  color: #212121;
   text-decoration: underline;
 }
 .success {
   background-color: #ebf8e1;
-  border-color:  #367b48;
+  border-color: #367b48;
   border-bottom-color: #ebf8e1;
   border-bottom-style: solid;
   border-bottom-width: 2px;
@@ -38,7 +38,7 @@
   border-top-color: #ebf8e1;
   border-top-style: solid;
   border-top-width: 2px;
-  color: $neutral-100;
+  color: #212121;
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
@@ -47,24 +47,24 @@
 }
 .success::before {
   background-color: #ebf8e1;
-  color: $neutral-100;
+  color: #212121;
   content: "success";
   text-transform: uppercase;
 }
 .success a:link {
-  color: $neutral-100;
+  color: #212121;
   text-decoration: underline;
 }
 .success a:visited {
-  color: $neutral-100;
+  color: #212121;
   text-decoration: underline;
 }
 .success a:hover {
-  color: $neutral-100;
+  color: #212121;
   text-decoration: underline;
 }
 .success a:focus {
-  color: $neutral-100;
+  color: #212121;
   text-decoration: underline;
 }
 .note {
@@ -82,7 +82,7 @@
   border-top-color: $primary-400;
   border-top-style: solid;
   border-top-width: 2px;
-  color: $neutral-100;
+  color: #212121;
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
@@ -95,7 +95,7 @@
 .secure {
   background-color: $yellow-400;
   border-color: $yellow-300;
-  color: $neutral-100;
+  color: #212121;
   padding: 0.5em;
   &::before {
     content: "secure";
@@ -104,7 +104,7 @@
 .warning {
   background-color: $yellow-400;
   border-color: $yellow-300;
-  color: $neutral-100;
+  color: #212121;
   padding: 0.5em;
   &::before {
     content: "warning";
@@ -113,7 +113,7 @@
 .experimental {
   background-color: $yellow-400;
   border-color: $yellow-300;
-  color: $neutral-100;
+  color: #212121;
   padding: 0.5em;
   &::before {
     content: "experimental";
@@ -122,7 +122,7 @@
 .draft {
   background-color: $yellow-400;
   border-color: $yellow-300;
-  color: $neutral-100;
+  color: #212121;
   padding: 0.5em;
   &::before {
     content: "draft";
@@ -131,7 +131,7 @@
 .negative {
   background-color: $red-400;
   border-color: $red-300;
-  color: $neutral-100;
+  color: #212121;
   padding: 0.5em;
   &::before {
     content: "negative";
@@ -140,7 +140,7 @@
 .obsolete {
   background-color: $red-400;
   border-color: $red-300;
-  color: $neutral-100;
+  color: #212121;
   padding: 0.5em;
   &::before {
     content: "obsolete";
@@ -149,7 +149,7 @@
 .deprecated {
   background-color: $red-400;
   border-color: $red-300;
-  color: $neutral-100;
+  color: #212121;
   padding: 0.5em;
   &::before {
     content: "deprecated";
