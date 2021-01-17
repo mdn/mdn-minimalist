@@ -24,18 +24,18 @@
   text-decoration: underline;
 }
 .success {
-  background-color: $green-400;
+  background-color: #ebf8e1;
   border-color: $green-200;
-  border-bottom-color: $green-400;
+  border-bottom-color: #ebf8e1;
   border-bottom-style: solid;
   border-bottom-width: 2px;
-  border-left-color: $green-400;
+  border-left-color: #ebf8e1;
   border-left-style: solid;
   border-left-width: 4px;
-  border-right-color: $green-400;
+  border-right-color: #ebf8e1;
   border-right-style: solid;
   border-right-width: 2px;
-  border-top-color: $green-400;
+  border-top-color: #ebf8e1;
   border-top-style: solid;
   border-top-width: 2px;
   color: $neutral-100;
@@ -46,7 +46,7 @@
   padding: 0.5em;
 }
 .success::before {
-  background-color: $green-400;
+  background-color: #ebf8e1;
   color: $neutral-100;
   content: "success";
   text-transform: uppercase;
