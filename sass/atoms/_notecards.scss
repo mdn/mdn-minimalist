@@ -70,13 +70,20 @@
   }
 }
 .success {
-  background-color: $green-400;
+  background-color: Green;
   border-color: $green-200;
-  border-style: solid;
-  border-left-color: $green-400;
+  border-bottom-color: DarkGreen;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: DarkGreen;
   border-left-style: solid;
   border-left-width: 4px;
-  border-width: 2px;
+  border-right-color: DarkGreen;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-top-color: DarkGreen;
+  border-top-style: solid;
+  border-top-width: 2px;
   color: $neutral-100;
   margin-bottom: 1em;
   margin-left: 0;
@@ -85,7 +92,8 @@
   padding: 0.5em;
 }
 .success::before {
-  background-color: $green-400;
+  background-color: DarkGreen;
+  color: White;
   content: "success";
   text-transform: uppercase;
 }
