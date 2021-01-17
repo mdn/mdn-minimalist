@@ -87,9 +87,9 @@
  background-color: $yellow-400;
  border-color: $yellow-300;
  color: $neutral-100;
- &::before {
-  content: "secure";
- }
+}
+.secure::before {
+ content: "secure";
 }
 .warning {
  background-color: $yellow-400;
