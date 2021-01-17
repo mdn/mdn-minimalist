@@ -75,12 +75,14 @@
   color: $neutral-100;
   &::before {
     content: "success";
+    background: transparent url("~@mdn/dinocons/general/success.svg") 0 2px no-repeat;
   }
 }
 .note {
   background-color: $primary-500;
   &::before {
     content: "note";
+    background: transparent url("~@mdn/dinocons/general/note.svg") 0 2px no-repeat;
   }
 }
 .secure {
@@ -89,6 +91,7 @@
   color: $neutral-100;
   &::before {
     content: "secure";
+    background: transparent url("~@mdn/dinocons/general/secure.svg") 0 2px no-repeat;
   }
 }
 .warning {
@@ -97,6 +100,7 @@
   color: $neutral-100;
   &::before {
     content: "warning";
+    background: transparent url("~@mdn/dinocons/general/warning.svg") 0 2px no-repeat;
   }
 }
 .experimental {
@@ -105,6 +109,7 @@
   color: $neutral-100;
   &::before {
     content: "experimental";
+    background: transparent url("~@mdn/dinocons/general/experimental.svg") 0 2px no-repeat;
   }
 }
 .draft {
@@ -113,6 +118,7 @@
   color: $neutral-100;
   &::before {
     content: "draft";
+    background: transparent url("~@mdn/dinocons/general/draft.svg") 0 2px no-repeat;
   }
 }
 .negative {
@@ -121,6 +127,7 @@
   color: $neutral-100;
   &::before {
     content: "negative";
+    background: transparent url("~@mdn/dinocons/general/negative.svg") 0 2px no-repeat;
   }
 }
 .obsolete {
@@ -129,6 +136,7 @@
   color: $neutral-100;
   &::before {
     content: "obsolete";
+    background: transparent url("~@mdn/dinocons/general/obsolete.svg") 0 2px no-repeat;
   }
 }
 .deprecated {
@@ -137,5 +145,6 @@
   color: $neutral-100;
   &::before {
     content: "deprecated";
+    background: transparent url("~@mdn/dinocons/general/deprecated.svg") 0 2px no-repeat;
   }
 }
