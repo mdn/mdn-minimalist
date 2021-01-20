@@ -38,7 +38,7 @@
   },
   "homepage": "https://github.com/mdn/mdn-minimalist#readme",
   "devDependencies": {
-    "@mdn/dinocons": "^0.1.2",
+    "@mdn/dinocons": "^0.2.0",
     "bundlesize": "^0.18.0",
     "css-loader": "^5.0.0",
     "file-loader": "^6.1.0",
