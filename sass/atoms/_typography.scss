@@ -33,12 +33,9 @@ h2 {
 
 h3 {
   @include heading-3();
-  background-color: $neutral-100;
-  color: $text-color-inverted;
-  font-weight: normal;
+  @include slab-highlight();
+
   margin: $base-spacing 0;
-  max-width: max-content;
-  padding: 0 $base-unit;
 }
 
 h4 {

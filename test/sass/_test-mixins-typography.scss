@@ -41,3 +41,21 @@
     }
   }
 }
+
+@include describe("slab-highlight") {
+  @include it("Returns ZillaSlab Highlight style") {
+    @include assert {
+      @include output {
+        @include slab-highlight();
+      }
+
+      @include expect {
+        background-color: #212121;
+        color: #fff;
+        font-weight: normal;
+        max-width: max-content;
+        padding: 0 6px;
+      }
+    }
+  }
+}

@@ -60,3 +60,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@mixin slab-highlight() {
+  background-color: $neutral-100;
+  color: $text-color-inverted;
+  font-weight: normal;
+  max-width: max-content;
+  padding: 0 $base-unit;
+}
