@@ -230,9 +230,9 @@ h3 {
   background-color: #212121;
   color: #fff;
   font-weight: normal;
-  margin: 24px 0;
   max-width: max-content;
   padding: 0 6px;
+  margin: 24px 0;
 }
 @media all and (min-width: 47.9385em) {
   h3 {
