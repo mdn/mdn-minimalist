@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://www.github.com/mdn/mdn-minimalist/compare/v0.6.2...v0.7.0) (2021-01-20)
+
+
+### Features
+
+* add slab-highlight mixin ([d43ea0a](https://www.github.com/mdn/mdn-minimalist/commit/d43ea0ab1123b659bbc7d6c6eff9ad410f4646cf)), closes [#437](https://www.github.com/mdn/mdn-minimalist/issues/437)
+
 ### [0.6.2](https://www.github.com/mdn/mdn-minimalist/compare/v0.6.1...v0.6.2) (2021-01-17)
 
 
