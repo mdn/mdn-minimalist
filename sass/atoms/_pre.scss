@@ -9,3 +9,6 @@ pre {
   padding: $base-spacing;
   width: 100%;
 }
+pre::before {
+  content: attr(class);
+}
