@@ -34,3 +34,9 @@
 @import "./atoms/examples";
 
 @import "./utils/utils";
+@media (prefers-color-scheme: dark) {
+  body   { 
+    background: #000;
+    color: #fff; 
+  }
+}
