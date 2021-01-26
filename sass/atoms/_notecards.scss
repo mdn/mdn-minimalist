@@ -17,17 +17,31 @@
     }
   }
 
+  h2,
+  h3,
   h4 {
+    /* 
+     * Because we also allow h3, we need to undo some of its styling here.
+     * This relates specifically to `background-color`, `color`, 
+     * `padding` and `font-weight`
+     */
+    background-color: inherit;
+    color: inherit;
     display: inline-block;
+    font-family: $site-font-family;
     font-size: $small-medium-font-size-mobile;
+    font-weight: bold;
     margin: 0;
     margin-bottom: ($base-spacing / 4);
+    padding: 0;
 
     @media #{$mq-tablet-and-up} {
       font-size: $small-medium-font-size;
     }
   }
 
+  h2,
+  h3,
   h4,
   &.inline {
     &::before {
@@ -71,18 +85,26 @@
     border-color: $green-200;
     color: $neutral-100;
 
-    h4::before {
-      background: transparent url("~@mdn/dinocons/general/check-mark.svg") 0 2px
-        no-repeat;
+    h2,
+    h3,
+    h4 {
+      &::before {
+        background: transparent url("~@mdn/dinocons/general/check-mark.svg") 0
+          2px no-repeat;
+      }
     }
   }
 
   &.note {
     background-color: $primary-500;
 
-    h4::before {
-      background: transparent url("~@mdn/dinocons/file-icons/file.svg") 0 2px
-        no-repeat;
+    h2,
+    h3,
+    h4 {
+      &::before {
+        background: transparent url("~@mdn/dinocons/file-icons/file.svg") 0 2px
+          no-repeat;
+      }
     }
   }
 
@@ -94,26 +116,40 @@
     border-color: $yellow-300;
     color: $neutral-100;
 
-    h4::before {
-      background: transparent
-        url("~@mdn/dinocons/notifications/exclamation-triangle.svg") 0 2px
-        no-repeat;
+    h2,
+    h3,
+    h4 {
+      &::before {
+        background: transparent
+          url("~@mdn/dinocons/notifications/exclamation-triangle.svg") 0 2px
+          no-repeat;
+      }
     }
   }
 
   &.experimental {
-    h4::before {
-      background-image: url("~@mdn/dinocons/general/flask.svg");
+    h2,
+    h3,
+    h4 {
+      &::before {
+        background-image: url("~@mdn/dinocons/general/flask.svg");
+      }
     }
   }
 
   &.draft {
-    h4::before {
-      background-image: url("~@mdn/dinocons/general/pencil.svg");
+    h2,
+    h3,
+    h4 {
+      &::before {
+        background-image: url("~@mdn/dinocons/general/pencil.svg");
+      }
     }
   }
 
   &.secure {
+    h2,
+    h3,
     h4,
     &.inline {
       &::before {
@@ -129,6 +165,8 @@
     border-color: $red-300;
     color: $neutral-100;
 
+    h2,
+    h3,
     h4,
     &.inline {
       &::before {
@@ -139,6 +177,8 @@
   }
 
   &.deprecated {
+    h2,
+    h3,
     h4,
     &.inline {
       &::before {
