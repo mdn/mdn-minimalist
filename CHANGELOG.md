@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.7.1](https://www.github.com/mdn/mdn-minimalist/compare/v0.7.0...v0.7.1) (2021-01-26)
+
+
+### Bug Fixes
+
+* add support for additional heading levels ([d6ef88a](https://www.github.com/mdn/mdn-minimalist/commit/d6ef88ad8d7af3eb6d6f33cbd0f76cf891599c13)), closes [#409](https://www.github.com/mdn/mdn-minimalist/issues/409)
+
 ## [0.7.0](https://www.github.com/mdn/mdn-minimalist/compare/v0.6.2...v0.7.0) (2021-01-20)
 
 
