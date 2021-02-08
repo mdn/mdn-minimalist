@@ -51,7 +51,7 @@
     "pretty-quick": "^3.0.0",
     "resolve-url-loader": "^3.1.1",
     "sass": "^1.26.3",
-    "sass-loader": "^10.0.2",
+    "sass-loader": "^11.0.0",
     "sass-true": "6.0.1",
     "stylelint": "^13.2.1",
     "stylelint-a11y": "^1.2.3",
