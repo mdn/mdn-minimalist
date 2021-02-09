@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.7.2](https://www.github.com/mdn/mdn-minimalist/compare/v0.7.1...v0.7.2) (2021-02-09)
+
+
+### Bug Fixes
+
+* add first interaction action ([2f9da1c](https://www.github.com/mdn/mdn-minimalist/commit/2f9da1c27ababbc8cd3d1480a7f8d9717528c00f)), closes [#395](https://www.github.com/mdn/mdn-minimalist/issues/395)
+
 ### [0.7.1](https://www.github.com/mdn/mdn-minimalist/compare/v0.7.0...v0.7.1) (2021-01-26)
 
 
