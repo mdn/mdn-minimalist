@@ -271,8 +271,8 @@ p {
 }
 
 .readable-line-length {
-  max-width: 42rem;
-  max-width: 75ch;
+  max-width: 45rem;
+  max-width: 85ch;
 }
 
 /* text links */
@@ -289,8 +289,8 @@ a:visited:active {
 }
 
 blockquote {
-  max-width: 42rem;
-  max-width: 75ch;
+  max-width: 45rem;
+  max-width: 85ch;
   font-size: 1.125rem;
   font-family: zillaslab, palatino, "Palatino Linotype", serif;
   font-weight: normal;
@@ -424,8 +424,8 @@ h4 .icon {
   padding-bottom: 0;
 }
 .callout p {
-  max-width: 42rem;
-  max-width: 75ch;
+  max-width: 45rem;
+  max-width: 85ch;
 }
 .callout h4 {
   font-family: zillaslab, palatino, "Palatino Linotype", serif;
@@ -1174,8 +1174,8 @@ table code,
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video#Technical_summary
  */
 .properties {
-  max-width: 42rem;
-  max-width: 75ch;
+  max-width: 45rem;
+  max-width: 85ch;
   border: 2px solid #00458b;
   border-left: 6px solid #00458b;
 }
