@@ -17,7 +17,6 @@
     }
   }
 
-  h2,
   h3,
   h4 {
     /* 
@@ -40,7 +39,6 @@
     }
   }
 
-  h2,
   h3,
   h4,
   &.inline {
@@ -85,7 +83,6 @@
     border-color: $green-200;
     color: $neutral-100;
 
-    h2,
     h3,
     h4 {
       &::before {
@@ -98,7 +95,6 @@
   &.note {
     background-color: $primary-500;
 
-    h2,
     h3,
     h4 {
       &::before {
@@ -116,7 +112,6 @@
     border-color: $yellow-300;
     color: $neutral-100;
 
-    h2,
     h3,
     h4 {
       &::before {
@@ -128,7 +123,6 @@
   }
 
   &.experimental {
-    h2,
     h3,
     h4 {
       &::before {
@@ -138,7 +132,6 @@
   }
 
   &.draft {
-    h2,
     h3,
     h4 {
       &::before {
@@ -148,7 +141,6 @@
   }
 
   &.secure {
-    h2,
     h3,
     h4,
     &.inline {
@@ -165,7 +157,6 @@
     border-color: $red-300;
     color: $neutral-100;
 
-    h2,
     h3,
     h4,
     &.inline {
@@ -177,7 +168,6 @@
   }
 
   &.deprecated {
-    h2,
     h3,
     h4,
     &.inline {
