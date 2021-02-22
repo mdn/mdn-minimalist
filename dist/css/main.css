@@ -347,7 +347,8 @@ a.external::before {
  * to avoid unnecessary code duplication
  */
 .highlighted-link-state {
-  @highlighted-link-state ();
+  background-color: #00458b;
+  color: #fff;
 }
 
 dl dt {
