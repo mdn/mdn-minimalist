@@ -1,5 +1,13 @@
 # Changelog
 
+### [0.7.3](https://www.github.com/mdn/mdn-minimalist/compare/v0.7.2...v0.7.3) (2021-02-22)
+
+
+### Bug Fixes
+
+* highlighted link state ([e8b4ba3](https://www.github.com/mdn/mdn-minimalist/commit/e8b4ba38df44553539d367e9e7ba96c2f2b46d1a)), closes [#488](https://www.github.com/mdn/mdn-minimalist/issues/488)
+* wider readable line length ([30b1697](https://www.github.com/mdn/mdn-minimalist/commit/30b1697111d2a22406b624ea6f63eb939da64c08)), closes [#457](https://www.github.com/mdn/mdn-minimalist/issues/457)
+
 ### [0.7.2](https://www.github.com/mdn/mdn-minimalist/compare/v0.7.1...v0.7.2) (2021-02-09)
 
 
