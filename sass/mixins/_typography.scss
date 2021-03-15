@@ -64,6 +64,7 @@
 @mixin slab-highlight() {
   background-color: $neutral-100;
   color: $text-color-inverted;
+  font-family: $heading-font-family;
   font-weight: normal;
   max-width: max-content;
   padding: 0 $base-unit;
