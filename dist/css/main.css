@@ -610,97 +610,27 @@ h4 .icon {
 }
 
 /* Specification badges */
-.spec-cr::before,
-.spec-ed::before,
-.spec-draft::before,
-.spec-lc::before,
-.spec-living::before,
-.spec-obsolete::before,
-.spec-pr::before,
-.spec-rec::before,
-.spec-rfc::before,
-.spec-standard::before,
-.spec-wd::before {
-  background-color: #fafafa;
-  border-left: 5px solid #212121;
-  border-radius: 6px;
-  display: inline-block;
-  margin-right: 6px;
-  padding: 6px;
-}
-
 .spec-living,
 .spec-standard {
   color: #00458b;
-}
-.spec-living::before,
-.spec-standard::before {
-  border-color: #00458b;
-  content: "LS";
-}
-
-.spec-standard::before {
-  content: "ST";
 }
 
 .spec-cr,
 .spec-pr,
 .spec-rec,
 .spec-rfc {
-  color: #367b48;
-}
-.spec-cr::before,
-.spec-pr::before,
-.spec-rec::before,
-.spec-rfc::before {
-  border-color: #276738;
-  content: "REC";
-}
-
-.spec-cr::before {
-  content: "CR";
-}
-
-.spec-pr::before {
-  content: "PR";
-}
-
-.spec-rfc::before {
-  content: "RFC";
+  color: #276738;
 }
 
 .spec-draft,
 .spec-lc,
 .spec-wd {
-  color: #e56a2e;
-}
-.spec-draft::before,
-.spec-lc::before,
-.spec-wd::before {
-  border-color: #e56a2e;
-  content: "WD";
-}
-
-.spec-draft::before {
-  content: "D";
-}
-
-.spec-lc::before {
-  content: "LC";
+  color: #a14400;
 }
 
 .spec-ed,
 .spec-obsolete {
-  color: #b54248;
-}
-.spec-ed::before,
-.spec-obsolete::before {
-  border-color: #b54248;
-  content: "ED";
-}
-
-.spec-obsolete::before {
-  content: "O";
+  color: #95353a;
 }
 
 pre {
