@@ -58,6 +58,10 @@ p {
   font-size: $tiny-text;
 }
 
+.slab-highlight {
+  @include slab-highlight();
+}
+
 .readable-line-length {
   @include readable-line-length();
 }
