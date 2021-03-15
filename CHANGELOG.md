@@ -1,5 +1,15 @@
 # Changelog
 
+### [0.7.4](https://www.github.com/mdn/mdn-minimalist/compare/v0.7.3...v0.7.4) (2021-03-15)
+
+
+### Bug Fixes
+
+* move external icon to right ([a44b4eb](https://www.github.com/mdn/mdn-minimalist/commit/a44b4ebb92612f72b9104b55e256e36e18f5ed75)), closes [#462](https://www.github.com/mdn/mdn-minimalist/issues/462)
+* no need for h2 in notecards ([3590677](https://www.github.com/mdn/mdn-minimalist/commit/35906771ee4fdac08912297b9db348df2ec961e0)), closes [#470](https://www.github.com/mdn/mdn-minimalist/issues/470)
+* remove spec badges ([c702743](https://www.github.com/mdn/mdn-minimalist/commit/c702743a06df0bda9318f4e60b54157cece8df6a)), closes [#516](https://www.github.com/mdn/mdn-minimalist/issues/516)
+* slab-highlight should set font-family ([da38379](https://www.github.com/mdn/mdn-minimalist/commit/da383797a3a0484a144c22d750cfae8f76d6bc0a)), closes [#529](https://www.github.com/mdn/mdn-minimalist/issues/529)
+
 ### [0.7.3](https://www.github.com/mdn/mdn-minimalist/compare/v0.7.2...v0.7.3) (2021-02-22)
 
 
