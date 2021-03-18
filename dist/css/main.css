@@ -933,13 +933,6 @@ a.minimal {
   }
 }
 
-/* Turns off background and border and set cursor to pointer. */
-.ghost {
-  background: none;
-  border: 0;
-  cursor: pointer;
-}
-
 .icon-button svg {
   fill: currentColor;
   height: 22px;
@@ -950,6 +943,21 @@ a.minimal {
 .icon-button.right svg {
   margin-left: 10px;
   margin-right: 0;
+}
+
+/* Turns off background and border and set cursor to pointer. */
+.ghost {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.ghost:hover, .ghost:focus {
+  text-decoration: none;
+}
+.ghost:active {
+  background-color: #00458b;
+  color: #fff;
 }
 
 form .field-group {
