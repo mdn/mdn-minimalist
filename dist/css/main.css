@@ -703,47 +703,6 @@ table kbd {
   margin: 6px;
 }
 
-.token.keyword {
-  color: #00458b;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-  color: #276738;
-}
-
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string,
-.token.variable {
-  background-color: transparent;
-  color: #212121;
-}
-
-.token.atrule,
-.token.attr-value,
-.token.function {
-  color: #b54248;
-}
-
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: #626262;
-}
-
-.token.regex,
-.token.important {
-  color: #a14400;
-}
-
 .button,
 a.button {
   background-color: #216b82;
