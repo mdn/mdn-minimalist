@@ -17,7 +17,6 @@
     }
   }
 
-  h2,
   h3,
   h4 {
     /* 
@@ -40,7 +39,6 @@
     }
   }
 
-  h2,
   h3,
   h4,
   &.inline {
@@ -81,109 +79,55 @@
   }
 
   &.success {
+    @include set-notecard-icon("~@mdn/dinocons/general/check-mark.svg");
+
     background-color: $green-400;
     border-color: $green-200;
     color: $neutral-100;
-
-    h2,
-    h3,
-    h4 {
-      &::before {
-        background: transparent url("~@mdn/dinocons/general/check-mark.svg") 0
-          2px no-repeat;
-      }
-    }
   }
 
   &.note {
-    background-color: $primary-500;
+    @include set-notecard-icon("~@mdn/dinocons/file-icons/file.svg");
 
-    h2,
-    h3,
-    h4 {
-      &::before {
-        background: transparent url("~@mdn/dinocons/file-icons/file.svg") 0 2px
-          no-repeat;
-      }
-    }
+    background-color: $primary-500;
   }
 
   &.warning,
   &.experimental,
   &.draft,
   &.secure {
+    @include set-notecard-icon(
+      "~@mdn/dinocons/notifications/exclamation-triangle.svg"
+    );
+
     background-color: $yellow-400;
     border-color: $yellow-300;
     color: $neutral-100;
-
-    h2,
-    h3,
-    h4 {
-      &::before {
-        background: transparent
-          url("~@mdn/dinocons/notifications/exclamation-triangle.svg") 0 2px
-          no-repeat;
-      }
-    }
   }
 
   &.experimental {
-    h2,
-    h3,
-    h4 {
-      &::before {
-        background-image: url("~@mdn/dinocons/general/flask.svg");
-      }
-    }
+    @include set-notecard-icon-only("~@mdn/dinocons/general/flask.svg");
   }
 
   &.draft {
-    h2,
-    h3,
-    h4 {
-      &::before {
-        background-image: url("~@mdn/dinocons/general/pencil.svg");
-      }
-    }
+    @include set-notecard-icon-only("~@mdn/dinocons/general/pencil.svg");
   }
 
   &.secure {
-    h2,
-    h3,
-    h4,
-    &.inline {
-      &::before {
-        background-image: url("~@mdn/dinocons/general/lock.svg");
-      }
-    }
+    @include set-notecard-icon-only("~@mdn/dinocons/general/lock.svg");
   }
 
   &.negative,
   &.obsolete,
   &.deprecated {
+    @include set-notecard-icon("~@mdn/dinocons/general/trash.svg");
+
     background-color: $red-400;
     border-color: $red-300;
     color: $neutral-100;
-
-    h2,
-    h3,
-    h4,
-    &.inline {
-      &::before {
-        background: transparent url("~@mdn/dinocons/general/trash.svg") 0 0
-          no-repeat;
-      }
-    }
   }
 
   &.deprecated {
-    h2,
-    h3,
-    h4,
-    &.inline {
-      &::before {
-        background-image: url("~@mdn/dinocons/emojis/thumbs-down.svg");
-      }
-    }
+    @include set-notecard-icon-only("~@mdn/dinocons/emojis/thumbs-down.svg");
   }
 }

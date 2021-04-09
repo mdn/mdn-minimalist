@@ -12,14 +12,14 @@ a {
   }
 
   &.external {
-    &::before {
+    &::after {
       background: transparent url("~@mdn/dinocons/general/external.svg") 0 0
         no-repeat;
       background-size: 16px;
       content: "";
       display: inline-block;
       height: 16px;
-      margin-right: $base-spacing / 8;
+      margin-left: $base-spacing / 8;
       width: 16px;
     }
   }
@@ -32,5 +32,5 @@ a {
  * to avoid unnecessary code duplication
  */
 .highlighted-link-state {
-  @highlighted-link-state();
+  @include highlighted-link-state();
 }

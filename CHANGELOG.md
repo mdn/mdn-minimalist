@@ -1,5 +1,37 @@
 # Changelog
 
+## [0.8.0](https://www.github.com/mdn/mdn-minimalist/compare/v0.7.4...v0.8.0) (2021-03-26)
+
+
+### Features
+
+* color palette v2 ([9eb356c](https://www.github.com/mdn/mdn-minimalist/commit/9eb356c16e094acf7b8d2dad20ff6b08c1f3ff37)), closes [#547](https://www.github.com/mdn/mdn-minimalist/issues/547)
+
+
+### Bug Fixes
+
+* correct font color for ghost button ([ac02303](https://www.github.com/mdn/mdn-minimalist/commit/ac02303451bf4e0036d8fe4521f94c068e63e90f))
+* ghost button interactive states ([dff7778](https://www.github.com/mdn/mdn-minimalist/commit/dff7778baf507180cb2a2283a470fac9b6f137c1)), closes [#536](https://www.github.com/mdn/mdn-minimalist/issues/536)
+* remove prismjs overrides ([a2e211d](https://www.github.com/mdn/mdn-minimalist/commit/a2e211d403e5a159bf30fa4d0a860ec2512a93e0)), closes [#550](https://www.github.com/mdn/mdn-minimalist/issues/550)
+
+### [0.7.4](https://www.github.com/mdn/mdn-minimalist/compare/v0.7.3...v0.7.4) (2021-03-15)
+
+
+### Bug Fixes
+
+* move external icon to right ([a44b4eb](https://www.github.com/mdn/mdn-minimalist/commit/a44b4ebb92612f72b9104b55e256e36e18f5ed75)), closes [#462](https://www.github.com/mdn/mdn-minimalist/issues/462)
+* no need for h2 in notecards ([3590677](https://www.github.com/mdn/mdn-minimalist/commit/35906771ee4fdac08912297b9db348df2ec961e0)), closes [#470](https://www.github.com/mdn/mdn-minimalist/issues/470)
+* remove spec badges ([c702743](https://www.github.com/mdn/mdn-minimalist/commit/c702743a06df0bda9318f4e60b54157cece8df6a)), closes [#516](https://www.github.com/mdn/mdn-minimalist/issues/516)
+* slab-highlight should set font-family ([da38379](https://www.github.com/mdn/mdn-minimalist/commit/da383797a3a0484a144c22d750cfae8f76d6bc0a)), closes [#529](https://www.github.com/mdn/mdn-minimalist/issues/529)
+
+### [0.7.3](https://www.github.com/mdn/mdn-minimalist/compare/v0.7.2...v0.7.3) (2021-02-22)
+
+
+### Bug Fixes
+
+* highlighted link state ([e8b4ba3](https://www.github.com/mdn/mdn-minimalist/commit/e8b4ba38df44553539d367e9e7ba96c2f2b46d1a)), closes [#488](https://www.github.com/mdn/mdn-minimalist/issues/488)
+* wider readable line length ([30b1697](https://www.github.com/mdn/mdn-minimalist/commit/30b1697111d2a22406b624ea6f63eb939da64c08)), closes [#457](https://www.github.com/mdn/mdn-minimalist/issues/457)
+
 ### [0.7.2](https://www.github.com/mdn/mdn-minimalist/compare/v0.7.1...v0.7.2) (2021-02-09)
 
 

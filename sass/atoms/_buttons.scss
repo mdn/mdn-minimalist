@@ -103,13 +103,6 @@ a.minimal {
   }
 }
 
-/* Turns off background and border and set cursor to pointer. */
-.ghost {
-  background: none;
-  border: 0;
-  cursor: pointer;
-}
-
 .icon-button {
   svg {
     fill: currentColor;

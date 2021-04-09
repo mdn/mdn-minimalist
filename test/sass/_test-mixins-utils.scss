@@ -36,8 +36,8 @@
       }
 
       @include expect {
-        max-width: 42rem;
-        max-width: 75ch;
+        max-width: 45rem;
+        max-width: 85ch;
       }
     }
   }

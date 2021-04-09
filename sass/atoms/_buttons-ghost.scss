@@ -1,0 +1,18 @@
+/* Turns off background and border and set cursor to pointer. */
+.ghost {
+  background: none;
+  border: 0;
+  color: $primary-50;
+  cursor: pointer;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:active {
+    background-color: $primary-50;
+    color: $neutral-600;
+  }
+}
