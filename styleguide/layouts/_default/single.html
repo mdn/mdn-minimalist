@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="main-page-container">
+    <aside class="toc">
+        <h2>Table of contents</h2>
+        {{ .TableOfContents }}
+    </aside>
+    <main class="main" role="main">
+        {{ .Content }}
+    </main>
+</div>
+{{ end }}

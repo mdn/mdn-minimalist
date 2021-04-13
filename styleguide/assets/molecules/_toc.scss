@@ -1,0 +1,14 @@
+.toc {
+  bottom: $base-spacing / 2;
+  max-height: 95vh;
+  overflow: scroll;
+  position: sticky;
+  top: $base-spacing / 2;
+
+  nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: $base-spacing / 2;
+  }
+}

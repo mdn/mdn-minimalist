@@ -193,14 +193,14 @@ img {
   font-family: zillaslab;
   font-style: normal;
   font-weight: bold;
-  src: url(./0beac26bfbe29230c3c64cda9c75028c.woff2) format("woff2"), url(./72026b3c6a79bb1ed3d3124fd172de92.woff) format("woff");
+  src: url(/typography/0beac26bfbe29230c3c64cda9c75028c.woff2) format("woff2"), url(/typography/72026b3c6a79bb1ed3d3124fd172de92.woff) format("woff");
 }
 @font-face {
   font-display: swap;
   font-family: zillaslab;
   font-style: normal;
   font-weight: normal;
-  src: url(./ce3a756dbc26ce21a07291affa06fef9.woff2) format("woff2"), url(./7e4c05c9e1b440bb4bc0a50cfa49dc49.woff) format("woff");
+  src: url(/typography/ce3a756dbc26ce21a07291affa06fef9.woff2) format("woff2"), url(/typography/7e4c05c9e1b440bb4bc0a50cfa49dc49.woff) format("woff");
 }
 h1,
 h2,
