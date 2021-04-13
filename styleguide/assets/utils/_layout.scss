@@ -1,0 +1,15 @@
+.main-page-container {
+  display: flex;
+  gap: $base-spacing;
+  margin: 0 auto;
+  max-width: $max-width-default;
+  padding: $base-spacing;
+
+  .toc {
+    flex: 0 0 25%;
+  }
+
+  .main {
+    flex: 0 1 75%;
+  }
+}

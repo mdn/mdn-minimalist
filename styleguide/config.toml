@@ -1,3 +1,25 @@
-baseURL = "http://example.org/"
+baseURL = "/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+languageLang = "en"
+title = "MDN Minimalist"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "home"
+    url = "/"
+    weight = 1
+
+[imaging]
+quality = 75
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
+  [markup.highlight]
+    style = "emacs"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

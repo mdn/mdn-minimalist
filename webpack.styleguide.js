@@ -8,7 +8,7 @@ module.exports = {
     main: "./sass/mdn-minimalist.scss",
   },
   output: {
-    path: path.resolve(__dirname, "dist", "css"),
+    path: path.resolve(__dirname, "styleguide/assets", "minimalist"),
   },
   mode: "development",
   plugins: [
@@ -41,7 +41,8 @@ module.exports = {
         test: /\.(woff|woff2)$/,
         loader: "file-loader",
         options: {
-          publicPath: ".",
+          publicPath: "/typography",
+          outputPath: "../../static/typography",
         },
       },
       {

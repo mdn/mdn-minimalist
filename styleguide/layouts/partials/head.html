@@ -1,0 +1,67 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ block "title" . }}{{ .Params.title }} - {{ .Site.Title }}{{ end }}</title>
+
+    <meta name="keywords" content={{ delimit .Keywords " " }} />
+    <meta name="description" content="{{ .Description }}" />
+
+    <link rel="canonical" href="{{ .Permalink }}" />
+
+    <link rel="shortcut icon" href="/media/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/media/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/media/favicon.svg" />
+
+    <link rel="apple-touch-icon" href="/media/apple-touch-icon.png" />
+
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="/media/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512"
+        href="/media/android-chrome-512x512.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon-32x32.png" />
+
+    <!--
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:locale" content="en-US" />
+    <meta property="og:url" content="https://github.com/project-calavera/hugo-skeleton" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:image:alt" content="" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:creator" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:image:alt" content="" />
+    -->
+
+    {{ $sass := resources.Get "minimalist/main.css" }}
+    {{ $options := (dict "enableSourceMap" true "outputStyle" "compressed") }}
+    {{ $styles := $sass | resources.ToCSS $options | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}"
+        integrity="{{ $styles.Data.Integrity }}">
+
+    {{ $styleguide_sass := resources.Get "styleguide.scss" }}
+    {{ $styleguide_styles := $styleguide_sass | resources.ToCSS $options | minify |
+    fingerprint }}
+    <link rel="stylesheet" href="{{ $styleguide_styles.RelPermalink }}"
+        integrity="{{ $styleguide_styles.Data.Integrity }}">
+    <style>
+        code {
+            background-color: transparent;
+        }
+
+        .dark {
+            background-color: #1b1b1b;
+            padding: 24px;
+        }
+
+    </style>
+</head>
