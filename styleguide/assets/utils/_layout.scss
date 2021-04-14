@@ -1,9 +1,12 @@
-.main-page-container {
-  display: flex;
-  gap: $base-spacing;
+.wrapper {
   margin: 0 auto;
   max-width: $max-width-default;
   padding: $base-spacing;
+}
+
+.main-page-container {
+  display: flex;
+  gap: $base-spacing;
 
   .toc {
     flex: 0 0 25%;
