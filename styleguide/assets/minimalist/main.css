@@ -1043,6 +1043,16 @@ table td {
   padding: 12px;
   text-align: left;
 }
+table th:first-child,
+table td:first-child {
+  min-width: 150px;
+}
+@media all and (min-width: 63.9385em) {
+  table th:first-child,
+table td:first-child {
+    min-width: 200px;
+  }
+}
 table pre {
   background-color: #fff;
 }

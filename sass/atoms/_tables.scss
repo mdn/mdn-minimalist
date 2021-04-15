@@ -11,6 +11,14 @@ table {
     border: 1px solid $neutral-500;
     padding: $base-spacing / 2;
     text-align: left;
+
+    &:first-child {
+      min-width: 150px;
+
+      @media #{$mq-small-desktop-and-up} {
+        min-width: 200px;
+      }
+    }
   }
 
   pre {
