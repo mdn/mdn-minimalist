@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.8.1](https://www.github.com/mdn/mdn-minimalist/compare/v0.8.0...v0.8.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* set min-width on first-child table columns ([dc60f2c](https://www.github.com/mdn/mdn-minimalist/commit/dc60f2c1ba7a195c23b3fb7ada8f76564ab07818))
+
 ## [0.8.0](https://www.github.com/mdn/mdn-minimalist/compare/v0.7.4...v0.8.0) (2021-03-26)
 
 
