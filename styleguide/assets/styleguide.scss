@@ -1,5 +1,6 @@
 @import "../../sass/vars/color-palette";
 @import "../../sass/vars/layout";
+@import "../../sass/vars/typography";
 
 @import "./utils/layout";
 
@@ -10,3 +11,4 @@
 @import "./molecules/toc";
 
 @import "./organisms/main";
+@import "./organisms/footer";

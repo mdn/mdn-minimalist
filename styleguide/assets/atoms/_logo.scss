@@ -1,7 +1,16 @@
-.logo {
-  background: transparent url("/media/mdn-minimalist.svg") 0 0 no-repeat;
-  background-size: 451px 135px;
+.logo,
+.page-footer-logo {
   display: block;
-  height: 135px;
-  width: 451px;
+  height: 35px;
+  width: 170px;
+
+  @media #{$mq-tablet-and-up} {
+    height: 55px;
+    width: 200px;
+  }
+
+  @media #{$mq-large-desktop-and-up} {
+    flex-basis: 250px;
+    height: inherit;
+  }
 }
