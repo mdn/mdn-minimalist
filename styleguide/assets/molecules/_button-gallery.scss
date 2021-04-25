@@ -1,0 +1,11 @@
+ul.button-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $base-spacing * 2;
+  justify-content: center;
+  margin-top: $base-spacing;
+
+  li {
+    flex: 1 1 25%;
+  }
+}
