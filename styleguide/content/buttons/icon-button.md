@@ -1,116 +1,14 @@
 ---
-title: buttons - MDN Minimalist
+title: Buttons - Icon button - MDN Minimalist
 keywords: buttons, button styles, mdn minimalist, mdn, sass, library
-description: Example style and use of the button elements
+description: Example style and use of the icon button element
 ---
 
-# Buttons
-
-## Ghost button
-
-The ghost button is used when a button element is required semantically, but should visually look like a anchor link.
-
-### Example
-
-<button class="ghost">Ghost Button</button>
-
-### Code
-
-```html
-<button class="ghost">Ghost Button</button>
-```
-
-## Primary button
-
-The primary button is primarily used for call to action items.
-
-### Example
-
-<button class="button">Primary Button</button>
-
-### Code
-
-```html
-<button class="button">Primary Button</button>
-```
-
-## Danger button
-
-When the outcome of clicking a button could potentially be destructive, use the `danger` class.
-
-### Example
-
-<button class="button danger">Danger Button</button>
-
-### Code
-
-```html
-<button class="button danger">Danger Button</button>
-```
-
-## Positive button
-
-For general form submission using the `positive` button.
-
-### Example
-
-<button class="button positive">Positive Button</button>
-
-### Code
-
-```html
-<button class="button positive">Positive Button</button>
-```
-
-## Inactive button
-
-As the name suggests, this is the style used when a button is inactive.
-
-### Example
-
-<button class="button inactive">Inactive Button</button>
-
-### Code
-
-```html
-<button class="button inactive">Inactive Button</button>
-```
-
-## Minimal button
-
-In some instances the standard buttons might be simply to large. In those cases you can use the `minimal` button.
-
-### Example
-
-<button class="button minimal">Minimal Button</button>
-
-### Code
-
-```html
-<button class="button minimal">Minimal Button</button>
-```
-
-## Light button
-
-When using a button on a dark background opt for the `light` button variant.
-
-### Example
-
-<div class="dark">
-    <button class="button light">Light Button</button>
-</div>
-
-### Code
-
-```html
-<button class="button light">Light Button</button>
-```
-
-## Icon button
+# Icon button
 
 When you need a button that will also contain an icon such as the sign-in buttons, this is the component to use. As can be seen in the code example, the icon SVG is embedded into the `button` element. This is to ensure that we can style the icon appropriately for the various interaction states.
 
-### Example
+## Left aligned icon example
 
 <button class="button icon-button">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"
@@ -148,7 +46,7 @@ When you need a button that will also contain an icon such as the sign-in button
 
 If you need the icon to be aligned on the right-hand side of the button add the SVG after the button's text content and use the `right` class.
 
-### Example
+## Right aligned icon example
 
 <button class="button icon-button right">
     Sign up now
@@ -175,35 +73,4 @@ If you need the icon to be aligned on the right-hand side of the button add the 
     />
   </svg>
 </button>
-```
-
-## Variants
-
-All buttons can recieve the `outline` class to render the button as an outlined button as opposed to a solid button.
-
-### Example
-
-<button class="button outline">Primary Outline Button</button>
-
-### Code
-
-```html
-<button class="button outline">Primary Outline Button</button>
-```
-
-A button is not always the correct element to use. Sometimes you have a link element but still need it to look like a button stylistically. The same classes used in the examples above can be applied to an anchor element to achieve this result.
-
-Always remember, "buttons do things and links take you somewhere". Choose your elements wisely 😀
-
-### Example
-
-<a href="#" class="button danger">Danger Link</a>
-
-<a href="#" class="button danger outline">Danger Outline Link</a>
-
-### Code
-
-```html
-<a href="#" class="button danger">Danger Link</a>
-<a href="#" class="button danger outline">Danger Outline Link</a>
 ```
