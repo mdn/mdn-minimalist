@@ -7,7 +7,6 @@
 
 @import "../../sass/mixins/buttons";
 @import "../../sass/mixins/links";
-@import "../../sass/mixins/notecards";
 @import "../../sass/mixins/typography";
 @import "../../sass/mixins/utils";
 
@@ -16,6 +15,5 @@
 /* Tests */
 @import "./test-mixins-buttons";
 @import "./test-mixins-links";
-@import "./test-mixins-notecards";
 @import "./test-mixins-typography";
 @import "./test-mixins-utils";
