@@ -7,7 +7,7 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - uses: GoogleCloudPlatform/release-please-action@v2.25
+      - uses: GoogleCloudPlatform/release-please-action@v2.26
         id: release
         with:
           token: ${{ secrets.GH_TOKEN }}
