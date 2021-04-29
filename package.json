@@ -73,5 +73,6 @@
       "maxSize": "10 kB",
       "compression": "gzip"
     }
-  ]
+  ],
+  "dependencies": {}
 }
