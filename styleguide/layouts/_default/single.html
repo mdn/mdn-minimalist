@@ -1,9 +1,6 @@
 {{ define "main" }}
 <div class="main-page-container">
-    <aside class="toc">
-        <h2>Table of contents</h2>
-        {{ .TableOfContents }}
-    </aside>
+    {{- partial "sidebar.html" . -}}
     <main class="main" role="main">
         {{ .Content }}
     </main>
