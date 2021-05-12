@@ -204,8 +204,15 @@ img {
 }
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   font-family: zillaslab, palatino, "Palatino Linotype", serif;
+  line-height: 1.2;
+}
+
+h4,
+h5 {
   line-height: 1.2;
 }
 
@@ -229,13 +236,6 @@ h2 {
 
 h3 {
   font-size: 1.424rem;
-  background-color: #212121;
-  color: #fff;
-  font-family: zillaslab, palatino, "Palatino Linotype", serif;
-  font-weight: normal;
-  max-width: max-content;
-  padding: 0 6px;
-  margin: 24px 0;
 }
 @media all and (min-width: 47.9385em) {
   h3 {
