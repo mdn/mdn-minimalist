@@ -14,7 +14,7 @@ jobs:
           release-type: node
           package-name: release-please-action
       # The logic below handles the npm publication:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
         # these if statements ensure that a publication only occurs when
         # a new release is created:
         if: ${{ steps.release.outputs.release_created }}
@@ -33,7 +33,7 @@ jobs:
     name: build-dist
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
       - uses: actions/setup-node@v2.1.5
         with:
           node-version: "14"
