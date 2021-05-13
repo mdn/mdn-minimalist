@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.0.0](https://www.github.com/mdn/mdn-minimalist/compare/v0.8.1...v1.0.0) (2021-05-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove notecards from minimalist
+
+### Bug Fixes
+
+* improved visual heading hierarchy ([a38d3cb](https://www.github.com/mdn/mdn-minimalist/commit/a38d3cb8e0b6a95645f70b8e64cc65b1f62c88d7)), closes [#625](https://www.github.com/mdn/mdn-minimalist/issues/625)
+* properties table width on tablet ([b25948c](https://www.github.com/mdn/mdn-minimalist/commit/b25948c8c06b1eaa215fa51968b1cf8e5fb2b3c8)), closes [#589](https://www.github.com/mdn/mdn-minimalist/issues/589)
+* separate color schemes ([7441850](https://www.github.com/mdn/mdn-minimalist/commit/7441850dc1fdf571a067ce77e9f1ed1051a85fbc)), closes [#584](https://www.github.com/mdn/mdn-minimalist/issues/584)
+* simpler h3 style ([76384e9](https://www.github.com/mdn/mdn-minimalist/commit/76384e9ef61421a6dfea2a289db4dc3e9d3ee22a)), closes [#625](https://www.github.com/mdn/mdn-minimalist/issues/625)
+
+
+### Code Refactoring
+
+* remove notecards from minimalist ([0b57f6e](https://www.github.com/mdn/mdn-minimalist/commit/0b57f6e1ac33a90e385114a71361cd3a405d58aa)), closes [#590](https://www.github.com/mdn/mdn-minimalist/issues/590)
+
 ### [0.8.1](https://www.github.com/mdn/mdn-minimalist/compare/v0.8.0...v0.8.1) (2021-04-15)
 
 
