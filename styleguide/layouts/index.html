@@ -3,5 +3,6 @@
     <h1>{{ .Params.home.heading }}</h1>
     <p class="lead">{{ .Params.home.lead }}</p>
     {{- partial "main-nav.html" . -}}
+    {{.Content}}
 </main>
 {{ end }}

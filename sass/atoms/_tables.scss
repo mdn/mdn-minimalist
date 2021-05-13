@@ -42,6 +42,7 @@ table,
   @include readable-line-length();
   border: $standard-primary-border;
   border-left: $property-table-border;
+  width: 100%;
 
   th,
   td {
