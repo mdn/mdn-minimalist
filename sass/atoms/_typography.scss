@@ -25,6 +25,12 @@ h5 {
   line-height: $heading-line-height;
 }
 
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+
 h4,
 h5 {
   line-height: $heading-line-height;
