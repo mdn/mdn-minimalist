@@ -20,7 +20,7 @@ Below is the default styling for headings level 1-5 with their default margins. 
 
 ## The Typescale
 
-Desktop and tablet typescale is based on [major third typescale](https://type-scale.com/?size=16&scale=1.250&text=MDN%20Web%20Docs&font=Poppins&fontweight=400&bodyfont=body_font_default&bodyfontweight=400&lineheight=1.75&backgroundcolor=%23ffffff&fontcolor=%23000000&preview=false) with a base of 100% of base font size set by the user which is typically 16-18px. On mobile phones the typescale based is based on a [major second typescale](https://bit.ly/2VUrOJm) with a base of 100% as set by the user.
+Desktop and tablet typescale is based on [major third typescale](https://type-scale.com/?size=16&scale=1.250&text=MDN%20Web%20Docs&font=Poppins&fontweight=400&bodyfont=body_font_default&bodyfontweight=400&lineheight=1.75&backgroundcolor=%23ffffff&fontcolor=%23000000&preview=false) with a base of 100% of base font size set by the user which is typically 16-18px. On mobile phones the typescale is based on a [major second typescale](https://bit.ly/2VUrOJm) with a base of 100% as set by the user.
 
 ## ZillaSlab highlight
 
