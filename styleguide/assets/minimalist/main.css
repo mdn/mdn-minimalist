@@ -82,11 +82,11 @@ select {
     scroll-behavior: auto !important;
   }
 }
-/* mdn color palette v2 */
 /* mdn color palette v1 */
-/* Gradients */
 /* Overlays */
 /* Shadows */
+/* Gradients */
+/* mdn color palette v2 */
 /*
  * media queries
  * - MDN should be coded "mobile first"
@@ -957,6 +957,7 @@ table code,
   max-width: 85ch;
   border: 2px solid #00458b;
   border-left: 6px solid #00458b;
+  width: 100%;
 }
 .properties th,
 .properties td {
