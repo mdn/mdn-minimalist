@@ -957,6 +957,7 @@ table code,
   max-width: 85ch;
   border: 2px solid #00458b;
   border-left: 6px solid #00458b;
+  width: 100%;
 }
 .properties th,
 .properties td {
