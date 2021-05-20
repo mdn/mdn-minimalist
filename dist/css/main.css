@@ -208,6 +208,7 @@ h3,
 h4,
 h5 {
   font-family: zillaslab, palatino, "Palatino Linotype", serif;
+  letter-spacing: 0.035rem;
   line-height: 1.2;
 }
 
@@ -919,6 +920,19 @@ table {
 @media all and (min-width: 47.9385em) {
   table {
     font-size: 1rem;
+  }
+}
+table caption {
+  font-size: 1.125rem;
+  font-family: zillaslab, palatino, "Palatino Linotype", serif;
+  letter-spacing: 0.035rem;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+@media all and (min-width: 47.9385em) {
+  table caption {
+    font-size: 1.25rem;
   }
 }
 table th,
