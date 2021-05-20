@@ -13,6 +13,7 @@ This is the most commonly used table style across MDN Web Docs. It is achieved b
 > Note: Notice the use of the `thead` element as well as the `scope` attribute on the `th` elements. This is critical to set correctly to ensure our table data is exposed correctly to assistive technologies.
 
 <table class="standard-table">
+<caption>Standard table</caption>
  <thead>
   <tr>
    <th scope="col">Attribute</th>

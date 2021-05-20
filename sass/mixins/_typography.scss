@@ -7,6 +7,12 @@
   letter-spacing: -0.0027777778rem;
 }
 
+@mixin headings-common-base() {
+  @include set-heading-font-family();
+  letter-spacing: 0.035rem;
+  line-height: $heading-line-height;
+}
+
 @mixin heading-1() {
   font-size: $xxl-font-size-mobile;
 
