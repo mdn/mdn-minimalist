@@ -21,8 +21,7 @@ h2,
 h3,
 h4,
 h5 {
-  @include set-heading-font-family();
-  line-height: $heading-line-height;
+  @include headings-common-base();
 }
 
 h3,

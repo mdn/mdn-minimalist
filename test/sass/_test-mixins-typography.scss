@@ -27,6 +27,22 @@
   }
 }
 
+@include describe("headings-common-base") {
+  @include it("Returns the expected base style for headings") {
+    @include assert {
+      @include output {
+        @include headings-common-base();
+      }
+
+      @include expect {
+        font-family: zillaslab, palatino, "Palatino Linotype", serif;
+        letter-spacing: 0.035rem;
+        line-height: 1.2;
+      }
+    }
+  }
+}
+
 @include describe("font-smoothing") {
   @include it("Returns prefixed style rules for font-smoothing") {
     @include assert {

@@ -6,6 +6,13 @@ table {
     font-size: $default-font-size;
   }
 
+  caption {
+    @include heading-5();
+    @include headings-common-base();
+    font-weight: bold;
+    margin-bottom: $base-spacing / 2;
+  }
+
   th,
   td {
     border: 1px solid $neutral-500;
