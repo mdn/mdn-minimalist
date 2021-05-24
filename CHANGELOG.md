@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.0.1](https://www.github.com/mdn/mdn-minimalist/compare/v1.0.0...v1.0.1) (2021-05-24)
+
+
+### Bug Fixes
+
+* switch to math.div ([44e86a7](https://www.github.com/mdn/mdn-minimalist/commit/44e86a7b2d44ad27c3398f8e43260e3ae6dc37f8)), closes [#629](https://www.github.com/mdn/mdn-minimalist/issues/629)
+* table caption lacks styling ([a539755](https://www.github.com/mdn/mdn-minimalist/commit/a5397556a26fde7186411439835f41bdb3ab27a9)), closes [#623](https://www.github.com/mdn/mdn-minimalist/issues/623)
+
 ## [1.0.0](https://www.github.com/mdn/mdn-minimalist/compare/v0.8.1...v1.0.0) (2021-05-13)
 
 
