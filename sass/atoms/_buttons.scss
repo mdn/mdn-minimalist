@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .button,
 a.button {
   @include button-state();
@@ -96,7 +98,7 @@ a.minimal {
   font-size: $small-font-size;
   font-weight: normal;
   min-height: inherit;
-  padding: ($base-unit / 2) $base-unit;
+  padding: math.div($base-unit, 2) $base-unit;
 
   @media #{$mq-tablet-and-up} {
     padding: 0 $base-unit;

@@ -1,3 +1,5 @@
+@use "sass:math";
+
 blockquote {
   @include blockquote();
   font-family: $heading-font-family;
@@ -10,11 +12,11 @@ blockquote {
     content: "";
     display: block;
     height: 5px;
-    margin-bottom: ($base-spacing / 2);
+    margin-bottom: math.div($base-spacing, 2);
   }
 
   &::after {
-    margin-top: ($base-spacing / 2);
+    margin-top: math.div($base-spacing, 2);
   }
 
   /*

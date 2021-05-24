@@ -1,3 +1,5 @@
+@use "sass:math";
+
 /* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd */
 kbd {
   background: $light-gray-gradient;
@@ -9,8 +11,8 @@ kbd {
   font-size: $small-font-size;
   font-weight: bold;
   line-height: 1;
-  margin: $base-unit / 2;
-  padding: ($base-spacing / 6) ($base-spacing / 4);
+  margin: math.div($base-unit, 2);
+  padding: math.div($base-spacing, 6) math.div($base-spacing, 4);
   white-space: nowrap;
 }
 
@@ -20,6 +22,6 @@ kbd {
  */
 table {
   kbd {
-    margin: $base-spacing / 4;
+    margin: math.div($base-spacing, 4);
   }
 }

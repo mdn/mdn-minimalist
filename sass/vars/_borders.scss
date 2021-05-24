@@ -1,5 +1,7 @@
-$standard-light-border: ($base-unit / 3) solid $neutral-600;
-$standard-primary-border: ($base-unit / 3) solid $primary-50;
+@use "sass:math";
+
+$standard-light-border: math.div($base-unit, 3) solid $neutral-600;
+$standard-primary-border: math.div($base-unit, 3) solid $primary-50;
 
 $thin-primary-border: 1px solid $primary-200;
 

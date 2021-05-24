@@ -1,8 +1,10 @@
+@use "sass:math";
+
 code {
   background-color: $neutral-550;
   box-decoration-break: clone;
   font-family: $code-inline-font-family;
-  padding: 0 ($base-unit / 2);
+  padding: 0 math.div($base-unit, 2);
   word-wrap: break-word;
 }
 

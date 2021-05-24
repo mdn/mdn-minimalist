@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .icon {
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -5,7 +7,7 @@
   content: "";
   display: inline-block;
   height: 21px;
-  margin-right: $base-spacing / 4;
+  margin-right: math.div($base-spacing, 4);
   vertical-align: sub;
   width: 21px;
 }
@@ -14,7 +16,7 @@ h2,
 h3,
 h4 {
   .icon {
-    margin-left: $base-spacing / 4;
+    margin-left: math.div($base-spacing, 4);
     vertical-align: middle;
   }
 }

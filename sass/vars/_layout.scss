@@ -1,3 +1,5 @@
+@use "sass:math";
+
 $browser-default-font-size: 16px;
 $base-unit: 6px;
 
@@ -6,21 +8,21 @@ $medium-spacing: $base-spacing * 2;
 $large-spacing: $medium-spacing * 2;
 
 $base-section-spacing: ($base-spacing * 2) $base-spacing;
-$base-section-spacing-mobile: ($base-spacing / 2) $base-spacing;
+$base-section-spacing-mobile: math.div($base-spacing, 2) $base-spacing;
 $content-block-margin: $base-spacing;
 
 $max-width-default: 1400px;
-$max-width-small-desktop: (1023px / $browser-default-font-size) * 1em;
+$max-width-small-desktop: math.div(1023px, $browser-default-font-size) * 1em;
 
-$small-mobile-ends: (479px / $browser-default-font-size) * 1em;
+$small-mobile-ends: math.div(479px, $browser-default-font-size) * 1em;
 $mobile-starts: $small-mobile-ends + 0.001em;
-$mobile-ends: (767px / $browser-default-font-size) * 1em;
+$mobile-ends: math.div(767px, $browser-default-font-size) * 1em;
 
 $tablet-starts: $mobile-ends + 0.001em;
-$tablet-ends: (1023px / $browser-default-font-size) * 1em;
+$tablet-ends: math.div(1023px, $browser-default-font-size) * 1em;
 
 $small-desktop-starts: $tablet-ends + 0.001em;
-$small-desktop-ends: (1199px / $browser-default-font-size) * 1em;
+$small-desktop-ends: math.div(1199px, $browser-default-font-size) * 1em;
 
 /*
  * media queries

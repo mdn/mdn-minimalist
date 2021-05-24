@@ -1,9 +1,11 @@
+@use "sass:math";
+
 /* General Badges */
 .badge {
   background-color: $neutral-575;
   border-radius: 6px;
-  margin-right: $base-spacing / 4;
-  padding: 0 $base-spacing / 4;
+  margin-right: math.div($base-spacing, 4);
+  padding: 0 math.div($base-spacing, 4);
 
   a {
     color: $neutral-100;
