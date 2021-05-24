@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .page-footer-logo {
   margin-bottom: $base-spacing;
 
@@ -45,7 +47,7 @@
     }
 
     ul {
-      padding-inline-start: $base-spacing / 4;
+      padding-inline-start: math.div($base-spacing, 4);
     }
 
     svg {

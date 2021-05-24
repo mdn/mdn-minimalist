@@ -1,3 +1,5 @@
+@use "sass:math";
+
 table {
   font-size: $small-font-size;
   overflow-x: auto;
@@ -10,13 +12,13 @@ table {
     @include heading-5();
     @include headings-common-base();
     font-weight: bold;
-    margin-bottom: $base-spacing / 2;
+    margin-bottom: math.div($base-spacing, 2);
   }
 
   th,
   td {
     border: 1px solid $neutral-500;
-    padding: $base-spacing / 2;
+    padding: math.div($base-spacing, 2);
     text-align: left;
   }
 
@@ -57,7 +59,7 @@ table,
     border: 0;
     border-top: $standard-primary-border;
     display: block;
-    padding: ($base-spacing / 2);
+    padding: math.div($base-spacing, 2);
     vertical-align: top;
 
     @media #{$mq-small-desktop-and-up} {
@@ -87,7 +89,7 @@ table,
   td {
     border: 0;
     border-left: $standard-light-border;
-    padding: ($base-spacing / 2);
+    padding: math.div($base-spacing, 2);
   }
 
   th {

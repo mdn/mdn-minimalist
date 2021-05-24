@@ -1,3 +1,5 @@
+@use "sass:math";
+
 a {
   color: $link-color;
   text-decoration: none;
@@ -19,7 +21,7 @@ a {
       content: "";
       display: inline-block;
       height: 16px;
-      margin-left: $base-spacing / 8;
+      margin-left: math.div($base-spacing, 8);
       width: 16px;
     }
   }
