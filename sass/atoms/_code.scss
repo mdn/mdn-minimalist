@@ -5,8 +5,8 @@ code {
   box-decoration-break: clone;
   font-family: $code-inline-font-family;
   padding: 0 math.div($base-unit, 2);
-  word-wrap: break-word;
   white-space: nowrap;
+  word-wrap: break-word;
 }
 
 .notranslate {
