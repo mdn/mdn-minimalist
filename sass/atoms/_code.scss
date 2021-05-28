@@ -6,12 +6,17 @@ code {
   font-family: $code-inline-font-family;
   padding: 0 math.div($base-unit, 2);
   word-wrap: break-word;
+  white-space: nowrap;
 }
 
 .notranslate {
   code {
     background-color: transparent;
   }
+}
+
+.pre {
+  white-space: pre;
 }
 
 .example-bad {
