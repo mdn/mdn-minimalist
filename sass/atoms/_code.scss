@@ -17,6 +17,7 @@ code {
 .example-bad {
   background-color: $red-450;
   border-color: $red-300;
+  text-decoration: rgba(100, 100, 100, 0.25) line-through;
 }
 
 .example-good {
