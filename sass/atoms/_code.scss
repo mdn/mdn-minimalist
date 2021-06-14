@@ -9,14 +9,14 @@ code {
   word-wrap: break-word;
 }
 
+pre code {
+  white-space: pre;
+}
+
 .notranslate {
   code {
     background-color: transparent;
   }
-}
-
-pre code {
-  white-space: pre;
 }
 
 .example-bad {
