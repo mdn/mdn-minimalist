@@ -5,7 +5,12 @@ code {
   box-decoration-break: clone;
   font-family: $code-inline-font-family;
   padding: 0 math.div($base-unit, 2);
+  white-space: nowrap;
   word-wrap: break-word;
+}
+
+pre code {
+  white-space: pre;
 }
 
 .notranslate {
