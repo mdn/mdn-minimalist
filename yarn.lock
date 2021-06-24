@@ -694,9 +694,9 @@
     chalk "^4.0.0"
 
 "@mdn/dinocons@^0.3.0":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@mdn/dinocons/-/dinocons-0.3.1.tgz#c614d5ec2a42bf2ce55a71a0ca5272641a90bee3"
-  integrity sha512-K35LQ2fRgAwXptQ87+N/nnm5fADV6vfYsOhhubbJh1xPQGtnXxUlihrA+CeGq2a/gH6kdC6QuDz0hyra/0Bq2Q==
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@mdn/dinocons/-/dinocons-0.3.2.tgz#2afae74a31dba2de0f1436df9117e9827600cbf7"
+  integrity sha512-0CusgBtQcb5EFfnSJ/AcYMMWbamUrYWdDrcQtfX4CCabr4Sfw9BkX55FoWZn8aVmhj4Np7DzNFm/W/3jf2LebQ==
 
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
