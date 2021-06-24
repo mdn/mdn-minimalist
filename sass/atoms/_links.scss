@@ -15,6 +15,7 @@ a {
 
   &.external {
     display: inline-block;
+
     &::after {
       background: transparent url("~@mdn/dinocons/general/external.svg") 0 0
         no-repeat;
