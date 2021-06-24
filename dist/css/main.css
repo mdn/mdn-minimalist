@@ -550,7 +550,12 @@ code {
   box-decoration-break: clone;
   font-family: consolas, "Liberation Mono", courier, monospace;
   padding: 0 3px;
+  white-space: nowrap;
   word-wrap: break-word;
+}
+
+pre code {
+  white-space: pre;
 }
 
 .notranslate code {
