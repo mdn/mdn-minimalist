@@ -19,6 +19,7 @@
     "prettier:staged": "pretty-quick --staged --pattern \"**/*.scss\"",
     "server": "http-server -p 8090",
     "start": "run-p build:sass:watch copy server",
+    "styleguide": "yarn build:styleguide:sass && cd styleguide && hugo server -D -F",
     "start:webpack": "run-p build copy server",
     "test": "yarn run test:bundlesize && jest",
     "test:bundlesize": "yarn build:sass && bundlesize"

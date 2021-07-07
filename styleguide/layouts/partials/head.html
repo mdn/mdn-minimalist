@@ -42,12 +42,12 @@
     <meta name="twitter:image:alt" content="" />
     -->
 
-    {{ $sass := resources.Get "minimalist/main.css" }}
-    {{ $options := (dict "enableSourceMap" true "outputStyle" "compressed") }}
-    {{ $styles := $sass | resources.ToCSS $options | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $styles.RelPermalink }}"
-        integrity="{{ $styles.Data.Integrity }}">
+    {{ $minimalist := resources.Get "minimalist/main.css" }}
+    <link rel="stylesheet" href="{{ $minimalist.RelPermalink }}"
+        integrity="{{ $minimalist.Data.Integrity }}">
 
+    {{ $options := (dict "enableSourceMap" true "outputStyle"
+    "compressed") }}
     {{ $styleguide_sass := resources.Get "styleguide.scss" }}
     {{ $styleguide_styles := $styleguide_sass | resources.ToCSS $options | minify |
     fingerprint }}
