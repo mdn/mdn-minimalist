@@ -9,7 +9,7 @@ form {
   }
 
   .field-note {
-    color: $neutral-300;
+    color: $mdn-neutral800;
     font-size: $small-font-size;
   }
 }
@@ -21,11 +21,11 @@ fieldset {
 }
 
 fieldset.bordered {
-  border: 1px solid $neutral-400;
+  border: 1px solid $mdn-neutral400;
 }
 
 legend.highlighted {
-  background-color: $neutral-100;
+  background-color: $mdn-neutral900;
   color: $text-color-inverted;
   padding: 10px 4px;
 
@@ -53,7 +53,7 @@ label.inline {
 [type="url"],
 [type="password"],
 textarea {
-  border: 1px solid $neutral-400;
+  border: 1px solid $mdn-neutral400;
   border-radius: 4px;
   padding: 5px 10px;
 }
@@ -64,31 +64,31 @@ textarea {
 [type="password"] {
   &:focus,
   &:active {
-    border-color: $primary-200;
-    box-shadow: 1px 1px 1px $primary-200;
+    border-color: $mdn-blue600;
+    box-shadow: 1px 1px 1px $mdn-blue600;
     outline: 0;
   }
 
   &.valid {
-    border-color: $green-200;
-    outline: 2px dashed $green-200;
+    border-color: $mdn-green600;
+    outline: 2px dashed $mdn-green600;
     outline-offset: 3px;
   }
 
   &.valid:focus,
   &.valid:active {
-    box-shadow: 1px 1px 1px $green-200;
+    box-shadow: 1px 1px 1px $mdn-green600;
   }
 
   &.invalid {
-    border-color: $red-200;
-    outline: 2px dashed $red-200;
+    border-color: $mdn-red500;
+    outline: 2px dashed $mdn-red500;
     outline-offset: 3px;
   }
 
   &.invalid:focus,
   &.invalid:active {
-    box-shadow: 1px 1px 1px $red-200;
+    box-shadow: 1px 1px 1px $mdn-red500;
   }
 }
 

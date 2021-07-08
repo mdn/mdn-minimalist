@@ -28,4 +28,5 @@ description: Example style and use of the button elements
 - <button class="button outline">Primary Outline Button</button>
 - <button class="button minimal">Minimal Button</button>
 - <div class="dark"><button class="button light">Light Button</button></div>
+- <div class="dark"><button class="button light outline">Light Outline Button</button></div>
 {.button-gallery}

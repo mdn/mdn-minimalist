@@ -3,8 +3,8 @@
 /* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd */
 kbd {
   background: $light-gray-gradient;
-  background-color: $neutral-550;
-  border: 1px solid $neutral-525;
+  background-color: $mdn-neutral100;
+  border: 1px solid $mdn-neutral200;
   border-radius: $default-border-radius;
   box-shadow: $light-gray-shadow;
   font-family: $code-inline-font-family;

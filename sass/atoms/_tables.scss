@@ -1,6 +1,8 @@
 @use "sass:math";
 
 table {
+  border: $standard-light-border;
+  border-left: 0;
   font-size: $small-font-size;
   overflow-x: auto;
   width: 100%;
@@ -11,18 +13,19 @@ table {
   }
 
   th {
-    background-color: $neutral-550;
+    background-color: $mdn-neutral200;
+    border: 0;
     border-bottom: $standard-light-border;
   }
 
   td {
-    background-color: $neutral-550;
+    background-color: $mdn-neutral100;
+    border: 0;
     border-bottom: $standard-light-border;
   }
 
   th,
   td {
-    border: 0;
     border-left: $standard-light-border;
     padding: math.div($base-spacing, 2);
     text-align: left;
@@ -42,7 +45,7 @@ table {
   }
 
   pre {
-    background-color: $neutral-600;
+    background-color: $mdn-neutral600;
   }
 
   caption {

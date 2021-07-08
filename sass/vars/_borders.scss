@@ -1,12 +1,12 @@
 @use "sass:math";
 
-$standard-light-border: math.div($base-unit, 3) solid $neutral-600;
-$standard-primary-border: math.div($base-unit, 3) solid $primary-50;
+$standard-light-border: 1px solid $mdn-neutral400;
+$standard-primary-border: math.div($base-unit, 3) solid $mdn-blue700;
 
-$thin-primary-border: 1px solid $primary-200;
+$thin-primary-border: 1px solid $mdn-blue600;
 
-$code-example-border: $base-unit solid $primary-50;
-$standard-table-border: $base-unit solid $green-100;
-$property-table-border: $base-unit solid $primary-50;
+$code-example-border: $base-unit solid $mdn-blue700;
+$standard-table-border: $base-unit solid $mdn-green700;
+$property-table-border: $base-unit solid $mdn-blue700;
 
 $default-border-radius: 6px;

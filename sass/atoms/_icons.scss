@@ -24,14 +24,14 @@ h4 {
 /* icon color styles to be applied to SVG elements */
 .experimental,
 .non-standard {
-  fill: $primary-200;
+  fill: $mdn-blue600;
 }
 
 .warning,
 .deprecated {
-  fill: $warning-300;
+  fill: $mdn-yellow700;
 }
 
 .obsolete {
-  fill: $error-300;
+  fill: $mdn-red700;
 }

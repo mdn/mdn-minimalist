@@ -14,8 +14,13 @@ When using a button on a dark background opt for the `light` button variant.
     <button class="button light">Light Button</button>
 </div>
 
+<div class="dark">
+    <button class="button light outline">Light Outline Button</button>
+</div>
+
 ### Code
 
 ```html
 <button class="button light">Light Button</button>
+<button class="button light outline">Light Outline Button</button>
 ```
