@@ -1,5 +1,13 @@
 # Changelog
 
+### [1.0.2](https://www.github.com/mdn/mdn-minimalist/compare/v1.0.1...v1.0.2) (2021-07-08)
+
+
+### Bug Fixes
+
+* linting ([3280c8d](https://www.github.com/mdn/mdn-minimalist/commit/3280c8d803b598f5f287be5c656fe7fbcaaf6c43))
+* styleguide build ([5eb3067](https://www.github.com/mdn/mdn-minimalist/commit/5eb3067e558a75f8a4aea2e81517b0d8de6bfee5))
+
 ### [1.0.1](https://www.github.com/mdn/mdn-minimalist/compare/v1.0.0...v1.0.1) (2021-05-24)
 
 
