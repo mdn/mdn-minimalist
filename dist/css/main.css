@@ -927,11 +927,45 @@ textarea {
 table {
   font-size: 0.9rem;
   overflow-x: auto;
+  width: 100%;
 }
 @media all and (min-width: 47.9385em) {
   table {
+    border-left: 6px solid #276738;
     font-size: 1rem;
   }
+}
+table th {
+  background-color: #eee;
+  border-bottom: 2px solid #fff;
+}
+table td {
+  background-color: #eee;
+  border-bottom: 2px solid #fff;
+}
+table th,
+table td {
+  border: 0;
+  border-left: 2px solid #fff;
+  padding: 12px;
+  text-align: left;
+}
+table th:first-child,
+table td:first-child {
+  border-left: 0;
+  min-width: 150px;
+}
+@media all and (min-width: 63.9385em) {
+  table th:first-child,
+table td:first-child {
+    min-width: 200px;
+  }
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table pre {
+  background-color: #fff;
 }
 table caption {
   font-size: 1.125rem;
@@ -946,28 +980,17 @@ table caption {
     font-size: 1.25rem;
   }
 }
-table th,
-table td {
-  border: 1px solid #c9c9c9;
-  padding: 12px;
-  text-align: left;
-}
-table pre {
-  background-color: #fff;
-}
 
-/* 
+/*
  * Standard table styles. For an example see:
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video#Events
  */
 table,
-.standard-table,
 .properties {
   border-collapse: collapse;
   margin-bottom: 24px;
 }
 table code,
-.standard-table code,
 .properties code {
   background-color: transparent;
   hyphens: auto;
@@ -1003,47 +1026,6 @@ table code,
   .properties th {
     min-width: 30%;
   }
-}
-
-/*
- * Done this way to avoid the following stylelint error: no-descending-specificity 
- * https://stylelint.io/user-guide/rules/no-descending-specificity
- */
-.standard-table {
-  width: 100%;
-}
-@media all and (min-width: 63.9385em) {
-  .standard-table {
-    border-left: 6px solid #276738;
-  }
-}
-.standard-table th,
-.standard-table td {
-  border: 0;
-  border-left: 2px solid #fff;
-  padding: 12px;
-}
-.standard-table th {
-  background-color: #eee;
-  border-bottom: 2px solid #fff;
-}
-.standard-table td {
-  background-color: #eee;
-  border-bottom: 2px solid #fff;
-}
-.standard-table tr th:first-child,
-.standard-table tr td:first-child {
-  border-left: 0;
-  min-width: 150px;
-}
-@media all and (min-width: 63.9385em) {
-  .standard-table tr th:first-child,
-.standard-table tr td:first-child {
-    min-width: 200px;
-  }
-}
-.standard-table tr:last-child td {
-  border-bottom: 0;
 }
 
 /* Style for general page overlay. Currently used with
