@@ -23,35 +23,38 @@ a.button {
 .outline,
 a.outline {
   @include outline-button-state(
-    $border-color: $primary-200,
-    $text-hover-color: $neutral-600
+    $border-color: $mdn-blue600,
+    $text-hover-color: $white
   );
 }
 
 .danger,
 a.danger {
-  @include button-state($bg-color: $red-100, $bg-hover-color: $red-200);
+  @include button-state($bg-color: $mdn-red700, $bg-hover-color: $mdn-red600);
 
   &.outline {
     @include outline-button-state(
-      $border-color: $red-200,
-      $bg-hover-color: $red-200,
-      $bg-active-color: $red-200,
-      $text-hover-color: $neutral-600
+      $border-color: $mdn-red600,
+      $bg-hover-color: $mdn-red600,
+      $bg-active-color: $mdn-red600,
+      $text-hover-color: $mdn-neutral600
     );
   }
 }
 
 .positive,
 a.positive {
-  @include button-state($bg-color: $green-100, $bg-hover-color: $green-200);
+  @include button-state(
+    $bg-color: $mdn-green700,
+    $bg-hover-color: $mdn-green600
+  );
 
   &.outline {
     @include outline-button-state(
-      $border-color: $green-200,
-      $bg-hover-color: $green-200,
-      $bg-active-color: $green-200,
-      $text-hover-color: $neutral-600
+      $border-color: $mdn-green600,
+      $bg-hover-color: $mdn-green600,
+      $bg-active-color: $mdn-green600,
+      $text-hover-color: $mdn-neutral600
     );
   }
 }
@@ -59,19 +62,19 @@ a.positive {
 .light,
 a.light {
   @include button-state(
-    $bg-color: $neutral-600,
-    $bg-hover-color: $neutral-600,
-    $text-color: $neutral-100
+    $bg-color: $white,
+    $bg-hover-color: $mdn-neutral100,
+    $text-color: $mdn-neutral900
   );
 
   &.outline {
     @include outline-button-state(
       $bg-color: transparent,
-      $border-color: $neutral-600,
-      $bg-hover-color: $neutral-600,
-      $bg-active-color: $neutral-600,
-      $text-color: $neutral-100,
-      $text-hover-color: $neutral-100
+      $border-color: $white,
+      $bg-hover-color: $white,
+      $bg-active-color: $white,
+      $text-color: $mdn-neutral100,
+      $text-hover-color: $mdn-neutral900
     );
   }
 }
@@ -79,15 +82,15 @@ a.light {
 .inactive,
 a.inactive {
   @include button-state(
-    $bg-color: $neutral-500,
-    $bg-hover-color: $neutral-500,
-    $text-color: $neutral-300
+    $bg-color: $mdn-neutral500,
+    $bg-hover-color: $mdn-neutral500,
+    $text-color: $mdn-neutral100
   );
   cursor: default;
 
   &:hover,
   &:focus {
-    color: $neutral-300;
+    color: $mdn-neutral300;
     text-decoration: none;
   }
 }

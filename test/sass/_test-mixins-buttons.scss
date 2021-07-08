@@ -6,19 +6,19 @@
       }
 
       @include expect {
-        background-color: #216b82;
-        border: 2px solid #216b82;
+        background-color: #005282;
+        border: 2px solid #005282;
         color: #fff;
 
         &:hover,
         &:focus {
-          background-color: #1e7f9d;
-          border-color: #1e7f9d;
+          background-color: #0072b3;
+          border-color: #0072b3;
         }
 
         &:active {
-          background-color: #216b82;
-          border-color: #216b82;
+          background-color: #005282;
+          border-color: #005282;
         }
       }
     }
@@ -28,25 +28,25 @@
     @include assert {
       @include output {
         @include button-state(
-          $bg-color: $primary-300,
-          $bg-hover-color: $primary-400
+          $bg-color: $mdn-blue300,
+          $bg-hover-color: $mdn-blue200
         );
       }
 
       @include expect {
-        background-color: #83d0f2;
-        border: 2px solid #83d0f2;
+        background-color: #83bfff;
+        border: 2px solid #83bfff;
         color: #fff;
 
         &:hover,
         &:focus {
-          background-color: #c2e8f9;
-          border-color: #c2e8f9;
+          background-color: #bbd8ff;
+          border-color: #bbd8ff;
         }
 
         &:active {
-          background-color: #83d0f2;
-          border-color: #83d0f2;
+          background-color: #83bfff;
+          border-color: #83bfff;
         }
       }
     }
@@ -60,12 +60,12 @@
 
       @include expect {
         background-color: #fff;
-        border-color: #1e7f9d;
-        color: #1e7f9d;
+        border-color: #0072b3;
+        color: #0072b3;
 
         &:hover,
         &:focus {
-          color: #1e7f9d;
+          color: #0072b3;
         }
       }
     }
@@ -75,28 +75,28 @@
     @include assert {
       @include output {
         @include outline-button-state(
-          $border-color: $primary-300,
-          $bg-hover-color: $primary-400,
-          $bg-active-color: $primary-300,
-          $text-hover-color: $neutral-600
+          $border-color: $mdn-blue300,
+          $bg-hover-color: $mdn-blue200,
+          $bg-active-color: $mdn-blue300,
+          $text-hover-color: $mdn-neutral600
         );
       }
 
       @include expect {
         background-color: #fff;
-        border-color: #83d0f2;
-        color: #83d0f2;
+        border-color: #83bfff;
+        color: #83bfff;
 
         &:hover,
         &:focus {
-          background-color: #c2e8f9;
-          border-color: #c2e8f9;
-          color: #fff;
+          background-color: #bbd8ff;
+          border-color: #bbd8ff;
+          color: #6d6d6d;
         }
 
         &:active {
-          background-color: #83d0f2;
-          border-color: #83d0f2;
+          background-color: #83bfff;
+          border-color: #83bfff;
         }
       }
     }
@@ -111,7 +111,7 @@
       }
 
       @include expect {
-        border: 2px solid #216b82;
+        border: 2px solid #005282;
       }
     }
   }
@@ -123,7 +123,7 @@
       }
 
       @include expect {
-        border: 5px solid #216b82;
+        border: 5px solid #005282;
       }
     }
   }
@@ -131,11 +131,11 @@
   @include it("Returns border with default border width but custom color") {
     @include assert {
       @include output {
-        @include bordered($border-color: $neutral-100);
+        @include bordered($border-color: $mdn-neutral100);
       }
 
       @include expect {
-        border: 2px solid #212121;
+        border: 2px solid #f4f4f4;
       }
     }
   }
@@ -143,11 +143,14 @@
   @include it("Returns border with custom border thickness and color") {
     @include assert {
       @include output {
-        @include bordered($border-thickness: 5px, $border-color: $neutral-100);
+        @include bordered(
+          $border-thickness: 5px,
+          $border-color: $mdn-neutral100
+        );
       }
 
       @include expect {
-        border: 5px solid #212121;
+        border: 5px solid #f4f4f4;
       }
     }
   }

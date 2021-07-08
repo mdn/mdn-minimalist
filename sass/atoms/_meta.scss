@@ -2,51 +2,51 @@
 
 /* General Badges */
 .badge {
-  background-color: $neutral-575;
+  background-color: $mdn-neutral100;
   border-radius: 6px;
   margin-right: math.div($base-spacing, 4);
   padding: 0 math.div($base-spacing, 4);
 
   a {
-    color: $neutral-100;
+    color: $mdn-neutral100;
   }
 }
 
 .html-version,
 .optional,
 .readonly {
-  border-left: 5px solid $neutral-600;
+  border-left: 5px solid $mdn-neutral600;
 }
 
 .optional,
 .readonly {
-  border-color: $neutral-100;
+  border-color: $mdn-neutral100;
 }
 
 .html-version {
-  border-color: $green-200;
+  border-color: $mdn-green600;
 }
 
 /* Specification badges */
 .spec-living,
 .spec-standard {
-  color: $primary-50;
+  color: $mdn-blue700;
 }
 
 .spec-cr,
 .spec-pr,
 .spec-rec,
 .spec-rfc {
-  color: $green-100;
+  color: $mdn-green700;
 }
 
 .spec-draft,
 .spec-lc,
 .spec-wd {
-  color: $orange-100;
+  color: $mdn-orange700;
 }
 
 .spec-ed,
 .spec-obsolete {
-  color: $red-100;
+  color: $mdn-red700;
 }

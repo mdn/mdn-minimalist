@@ -85,11 +85,9 @@ select {
     scroll-behavior: auto !important;
   }
 }
-/* mdn color palette v1 */
-/* Overlays */
-/* Shadows */
-/* Gradients */
 /* mdn color palette v2 */
+/* Overlays */
+/* Gradients */
 /*
  * media queries
  * - MDN should be coded "mobile first"
@@ -138,25 +136,25 @@ select {
 }
 /* 
  * Sets base, hover, focus and active state styles for solid buttons.
- * @param `$bg-color` - background color for default state [default: `$primary-200`]
- * @param `$bg-hover-color` - background color for hover and focus state [default: `$primary-100`]
+ * @param `$bg-color` - background color for default state [default: `$mdn-blue600`]
+ * @param `$bg-hover-color` - background color for hover and focus state [default: `$mdn-blue700`]
  * @param `$bg-active-color` - background color for active state [default: `$bg-color`]
- * @param `$text-color` - foreground text color [default: `$neutral-600`]
+ * @param `$text-color` - foreground text color [default: `$text-color-inverted`]
  * @param `$text-hover-color` - foreground text color for hover state [default: null]
  */
 /* 
  * Sets base, hover, focus and active state styles for outline style buttons.
- * @param `$bg-color` - background color for default state [default: `$neutral-600`]
+ * @param `$bg-color` - background color for default state [default: `$white`]
  * @param `$bg-hover-color` - background and border color for hover state [default: `null`]
  * @param `$bg-active-color` - background and border color for active state [default: `null`]
- * @param `$border-color` - border color [default: `$primary-200`]
+ * @param `$border-color` - border color [default: `$mdn-blue600`]
  * @param `$text-color` - text color [default: `$border-color`]
- * @param `$text-hover-color` - text color for hover state [default: $primary-200]
+ * @param `$text-hover-color` - text color for hover state [default: $mdn-blue600]
  */
 /* 
  * Returns a simple border with the default thickness and color or using those specified.
  * @param `$border-thickness` - border thickness [default: `2px`]
- * @param `$border-color` - the color of the border [default: `$primary-100`]
+ * @param `$border-color` - the color of the border [default: `$mdn-blue700`]
  */
 /* Used with flexbox and grid. The new syntax is to use `gap`, but here
    we also provide the fallback of `grid-gap`. This is also why we need
@@ -175,7 +173,7 @@ select {
 html {
   background-color: #fff;
   box-sizing: border-box;
-  color: #212121;
+  color: #1b1b1b;
 }
 
 body {
@@ -284,7 +282,7 @@ p {
 }
 
 .slab-highlight {
-  background-color: #212121;
+  background-color: #1b1b1b;
   color: #fff;
   font-family: zillaslab, palatino, "Palatino Linotype", serif;
   font-weight: normal;
@@ -300,7 +298,7 @@ p {
 /* text links */
 a:link,
 a:visited {
-  color: #00458b;
+  color: #005282;
   text-decoration: none;
 }
 a:link:hover, a:link:focus, a:link:active,
@@ -329,7 +327,7 @@ blockquote {
   }
 }
 blockquote::before, blockquote::after {
-  background-image: linear-gradient(to right, #00458b, #83d0f2);
+  background-image: linear-gradient(to right, #005282, #83bfff);
   content: "";
   display: block;
   height: 5px;
@@ -343,7 +341,7 @@ blockquote p:last-of-type {
 }
 
 a {
-  color: #00458b;
+  color: #005282;
   text-decoration: none;
 }
 a:hover, a:focus {
@@ -372,7 +370,7 @@ a.external::after {
  * to avoid unnecessary code duplication
  */
 .highlighted-link-state {
-  background-color: #00458b;
+  background-color: #005282;
   color: #fff;
 }
 
@@ -426,20 +424,20 @@ h4 .icon {
 /* icon color styles to be applied to SVG elements */
 .experimental,
 .non-standard {
-  fill: #1e7f9d;
+  fill: #0072b3;
 }
 
 .warning,
 .deprecated {
-  fill: #b49e35;
+  fill: #575000;
 }
 
 .obsolete {
-  fill: #95353a;
+  fill: #a30008;
 }
 
 .callout {
-  background-color: #c2e8f9;
+  background-color: #bbd8ff;
   border-radius: 6px;
   display: flex;
   flex-flow: column;
@@ -456,7 +454,7 @@ h4 .icon {
 .callout h4 {
   font-family: zillaslab, palatino, "Palatino Linotype", serif;
   background-color: transparent;
-  color: #212121;
+  color: #1b1b1b;
 }
 .callout .button {
   max-width: inherit;
@@ -471,74 +469,74 @@ h4 .icon {
 
 /* notification text styles */
 .neutral {
-  color: #1e7f9d;
+  color: #0072b3;
 }
 
 .warning {
-  color: #b49e35;
+  color: #575000;
 }
 
 .error {
-  color: #95353a;
+  color: #a30008;
 }
 
 .success {
-  color: #276738;
+  color: #005a38;
 }
 
 /* General Badges */
 .badge {
-  background-color: #fafafa;
+  background-color: #f4f4f4;
   border-radius: 6px;
   margin-right: 6px;
   padding: 0 6px;
 }
 .badge a {
-  color: #212121;
+  color: #f4f4f4;
 }
 
 .html-version,
 .optional,
 .readonly {
-  border-left: 5px solid #fff;
+  border-left: 5px solid #6d6d6d;
 }
 
 .optional,
 .readonly {
-  border-color: #212121;
+  border-color: #f4f4f4;
 }
 
 .html-version {
-  border-color: #367b48;
+  border-color: #007d50;
 }
 
 /* Specification badges */
 .spec-living,
 .spec-standard {
-  color: #00458b;
+  color: #005282;
 }
 
 .spec-cr,
 .spec-pr,
 .spec-rec,
 .spec-rfc {
-  color: #276738;
+  color: #005a38;
 }
 
 .spec-draft,
 .spec-lc,
 .spec-wd {
-  color: #a14400;
+  color: #922a00;
 }
 
 .spec-ed,
 .spec-obsolete {
-  color: #95353a;
+  color: #a30008;
 }
 
 pre {
-  background-color: #eee;
-  border-left: 6px solid #00458b;
+  background-color: #f4f4f4;
+  border-left: 6px solid #005282;
   font-size: 1rem;
   line-height: 1.4;
   margin: 0 0 24px;
@@ -549,7 +547,7 @@ pre {
 }
 
 code {
-  background-color: #eee;
+  background-color: #f4f4f4;
   box-decoration-break: clone;
   font-family: consolas, "Liberation Mono", courier, monospace;
   padding: 0 3px;
@@ -566,22 +564,22 @@ pre code {
 }
 
 .example-bad {
-  background-color: #ffeef0;
-  border-color: #d0454c;
+  background-color: #fae4e5;
+  border-color: #ff7d7e;
 }
 
 .example-good {
-  background-color: #ebf8e1;
-  border-color: #529e66;
+  background-color: #90ffc5;
+  border-color: #009e66;
 }
 
 /* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd */
 kbd {
-  background: linear-gradient(to bottom, #eee, #fff);
-  background-color: #eee;
-  border: 1px solid #cdd5d7;
+  background: linear-gradient(to bottom, #f4f4f4, #6d6d6d);
+  background-color: #f4f4f4;
+  border: 1px solid #d5d5d5;
   border-radius: 6px;
-  box-shadow: 0 1px 2px 1px #cdd5d7;
+  box-shadow: 0 1px 2px 1px #d5d5d5;
   font-family: consolas, "Liberation Mono", courier, monospace;
   font-size: 0.9rem;
   font-weight: bold;
@@ -601,8 +599,8 @@ table kbd {
 
 .button,
 a.button {
-  background-color: #216b82;
-  border: 2px solid #216b82;
+  background-color: #005282;
+  border: 2px solid #005282;
   color: #fff;
   border-radius: 4px;
   cursor: pointer;
@@ -616,13 +614,13 @@ a.button {
 .button:hover, .button:focus,
 a.button:hover,
 a.button:focus {
-  background-color: #1e7f9d;
-  border-color: #1e7f9d;
+  background-color: #0072b3;
+  border-color: #0072b3;
 }
 .button:active,
 a.button:active {
-  background-color: #216b82;
-  border-color: #216b82;
+  background-color: #005282;
+  border-color: #005282;
 }
 .button:hover, .button:focus, .button:active,
 a.button:hover,
@@ -634,8 +632,8 @@ a.button:active {
 .outline,
 a.outline {
   background-color: #fff;
-  border-color: #1e7f9d;
-  color: #1e7f9d;
+  border-color: #0072b3;
+  color: #0072b3;
 }
 .outline:hover, .outline:focus,
 a.outline:hover,
@@ -644,87 +642,87 @@ a.outline:focus {
 }
 .danger,
 a.danger {
-  background-color: #95353a;
-  border: 2px solid #95353a;
+  background-color: #a30008;
+  border: 2px solid #a30008;
   color: #fff;
 }
 .danger:hover, .danger:focus,
 a.danger:hover,
 a.danger:focus {
-  background-color: #b54248;
-  border-color: #b54248;
+  background-color: #db000e;
+  border-color: #db000e;
 }
 .danger:active,
 a.danger:active {
-  background-color: #95353a;
-  border-color: #95353a;
+  background-color: #a30008;
+  border-color: #a30008;
 }
 .danger.outline,
 a.danger.outline {
   background-color: #fff;
-  border-color: #b54248;
-  color: #b54248;
+  border-color: #db000e;
+  color: #db000e;
 }
 .danger.outline:hover, .danger.outline:focus,
 a.danger.outline:hover,
 a.danger.outline:focus {
-  background-color: #b54248;
-  border-color: #b54248;
-  color: #fff;
+  background-color: #db000e;
+  border-color: #db000e;
+  color: #6d6d6d;
 }
 .danger.outline:active,
 a.danger.outline:active {
-  background-color: #b54248;
-  border-color: #b54248;
+  background-color: #db000e;
+  border-color: #db000e;
 }
 
 .positive,
 a.positive {
-  background-color: #276738;
-  border: 2px solid #276738;
+  background-color: #005a38;
+  border: 2px solid #005a38;
   color: #fff;
 }
 .positive:hover, .positive:focus,
 a.positive:hover,
 a.positive:focus {
-  background-color: #367b48;
-  border-color: #367b48;
+  background-color: #007d50;
+  border-color: #007d50;
 }
 .positive:active,
 a.positive:active {
-  background-color: #276738;
-  border-color: #276738;
+  background-color: #005a38;
+  border-color: #005a38;
 }
 .positive.outline,
 a.positive.outline {
   background-color: #fff;
-  border-color: #367b48;
-  color: #367b48;
+  border-color: #007d50;
+  color: #007d50;
 }
 .positive.outline:hover, .positive.outline:focus,
 a.positive.outline:hover,
 a.positive.outline:focus {
-  background-color: #367b48;
-  border-color: #367b48;
-  color: #fff;
+  background-color: #007d50;
+  border-color: #007d50;
+  color: #6d6d6d;
 }
 .positive.outline:active,
 a.positive.outline:active {
-  background-color: #367b48;
-  border-color: #367b48;
+  background-color: #007d50;
+  border-color: #007d50;
 }
 
 .light,
 a.light {
   background-color: #fff;
   border: 2px solid #fff;
-  color: #212121;
+  color: #1b1b1b;
 }
 .light:hover, .light:focus,
 a.light:hover,
 a.light:focus {
-  background-color: #fff;
-  border-color: #fff;
+  background-color: #f4f4f4;
+  border-color: #f4f4f4;
 }
 .light:active,
 a.light:active {
@@ -742,7 +740,7 @@ a.light.outline:hover,
 a.light.outline:focus {
   background-color: #fff;
   border-color: #fff;
-  color: #212121;
+  color: #1b1b1b;
 }
 .light.outline:active,
 a.light.outline:active {
@@ -752,26 +750,26 @@ a.light.outline:active {
 
 .inactive,
 a.inactive {
-  background-color: #c9c9c9;
-  border: 2px solid #c9c9c9;
-  color: #626262;
+  background-color: #8a8a8a;
+  border: 2px solid #8a8a8a;
+  color: #f4f4f4;
   cursor: default;
 }
 .inactive:hover, .inactive:focus,
 a.inactive:hover,
 a.inactive:focus {
-  background-color: #c9c9c9;
-  border-color: #c9c9c9;
+  background-color: #8a8a8a;
+  border-color: #8a8a8a;
 }
 .inactive:active,
 a.inactive:active {
-  background-color: #c9c9c9;
-  border-color: #c9c9c9;
+  background-color: #8a8a8a;
+  border-color: #8a8a8a;
 }
 .inactive:hover, .inactive:focus,
 a.inactive:hover,
 a.inactive:focus {
-  color: #626262;
+  color: #bababa;
   text-decoration: none;
 }
 
@@ -806,16 +804,12 @@ a.minimal {
 .ghost {
   background: none;
   border: 0;
-  color: #00458b;
+  color: #005282;
   cursor: pointer;
   text-decoration: underline;
 }
 .ghost:hover, .ghost:focus {
   text-decoration: none;
-}
-.ghost:active {
-  background-color: #00458b;
-  color: #fff;
 }
 
 form .field-group {
@@ -826,7 +820,7 @@ form .field-group.inline {
   margin-right: 20px;
 }
 form .field-note {
-  color: #626262;
+  color: #343434;
   font-size: 0.9rem;
 }
 
@@ -837,11 +831,11 @@ fieldset {
 }
 
 fieldset.bordered {
-  border: 1px solid #8e8e8e;
+  border: 1px solid #a4a4a4;
 }
 
 legend.highlighted {
-  background-color: #212121;
+  background-color: #1b1b1b;
   color: #fff;
   padding: 10px 4px;
 }
@@ -868,7 +862,7 @@ label.inline {
 [type=url],
 [type=password],
 textarea {
-  border: 1px solid #8e8e8e;
+  border: 1px solid #a4a4a4;
   border-radius: 4px;
   padding: 5px 10px;
 }
@@ -880,16 +874,16 @@ textarea {
 [type=url]:active,
 [type=password]:focus,
 [type=password]:active {
-  border-color: #1e7f9d;
-  box-shadow: 1px 1px 1px #1e7f9d;
+  border-color: #0072b3;
+  box-shadow: 1px 1px 1px #0072b3;
   outline: 0;
 }
 [type=text].valid,
 [type=email].valid,
 [type=url].valid,
 [type=password].valid {
-  border-color: #367b48;
-  outline: 2px dashed #367b48;
+  border-color: #007d50;
+  outline: 2px dashed #007d50;
   outline-offset: 3px;
 }
 [type=text].valid:focus, [type=text].valid:active,
@@ -899,14 +893,14 @@ textarea {
 [type=url].valid:active,
 [type=password].valid:focus,
 [type=password].valid:active {
-  box-shadow: 1px 1px 1px #367b48;
+  box-shadow: 1px 1px 1px #007d50;
 }
 [type=text].invalid,
 [type=email].invalid,
 [type=url].invalid,
 [type=password].invalid {
-  border-color: #b54248;
-  outline: 2px dashed #b54248;
+  border-color: #ff4044;
+  outline: 2px dashed #ff4044;
   outline-offset: 3px;
 }
 [type=text].invalid:focus, [type=text].invalid:active,
@@ -916,7 +910,7 @@ textarea {
 [type=url].invalid:active,
 [type=password].invalid:focus,
 [type=password].invalid:active {
-  box-shadow: 1px 1px 1px #b54248;
+  box-shadow: 1px 1px 1px #ff4044;
 }
 
 textarea {
@@ -925,28 +919,31 @@ textarea {
 }
 
 table {
+  border: 1px solid #a4a4a4;
+  border-left: 0;
   font-size: 0.9rem;
   overflow-x: auto;
   width: 100%;
 }
 @media all and (min-width: 47.9385em) {
   table {
-    border-left: 6px solid #276738;
+    border-left: 6px solid #005a38;
     font-size: 1rem;
   }
 }
 table th {
-  background-color: #eee;
-  border-bottom: 2px solid #fff;
+  background-color: #d5d5d5;
+  border: 0;
+  border-bottom: 1px solid #a4a4a4;
 }
 table td {
-  background-color: #eee;
-  border-bottom: 2px solid #fff;
+  background-color: #f4f4f4;
+  border: 0;
+  border-bottom: 1px solid #a4a4a4;
 }
 table th,
 table td {
-  border: 0;
-  border-left: 2px solid #fff;
+  border-left: 1px solid #a4a4a4;
   padding: 12px;
   text-align: left;
 }
@@ -965,7 +962,7 @@ table tr:last-child td {
   border-bottom: 0;
 }
 table pre {
-  background-color: #fff;
+  background-color: #6d6d6d;
 }
 table caption {
   font-size: 1.125rem;
@@ -1003,15 +1000,15 @@ table code,
 .properties {
   max-width: 45rem;
   max-width: 85ch;
-  border: 2px solid #00458b;
-  border-left: 6px solid #00458b;
+  border: 2px solid #005282;
+  border-left: 6px solid #005282;
   width: 100%;
 }
 .properties th,
 .properties td {
-  background-color: #fafafa;
+  background-color: #f4f4f4;
   border: 0;
-  border-top: 2px solid #00458b;
+  border-top: 2px solid #005282;
   display: block;
   padding: 12px;
   vertical-align: top;
@@ -1080,8 +1077,8 @@ table code,
 }
 
 .sample-code-frame {
-  border: 1px solid #1e7f9d;
-  border-left: 6px solid #00458b;
+  border: 1px solid #0072b3;
+  border-left: 6px solid #005282;
   margin: 0;
   margin-bottom: 12px;
   padding: 12px;

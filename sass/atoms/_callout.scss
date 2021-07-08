@@ -1,5 +1,5 @@
 .callout {
-  background-color: $primary-400;
+  background-color: $mdn-blue200;
   border-radius: $default-border-radius;
   display: flex;
   flex-flow: column;
@@ -17,7 +17,7 @@
     @include set-heading-font-family();
 
     background-color: transparent;
-    color: $neutral-100;
+    color: $mdn-neutral900;
   }
 
   .button {

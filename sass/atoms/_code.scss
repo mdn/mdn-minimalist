@@ -1,7 +1,7 @@
 @use "sass:math";
 
 code {
-  background-color: $neutral-550;
+  background-color: $mdn-neutral100;
   box-decoration-break: clone;
   font-family: $code-inline-font-family;
   padding: 0 math.div($base-unit, 2);
@@ -20,11 +20,11 @@ pre code {
 }
 
 .example-bad {
-  background-color: $red-450;
-  border-color: $red-300;
+  background-color: $mdn-red100;
+  border-color: $mdn-red400;
 }
 
 .example-good {
-  background-color: $green-400;
-  border-color: $green-300;
+  background-color: $mdn-green100;
+  border-color: $mdn-green500;
 }

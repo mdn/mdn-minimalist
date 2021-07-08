@@ -1,14 +1,14 @@
 /* 
  * Sets base, hover, focus and active state styles for solid buttons.
- * @param `$bg-color` - background color for default state [default: `$primary-200`]
- * @param `$bg-hover-color` - background color for hover and focus state [default: `$primary-100`]
+ * @param `$bg-color` - background color for default state [default: `$mdn-blue600`]
+ * @param `$bg-hover-color` - background color for hover and focus state [default: `$mdn-blue700`]
  * @param `$bg-active-color` - background color for active state [default: `$bg-color`]
- * @param `$text-color` - foreground text color [default: `$neutral-600`]
+ * @param `$text-color` - foreground text color [default: `$text-color-inverted`]
  * @param `$text-hover-color` - foreground text color for hover state [default: null]
  */
 @mixin button-state(
-  $bg-color: $primary-100,
-  $bg-hover-color: $primary-200,
+  $bg-color: $mdn-blue700,
+  $bg-hover-color: $mdn-blue600,
   $bg-active-color: $bg-color,
   $text-color: $text-color-inverted,
   $text-hover-color: null
@@ -36,20 +36,20 @@
 
 /* 
  * Sets base, hover, focus and active state styles for outline style buttons.
- * @param `$bg-color` - background color for default state [default: `$neutral-600`]
+ * @param `$bg-color` - background color for default state [default: `$white`]
  * @param `$bg-hover-color` - background and border color for hover state [default: `null`]
  * @param `$bg-active-color` - background and border color for active state [default: `null`]
- * @param `$border-color` - border color [default: `$primary-200`]
+ * @param `$border-color` - border color [default: `$mdn-blue600`]
  * @param `$text-color` - text color [default: `$border-color`]
- * @param `$text-hover-color` - text color for hover state [default: $primary-200]
+ * @param `$text-hover-color` - text color for hover state [default: $mdn-blue600]
  */
 @mixin outline-button-state(
-  $bg-color: $neutral-600,
+  $bg-color: $white,
   $bg-hover-color: null,
   $bg-active-color: null,
-  $border-color: $primary-200,
+  $border-color: $mdn-blue600,
   $text-color: $border-color,
-  $text-hover-color: $primary-200
+  $text-hover-color: $mdn-blue600
 ) {
   background-color: $bg-color;
   border-color: $border-color;
@@ -75,8 +75,8 @@
 /* 
  * Returns a simple border with the default thickness and color or using those specified.
  * @param `$border-thickness` - border thickness [default: `2px`]
- * @param `$border-color` - the color of the border [default: `$primary-100`]
+ * @param `$border-color` - the color of the border [default: `$mdn-blue700`]
  */
-@mixin bordered($border-thickness: 2px, $border-color: $primary-100) {
+@mixin bordered($border-thickness: 2px, $border-color: $mdn-blue700) {
   border: $border-thickness solid $border-color;
 }
