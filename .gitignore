@@ -73,5 +73,5 @@ public
 dist/css/main.js
 
 # styleguide build assets
-# styleguide/assets/minimalist/
-# styleguide/resources/
+styleguide/assets/minimalist/
+styleguide/resources/
