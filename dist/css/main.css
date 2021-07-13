@@ -920,14 +920,12 @@ textarea {
 
 table {
   border: 1px solid #a4a4a4;
-  border-left: 0;
   font-size: 0.9rem;
   overflow-x: auto;
   width: 100%;
 }
 @media all and (min-width: 47.9385em) {
   table {
-    border-left: 6px solid #005a38;
     font-size: 1rem;
   }
 }
