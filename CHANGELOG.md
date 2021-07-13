@@ -1,5 +1,13 @@
 # Changelog
 
+### [2.0.1](https://www.github.com/mdn/mdn-minimalist/compare/v2.0.0...v2.0.1) (2021-07-13)
+
+
+### Bug Fixes
+
+* change light gray gradient ([8f5ce1c](https://www.github.com/mdn/mdn-minimalist/commit/8f5ce1c5b0678874642af0bd2c505a6f85caae1e)), closes [#688](https://www.github.com/mdn/mdn-minimalist/issues/688)
+* change spec badges ([b64194f](https://www.github.com/mdn/mdn-minimalist/commit/b64194f25d575e43e58f370d4be7b2b085396a00)), closes [#691](https://www.github.com/mdn/mdn-minimalist/issues/691)
+
 ## [2.0.0](https://www.github.com/mdn/mdn-minimalist/compare/v1.0.1...v2.0.0) (2021-07-08)
 
 
