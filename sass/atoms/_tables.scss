@@ -2,13 +2,11 @@
 
 table {
   border: $standard-light-border;
-  border-left: 0;
   font-size: $small-font-size;
   overflow-x: auto;
   width: 100%;
 
   @media #{$mq-tablet-and-up} {
-    border-left: $standard-table-border;
     font-size: $default-font-size;
   }
 
