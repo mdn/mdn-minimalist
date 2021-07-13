@@ -5,26 +5,11 @@
   background-color: $mdn-neutral100;
   border-radius: 6px;
   margin-right: math.div($base-spacing, 4);
-  padding: 0 math.div($base-spacing, 4);
+  padding: 0 math.div($base-spacing, 2);
 
   a {
     color: $mdn-neutral100;
   }
-}
-
-.html-version,
-.optional,
-.readonly {
-  border-left: 5px solid $mdn-neutral600;
-}
-
-.optional,
-.readonly {
-  border-color: $mdn-neutral100;
-}
-
-.html-version {
-  border-color: $mdn-green600;
 }
 
 /* Specification badges */
