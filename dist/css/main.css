@@ -489,25 +489,10 @@ h4 .icon {
   background-color: #f4f4f4;
   border-radius: 6px;
   margin-right: 6px;
-  padding: 0 6px;
+  padding: 0 12px;
 }
 .badge a {
   color: #f4f4f4;
-}
-
-.html-version,
-.optional,
-.readonly {
-  border-left: 5px solid #6d6d6d;
-}
-
-.optional,
-.readonly {
-  border-color: #f4f4f4;
-}
-
-.html-version {
-  border-color: #007d50;
 }
 
 /* Specification badges */
