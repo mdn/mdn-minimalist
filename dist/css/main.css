@@ -575,7 +575,7 @@ pre code {
 
 /* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd */
 kbd {
-  background: linear-gradient(to bottom, #f4f4f4, #6d6d6d);
+  background: linear-gradient(to bottom, #f4f4f4, #d5d5d5);
   background-color: #f4f4f4;
   border: 1px solid #d5d5d5;
   border-radius: 6px;
