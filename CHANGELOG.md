@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.0.2](https://www.github.com/mdn/mdn-minimalist/compare/v2.0.1...v2.0.2) (2021-07-14)
+
+
+### Bug Fixes
+
+* fix green background color ([5781e2d](https://www.github.com/mdn/mdn-minimalist/commit/5781e2d73217ab13609eb35a2a86f33dc2e5f7e9)), closes [#697](https://www.github.com/mdn/mdn-minimalist/issues/697)
+
 ### [2.0.1](https://www.github.com/mdn/mdn-minimalist/compare/v2.0.0...v2.0.1) (2021-07-13)
 
 
