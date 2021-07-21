@@ -1,38 +1,6 @@
 @import "./lib/reset";
-
-@import "./vars/mdn-web-docs-palette";
-@import "./vars/backgrounds";
-@import "./vars/color-gradients";
-@import "./vars/layout";
-@import "./vars/borders";
-@import "./vars/shadows";
-@import "./vars/typography";
-
-@import "./mixins/animation";
-@import "./mixins/buttons";
-@import "./mixins/links";
-@import "./mixins/typography";
-@import "./mixins/utils";
-
-@import "./atoms/base";
-@import "./atoms/typography";
-@import "./atoms/blockquote";
-@import "./atoms/links";
-@import "./atoms/lists";
-@import "./atoms/icons";
-@import "./atoms/callout";
-@import "./atoms/notifications";
-@import "./atoms/meta";
-@import "./atoms/pre";
-@import "./atoms/code";
-@import "./atoms/kbd";
-@import "./atoms/buttons";
-@import "./atoms/buttons-ghost";
-@import "./atoms/forms";
-@import "./atoms/tables";
-@import "./atoms/properties-table";
-@import "./atoms/overlays";
-@import "./atoms/utils";
-@import "./atoms/examples";
+@use "./vars";
+@use "./mixins";
+@use "./atoms";
 
 @import "./utils/utils";
