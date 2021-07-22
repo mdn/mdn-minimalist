@@ -1,3 +1,5 @@
+@use "./mdn-web-docs-palette" as *;
+
 /* Gradients */
 $blockquote-gradient: linear-gradient(to right, $mdn-blue700, $mdn-blue300);
 $standard-gradient: linear-gradient(to right, $mdn-blue300, $mdn-green100);

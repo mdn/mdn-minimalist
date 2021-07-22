@@ -1,3 +1,5 @@
+@use "../vars/" as *;
+
 ul.swatch-library {
   display: flex;
   flex-wrap: wrap;

@@ -1,3 +1,5 @@
+@use "../vars/" as *;
+
 /* Used with flexbox and grid. The new syntax is to use `gap`, but here
    we also provide the fallback of `grid-gap`. This is also why we need
    the stylelint-disable-line as the order is important */

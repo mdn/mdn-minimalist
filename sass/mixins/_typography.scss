@@ -1,3 +1,6 @@
+@use "../vars/" as *;
+@use "./utils" as *;
+
 @mixin set-heading-font-family() {
   font-family: $heading-font-family;
 }

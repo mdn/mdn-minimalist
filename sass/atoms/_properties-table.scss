@@ -1,4 +1,6 @@
 @use "sass:math";
+@use "../mixins/" as *;
+@use "../vars/" as *;
 
 /*
  * Property tables, for an example see :

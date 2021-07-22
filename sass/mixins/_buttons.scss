@@ -1,3 +1,5 @@
+@use "../vars" as *;
+
 /* 
  * Sets base, hover, focus and active state styles for solid buttons.
  * @param `$bg-color` - background color for default state [default: `$mdn-blue600`]

@@ -1,3 +1,5 @@
+@use "../vars/" as *;
+
 @mixin highlighted-link-state() {
   background-color: $mdn-blue700;
   color: $text-color-inverted;

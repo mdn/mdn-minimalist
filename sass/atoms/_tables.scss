@@ -1,4 +1,6 @@
 @use "sass:math";
+@use "../mixins/" as *;
+@use "../vars/" as *;
 
 table {
   border: $standard-light-border;

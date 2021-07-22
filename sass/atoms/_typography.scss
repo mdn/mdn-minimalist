@@ -1,3 +1,6 @@
+@use "../mixins/" as *;
+@use "../vars/" as *;
+
 @font-face {
   font-display: swap;
   font-family: zillaslab;

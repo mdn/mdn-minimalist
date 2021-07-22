@@ -1,4 +1,5 @@
 @use "sass:math";
+@use "../vars/" as *;
 
 code {
   background-color: $mdn-neutral100;

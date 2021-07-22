@@ -1,4 +1,6 @@
 @use "sass:math";
+@use "../vars/" as *;
+@use "../mixins/" as *;
 
 a {
   color: $link-color;
