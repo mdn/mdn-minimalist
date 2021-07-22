@@ -945,7 +945,7 @@ table tr:last-child td {
   border-bottom: 0;
 }
 table pre {
-  background-color: #6d6d6d;
+  background-color: #eee;
 }
 table caption {
   font-size: 1.125rem;
