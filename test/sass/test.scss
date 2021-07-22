@@ -1,16 +1,8 @@
 /* Requirements */
 @use "../../node_modules/sass-true/sass/true";
-
-@use "../../sass/vars/mdn-web-docs-palette";
-@use "../../sass/vars/layout";
-@use "../../sass/vars/typography" as *;
-
-@use "../../sass/mixins/buttons" as *;
-@use "../../sass/mixins/links";
-@use "../../sass/mixins/typography" as *;
-@use "../../sass/mixins/utils";
-
-@use "../../sass/atoms/buttons" as *;
+@use "../../sass/vars/" as *;
+@use "../../sass/mixins/" as *;
+@use "../../sass/atoms/" as *;
 
 /* Tests */
 @use "./test-mixins-buttons";
