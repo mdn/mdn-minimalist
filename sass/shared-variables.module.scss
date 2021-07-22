@@ -1,4 +1,4 @@
-@use "./vars";
+@use "./vars" as *;
 
 :export {
   mdn-red100: $mdn-red100;
