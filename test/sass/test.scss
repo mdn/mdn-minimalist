@@ -1,19 +1,19 @@
 /* Requirements */
-@import "../../node_modules/sass-true/sass/true";
+@use "../../node_modules/sass-true/sass/true";
 
-@import "../../sass/vars/mdn-web-docs-palette";
-@import "../../sass/vars/layout";
-@import "../../sass/vars/typography";
+@use "../../sass/vars/mdn-web-docs-palette";
+@use "../../sass/vars/layout";
+@use "../../sass/vars/typography";
 
-@import "../../sass/mixins/buttons";
-@import "../../sass/mixins/links";
-@import "../../sass/mixins/typography";
-@import "../../sass/mixins/utils";
+@use "../../sass/mixins/buttons";
+@use "../../sass/mixins/links";
+@use "../../sass/mixins/typography";
+@use "../../sass/mixins/utils";
 
-@import "../../sass/atoms/buttons";
+@use "../../sass/atoms/buttons";
 
 /* Tests */
-@import "./test-mixins-buttons";
-@import "./test-mixins-links";
-@import "./test-mixins-typography";
-@import "./test-mixins-utils";
+@use "./test-mixins-buttons";
+@use "./test-mixins-links";
+@use "./test-mixins-typography";
+@use "./test-mixins-utils";

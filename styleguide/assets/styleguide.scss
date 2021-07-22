@@ -1,16 +1,16 @@
-@import "../../sass/vars/mdn-web-docs-palette";
-@import "./vars/layout";
-@import "../../sass/vars/typography";
+@use "../../sass/vars/mdn-web-docs-palette";
+@use "./vars/layout";
+@use "../../sass/vars/typography";
 
-@import "./utils/layout";
+@use "./utils/layout";
 
-@import "./atoms/logo";
-@import "./atoms/samples";
-@import "./atoms/tables";
+@use "./atoms/logo";
+@use "./atoms/samples";
+@use "./atoms/tables";
 
-@import "./molecules/button-gallery";
-@import "./molecules/swatch-library";
-@import "./molecules/toc";
+@use "./molecules/button-gallery";
+@use "./molecules/swatch-library";
+@use "./molecules/toc";
 
-@import "./organisms/main";
-@import "./organisms/footer";
+@use "./organisms/main";
+@use "./organisms/footer";
