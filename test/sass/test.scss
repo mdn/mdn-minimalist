@@ -5,7 +5,7 @@
 @use "../../sass/atoms/" as *;
 
 /* Tests */
-@use "./test-mixins-buttons";
-@use "./test-mixins-links";
-@use "./test-mixins-typography";
-@use "./test-mixins-utils";
+@use "./test-mixins-buttons" as *;
+@use "./test-mixins-links" as *;
+@use "./test-mixins-typography" as *;
+@use "./test-mixins-utils" as *;
