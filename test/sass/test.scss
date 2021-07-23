@@ -1,8 +1,8 @@
 /* Requirements */
-@use "../../node_modules/sass-true/sass/true";
-@use "../../sass/vars/" as *;
-@use "../../sass/mixins/" as *;
+@use "true" as *;
+@use "../../sass/mixins" as *;
 @use "../../sass/atoms/" as *;
+@use "../../sass/vars/" as *;
 
 /* Tests */
 @import "./test-mixins-buttons";
