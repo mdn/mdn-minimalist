@@ -2,7 +2,7 @@
 
 blockquote {
   @include blockquote();
-  font-family: $heading-font-family;
+  font-family: inherit;
   font-weight: normal;
   margin-bottom: $base-spacing;
 
