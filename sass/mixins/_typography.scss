@@ -58,10 +58,10 @@
 
 @mixin blockquote() {
   @include readable-line-length();
-  font-size: $small-medium-font-size-mobile;
+  font-size: inherit;
 
   @media #{$mq-tablet-and-up} {
-    font-size: $small-medium-font-size;
+    font-size: inherit;
   }
 }
 
