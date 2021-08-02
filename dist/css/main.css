@@ -1,93 +1,8 @@
 /*!******************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./sass/mdn-minimalist.scss ***!
   \******************************************************************************************************************************************************************************************/
-/* See https://hankchizljaw.com/wrote/a-modern-css-reset/ */
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remove default padding */
-ul[class],
-ol[class] {
-  padding: 0;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-/* Remove list styles on ul, ol elements with a class attribute */
-ul[class],
-ol[class] {
-  list-style: none;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* Natural flow and rhythm in articles by default */
-article > * + * {
-  margin-top: 1em;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  /* We are relaxing the `declaration-no-important` here
-     because we want to ensure that code further down the
-     cascade will adhere to this accessibility enhancement */
-  /* stylelint-disable declaration-no-important */
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-/* mdn color palette v2 */
 /* Overlays */
-/* Gradients */
+/* mdn color palette v2 */
 /*
  * media queries
  * - MDN should be coded "mobile first"
@@ -96,6 +11,7 @@ select {
 /*
  * z-index scale
  */
+/* Gradients */
 /* Fonts */
 /* Desktop and tablet typescale based on major third typescale with a base of 
    100% of base font size set by the user. */
@@ -311,8 +227,8 @@ a:visited:active {
 blockquote {
   max-width: 45rem;
   max-width: 85ch;
-  font-size: 1.125rem;
-  font-family: zillaslab, palatino, "Palatino Linotype", serif;
+  font-size: inherit;
+  font-family: inherit;
   font-weight: normal;
   margin-bottom: 24px;
   /*
@@ -323,7 +239,7 @@ blockquote {
 }
 @media all and (min-width: 47.9385em) {
   blockquote {
-    font-size: 1.25rem;
+    font-size: inherit;
   }
 }
 blockquote::before, blockquote::after {
@@ -1068,6 +984,90 @@ table code,
   width: 100%;
 }
 
+/* See https://hankchizljaw.com/wrote/a-modern-css-reset/ */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  /* We are relaxing the `declaration-no-important` here
+     because we want to ensure that code further down the
+     cascade will adhere to this accessibility enhancement */
+  /* stylelint-disable declaration-no-important */
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 .inline {
   display: inline-block;
 }
