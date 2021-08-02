@@ -1,4 +1,6 @@
 @use "sass:math";
+@use "../mixins/" as *;
+@use "../vars/" as *;
 
 blockquote {
   @include blockquote();

@@ -1,3 +1,5 @@
+@use "../vars/" as *;
+
 /* Turns off background and border and set cursor to pointer. */
 .ghost {
   background: none;

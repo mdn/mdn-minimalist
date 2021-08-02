@@ -1,3 +1,6 @@
+@use "../mixins/" as *;
+@use "../vars/" as *;
+
 .callout {
   background-color: $mdn-blue200;
   border-radius: $default-border-radius;

@@ -1,16 +1,8 @@
 /* Requirements */
-@import "../../node_modules/sass-true/sass/true";
-
-@import "../../sass/vars/mdn-web-docs-palette";
-@import "../../sass/vars/layout";
-@import "../../sass/vars/typography";
-
-@import "../../sass/mixins/buttons";
-@import "../../sass/mixins/links";
-@import "../../sass/mixins/typography";
-@import "../../sass/mixins/utils";
-
-@import "../../sass/atoms/buttons";
+@use "true" as *;
+@use "../../sass/mixins" as *;
+@use "../../sass/atoms/" as *;
+@use "../../sass/vars/" as *;
 
 /* Tests */
 @import "./test-mixins-buttons";

@@ -1,4 +1,5 @@
 @use "sass:math";
+@use "../vars/" as *;
 
 /* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd */
 kbd {

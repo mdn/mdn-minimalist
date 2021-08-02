@@ -1,6 +1,4 @@
-@import "./vars/mdn-web-docs-palette";
-@import "./vars/backgrounds";
-@import "./vars/color-gradients";
+@use "./vars" as *;
 
 :export {
   mdn-red100: $mdn-red100;

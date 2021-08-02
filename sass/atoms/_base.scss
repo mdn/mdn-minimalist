@@ -1,3 +1,6 @@
+@use "../vars" as *;
+@use "../mixins" as *;
+
 html {
   background-color: $white;
   box-sizing: border-box;
