@@ -31,7 +31,6 @@ table {
     text-align: left;
 
     &:first-child {
-      border-left: 0;
       min-width: 150px;
 
       @media #{$mq-small-desktop-and-up} {
