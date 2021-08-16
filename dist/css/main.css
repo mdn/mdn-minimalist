@@ -848,7 +848,6 @@ table td {
 }
 table th:first-child,
 table td:first-child {
-  border-left: 0;
   min-width: 150px;
 }
 @media all and (min-width: 63.9385em) {
