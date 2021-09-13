@@ -2,11 +2,13 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9b97df5e-40a6-47b0-9c73-5a1086c3e2a6/deploy-status)](https://app.netlify.com/sites/mdn-minimalist/deploys)
 
-The base Sass for Mozilla Developer based projects and products
+The base Sass for Mozilla Developer based projects and products.
 
 ## Testing changes locally
 
-When making changes to minimalist testing is done via the styleguide. To run the styleguide, built on Hugo, run the following command in your terminal:
+Before you can start working with minimalist, you need to install [Hugo](https://gohugo.io/getting-started/installing/).
+
+When making changes to minimalist, testing is done via the styleguide. To run the styleguide, built on Hugo, run the following command in your terminal:
 
 ```bash
 yarn styleguide
