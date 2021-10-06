@@ -3811,9 +3811,9 @@ min-indent@^1.0.0:
   integrity sha1-z8RcN+nsDY8KDsPdTvf3w6vjklY=
 
 mini-css-extract-plugin@^2.0.0:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-2.2.2.tgz#df22f16bf43173050c6d652fa7d035318c310e04"
-  integrity sha512-eUjQ/q1rQIeHWgIx7ny/DNgXHcMXHdBwgrZQK7Ev8dbR+HxhroFM2Cb6kMiswOYaq05IRJhPuQqXWUABIjjA3g==
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-2.4.1.tgz#3f3eb6576fb29dd00c423c365e6d3aa59c48ca2a"
+  integrity sha512-97R1JD3GCG7wN5DNM6JrJMxnWNGf2oDlwRgoDc4HOQ5GprahF98mvcPvDMTb5eI1n3vmmMzCpbXH8tpcnr/Nmw==
   dependencies:
     schema-utils "^3.1.0"
 
