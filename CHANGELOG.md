@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.0.3](https://www.github.com/mdn/mdn-minimalist/compare/v2.0.2...v2.0.3) (2021-10-20)
+
+
+### Bug Fixes
+
+* update readme ([d9ec619](https://www.github.com/mdn/mdn-minimalist/commit/d9ec61950f856600398e48358eeb0acccf952d80))
+
 ### [2.0.2](https://www.github.com/mdn/mdn-minimalist/compare/v2.0.1...v2.0.2) (2021-07-14)
 
 
