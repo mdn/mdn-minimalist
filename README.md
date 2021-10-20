@@ -2,6 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9b97df5e-40a6-47b0-9c73-5a1086c3e2a6/deploy-status)](https://app.netlify.com/sites/mdn-minimalist/deploys)
 
+> NOTE: Work on minimalist is temporarily on hold. Please check back later.
+
 The base Sass for Mozilla Developer based projects and products.
 
 ## Testing changes locally
