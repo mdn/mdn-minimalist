@@ -895,10 +895,10 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@mdn/dinocons@^0.3.0":
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/@mdn/dinocons/-/dinocons-0.3.5.tgz#3c3e9cb2877c4449c224134cf29b2658f4614576"
-  integrity sha512-LIM66Ylm26YE/fYc0IquszpE2rcta2gaBrKLWO5HH0CnlQP7HLwh6D6SrErIgGnXzMCw3kc5t4YX/QgwcPFvEA==
+"@mdn/dinocons@^0.5.5":
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/@mdn/dinocons/-/dinocons-0.5.5.tgz#8d75feb46400d6c2192aa9a321661fbea9e7f9bc"
+  integrity sha512-eFFucQdKqM62Hmc1H9EtWMvruaRVXaIg8WhSRAS9veY5FG3p/ar/d4bHy/UODYTE2VCt4+gwJTRqS1lUSIhLAg==
 
 "@nodelib/fs.scandir@2.1.3":
   version "2.1.3"
