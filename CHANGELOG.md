@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.0.4](https://www.github.com/mdn/mdn-minimalist/compare/v2.0.3...v2.0.4) (2021-11-24)
+
+
+### Bug Fixes
+
+* auto-merge ([7112f22](https://www.github.com/mdn/mdn-minimalist/commit/7112f2218b0bb034c2339aaab3595ac6cf825878))
+
 ### [2.0.3](https://www.github.com/mdn/mdn-minimalist/compare/v2.0.2...v2.0.3) (2021-10-20)
 
 
