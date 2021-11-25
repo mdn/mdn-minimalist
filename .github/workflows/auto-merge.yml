@@ -5,4 +5,4 @@ jobs:
   auto-merge:
     uses: mdn/workflows/.github/workflows/auto-merge.yml@main
     secrets:
-      github-token: ${{ secrets.GH_TOKEN }}
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
