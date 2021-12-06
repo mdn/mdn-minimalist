@@ -1,48 +1,13 @@
+name: publish-release
+
 on:
   push:
     branches:
       - main
-name: publish-minimalist
+
 jobs:
-  release-please:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: GoogleCloudPlatform/release-please-action@v2.35
-        id: release
-        with:
-          token: ${{ secrets.GH_TOKEN }}
-          release-type: node
-          package-name: release-please-action
-      # The logic below handles the npm publication:
-      - uses: actions/checkout@v2.3.5
-        # these if statements ensure that a publication only occurs when
-        # a new release is created:
-        if: ${{ steps.release.outputs.release_created }}
-      - uses: actions/setup-node@v2.5.0
-        with:
-          node-version: 12
-          registry-url: "https://registry.npmjs.org"
-        if: ${{ steps.release.outputs.release_created }}
-      - run: yarn install --frozen-lockfile
-        if: ${{ steps.release.outputs.release_created }}
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
-        if: ${{ steps.release.outputs.release_created }}
-  dist:
-    name: build-dist
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2.3.5
-      - uses: actions/setup-node@v2.5.0
-        with:
-          node-version: "14"
-      - name: Install dependencies
-        run: |
-          yarn
-      - name: Build Minimalist distribution
-        run: |
-          yarn build:dist
-      - uses: stefanzweifel/git-auto-commit-action@v4.12.0
-        with:
-          commit_message: Latest CSS distribution build
+  publish-release:
+    uses: mdn/workflows/.github/workflows/publish-release.yml@main
+    secrets:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
