@@ -20,6 +20,6 @@ jobs:
       - name: Build Minimalist distribution
         run: |
           yarn build:dist
-      - uses: stefanzweifel/git-auto-commit-action@v4.13.0
+      - uses: stefanzweifel/git-auto-commit-action@v4.13.1
         with:
           commit_message: Latest CSS distribution build
